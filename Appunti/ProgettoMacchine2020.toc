@@ -1,26 +1,6 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
-\contentsline {chapter}{\numberline {1}Richiami teorici}{1}% 
-\contentsline {section}{\numberline {1.1}Teoria della similitudine}{1}% 
-\contentsline {section}{\numberline {1.2}Influenza di Re}{9}% 
-\contentsline {section}{\numberline {1.3}Flusso comprimibile}{10}% 
-\contentsline {section}{\numberline {1.4}Richiamo di termodinamica}{12}% 
-\contentsline {chapter}{\numberline {2}Turbomacchine assiali}{15}% 
-\contentsline {section}{\numberline {2.1}Generalità}{15}% 
-\contentsline {section}{\numberline {2.2}Nomenclatura}{15}% 
-\contentsline {subsection}{\numberline {2.2.1}Definizioni geometriche}{16}% 
-\contentsline {subsection}{\numberline {2.2.2}Definizioni per la corrente fluida}{16}% 
-\contentsline {subsection}{\numberline {2.2.3}Forze}{16}% 
-\contentsline {subsection}{\numberline {2.2.4}Adimensionalizzazione delle forze}{19}% 
-\contentsline {section}{\numberline {2.3}Ugelli e diffusori}{22}% 
-\contentsline {section}{\numberline {2.4}Schiere palari}{23}% 
-\contentsline {subsection}{\numberline {2.4.1}Schiere di espansione}{23}% 
-\contentsline {subsection}{\numberline {2.4.2}Schiere di compressione}{25}% 
-\contentsline {section}{\numberline {2.5}Equilibrio radiale}{28}% 
-\contentsline {subsection}{\numberline {2.5.1}Termodinamica}{29}% 
-\contentsline {subsection}{\numberline {2.5.2}Ipotesi semplificative}{30}% 
-\contentsline {section}{\numberline {2.6}Condizione di vortice libero}{30}% 
-\contentsline {section}{\numberline {2.7}Vortice forzato}{31}% 
-\contentsline {subsection}{\numberline {2.7.1}A valle del vortice forzato}{35}% 
-\contentsline {section}{\numberline {2.8}Vortice generico}{36}% 
-\contentsline {subsection}{\numberline {2.8.1}Angolo di palettatura costante}{37}% 
+\contentsline {chapter}{\numberline {1}Compressori assiali}{1}% 
+\contentsline {section}{\numberline {1.1}Introduzione}{1}% 
+\contentsline {section}{\numberline {1.2}Lavoro e triangoli di velocità}{2}% 
+\contentsline {section}{\numberline {1.3}Termodinamica}{8}% 
