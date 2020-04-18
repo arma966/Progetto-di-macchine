@@ -1,0 +1,79 @@
+%%%%%%%%%%%%%%%%%%%% book_it.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Esempio di file principale per i capitoli della vostra  "monografia"
+%
+% Usare questo file come template per il vostro documento.
+%
+%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% CONSIGLIATO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[envcountsame,envcountchap]{svmono}
+
+% scegliere le opzioni per []  come richiesto dalla lista 
+% nella Reference Guide, Sez. 2.2
+
+\usepackage{makeidx}         % permette di generare l'indice
+\usepackage{graphicx}        % pacchetto grafico standard LaTeX 
+                             % per l'inclusione di file immagine
+\graphicspath{{./}{Figure/}}
+\usepackage{amsfonts,amsmath,amssymb}
+\usepackage{multicol}        % usato per l'indice a due colonne
+\usepackage{subcaption}
+\usepackage{cancel}
+\usepackage{quoting}
+\usepackage[bottom]{footmisc}% mette le note a pie' di pagina
+\usepackage[italian]{babel}
+% etc.
+% si veda la lista di ulteriori pacchetti utili 
+% nella Reference Guide, Sez. 2.3, 3.1-3.3
+
+\def\theoremname{Teorema}
+\makeindex             % usato per l'indice degli argomenti 
+                       % si prega di usare lo stile svind.ist con 
+                       % il vostro programma makeindex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\author{Armenante Davide}
+\title{Progetto di macchine\\
+%{\small SPIN Springer internal project number, se noto}
+}
+\subtitle{Appunti del corso}
+\date{2020}
+\maketitle
+
+\frontmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{Contenuto/dedic_it}
+\include{Contenuto/pref_it}
+
+\tableofcontents
+
+
+\mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Contenuto/RichiamiTeor}
+
+\include{Contenuto/TurbAss}
+%\include{Contenuto/Immagini}
+%\include{chapter}
+%\appendix
+%\include{appendix}
+
+\backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\include{Contenuto/solutions_it}
+%\include{Contenuto/referenc_it}
+%\printindex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+
+
+
+
