@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.31)  18 APR 2020 23:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.31)  19 APR 2020 12:01
 entering extended mode
 **./ProgettoMacchine2020.tex
 (ProgettoMacchine2020.tex
@@ -358,7 +358,7 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 
 Writing index file ProgettoMacchine2020.idx
 (ProgettoMacchine2020.aux (Contenuto/dedic_it.aux) (Contenuto/pref_it.aux)
-(Contenuto/RichiamiTeor.aux) (Contenuto/TurbAss.aux
+(Contenuto/RichiamiTeor.aux) (Contenuto/MaccAss.aux
 
 LaTeX Warning: Label `' multiply defined.
 
@@ -384,7 +384,7 @@ LaTeX Warning: Label `fig:TurboFan' multiply defined.
 
 LaTeX Warning: Label `' multiply defined.
 
-))
+) (Contenuto/TurbAss.aux))
 \openout1 = `ProgettoMacchine2020.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
@@ -399,7 +399,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
 LaTeX Font Info:    ... okay on input line 41.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
 LaTeX Font Info:    ... okay on input line 41.
- ("D:\Programmi\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+
+("D:\Programmi\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count129
 \scratchdimen=\dimen163
@@ -521,14 +522,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ]
-(ProgettoMacchine2020.toc)
+(ProgettoMacchine2020.toc [9])
 \tf@toc=\write4
 \openout4 = `ProgettoMacchine2020.toc'.
 
- [9] [10
-
-
-]
+ [10]
 \openout2 = `Contenuto/RichiamiTeor.aux'.
 
  (Contenuto/RichiamiTeor.tex
@@ -544,8 +542,10 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 
 
 
+
+
 ]
-<fig/moody.jpg, id=38, 169.71405pt x 106.4778pt>
+<fig/moody.jpg, id=39, 169.71405pt x 106.4778pt>
 File: fig/moody.jpg Graphic file (type jpg)
 <use fig/moody.jpg>
 Package pdftex.def Info: fig/moody.jpg  used on input line 68.
@@ -661,10 +661,10 @@ File: fig/secondo_8.pdf Graphic file (type pdf)
 Package pdftex.def Info: fig/secondo_8.pdf  used on input line 392.
 (pdftex.def)             Requested size: 268.80103pt x 193.35672pt.
  [12]) [13 <./fig/secondo_8.pdf>] [14]
-\openout2 = `Contenuto/TurbAss.aux'.
+\openout2 = `Contenuto/MaccAss.aux'.
 
 
-(Contenuto/TurbAss.tex
+(Contenuto/MaccAss.tex
 Capitolo 2.
 <fig/profiloDef.pdf, id=258, 757.32938pt x 480.29437pt>
 File: fig/profiloDef.pdf Graphic file (type pdf)
@@ -915,110 +915,126 @@ File: fig/IsoRendCompAss.pdf Graphic file (type pdf)
 <use fig/IsoRendCompAss.pdf>
 Package pdftex.def Info: fig/IsoRendCompAss.pdf  used on input line 268.
 (pdftex.def)             Requested size: 336.0pt x 325.78922pt.
- [49]
-<fig/ComprStageLoss.pdf, id=838, 848.4197pt x 585.68813pt>
+ [49] [50 <./fig/IsoRendCompAss.pdf>]
+<fig/ComprStageLoss.pdf, id=886, 848.4197pt x 585.68813pt>
 File: fig/ComprStageLoss.pdf Graphic file (type pdf)
 <use fig/ComprStageLoss.pdf>
-Package pdftex.def Info: fig/ComprStageLoss.pdf  used on input line 286.
+Package pdftex.def Info: fig/ComprStageLoss.pdf  used on input line 307.
 (pdftex.def)             Requested size: 336.0pt x 231.94751pt.
-<fig/Howell.pdf, id=839, 907.89188pt x 514.92375pt>
+<fig/Howell.pdf, id=887, 907.89188pt x 514.92375pt>
 File: fig/Howell.pdf Graphic file (type pdf)
 <use fig/Howell.pdf>
-Package pdftex.def Info: fig/Howell.pdf  used on input line 296.
+Package pdftex.def Info: fig/Howell.pdf  used on input line 318.
 (pdftex.def)             Requested size: 336.0pt x 190.56593pt.
-<fig/SchieraDim.pdf, id=840, 995.21812pt x 462.97969pt>
+<fig/SchieraDim.pdf, id=888, 995.21812pt x 462.97969pt>
 File: fig/SchieraDim.pdf Graphic file (type pdf)
 <use fig/SchieraDim.pdf>
-Package pdftex.def Info: fig/SchieraDim.pdf  used on input line 303.
+Package pdftex.def Info: fig/SchieraDim.pdf  used on input line 325.
 (pdftex.def)             Requested size: 336.0pt x 156.30894pt.
-<fig/1CorrHowell.pdf, id=841, 434.16702pt x 515.81238pt>
+<fig/1CorrHowell.pdf, id=889, 434.16702pt x 515.81238pt>
 File: fig/1CorrHowell.pdf Graphic file (type pdf)
 <use fig/1CorrHowell.pdf>
-Package pdftex.def Info: fig/1CorrHowell.pdf  used on input line 310.
+Package pdftex.def Info: fig/1CorrHowell.pdf  used on input line 335.
 (pdftex.def)             Requested size: 134.39795pt x 159.67194pt.
- [50 <./fig/IsoRendCompAss.pdf>] [51 <./fig/ComprStageLoss.pdf> <./fig/Howell.p
-df
+ [51] [52 <./fig/ComprStageLoss.pdf> <./fig/Howell.pdf
 
 pdfTeX warning: pdflatex (file ./fig/Howell.pdf): PDF inclusion: multiple pdfs 
 with page group included in a single page
->] [52 <./fig/SchieraDim.pdf> <./fig/1CorrHowell.pdf
+>] [53 <./fig/SchieraDim.pdf> <./fig/1CorrHowell.pdf
 
 pdfTeX warning: pdflatex (file ./fig/1CorrHowell.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
 >]
-<fig/FuoriProg1.pdf, id=940, 578.16pt x 651.93562pt>
+<fig/FuoriProg1.pdf, id=944, 578.16pt x 651.93562pt>
 File: fig/FuoriProg1.pdf Graphic file (type pdf)
 <use fig/FuoriProg1.pdf>
-Package pdftex.def Info: fig/FuoriProg1.pdf  used on input line 355.
+Package pdftex.def Info: fig/FuoriProg1.pdf  used on input line 382.
 (pdftex.def)             Requested size: 336.0pt x 378.869pt.
-<fig/FuoriProg2.pdf, id=941, 605.178pt x 558.17365pt>
+<fig/FuoriProg2.pdf, id=945, 605.178pt x 558.17365pt>
 File: fig/FuoriProg2.pdf Graphic file (type pdf)
 <use fig/FuoriProg2.pdf>
-Package pdftex.def Info: fig/FuoriProg2.pdf  used on input line 362.
-(pdftex.def)             Requested size: 235.19897pt x 216.92882pt.
-<fig/FuoriProg3.pdf, id=942, 523.9575pt x 557.08125pt>
+Package pdftex.def Info: fig/FuoriProg2.pdf  used on input line 391.
+(pdftex.def)             Requested size: 191.52133pt x 176.64325pt.
+<fig/FuoriProgMach.pdf, id=946, 384.20102pt x 600.93694pt>
+File: fig/FuoriProgMach.pdf Graphic file (type pdf)
+<use fig/FuoriProgMach.pdf>
+Package pdftex.def Info: fig/FuoriProgMach.pdf  used on input line 397.
+(pdftex.def)             Requested size: 127.67763pt x 199.70357pt.
+<fig/FuoriProg3.pdf, id=947, 523.9575pt x 557.08125pt>
 File: fig/FuoriProg3.pdf Graphic file (type pdf)
 <use fig/FuoriProg3.pdf>
-Package pdftex.def Info: fig/FuoriProg3.pdf  used on input line 369.
+Package pdftex.def Info: fig/FuoriProg3.pdf  used on input line 405.
 (pdftex.def)             Requested size: 134.39795pt x 142.89113pt.
-<fig/FuoriProg4.pdf, id=943, 385.79883pt x 550.32051pt>
+<fig/FuoriProg4.pdf, id=948, 385.79883pt x 550.32051pt>
 File: fig/FuoriProg4.pdf Graphic file (type pdf)
 <use fig/FuoriProg4.pdf>
-Package pdftex.def Info: fig/FuoriProg4.pdf  used on input line 376.
+Package pdftex.def Info: fig/FuoriProg4.pdf  used on input line 412.
 (pdftex.def)             Requested size: 134.39795pt x 191.70816pt.
-<fig/CritCarico1.pdf, id=944, 542.025pt x 296.6081pt>
-File: fig/CritCarico1.pdf Graphic file (type pdf)
-<use fig/CritCarico1.pdf>
-Package pdftex.def Info: fig/CritCarico1.pdf  used on input line 383.
-(pdftex.def)             Requested size: 336.0pt x 183.87248pt.
-<fig/CritCarico2.pdf, id=945, 710.88646pt x 568.2373pt>
-File: fig/CritCarico2.pdf Graphic file (type pdf)
-<use fig/CritCarico2.pdf>
-Package pdftex.def Info: fig/CritCarico2.pdf  used on input line 396.
-(pdftex.def)             Requested size: 134.39795pt x 107.42862pt.
-<fig/CritCarico3.pdf, id=946, 1242.89343pt x 502.12593pt>
-File: fig/CritCarico3.pdf Graphic file (type pdf)
-<use fig/CritCarico3.pdf>
-Package pdftex.def Info: fig/CritCarico3.pdf  used on input line 403.
-(pdftex.def)             Requested size: 336.0pt x 135.74437pt.
-<fig/CritCarico4.pdf, id=947, 715.92468pt x 514.17094pt>
-File: fig/CritCarico4.pdf Graphic file (type pdf)
-<use fig/CritCarico4.pdf>
-Package pdftex.def Info: fig/CritCarico4.pdf  used on input line 412.
-(pdftex.def)             Requested size: 134.39795pt x 96.51665pt.
-) [53] [54 <./fig/FuoriProg1.pdf>] [55 <./fig/FuoriProg2.pdf> <./fig/FuoriProg3
-.pdf
+ [54] [55 <./fig/FuoriProg1.pdf>] [56 <./fig/FuoriProg2.pdf> <./fig/FuoriProgMa
+ch.pdf
+
+pdfTeX warning: pdflatex (file ./fig/FuoriProgMach.pdf): PDF inclusion: multipl
+e pdfs with page group included in a single page
+> <./fig/FuoriProg3.pdf
 
 pdfTeX warning: pdflatex (file ./fig/FuoriProg3.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
->] [56 <./fig/FuoriProg4.pdf> <./fig/CritCarico1.pdf
+>]
+<fig/CritCarico1.pdf, id=998, 542.025pt x 296.6081pt>
+File: fig/CritCarico1.pdf Graphic file (type pdf)
+<use fig/CritCarico1.pdf>
+Package pdftex.def Info: fig/CritCarico1.pdf  used on input line 422.
+(pdftex.def)             Requested size: 336.0pt x 183.87248pt.
+<fig/CritCarico2.pdf, id=999, 710.88646pt x 568.2373pt>
+File: fig/CritCarico2.pdf Graphic file (type pdf)
+<use fig/CritCarico2.pdf>
+Package pdftex.def Info: fig/CritCarico2.pdf  used on input line 435.
+(pdftex.def)             Requested size: 134.39795pt x 107.42862pt.
+<fig/CritCarico3.pdf, id=1000, 1242.89343pt x 502.12593pt>
+File: fig/CritCarico3.pdf Graphic file (type pdf)
+<use fig/CritCarico3.pdf>
+Package pdftex.def Info: fig/CritCarico3.pdf  used on input line 446.
+(pdftex.def)             Requested size: 336.0pt x 135.74437pt.
+ [57 <./fig/FuoriProg4.pdf>]
+<fig/CritCarico4.pdf, id=1012, 715.92468pt x 514.17094pt>
+File: fig/CritCarico4.pdf Graphic file (type pdf)
+<use fig/CritCarico4.pdf>
+Package pdftex.def Info: fig/CritCarico4.pdf  used on input line 457.
+(pdftex.def)             Requested size: 134.39795pt x 96.51665pt.
+ [58 <./fig/CritCarico1.pdf> <./fig/CritCarico2.pdf
 
-pdfTeX warning: pdflatex (file ./fig/CritCarico1.pdf): PDF inclusion: multiple 
+pdfTeX warning: pdflatex (file ./fig/CritCarico2.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
->] [57 <./fig/CritCarico2.pdf> <./fig/CritCarico3.pdf
-
-pdfTeX warning: pdflatex (file ./fig/CritCarico3.pdf): PDF inclusion: multiple 
-pdfs with page group included in a single page
-> <./fig/CritCarico4.pdf
+>] [59 <./fig/CritCarico3.pdf> <./fig/CritCarico4.pdf
 
 pdfTeX warning: pdflatex (file ./fig/CritCarico4.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
->] [58
+>]) [60]
+\openout2 = `Contenuto/TurbAss.aux'.
+
+ (Contenuto/TurbAss.tex
+Capitolo 4.
+) [61
+
+
+
+
+] [62
 
 
 
 ] (ProgettoMacchine2020.aux (Contenuto/dedic_it.aux)
-(Contenuto/pref_it.aux) (Contenuto/RichiamiTeor.aux) (Contenuto/TurbAss.aux)
-(Contenuto/ComprAss.aux))
+(Contenuto/pref_it.aux) (Contenuto/RichiamiTeor.aux) (Contenuto/MaccAss.aux)
+(Contenuto/ComprAss.aux) (Contenuto/TurbAss.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6497 strings out of 492452
- 97283 string characters out of 3131660
- 191045 words of memory out of 3000000
- 10661 multiletter control sequences out of 15000+200000
+ 6518 strings out of 492452
+ 97906 string characters out of 3131660
+ 191480 words of memory out of 3000000
+ 10674 multiletter control sequences out of 15000+200000
  10903 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,19n,46p,892b,327s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1039,10 +1055,11 @@ s/type1/public/amsfonts/cm/cmr9.pfb><D:/Programmi/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmsy10.pfb><D:/Programmi/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmsy5.pfb><D:/Programmi/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D
 :/Programmi/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Programmi/
-MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on ProgettoMacchine2020.pdf (66 pages, 2130460 bytes).
+MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/line10.pfb><D:/Programmi/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on ProgettoMacchine2020.pdf (70 pages, 2178021 bytes).
 PDF statistics:
- 1132 PDF objects out of 1200 (max. 8388607)
+ 1164 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 286 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 291 words of extra memory for PDF output out of 10000 (max. 10000000)
 

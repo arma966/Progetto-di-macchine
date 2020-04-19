@@ -271,106 +271,142 @@ Determino ora il rendimento ottimale in funzione di $\Phi$
 \end{figure}
 
 \section{Progettazione della schiera}
+\subsection{Correlazioni di Howell}
+Sono presenti molteplici correlazioni per progettare una macchina assiale. Noi vedremo un filone di correlazioni, sono datate ma non hanno perso di validità. Anche nella progettazione di una nuova macchina è utile partire da un predimensionamento per poi andare a raffinare con strumenti moderni. Verrà quindi usato come passo preliminare.
+Si parte dalle seguenti riflessioni:
+\begin{itemize}
+\item La deflessione imposta alla corrente è limitata: nell'ordine delle decine di gradi (19, 20, 30 al massimo 40);
+\item Profili sottili a bassa curvatura.
+\end{itemize}
+Le perdite possono quindi essere suddivise in 
+\begin{itemize}
+\item Perdite di anello;
+\item perdite di profilo;
+\item perdite per flussi secondari.
+\end{itemize}
+La perdita di profilo è direttamente correlata al $c_D$, sarà quella in cui si può andare maggiormente a lavorare. 
+Il flusso all'interno del compressore è un moto elicoidale. Il flusso lambisce quindi lacassa della macchina, vi sarà quindi un attrito tra fluido e la partete, queste perdite le chiameremo perdite di "anello".
+Le perdite per flussi secondari sono state adeguatamente trattate nel capitolo precedente. 
+Si andrà quindi a lavorare sulle perdite di profilo aggiungendo poi le altre due perdite tramite coefficienti di correlazione.
+
+Le perdite di anello inducono un drag aggiuntivo correlato a quanto più è elevato lo sviluppo radiale della pala, definito $H$ lo sviluppo radiale e $s$ passo palare, si può scrivere
 \begin{align*}
 C_{Da} = 0.02 \cdot \frac{s}{H}
 \end{align*}
+Abbiamo poi che la perdita per flussi secondari è correlata con il quadrato del coefficiente di portanza, quanto più io ho una portanza elevata quanto più impongo una deviazione, tanto più è probabile che abbia un instaurarsi di moti secondari.
 \begin{align*}
 C_{Da} = 0.018 \cdot C_L^2
 \end{align*}
+Posso andare quindi a scrivere un coefficiente di resistenza complessivo
 \begin{align*}
-C_{Dtot} = C_D + C_{Da} + C_{Ds} = C_D + 0.002 \cdot \frac{s}{H} + 0.018 \cdot C_L^2
+C_{Dtot} = C_D + C_{Da} + C_{Ds} = C_D + 0.02 \cdot \frac{s}{H} + 0.018 \cdot C_L^2
 \end{align*}
-
+In figura \ref{fig:ComprStageLoss} si vede come le varie perdite inficiano sull'efficienza della schiera.
 \begin{figure}
 \centering
   \includegraphics[width=\textwidth]{fig/ComprStageLoss.pdf}
 \caption{}
 \label{fig:ComprStageLoss}
 \end{figure}
-Correlazione di Howell
+La progettazione preliminare con la correlazione di Howell, si va a cercare la relazione tra gli angoli geometrici in ingresso e uscita e gli angoli che deve avere il fluido. La prima correlazione di Howell dice che la condizione di riferimento, ovvero la deflessione che la corrente subisce nell'attraversamento delle pale (nominale) $\varepsilon^*$ viene riferita rispetto alla deviazione di stallo $\varepsilon_s$
 \begin{equation}
-\varepsilon* = 0.8 \cdot \epsilon_s
+\varepsilon^* = 0.8 \cdot \varepsilon_s
 \end{equation}
+In figura \ref{fig:Howell} è rappresentato l'andamento della deflessione in funzione dell'angolo di incidenza. Come si nota un tratto pressocchè lineare seguito da un brusco cambiamento di curvatura. Quest'ultimo è facilmente individuabile, risutlta quindi comodo utilizzarlo come punto di riferimento per individuare la deflessione nominale. Cpme deflessione nominale si utilizzarà quindi un valore che va a minimizzare le perdite, tenendo conto poi dei margini di operabilità.  
 \begin{figure}
 \centering
   \includegraphics[width=\textwidth]{fig/Howell.pdf}
 \caption{}
 \label{fig:Howell}
 \end{figure}
-
+In figura \ref{fig:SchieraDim} si riportano le nomenclature utilizzate in questo capitolo, è rappresentata la differenza tra angoli geometrici e fluidodinamici.
 \begin{figure}
 \centering
   \includegraphics[width=\textwidth]{fig/SchieraDim.pdf}
 \caption{}
 \label{fig:SchieraDim}
 \end{figure}
-
+La prima correlazione di Howell permette di calcolare gli angoli del flusso attesi da una chiera di data solidità ($\varepsilon = \varepsilon*$).
+La seconda correlazione di Howell permette di trovare, noti gli angoli di lusso, i corrispondenti valori degli angoli geometrici della schiera ($\varepsilon = \varepsilon*$).
+La terza correlazione di Howell permette di calcolare le prestazioni in off-design, quando $\varepsilon \neq \varepsilon*$ 
+In figura \ref{fig:1CorrHowell} è rappresentata la prima correlazione di Howell al variare della solidità della schiera. Si nota che a parità di deflessine nominalre si avrà una maggiore angolo in uscira per schiere più compatte.
 \begin{figure}
 \centering
   \includegraphics[width=.4\textwidth]{fig/1CorrHowell.pdf}
 \caption{}
 \label{fig:1CorrHowell}
 \end{figure}
+Si definisce il campo di validità della relazione
 \begin{align*}
 \varepsilon^* = f \bigg( \frac{s}{l}, \alpha_2^*, Re \bigg) \;\; 20^{\circ} < \theta < 40^{\circ}
 \end{align*}
 \begin{align*}
 \varepsilon^* = f\bigg(\frac{s}{l}, \alpha_2*\bigg)\;\; Re > 3 \cdot 10^5
 \end{align*}
+La deflessione nominale è definita come segue
 \begin{align*}
 \varepsilon^* = \alpha_1^* - \alpha_2^*
 \end{align*}
+Le curve espresse come relazione tra gli angoli
 \begin{align*}
 \tan \alpha_1^* - \tan \alpha_2^* = \cfrac{1.55}{1 + 1.5 \cfrac{s}{l}}
 \end{align*}
+La seconda correlazione di Howell mi da il valore della deviazione $\delta$, lo scostamento tra angolo geometrico e angolo effettivo del flusso in uscita. Si ha che $\delta$ dipende dai seguenti fattori
 \begin{align*}
 \delta = f \bigg( \theta, forma \; della \; pala, \frac{s}{l}, \gamma \bigg)
 \end{align*}
+Si usa la seguente relazione
 \begin{align*}
 \delta^* = m \theta \bigg( \frac{s}{l} \bigg)^n
 \end{align*}
+con $n = 1/2$ per schiere di compressore e $n = 1$ per schiere di IGV. Il coefficiente $m$ è funzione della forma della pala, si ripete che queste sono correlazioni approssimative.
 \begin{align*}
 m = 0.23 \cdot \bigg( 2 \cdot \frac{a}{l} \bigg)^2 + \frac{\alpha_2^*}{500}
 \end{align*}
+Con queste correlazioni posso ridurre i gradi di libertà nella definizione della geometria. Infatti una volta scelti $ \theta, \sigma $, dalla seconda correlazione ottengo $ \delta^* $ e dalla prima corrlazione trovo $ \varepsilon^* $. In questo modo posso definire
 \begin{align*}
-\delta^* = \alpha_2^* - \alpha_{2g}
+i^* = \varepsilon^* - \theta + \delta^*
 \end{align*}
 \begin{align*}
-\alpha_2^* = \cfrac{\alpha_{2,g} + 0.23 \bigg( \cfrac{2 a}{l} \bigg)^2 \theta \cdot \sqrt{\cfrac{s}{l}}}{1 - \cfrac{1}{500} \cdot \sqrt{\cfrac{s}{l}}}
+\alpha_{1g} = \alpha_1^* - i^*
 \end{align*}
 \begin{align*}
-y,\alpha_2 = f \left(\alpha_1, Re, M_1, forma \right)
+\alpha_{1g} = \alpha_2^* - \delta^*
 \end{align*}
-\begin{align*}
-\alpha_2^* = f \left(\frac{1}{\sigma}, \alpha_1^* \right)
-\end{align*}
-\begin{align*}
-\alpha_1^* = f' \left( \frac{1}{\sigma}, \alpha_2^* \right) \Rightarrow \varepsilon^* = f \bigg( \frac{s}{l}, \alpha_2^* \bigg)
-\end{align*}
-\begin{align*}
-\tan \alpha_1^* - \tan \alpha_2^* = \cfrac{1.55}{1 + 1.5 \cfrac{s}{l}}
-\end{align*}
+Ora posso effettivamente disegnare la schiera. 
+
+\subsection{Condizioni fuori progetto}
+Si utilizzano delle ulteriori relazioni nelle quali si va a rapportare la deflessione relativa $\varepsilon/\varepsilon^*$ rispetto alle altre caratteristiche (figura \ref{fig:FuoriProg1})
 \begin{figure}
 \centering
   \includegraphics[width=\textwidth]{fig/FuoriProg1.pdf}
 \caption{}
 \label{fig:FuoriProg1}
 \end{figure}
-
+Queste relazioni sono state ricavati per numeri di Mach bassi, vediamo cosa succede aumentando la velocità e quindi avvicinandosi alle condizioni soniche. In figura \ref{fig:FuoriProg2} si rapporta il coefficiente di pressione In il numero di Mach in entrata. 
 \begin{figure}
 \centering
-  \includegraphics[width=.7\textwidth]{fig/FuoriProg2.pdf}
-\caption{}
-\label{fig:FuoriProg2}
+\begin{minipage}{.6\textwidth}
+  \centering
+  \includegraphics[width=.95\linewidth]{fig/FuoriProg2.pdf}
+  \captionof{figure}{}
+  \label{fig:FuoriProg2}
+\end{minipage}%
+\begin{minipage}{.4\textwidth}
+  \centering
+  \includegraphics[width=.95\linewidth]{fig/FuoriProgMach.pdf}
+  \captionof{figure}{ Campo di pressione attorno al profilo al variare del numero di Mach}
+  \label{fig:FuoriProgMach}
+\end{minipage}
 \end{figure}
-
+Il diagramma è riferito a condizioni specifiche. Di divide la curva in due parti da $M_C$, oltre questo Mach critico l'andamento delle pressioni sul singolo profilo, Fintanto che $ M < M_C$ l'andamento è quello mostrato in figura. Al crescere di $M$ il campo di pressione attorno al profilo si modifica con la possibile formazione di un'onda d'urto, il recupero di pressione varia anch'esso in maniera sensibile perggiorando le prestazioni del profilo. Nella condizione di $ M_{max} $ si ha un'onda d'urto che occupa l'intero condotto, sono in chocking e la portata non può variare.
 \begin{figure}
 \centering
   \includegraphics[width=.4\textwidth]{fig/FuoriProg3.pdf}
 \caption{}
 \label{fig:FuoriProg3}
 \end{figure}
-
+In figura \ref{fig:FuoriProg3} ho le relazioni che mi correlano deflessione della schiera e rendimento in funzione di una grandezza dipendente da $M$ completamente definita una volta definiti $M_C$ e $M_{max}$ che ricordiamo essere specifici per condizioni fissate; soprattutto $M_C$ è pesantemente influenzato dall'angolo di incidenza come si vede in figura \ref{fig:FuoriProg4}.
 \begin{figure}
 \centering
   \includegraphics[width=.4\textwidth]{fig/FuoriProg4.pdf}
@@ -378,6 +414,9 @@ y,\alpha_2 = f \left(\alpha_1, Re, M_1, forma \right)
 \label{fig:FuoriProg4}
 \end{figure}
 
+\subsection{Criterio di carico}
+Al variare del numero di pale, a parità di lavoro svolto dalla macchina dovrò imporre diverse deflessioni, ne conseguirà un carico diverso sulla singola pala. Con poche pale dovrò infatti imporre deflessioni maggiori con un forte carico sul singolo profilo.
+Si va a fare una verifica, fissata la schiera e la solidità si va a calcolare il coefficiente di deflessione locale $D_{loc}$ che dice quant'è la massima decelerazione a cui è soggetta la schiera (eq. \ref{eq:D_loc}). Si considera poi la riduzione di quantità di moto come nell'equazione \ref{eq:D_ridqmot} integrando sullo spessore occupato dalla scia, con $V$ è velocità di riferimento mentre $\nu$ è la velocità come funzione della posizione.
 \begin{figure}
 \centering
   \includegraphics[width=\textwidth]{fig/CritCarico1.pdf}
@@ -385,34 +424,41 @@ y,\alpha_2 = f \left(\alpha_1, Re, M_1, forma \right)
 \label{fig:CritCarico1}
 \end{figure}
 Fattore di diffusione locale
-\begin{align*}
+\begin{equation}\label{eq:D_loc}
 D_{loc} = \frac{V_{max} - V_2}{V_{max}}
-\end{align*}
-\begin{align*}
+\end{equation}
+\begin{equation}\label{eq:D_ridqmot}
 \theta = \int_{\delta_P}^{\delta_S} \frac{\nu}{V} \bigg(1- \frac{\nu}{V} \bigg) dy
-\end{align*} 
+\end{equation} 
 \begin{figure}
 \centering
   \includegraphics[width=.4\textwidth]{fig/CritCarico2.pdf}
 \caption{}
 \label{fig:CritCarico2}
 \end{figure}
-
+Se ho molte pale, l'integrale diventa molto grande perchè potrei avere l'intero canale palare occupato dalla scia, quindi come criterio empirico utilizzo
+\begin{align*}
+\frac{\theta}{c} < 0.2
+\end{align*}
+In questo modo l'inspessimento di strato limite è considerato trascurabile rispetto alla corrente principale. 
 \begin{figure}
 \centering
   \includegraphics[width=\textwidth]{fig/CritCarico3.pdf}
 \caption{}
 \label{fig:CritCarico3}
 \end{figure}
+Il valore di $D$ si può calcolare anche attraverso differenti correlazioni (figura \ref{fig:CritCarico3})
 \begin{align*}
 D = \bigg( \frac{V_1 - V_2}{V_1} \bigg) + \bigg( \frac{V_{t1} - V_{t2}}{2 \sigma V_1} \bigg) = \bigg( 1 - \frac{\cos \alpha_1}{cos \alpha_2} \bigg) + \frac{\cos \alpha_1}{2 \sigma} (\tan \alpha_1 - \tan \alpha_2)
-\end{align*} 
+\end{align*}
+e come criterio empirico si usa $$ D \leqslant 0.4 \div 0.5  $$
 \begin{figure}
 \centering
   \includegraphics[width=.4\textwidth]{fig/CritCarico4.pdf}
 \caption{}
 \label{fig:CritCarico4}
 \end{figure}
+Infine si possono andare a cercare correlazioni rispetto allo strato limite come mostrato in figura \ref{fig:CritCarico4} ma ciò non ha molto senso in quanto nel contesto moderno è propio la parte di progettazione che si effettua per via numerica. 
 \begin{align*}
 \Delta M = \int_0^{\delta} \rho u dy (U-u) = \rho \int_0^{\delta} u (U-u) dy
 \end{align*} 
@@ -420,3 +466,45 @@ Spessore della quantità di moto dello strato limite
 \begin{equation}
 \theta = \frac{\Delta M}{\rho U^2} = \int_0^{\delta} \frac{u}{U} \bigg( 1 -\frac{u}{U} \bigg) dy
 \end{equation}
+
+\section{Schiere supersoniche}
+Fin'ora abbiamo parlato di schiere di copressori con deflusso subsonico debolmente comprimibile con rapporti di compressione modesti (10 - 20 peerc) partendo dal presupposto che il flusso in ingresso sia inferiore alla velocità sonica. Quindi 
+\begin{align*}
+\begin{cases}
+M_1 <1\\
+M_2 <1
+\end{cases}
+\end{align*} 
+Vediamo delle condizioni diverse. Si parlerà di compressore transonico se 
+\begin{align*}
+\begin{cases}
+M_1 >1\\
+M_2 <1
+\end{cases}
+\end{align*} 
+Nel caso in cui si arrivi in condizione soniche all'interno della macchina si faranno ulteriori distinzioni rispetto alla componente assiale: per $M_{1a} < 1 $ si parlerà di \textit{regime innescato} o \textit{non innescato} mentre per $ M_{1a} > 1 $ si parlerà di \textit{regime saturo}.
+Ulteriori possibilità che non hanno però rilevanza nei compressori sono 
+\begin{align*}
+\begin{cases}
+M_1 <1\\
+M_2 >1
+\end{cases}
+\end{align*} 
+In questo caso il flusso viene accelerato ma per definizione in un compressore cerco esattamente l'effetto opposto. Si ha poi
+\begin{align*}
+\begin{cases}
+M_1 >1\\
+M_2 >1
+\end{cases}
+\end{align*} 
+in cui il flusso è interamente supersonico, non ha interessi applicativi.
+
+Le schiere supersoniche trovano applicazioni particolari in campo aeronautico. Nel regime non innescato notiamo che è presente un'onda d'urto normale al flusso, si avrà una zona supersonica a monte della schiera, l'aumento di velocità naturalmente è dovuto all'aumento di spessore della schiera.
+
+el regime innescato la perturbazione di pressione occupa integralmente il condoto palare, distinguo in maniera chiara, la portata è bloccata. 
+
+In regime saturo la componente assiale è superiore a 1, il blocco sonico è a mnonte della schiera, a monte si creano onde oblique che dissipano energia.
+
+IMMAGINI
+
+Questo tipo di deflusso consente un salto di pressione più elevato a scapito però di una pesante perdita in termini di rendimento. 

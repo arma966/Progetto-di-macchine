@@ -29,3 +29,8 @@
 \contentsline {section}{\numberline {3.2}Lavoro e triangoli di velocità}{42}% 
 \contentsline {section}{\numberline {3.3}Termodinamica}{48}% 
 \contentsline {section}{\numberline {3.4}Progettazione della schiera}{50}% 
+\contentsline {subsection}{\numberline {3.4.1}Correlazioni di Howell}{50}% 
+\contentsline {subsection}{\numberline {3.4.2}Condizioni fuori progetto}{55}% 
+\contentsline {subsection}{\numberline {3.4.3}Criterio di carico}{57}% 
+\contentsline {section}{\numberline {3.5}Schiere supersoniche}{59}% 
+\contentsline {chapter}{\numberline {4}Turbine a flusso assiale e misto}{61}% 
