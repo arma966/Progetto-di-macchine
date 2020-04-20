@@ -1,5 +1,7 @@
 \chapter{Turbine a flusso assiale e misto}
-Nel caso delle turbine non si parlerà di flusso assiale puro, è presente anche una significativa componente radiale. Nel caso di una turbina il salto entalpico per stadio è di gran lunga superiore all'analogo elaborabile dal compressore. Entalpia e temperatura decrescono molto rapidamente, l'ipotesi di avere densità costante e l'andamento delle pressioni a gradino tra stadi successivi non è più accettabile a causa proprio della dimensione del salto entalpico. Abbiamo temperature molto elevate, nel compressore è la qualità del design del profilo a dominare mentre nella turbina il limite costruttivo è dato dai materiali della palettatura che lavorano a temperature molto elevate e con deflessioni che vanno dai $50^{\circ} a 180^{\circ}$. 
+Nel caso delle turbine non si parlerà di flusso assiale puro, è presente anche una significativa componente radiale. Nel caso di una turbina il salto entalpico per stadio è di gran lunga superiore all'analogo elaborabile dal compressore. 
+
+Entalpia e temperatura decrescono molto rapidamente, l'ipotesi di avere densità costante e l'andamento delle pressioni a gradino tra stadi successivi non è più accettabile a causa proprio della dimensione del salto entalpico. Abbiamo temperature molto elevate, nel compressore è la qualità del design del profilo a dominare mentre nella turbina il limite costruttivo è dato dai materiali della palettatura che lavorano a temperature molto elevate e con deflessioni che vanno dai $50^{\circ}$ ai $180^{\circ}$. 
 \begin{figure}[h!]
 \centering
   \includegraphics[width=.9\textwidth]{fig/TurboGas.png}
@@ -59,7 +61,7 @@ Il rendimento è il seguente
 \begin{align*}
 \eta = \cfrac{h_{0_0} - h_{0_2}}{h_{0_0} - h_{2_{ss}} - \Phi_E \cfrac{c_2^2}{2}} = \frac{\Delta h_0}{\Delta h_{is_{ts}}-\Phi_E \cfrac{c_2^2}{2}}
 \end{align*}
-Il termine fi e rappresenta la quota cinetica a valle della turbina. Quando lo considero uguale a 1 sto considerando un rendimento total to total mentre se lo considero pari a zero sto considerando un rendimento total to static.
+Il termine $\Phi_E$ rappresenta la quota cinetica a valle della turbina. Quando lo considero uguale a 1 sto considerando un rendimento \textit{total to total} mentre se lo considero pari a zero sto considerando un rendimento \textit{total to static}.
 \begin{align*}
 \begin{cases}
 \Phi_E = 1 \; \Rightarrow & \eta = \eta_{tt}\\
@@ -88,13 +90,13 @@ k_{is} = \frac{u_1}{c_1} = \frac{1}{\sqrt{\psi}}
 \end{align*}
 Coefficiente di lavoro specifico totale
 \begin{align*}
-\lambda = \cfrac{h_{0_0} - h_{2_0}}{\cfrac{u^2}{2}} \frac{\Delta h_0}{\frac{u^2}{2}}
+\lambda = \cfrac{h_{0_0} - h_{2_0}}{\cfrac{u^2}{2}} \cfrac{\Delta h_0}{\cfrac{u^2}{2}}
 \end{align*}
 Voglio cercare la relazione tra il grado di reazione ideale e quello effettivo. Adimensionalizzo i triangoli di velocità. Ora non posso più riferirmi ad una sola velocità meridiana, questa diventa una grandezza di progettazione in quanto definisce le sezioni della macchina. Utilizzo quindi i rapporti tra velocità meridiane e tra i raggi.
 \begin{align*}
 \frac{c_{m2}}{c_{m1}}, \;\; \frac{r_2}{r_1}
 \end{align*}
-Adimensionalizzo tutte le grandezze con la velocità periferica $u_1$. Chiaramente i triangoli di velocità saranno di dimensioni diverse. 
+Adimensionalizzo tutte le grandezze con la velocità periferica $u_1$. Chiaramente i triangoli di velocità saranno di dimensioni diverse come mostrato in figura \ref{fig:triangTurb}. 
 \begin{figure}[h!]
 \centering
   \includegraphics[width=.8\textwidth]{fig/triangTurb.pdf}
@@ -174,28 +176,240 @@ Posso però esprimere la velocità acustica a monte della turbina in funzione de
 \begin{align*}
 a_{0_0} = \sqrt{kRT_{0_0}} = \sqrt{\frac{c_p}{c_v} \left( c_p - c_v \right) T_{0_0}} = \sqrt{h_{0_0} \left( k - 1 \right)}
 \end{align*}
-
+Ricordiamo l'espressione del lavoro adimensionalizzato
 \begin{align*}
-\psi	= \cfrac{h_{0_0} - h_{2ss}}{\cfrac{u_1^2}{2}} = \cfrac{c_i^2}{u_1^2} = \cfrac{\Delta h_{is_{ts}}}{\cfrac{u_1^2}{2}}
+\psi = \cfrac{h_{0_0} - h_{2ss}}{\cfrac{u_1^2}{2}} = \cfrac{c_i^2}{u_1^2} = \cfrac{\Delta h_{is_{ts}}}{\cfrac{u_1^2}{2}}
 \end{align*}
-
 \begin{align*}
 \frac{c_i^2}{2} = \psi \frac{u_1^2}{2} \frac{a_{0_0}^2}{a_{0_0}^2} = \frac{\psi}{2} Mu^2 (k-1) h_{0_0}
 \end{align*}
+Mi ricavo quindi le espressioni dei punti delle trasformazioni isoentropiche
 \begin{align*}
 h_{1s} = h_{0_0} - \left(1- R^* \right) \frac{c_i^2}{2} = h_{0_0} \bigg[ 1- \left( 1- R^* \right) \frac{k-1}{2} \psi M_u^2 \bigg]
 \end{align*}
 \begin{align*}
 h_{2ss} = h_{0_0} - \frac{c_i^2}{2} = h_{0_0} \bigg[ 1 - \frac{k-1}{2} \psi M_u^2 \bigg]
 \end{align*}
-
+Ricordanto che
 \begin{align*}
 \frac{c_1^2}{2} = \eta_s \frac{c_i^2}{2} \left( 1- R^* \right)
 \end{align*}
+Ricavo le espressioni dell'entalpia nei punti $1$ e $2$
 \begin{align*}
 h_1 = h_{0_0} - \frac{c_1^2}{2} = h_{0_0} \bigg[ 1- \left( 1- R^* \right) \frac{k-1}{2} \eta_s \psi M_u^2 \bigg]
 \end{align*}
-
 \begin{align*}
 h_2 = h_{0_0} - \Delta h_0 - \frac{c_2^2}{2} = h_{0_0} \bigg[ 1- \bigg( \eta_{ts} + \frac{C_2^2}{\psi} \bigg) \frac{k-1}{2} \psi M_u^2 \bigg]
 \end{align*}
+
+\section{Schiere palari}
+L'attraversamento del fluido viene ottenuto da un insieme di palettature che sono meno critiche dal punto di vista fluidodinamico. Il gradiente di pressione naturalmente non sostiene la separazione di vena fluida, non sussistono quindi grosse criticità sotto questo punto di vista. La deflessione imposta sarà quindi di gran lunga maggiore di quella del compressore, ne conseguiranno quindi anche spessori maggiori. 
+\begin{figure}
+\centering
+  \includegraphics[width=\textwidth]{fig/SchierePaleTab.pdf}
+\caption{}
+\label{fig:SchierePaleTab}
+\end{figure}
+Dal punto di vista storico questi proili si ricavano da correlazioni che  sommatoria di una linea media ad una distribuzione di spessori. Abbiamo profili di diversa categoria e i valori sono ricavati in base a dei parametri di progettazione come mostrato in figura \ref{fig:SchierePaleTab}.
+
+Questo è vero per profili a deflessione relativamente bassa come quelli delle turbine a gas. Nei profili ad alta deflessione utilizzati soprattutto in macchine ad azione, la sezione è costituita da una carenatura ad arco di cerchio. Come di vede in figura la omega uno ha stesso modulo di omega due, questa viene solo deviata. La palettatura è un arco di cerchio tangente alle due direzioni, la palettatura è data da un inspessimento verso il centro per dare resistenza meccanica. La coda è tronca mentre il leading edge non può naturlamnete esserlo, viene arrotondato. 
+\begin{figure}
+\centering
+  \includegraphics[width=.6\textwidth]{fig/palaBassaDef.pdf}
+\caption{}
+\label{fig:palaBassaDef}
+\end{figure}
+Possimao trovarci spesso, nel caso di turbine a vapore, nel caso in cui gli effetti ci comprimibilità non sono trascurabili. L'ugello di una turbina a vapore è convergente divergente, si ha quindi una velocità supersonica. A valle del condotto convergente si instaura un'onda d'urto e quindi un sistema di onde oblique che va ad interagire con la palettatura del rotore posta a valle.
+\begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.95\linewidth]{fig/ou_schiera.png}
+  \captionof{figure}{}
+  \label{fig:ou_schiera}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.95\linewidth]{fig/SupSonic.pdf}
+  \captionof{figure}{}
+  \label{fig:SupSonic}
+\end{minipage}
+\end{figure}
+Si distinguono un'onda normale sul condotto (a) e un'onda obliqua a valle (b). Si tratta di un sistema complicato di onde d'urto. Si utilizzarà quindi un leading edge appuntito per stabilizzare il comportamento della palettatura stessa.
+\begin{figure}
+\centering
+  \includegraphics[width=\textwidth]{fig/PaleSup.pdf}
+\caption{}
+\label{fig:PaleSup}
+\end{figure}
+
+\section{Prestazioni della schiera}
+Definiti i triangoli di velocità cerco il coefficiente di perdita in uscita e l'angolo in uscita, entrambi in funzione dell'angolo in ingresso.
+\begin{align*}
+y, \alpha_2 = f \left( \alpha_1 \right)
+\end{align*}
+In prima approssimazione posso trascurare $Ma$ e $Re$.
+\begin{figure}
+\centering
+  \includegraphics[width=\textwidth]{fig/PrestSchieraTurb.pdf}
+\caption{Il linea continua la schiera ad azione, il linea tratteggiata la schiera a reazione}
+\label{fig:PrestSchieraTurb}
+\end{figure}
+Stabilire l'angolo del fluido in uscita non è ovvio. In presenza di una deviazione elevata della palettatura mi ritrovo con un ampio passo palare. Convenzionalmente si assume come deviazione, si prende una normale al ventre del profilo dal trailing edge, diremo quindi che l'angolo di uscita, detto angolo geometrico è
+\begin{align*}
+\alpha_1^* = \arccos (a/s)
+\end{align*}
+Notiamo che $\alpha_2$ è poco variabile al variare dell'incidenza. Stessa cosa vale per il primo tratto delle perdite.
+
+Vogliamo cercare delle correlazioni sperimentali. Sappiamo che l'angolo non sarà esattamente quello geometrico, si definisce un angolo fluidodinamico
+\begin{align*}
+\cos \alpha_1 = \frac{1}{k} \alpha_1^*
+\end{align*}
+dove $k$ può essere stimato con diverse correlazioni. A titolo di esempio si può prendere
+\begin{align*}
+k = 1 - 10750 \bigg( \frac{t}{s} \bigg)^{3.3} \bigg( \frac{a}{s} \bigg)
+\end{align*}
+Per quanto riguarda le perdite, vedremo che andremo a considerare le perdite di Soderberg. Possiamo però anche considerare la cumulata delle diverse perdite come mostrato in figura \ref{fig:PerditeSchiera}. 
+\begin{figure}
+\centering
+  \includegraphics[width=.65\textwidth]{fig/PerditeSchiera.pdf}
+\caption{}
+\label{fig:PerditeSchiera}
+\end{figure}
+\subsection{Soderberg}
+La correlazione si Soderberg aggrega le perdite nel seguente modo
+\begin{align*}
+\begin{cases}
+\xi = \xi_1 = \cfrac{|h_1 - h_{1s}|}{\cfrac{1}{2} c_1^2} & \mbox{ statore }\\
+\xi = \xi_2 = \cfrac{|h_2 - h_{2s}|}{\cfrac{1}{2} \omega_2^2} & \mbox{ rotore }
+\end{cases}
+\end{align*}
+Si cercano ora coefficienti funzioni di 
+\begin{itemize}
+\item Delessione cinematica: $\Delta \alpha$ statore, $\Delta \beta$ rotore;
+\item numero di Reynolds: $Re = \frac{D_i c_1}{\nu}$
+\begin{itemize}
+\item diametro idraulico\footnote{Diametro bagnato dal fluido \begin{align*}
+D_i = \frac{2 h s \cos \alpha_1}{h + s \cos \alpha_1}, \;\; D_i = \frac{2 h s \cos \beta_2}{h + s \cos \beta_2}
+\end{align*}};
+\item altezza palare $h$.f
+\end{itemize}
+\item allungamento della pala $h/b$;
+\item $t/c$.
+\end{itemize}
+Le correlazioni sono espresse rispetto ad una perdita $\xi^*$ rispetto ad una palettatura di riferimento
+\begin{align*}
+\begin{cases}
+\xi = \bigg( \cfrac{10^5}{Re} \bigg)^{0.25} \bigg[ \left( 1 + \xi^* \right) \bigg ( 0.975 + 0.075 \cfrac{h}{b} \bigg) -1 \bigg] & \mbox{statore} \\
+\xi = \bigg( \cfrac{10^5}{Re} \bigg)^{0.25} \bigg[ \left( 1 + \xi^* \right) \bigg ( 0.993 + 0.021 \cfrac{h}{b} \bigg) -1 \bigg] & \mbox{rotore}
+\end{cases}
+\end{align*}
+In figura si vede che posso ottenere i valori di $\xi^*$ in funzione della deflessione cinematica $\varepsilon$ al variare del rapporto $t/c$.
+\begin{figure}
+\centering
+  \includegraphics[width=\textwidth]{fig/Soderberg.pdf}
+\caption{}
+\label{fig:Soderberg}
+\end{figure}
+Si tratta di una sintesi di dati sperimentali ricavati in galleria del vento.
+
+\subsection{Ainley-Mathieson}
+Si possono vedere anche altre correlazioni come quella di Ainley-Mathieson per le perdite di profilo. Si definiscono dei parametri
+%[label={$-$}]
+\begin{itemize}
+\item $Re = 2 \cdot 10^5$ (basato sulla corda)
+\item $M_1 < 0.6$
+\item $t_{max}/c = 0.2$
+\item $t/s = 0.02$
+\item Condizioni nominali (angolo di incidenza nullo)
+\end{itemize}
+Deinisco il coefficiente di perdita come
+\begin{align*}
+Y_P = \frac{p_{0_0} - p_{1_0}}{p_{1_0} - p_1}
+\end{align*}
+Sperimentalmente
+\begin{align*}
+Y_P = \big[ Y_P^* + m_a^2 \left( Y_P^{**} - Y_P^* \right) \big] \bigg(\cfrac{\cfrac{t_{max}}{c}}{0.2} \bigg)^{m_a}
+\end{align*}
+Con 
+\begin{align*}
+Y_P^* \; \to \;
+\begin{cases}
+\alpha_0 = 0\\
+R = 0\\
+m_a = 0
+\end{cases}
+\end{align*}
+\begin{align*}
+Y_P^{**} \; \to \;
+\begin{cases}
+\alpha_1 = -\alpha_0\\
+R = 0.5\\
+m_a = 1
+\end{cases}
+\end{align*}
+\begin{align*}
+m_a = - \frac{\alpha_0}{\alpha_1}, \;\; 0.15 \leq \frac{t_{max}}{c} \leq 0.25
+\end{align*}
+\begin{figure}
+\centering
+  \includegraphics[width=\textwidth]{fig/Mathieson.pdf}
+\caption{}
+\label{fig:Mathieson}
+\end{figure}
+Si possono quindi esprimere le correlazini corrette
+\begin{align*}
+Y_P = Y_{P,0.02} \bigg[ 1 + 7 \bigg( \frac{t}{s} - 0.02 \bigg) \bigg] \; \mbox{correzione per diverso spessore di uscita}
+\end{align*}
+\begin{align*}
+Y_P = Y_{P,2 \cdot 10^5} \bigg( \frac{2 \cdot 10^5}{Re} \bigg)^{0.2} \; \mbox{correzione per diverso Re}
+\end{align*}
+La precedente correlazione fornisce l'espressione solamente per le perdite di profilo. A queste dovranno essere aggiunte le perdite secondarie e per giochi.
+\begin{align*}
+Y_S + Y_G = \Big( \lambda + B \frac{\delta}{k} \Big) \Bigg( \frac{c_L}{\frac{s}{c}} \frac{\cos^2 \alpha_1}{\cos^3 \alpha_{\infty}} \Bigg)
+\end{align*}
+Con
+%[label={$-$}]
+\begin{itemize}
+\item $B = 0.5$ pale "libere";
+\item $B = 0.25$ pale "cerchiate";
+\item $h$ altezza della pala;
+\item $\delta$ gioco radiale;
+\item $\lambda$ è un coefficiente sperimentale.
+\end{itemize}
+\begin{align*}
+\theta = \cfrac{\bigg(\cfrac{A_1}{A_0}\bigg)^2}{1- \cfrac{D_i}{D_e}}
+\end{align*}
+\begin{figure}
+\centering
+  \includegraphics[width=.6\textwidth]{fig/lambdaPerditeSchiera.pdf}
+\caption{}
+\label{fig:lambdaPerditeSchiera}
+\end{figure}
+
+Si vanno quindi a calcolare le perdite in condizioni fuori progetto, si usano correlazioni come quelle riportate in figura \ref{fig:FuoriProgT1}.
+\begin{figure}
+\centering
+  \includegraphics[width=\textwidth]{fig/FuoriProgT1.pdf}
+\caption{}
+\label{fig:FuoriProgT1}
+\end{figure}
+
+\section{Criteri di carico}
+\begin{figure}
+\centering
+  \includegraphics[width=\textwidth]{fig/Ainley.pdf}
+\caption{}
+\label{fig:Ainley}
+\end{figure}
+Una volta determinata la schiera è opportuno andare a verificare un criterio di carico, ovvero se la solidità scelta è sostenibile o meno. Con molte pale aumento le perdite perchè aumenta la superfice bagnata ma per contro si riesce a realizzare meglio la variazione d'angolo che è quella che da momento alla turbina. In figura \ref{fig:Ainley} sono illustrati i diversi criteti di carico. I criteri di Zweifel impongono un vincolo sul rapporto tra forza tangenziale e una forza tangenziale ideale come segue
+\begin{align*}
+\cfrac{F_t}{F_{t,id}} = \cfrac{F_t}{\cfrac{1}{2} \rho b c_1^2} = c_{F_t} = 2 \cos^2 \alpha_1 \bigg(\cfrac{c_{m0}}{c_{m1}} \tan \alpha_0 - \tan \alpha_1 \bigg) \cfrac{s}{b} = 0.8
+\end{align*}
+In figura è rappresentata in rosso l'area formata dall'andamento delle pressioni ideale nell'attraversamento del fluido nel canale interpalare. Viene poi evidenziata l'area formata dall'andamento reale, il loro rapporto è appunto il rapporto tra le forze tangenziali.
+\begin{figure}
+\centering
+  \includegraphics[width=\textwidth]{fig/CritCaricoT.pdf}
+\caption{}
+\label{fig:CritCaricoT}
+\end{figure}

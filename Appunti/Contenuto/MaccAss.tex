@@ -60,15 +60,14 @@ $\epsilon = \Delta \alpha$: entità della deflessione subita dal flusso tra ingr
 Nel caso delle turbine le deviazioni sono più alte rispetto ai compressori, rallentare una corrente è sempre molto più facile che accelerarla. 
 
 Dalle considerazioni geometriche viste prima si può scrivere
-\begin{equation}
-\epsilon = \theta + i - \delta
-\end{equation}
+\begin{align*}
+\varepsilon = \theta + i - \delta
+\end{align*}
 
 \subsection{Forze}
 Le forze agenti sulla schiera di pale posso scriverle rispetto al sistema di rif assiale tangenziale per determinare la coppia, ovvero la potenza fornita all'albero nel caso di compressore. La componente assiale sarà la spinta che i cuscinetti dovranno sopportare per il funzionamento ma ri riperquotono anche sulle perdite di carico. 
 
 Le forze vanno anche declinate sotto il profilo di portanza e resistenza. Si tratta delle stesse forze su due sistemi di riferimento diversi. 
-
 \begin{align*}
 	\begin{cases}
 		F_a = f(\Delta v, \Delta p_0)\\
@@ -81,9 +80,7 @@ Le forze vanno anche declinate sotto il profilo di portanza e resistenza. Si tra
 		D = f(F_a,F_t)
 	\end{cases}
 \end{align*}
-
 Considero una schiera palare e considero un volume di controllo ($ABCD$) che segue la linea media del profilo. Le velocità in ingresso e in uscita le scompongo nella direzioe assiale e radiale. 
-
 \begin{figure}[h!]
 \centering
 \begin{minipage}{.4\textwidth}
@@ -104,33 +101,32 @@ Applico le equazioni di conservazione. Per continuità ho:
 s \rho V_{1a} = s \rho V_{2a} \Rightarrow V_{1a} = V_{2a} = V_a
 \end{equation}
 Dove ho ipotizzato $\rho$ costante, per un compressore assiale i rapporti di compressione per stadio sono modesti, nel caso di una turbina non sarebbe valido. Per quanto riguarda la quantità di moto in direzione tangenziale:
-\begin{equation}
+\begin{align*}
 F_t= \dot{m} \Delta V_t = s \rho	V_a (V_{1t}-V_{2t})
-\end{equation}
+\end{align*}
 In direzione assiale
-\begin{equation}
+\begin{align*}
 F_a = s (p_1 - p_2)
-\end{equation}
-
+\end{align*}
 Scrivendo la pressione nelle componenti di pressione statica e dinamica posso espandere l'espressione delle forze assiali ottenendo:
-\begin{equation}
-F_a =\ldots=\cfrac{1}{2} \rho s (V_{t2}-V_{t1}) (V_{t2}+V_{t1}) + s \Delta p_0
-\end{equation}
-
+\begin{align*}
+F_a = s \cdot ( p_1 - p_2) &= s \cdot \left( p_{01} - \frac{1}{2} \rho V_1^2 - p_{02} + \frac{1}{2} \rho V_2^2 \right) = \\
+&= \frac{1}{2} \rho s \left( V_2^2 - V_1^2 \right) + s \left( p_{01} - p_{02} \right) = \\
+&= \frac{1}{2} \rho s \left( V_{t2}^2 + V_a^2 + - V_{t1}^2- V_a^2 \right) + s \Delta p_0 =\\
+&=\cfrac{1}{2} \rho s (V_{t2}-V_{t1}) (V_{t2}+V_{t1}) + s \Delta p_0
+\end{align*}
 $\Delta p_0$ è la perdita di pressione totale, rappresenta quindi la perdita di carico nel deflusso attraverso la schiera. $(V_{t2}-V_{t1})$ rappresenta il trasferimento di quantità di moto. Se divido il termine $(V_{t2}+V_{t1})$ per $2$ ottengo l'espressione della velocità tangenziale all'infinito (velocità media indisturbata).
 \begin{align*}
 \cfrac{(V_{t2}+V_{t1})}{2} = V_{t \infty}
 \end{align*}
-
 Eseguendo ulteriori semplificazioni posso scrivere
-\begin{equation}
+\begin{align*}
 F_a = -F_t \cfrac{V_{t \infty}}{V_a} + \Delta p_0 = - F_t \tan \alpha_{\infty} + s \Delta p_0
-\end{equation}
-
+\end{align*}
 Oltre a questa grandezza posso definire un coefficiente di perdita $y$ come
-\begin{equation}
+\begin{align*}
 y = \cfrac{\Delta p_0}{p_{02}-p_2} = \cfrac{\Delta p_0}{\cfrac{1}{2} \rho V_2^2}
-\end{equation}
+\end{align*}
 Nota bene: è stato usato lo stesso simbolo ma non deve essere confuso con il nuemro di Camber.
 
 Nel sistema di riferimento relativo, le forze vengono scomposte nella componente di \textit{Lift} (ortogonale alla velocità incidente) e nella componente di \textit{Drag} (parallela alla velocità incidente. 
@@ -149,7 +145,7 @@ Posso quindi scrivere le espression di lift e drag e le forze nelle componeneti 
 \end{equation}
 \begin{equation}
 	\begin{cases} 
-		L = L (\sin \alpha_{\infty} -  D \cos \alpha_{\infty})\\
+		L = - (\sin \alpha_{\infty} -  D \cos \alpha_{\infty})\\
 		D = L \cos \alpha_{\infty} +  D \sin \alpha_{\infty}
 	\end{cases}
 \end{equation}
@@ -164,7 +160,7 @@ c_D = \cfrac{D}{\cfrac{1}{2} \rho c V_{\infty}^2}
 \end{equation}
 Il coefficiente di forza $c_F$ sarà definito come:
 \begin{align*}
-c_F = \cfrac{F_t}{\cfrac{1}{2} \rho c V_{\infty}^2} = \cfrac{s V_a (V_{t1}-V{t2}=}{\cfrac{1}{2} c V_{\infty}^2} = ...
+c_F = \cfrac{F_t}{\cfrac{1}{2} \rho c V_{\infty}^2} = \cfrac{s \rho V_a (V_{t1}-V{t2})}{\cfrac{1}{2} c \rho V_{\infty}^2} = ...
 \end{align*}
 \begin{figure}
 \centering
@@ -174,58 +170,58 @@ c_F = \cfrac{F_t}{\cfrac{1}{2} \rho c V_{\infty}^2} = \cfrac{s V_a (V_{t1}-V{t2}
 \end{figure}
 Usando le relazioni $V_a = V_{\infty} \cos \alpha_{\infty}$ e $V_{t1,2} = \tan \alpha_{1,2}$ (vedi Figura \ref{fig:trigrel}) si espande ulteriormente la relazione ottenendo
 \begin{equation}
-c_F = 2 \cfrac{s}{c} \cos ^ 2 (\alpha_{\infty})(\tan \alpha_1 - \tan \alpha_2)
+c_F = 2 \bigg(\cfrac{s}{c} \bigg) \cos ^ 2 \alpha_{\infty}(\tan \alpha_1 - \tan \alpha_2)
 \end{equation}
 
 Allo stesso modo posso espandere $c_P$
-\begin{equation}
+\begin{align*}
 c_P = \cfrac{F_a}{\cfrac{1}{2} \rho c V_{\infty}^2} = \cfrac{s \Delta p_0 - F_t \tan \alpha_{\infty}}{\cfrac{1}{2} \rho c V_{\infty}^2} = \cfrac{s \Delta p_0}{\cfrac{1}{2} \rho c V_{\infty}^2} - c_F \tan \alpha_{\infty}
-\end{equation}
+\end{align*}
 Ricordando la relazione del coefficiente di perdita
 \begin{align*}
-t = \cfrac{\Delta p_0}{\cfrac{1}{2} \rho c V_2^2}
+y = \cfrac{\Delta p_0}{\cfrac{1}{2} \rho c V_2^2}
 \end{align*}
 Posso scrivere
 \begin{align*}
-c_P = \left(\cfrac{s}{c}\right)y \left(\cfrac{V_2}{V_{\infty}}\right)^2 - c_F \tan \alpha_{\infty}
+c_P = \bigg(\cfrac{s}{c}\bigg)y \bigg(\cfrac{V_2}{V_{\infty}}\bigg)^2 - c_F \tan \alpha_{\infty}
 \end{align*}
 E quindi
-\begin{equation}
-c_P = \left(\cfrac{s}{c}\right)y \cfrac{\cos^2 \alpha_{\infty}}{\sin^2 \alpha_2} -2\left(\cfrac{s}{c}\right) \left(\tan \alpha_1 - \tan \alpha_2 \right) \sin \alpha_{\infty} \cdot cos \alpha_{\infty}
-\end{equation}
+\begin{align*}
+c_P = \bigg(\cfrac{s}{c}\bigg)y \cfrac{\cos^2 \alpha_{\infty}}{\cos^2 \alpha_2} -2\bigg(\cfrac{s}{c}\bigg) \left(\tan \alpha_1 - \tan \alpha_2 \right) \sin \alpha_{\infty} \cdot cos \alpha_{\infty}
+\end{align*}
 
 Ho così ottenuto tutte le relazioni per passare da coefficienti di portanza e resistenza a coefficienti di forza e pressione.
 
 Nel caso di fluido ideale non viscoso il drag è nullo, in questo caso allora il Lift sarà uguale a $2$ e dipenderà solo dalla geometria della schiera. 
 
 Ipotesi di perdite nulle $\Delta p_0 = 0$
-\begin{equation}
+\begin{align*}
 \begin{cases}
 F_a = s \rho V_{\infty t} (V_{2t}-V{1t})\\
 F_t = s \rho V_a (V_{1t}-V{2t})
 \end{cases}
-\end{equation}
+\end{align*}
 
 Come ho fatto con le forze, posso esprimere quindi i coefficienti adimensionali secondo i diversi sistemi di coordinate. 
 
 Posso trovare allora
-\begin{equation}
+\begin{align*}
 \begin{cases}
 c_L = c_F \cos \alpha_{\infty} - c_P \sin \alpha_{\infty} \\
 c_D = c_F \sin \alpha_{\infty} + c_P \cos \alpha_{\infty}
 \end{cases}
-\end{equation}
+\end{align*}
 Sostituendo $c_F$ e $c_P$ ottengo
-\begin{equation}
+\begin{align*}
 \begin{cases}
 c_L = 2 \cfrac{s}{c} (tan \alpha_1 - \tan \alpha_2) \cos \alpha_{\infty} - c_D \tan \alpha_{\infty} \\
 c_D = \cfrac{s}{c} y \cfrac{cos^3 \alpha_{\infty}}{\cos \alpha_2}
 \end{cases}
-\end{equation}
+\end{align*}
 Sotto le ipotesi di flusso a potenziale non c'è generazione di forze. Si introduce quindi una rotazione nel flusso per modellare matematicamente il profilo (teorema di Kutta-Jukowsky). In questo modo sull'estradosso la velocità sarà maggiore di $V_{\infty}$ mentre nell'intradosso sarà minore. Si calcola quindi la circuitazione. Con $L$ è indicata la forza, con $\Sigma$ la forza della circuitazione.
-\begin{equation}
+\begin{align*}
 \Sigma = \oint \overline{v} \cdot d \overline{l} \;\;\; L = \rho \sigma V_{\infty}
-\end{equation}
+\end{align*}
 
 In questo modo, anche senza avere la precisione che si avrebbe in una simulazione fluidodinamica del profilo, riesco a modellare in maniera snella anche una schiera di pale. Avrò semplicemente l'integrale all'ingresso e all'uscita della schiera su un volume di controllo. 
 \begin{figure}
@@ -269,56 +265,52 @@ Le definizioni sono note e stranote.
 \end{minipage}
 \end{figure}
 Posso rappresentare queste trasformazioni sul piano $h-s$ con una trasformazione non isoentropica. 
-\begin{equation}
+\begin{align*}
 \eta_{is} = \cfrac{h_{2s} - h_1}{h_2-h_1} = \cfrac{c_2^2 - c_1^2}{c_{2s}^2 - c_1^2}
-\end{equation}
+\end{align*}
 Nel caso di ugelli per $Ma < 0.3$ posso scrivermi tutte le grandezze
-\begin{equation}
+\begin{align*}
 \begin{cases}
-p_{01} = p_1 + \cfrac{1}{2} \rho c_1^2 \;\; \to  \;\; c_1^2 = \cfrac{2}{\rho} (p_{01} - p_1)\\
-p_{02} = p_2 + \cfrac{1}{2} \rho c_{2s}^2 \;\; \to  \;\; c_{2s}^2 = \cfrac{2}{\rho} (p_{01} - p_1)\\
-p_{02} = p_2 + \cfrac{1}{2} \rho c_2^2 \;\; \to  \;\; c_2^2 = \cfrac{2}{\rho} (p_{02} - p_2)
+p_{01} = p_1 + \cfrac{1}{2} \rho c_1^2 \;& \to  \;\; c_1^2 = \cfrac{2}{\rho} (p_{01} - p_1)\\
+p_{02} = p_2 + \cfrac{1}{2} \rho c_{2s}^2 \;& \to  \;\; c_{2s}^2 = \cfrac{2}{\rho} (p_{01} - p_1)\\
+p_{02} = p_2 + \cfrac{1}{2} \rho c_2^2 \;& \to  \;\; c_2^2 = \cfrac{2}{\rho} (p_{02} - p_2)
 \end{cases}
-\end{equation}
+\end{align*}
 Sostituendo queste relazioni nell'espressione del rendimento si ottiene
-\begin{equation}
-\eta_{is} = \cfrac{p_{02} - p_2 - (p_{01} - p_1)}{p_{01} - p_2 - (p_{01} - p_1)}=\cfrac{p_{02} - p_2 -(p_{01} - p_1)}{p_1-p_2}=1- \cfrac{\Delta p_0}{p_1 - p_2}
-\end{equation}
+\begin{align*}
+\eta_{is} = \cfrac{p_{02} - p_2 - (p_{01} - p_1)}{\cancel{p_{01}} - p_2 - (\cancel{p_{01}} - p_1)}=\cfrac{p_{02} - p_2 -(p_{01} - p_1)}{p_1-p_2}=1- \cfrac{\Delta p_0}{p_1 - p_2}
+\end{align*}
 
 $\Delta p_0$ rappresenta la perdita tra ingresso e uscita. 
 
 Per i diffusori si consideri sempre $Ma<0.3$ si possono usare le stesse espressioni, si ottiene un rendimento isoentropico come segue.
-\begin{equation}
+\begin{align*}
 \eta_{is} = \cfrac{p_2 - p_1}{p_2-p_1 + (p_{01}-p_{02})} = \cfrac{c_1^2 - c_{2s}^2}{c_1^2 - c_2^2}
-\end{equation}
+\end{align*}
 L'utilizzo di un rendimento isoentropico è meno espressivo nel caso di un diffusore, ha maggior significato fisico un altra cosa, qual'è l'entita di $ \Delta p$ recuperabile della parte eccedente la pressione statica in ingresso.
-\begin{equation}
+\begin{align*}
 \eta_{is} = \cfrac{p_{01} - p_1 - (p_{01} - p_2)}{p_{01} - p_1-(p_{02} - p_2)} = \cfrac{p_2 - p_1}{p_2 - p_1 + (p_{01} - p_{02})} = \cfrac{1}{1- \cfrac{\Delta p_0}{p_2 - p_1}}
-\end{equation}
+\end{align*}
 Definendo il coefficiente di recupero di pressione come
-\begin{equation}
+\begin{align*}
 c_p = \cfrac{p_2 - p_1}{p_{01} - p_1}
-\end{equation}
+\end{align*}
 Cerchiamo però il legame tra coefficiente di recupero e rendimento isoentropico. Rimanipolando le formule si ottiene
-\begin{equation}
+\begin{align*}
 \cfrac{1}{\eta_{is}} = \cfrac{p_2 - p_1 + (p_{01} - p_{02})}{p_2 - p_1} = \cfrac{p_{01} - p_1 - (p_{02} - p_2)}{p_2-p_1} = \cfrac{1}{c_P} - \cfrac{p_{02} - p_2}{p_2 - p_1}
-\end{equation}
-
+\end{align*}
 Posso definire un coefficiente di pressione ideale:
-\begin{equation}
+\begin{align*}
 c_{pi} = \cfrac{p_2 - p_1 + (p_{01} - p_{02})}{p_{01} - p_1}
-\end{equation}
-
+\end{align*}
 Esprimendo secondo $A_1$ e $A_2$, aree di ingresso e uscita del diffusore 
-\begin{equation}
+\begin{align*}
 c_{pi} = \cfrac{c_1^2 - c_2^2}{c_1^2} = 1 - \left( \cfrac{c_2}{c_1}\right)^2 = 1- \left(\cfrac{A_1}{A_2} \right)^2 =1-\cfrac{1}{A_R^2}
-\end{equation}
-
+\end{align*}
 A questo punto ottengo un rapporto
-\begin{equation}
+\begin{align*}
 \cfrac{c_P}{c_{pi}} = ... = \eta_{is}
-\end{equation}
-
+\end{align*}
 Il diffusore funziona bene finchè il rapporto tra sezione di uscita e sezione di ingresso è molto piccolo. 
 \begin{figure}
 \centering
@@ -339,40 +331,40 @@ Le schiere di pale possono essere di espansione, in cui si ha un'accelerazione d
 
 \subsection{Schiere di espansione}
 Il rendimento isoentropico di queste schiere è espressa come 
-\begin{equation}
+\begin{align*}
 \eta_{is} = 1- \cfrac{\Delta p_0}{p_1 - p_2}
-\end{equation}
+\end{align*}
 Sappiamo però che la perdita di pressione tra ingresso e uscita può essere scritta nei termini della forza assiale sviluppata
-\begin{equation}
+\begin{align*}
 p_1-p_2 = \cfrac{F_a}{s}
-\end{equation}
+\end{align*}
 Ma la forza assiale può essere scritta come
 \begin{align*}
 F_a=  - F_t \tan \alpha_{\infty} + s \Delta p_0
 \end{align*}
 E quindi posso scrivere il rendimento isoentropico come
-\begin{equation}
+\begin{align*}
 \eta_{is} = \cfrac{1}{1- \cfrac{\Delta p_0 s}{F_t \tan \alpha_{\infty}}}
-\end{equation}
+\end{align*}
 \subsection{Schiere di compressione}
 In questo caso posso scrivere il rendimento isoentropico come
-\begin{equation}
+\begin{align*}
 \eta_{is} = \cfrac{1}{1 + \cfrac{\Delta p_0}{p_2-p_1}}
-\end{equation}
+\end{align*}
 Seguendo un percorso simile a prima posso scrivere le seguenti relazioni
-\begin{equation}
+\begin{align*}
 p_2-p_1 = -\cfrac{F_a}{s}
-\end{equation}
+\end{align*}
 \begin{align*}
 F_a = -F_t \tan \alpha_{\infty} + s \Delta p_0
 \end{align*}
-\begin{equation}
+\begin{align*}
 \eta_{is} = 1- \cfrac{\Delta p_0 s}{F_t \tan \alpha_{\infty}}
-\end{equation}
+\end{align*}
 Ora vado ad utilizzare tutte le relazioni viste precedentemente. 
 La forza tangenziale è espressa secondo il coefficiente di forza, la differenza di pressione totale V infinito e V2. 
 
-\begin{equation}
+\begin{align*}
 \begin{cases}
 F_t = c_F \cfrac{1}{2} \rho c V_{\infty}^2\\
 V_{\infty} = \cfrac{V_a}{cos \alpha_{\infty}}
@@ -381,14 +373,14 @@ V_2 = \cfrac{V_a}{cos \alpha_2}
 \end{cases}
 \rightarrow
 \cfrac{\Delta p_0 s}{F_t \tan \alpha_{\infty}} = \cfrac{y}{c_F \tan \alpha_{\infty}} \cdot \cfrac{cos^2 \alpha_{\infty}}{\delta \cdot cos^2 \alpha_2}
-\end{equation}
+\end{align*}
 
 
 Andando a considerare poi tutte le relazioni tra i coefficienti di forza, di pressione, di lift e di drag posso esprimere il rendimento isoentropico in funzione dei parametri di lift e di drag.
 Vedo che per rendere elevato il rendimento della schiera devo cercare il massimo del rapporto $c_L/c_D$, che rappresenta l'efficienza del profilo.
 
 Con tutte le sostituzioni ottengo
-\begin{equation}
+\begin{align*}
 \begin{cases}
 c_P = \left(  \cfrac{s}{c} \right) y \left( \cfrac{V_2}{V_{\infty}}  \right)^2 - c_F \tan \alpha_{\infty}\\
 c_L = c_F \cos \alpha_{\infty} - c_P \sin \alpha_{\infty}\\
@@ -397,18 +389,18 @@ c_L = 2 \left(  \cfrac{s}{c} \right) (tan \alpha_1 - \tan \alpha_2) \cos \alpha_
 c_D= \left(  \cfrac{s}{c} \right) y \cfrac{\cos^3 \alpha_{\infty}}{\cos \alpha_2}
 \end{cases}
 \Rightarrow
-\eta_{is} = 1- \cfrac{2 c_D}{c_L \sin (2 \alpha_{\infty}}
-\end{equation}
+\eta_{is} = 1- \cfrac{2 c_D}{c_L \sin (2 \alpha_{\infty})}
+\end{align*}
 
 Il rapporto $c_L/c_D$ posso considerarlo costante, in condizione di funzionamento ottimo è un'affermazione banale, è ovvio che nell'intorno di questo punto possa essre considerato costante. 
 
 Esiste un tratto significativo di funzionamento in cui il rapporto $c_L/c_D$ rimane costatne. In queste condizioni posso derivare il rendimento rispetto all'angolo alpha, derivando per alpha posso vedere il rendimento nelle condizioni di massimo.
-\begin{equation}
+\begin{align*}
 \cfrac{\partial \eta_{is}}{\partial \alpha_{\infty}} = 0, \;\; \cfrac{c_D}{c_L} = cost.
-\end{equation}
-\begin{equation}
+\end{align*}
+\begin{align*}
 \eta_{is,max} = 1- \cfrac{2 c_D}{c_L}
-\end{equation}
+\end{align*}
 Il valore di $\alpha_{\infty}$ ottimale è quello di $45$ gradi.
 
 Secondo la solita convenzione si studiano i triangoli di velocità della schiera in movimento (Figura \ref{fig:SchiereCompr}). I triangoli invece di essere chiusi sul vettore velocità vengono rappresentati partendo dallo stesso punto di origine. 
@@ -422,48 +414,48 @@ Posso quindi calcolare la forza tangenziale data dalla variazione delle velocit�
 \begin{align*}
 \Delta c_t = c_{2t} - c_{1t} = \omega_{1t} - \omega_{2t} = |\Delta \omega_t |
 \end{align*}
-\begin{equation}
+\begin{align*}
 F_t = s \rho c_a (\omega_{1t} - \omega_{2t})
-\end{equation}
+\end{align*}
 
 Partendo dalle relazioni di potenza, portata in massa e forza tangenziale definisco il lavoro unitario.
-\begin{equation}
+\begin{align*}
 \begin{cases}
 P=F_t \cdot u\\
 \dot{m} = \rho s c_a\\
 F_t = c_F \cfrac{1}{2} \rho c \omega_{\infty}^2 = \cfrac{c_F \cfrac{1}{2} \rho c c_a^2}{\cos^2 \beta_{\infty}}
-\end{cases}
-\Rightarrow
+\end{cases} \;
+\Rightarrow \;
 L_u = \cfrac{F_t \cdot u}{\rho s c_a}
-\end{equation}
+\end{align*}
 Ottenendo infine
-\begin{equation}
+\begin{align*}
 L_u = \cfrac{c_F \delta}{2 \cos^2 \beta_{\infty}} \cdot c_a \cdot u
-\end{equation}
+\end{align*}
 Sostituendo la relazione della forza tangenziale ottengo il lavoro unitario in funzione del coefficiente di forza, della solidità della schiera della velocità assiale e periferica. 
 
 Con questa espressione si può ora adimensionalizzare il lavoro
-\begin{equation}
+\begin{align*}
 \begin{cases}
 \lambda = \cfrac{L_u}{\omega ^2 D^2} = \cfrac{L_u}{4 u^2}\\
 \phi = \cfrac{Q}{\omega D^3} \propto \cfrac{c_a}{u} \\
 \lambda = \cfrac{c_F \delta}{8 \cos^2 \beta_{\infty}} \cdot \cfrac{c_a}{u} = \cfrac{c_F \delta}{8 \cos^2 \beta_{\infty}} \cdot \phi
 \end{cases}
-\end{equation}
+\end{align*}
 L'ultima espressione rappresenta la cifra di funzionamento della macchina in quanto ovviamente il lavoro viene fatto esclusivamente dalle parti rotoriche.
 
 Si può quindi scrivere il rendimento isoentropico sia nel caso di compressione che di espansione. 
 
 \begin{multicols}{2}
 Compressione
-\begin{equation}
+\begin{align*}
 \eta_{is} = \cfrac{L_u - \cfrac{\Delta p_0}{\rho}}{L_u} = 1- \cfrac{\cfrac{\Delta p_0}{\rho}}{L_u}
-\end{equation}
+\end{align*}
 \break
 Espansione
-\begin{equation}
+\begin{align*}
 \eta_{is} = \cfrac{L_u}{L_u + \cfrac{\Delta p_0}{\rho}} = \cfrac{1}{1+\cfrac{\cfrac{\Delta p_0}{\rho}}{L_u}}
-\end{equation}
+\end{align*}
 \end{multicols}
 
 Utilizzando le relazioni note
@@ -478,23 +470,23 @@ L_u = \cfrac{c_F \delta}{2 \cos^2 \beta_{\infty}} \cdot c_a \cdot u\\
 Si ottengono le espressioni
 \begin{multicols}{2}
 Compressione
-\begin{equation}
+\begin{align*}
 \eta_{is} = 1- \cfrac{y}{c_F} \cdot  \cfrac{cos^2 \beta_{\infty}}{\delta \cos^2 \beta_2} \cdot \phi
-\end{equation}
+\end{align*}
 \break
 Espansione
-\begin{equation}
+\begin{align*}
 \eta_{is} = \cfrac{1}{1+\cfrac{y}{c_F} \cdot \cfrac{\cos^2 \beta_{\infty}}{\delta \cos^2 \beta_2} \cdot \phi}
-\end{equation}
+\end{align*}
 \end{multicols}
 Ora vediamo cosa succede mettendo assime parte statorica e parte rotorica. Il rendimento di uno stadio assumerà l'espressione
-\begin{equation}
+\begin{align*}
 \Delta p_0 = \Delta p_{0,stat} + \Delta p_{0,rot}
-\end{equation}
+\end{align*}
 \section{Equilibrio radiale}
 \begin{figure}
 \centering
-  \includegraphics[width=\textwidth]{fig/ReticoloComp.pdf}
+  \includegraphics[width=.8\textwidth]{fig/ReticoloComp.pdf}
 \caption{Reticolo di calcolo quasi-3D per un compressore assiale bistadio}
 \label{fig:ReticoloComp}
 \end{figure}
@@ -509,44 +501,44 @@ Devo assicurarmi che non vi sia trasmissione di forze tra sezioni circolari dell
 
 Si consideri l'elementino di fluido $dz - d\theta$ su cui agiscono le forze di pressione. 
 Si calcoli l'equilibrio delle forze
-\begin{equation}
+\begin{align*}
 \left( p + \cfrac{dp}{dr} dr \right) (r + dr) d \theta dz + pr d \theta dz -2p dr dz \sin \frac{d \theta}{2} = r \frac{dp}{dr} dr d \theta dz
-\end{equation}
+\end{align*}
 Linearizzando e trascurando i termini del secondo ordine si ottiene un termine che sarà equilibrato dalle forze centrifughe agenti sull'elemento. Perchè il moto non abbia componenti radiali deve quindi accadere che
-\begin{equation}
+\begin{align*}
 \rho r d \theta dr dz \cdot \frac{V_t^2}{r} = r \frac{dp}{dr} dr d \theta dz\Rightarrow \cfrac{1}{\rho} \cfrac{dp}{dr} = \frac{V_t^2}{r}
 \label{eq:EquilibrioRad}
-\end{equation}
+\end{align*}
 
 \subsection{Termodinamica}
 Vediamo cosa succede da un punto di vista termodinamico.
 Scriviamo l'entalpia di ristagno considerando che $V_r = 0$
-\begin{equation}
+\begin{align*}
 h_0 = h + \cfrac{V^2}{2} = h + \cfrac{1}{2}(V_t^2 + V_a^2)
-\end{equation}
+\end{align*}
 Posso ora differenziare lungo il raggio ottenendo
 \begin{equation}
 \frac{dh_0}{dr} = \frac{dh}{dr} + V_t \frac{V_t}{dr} + V_a \frac{dV_a}{dr}
 \label{eq:EntalpiaDiff}
 \end{equation}
 Considero ora il primo principio della termodinamica nella seguente forma
-\begin{equation}
+\begin{align*}
 Tds = dh - \cfrac{1}{\rho} dp
 \label{eq:PrimoPrinc}
-\end{equation}
+\end{align*}
 Mettendo assieme le equazioni \ref{eq:EntalpiaDiff} e \ref{eq:PrimoPrinc} ottengo
-\begin{equation}
+\begin{align*}
 \frac{dh_0}{dr} = T \frac{ds}{dr} + \frac{1}{\rho} \frac{dp}{dr} + V_t \frac{dV_t}{dr} + V_a \frac{dV_a}{dr}
-\end{equation}
+\end{align*}
 Considerando poi l'equazione \ref{eq:EquilibrioRad} si ottiene
-\begin{equation}
+\begin{align*}
 \frac{dh_0}{dr} = T \frac{ds}{dr} + \frac{V_t^2}{r} + V_t \frac{dV_t}{dr} + V_a \frac{dV_a}{dr}
-\end{equation}
+\end{align*}
 Ottengo un'espressione in cui non ho più una pressione ma solo i valori delle velocità, entalpia ed entropia al variare del raggio.
 Ora posso scrivere l'equazione complessiva che rappresenta il legame da imporre per avere un flusso bidimensionale.
-\begin{equation}
+\begin{align*}
 \boxed{ \frac{dh_0}{dr} - T\frac{ds}{dr} = V_a \frac{dV_a}{dr} + \frac{V_t}{r} \frac{d}{dr}(V_t \cdot r)}
-\end{equation}
+\end{align*}
 Questa equazione ci consente di affrontare due problematiche tipiche della progettazione delle macchine:
 \begin{enumerate}
 \item Problema diretto (o problema di verifica): nota la geometria di una macchina e la distribuzione radiale dell'angolo $\alpha_{\infty}$, determinare la distrubuzione radiale di tutte le grandezza del flusso e termidinamiche;
@@ -554,12 +546,12 @@ Questa equazione ci consente di affrontare due problematiche tipiche della proge
 \end{enumerate}
 \subsection{Ipotesi semplificative}
 Posso fare un'ulteriore osservazione che semplifica la vita in fase di progettazione preliminare. Impongo
-\begin{equation}
+\begin{align*}
 \begin{cases}
 \cfrac{dh_0}{dr} = 0\\
 \cfrac{ds}{dr} = 0
 \end{cases}
-\end{equation}
+\end{align*}
 Ho imposto che $h_0$ e la dissipazione siano costanti lungo il raggio
 In questo modo ottengo la relazione semplificata
 \begin{equation}
@@ -571,13 +563,13 @@ Queste due osservazioni sono abbastanza realistiche.
 Facendo queste assunzioni sulle distribuzioni delle velocità tangenziali posso fare delle osservazioni sulle velocità assiali. 
 Ad esempio posso costruire la macchina imponendo le condizioni di vortice libero, una delle tipiche condizioni imposte tra $V_a$ e $V_t$ ($V_t \cdot r = cost.$).
 Questo significa che considerando un mantello $i$ generico.
-\begin{equation}
+\begin{align*}
 V_t \cdot r = V_{ti} \cdot r_i \Rightarrow V_a = cost.
-\end{equation}
+\end{align*}
 Imponendo queste condizioni si ottiene una velocità assiale costante lungo il raggio (vedi Eq. \ref{eq:EquilibrioRadSemp}). Vediamo cosa succede dal punto di vista dell'entalpia considerando il rapporto tra una sezione generica e una sezione $i$. Sapendo che $h_0 = cost.$ si scrive
-\begin{equation}
+\begin{align*}
 h + \frac{V^2}{2} = h_i + \frac{V_i^2}{2} \Rightarrow h = h_i	+ \frac{V_i^2 - V^2}{2}
-\end{equation}
+\end{align*}
 E quindi
 \begin{equation}
 \frac{h}{h_i} = 1 + \frac{1}{2h_i} (V_{ti}^2-V_t^2 + \cancel{V_a^2} -\cancel{V_a^2}) = 1 + \frac{1}{2h_i} \left( 1- \frac{V_t^2}{V_{ti}^2} \right)
@@ -588,22 +580,22 @@ Ma facendo un'ulteriore, semplicissima considerazione
 V_t \cdot r = V_{ti} \cdot r_i \Rightarrow \frac{V_t}{V_{ti}} = \frac{r_i}{r}
 \end{align*}
 Posso scrivere la \ref{eq:RappEnt} nel modo seguente
-\begin{equation}
+\begin{align*}
 \boxed{ \frac{h}{h_i} = 1 + \frac{1}{2h_i} \bigg(1 -  \left( \frac{r_i}{r}\right)^2 \bigg)}
-\end{equation}
+\end{align*}
 Rimanipolandola ulteriormente posso scriverla nella forma
-\begin{equation}
+\begin{align*}
 \frac{h}{h_i} = 1 + \frac{\gamma -1}{2} M_{ti}^2 \bigg(1 -  \left( \frac{r_i}{r}\right)^2 \bigg) 
-\end{equation}
+\end{align*}
 Si possono ora diagrammare nelle condizioni di vortice libero tutte le espressini utili a livello termodinamico. Queste curve possono essere disegnate al variare del numero di Mach.
-\begin{equation}
+\begin{align*}
 \begin{cases}
 h = \cfrac{a ^ 2}{\gamma - 1} \\
 M_{ti} = \cfrac{V_{ti}}{a_i}\\
 \cfrac{h}{h_i} = 1 + \cfrac{\gamma -1}{2} M_{ti}^2 \bigg(1 -  \Big( \cfrac{r_i}{r}\Big)^2 \bigg)\\
 \cfrac{p}{p_i} = \left( \cfrac{h}{h_i} \right)^{\frac{\gamma}{\gamma - 1}}
 \end{cases}
-\end{equation}
+\end{align*}
 In Figura \ref{fig:VorticeLibero} è rappresentata la variazione di pressione al variare del numero di Mach.
 \begin{figure}
 \centering
@@ -635,12 +627,12 @@ Introducendo questa legge e sostituendo a $V_{ti}$ si ottiene
 \boxed{\frac{d}{dr}\bigg( \frac{V_a^2}{2} \bigg) + \frac{V_{ti}}{r_i} \frac{d}{dr} \bigg(\frac{V_{ti}}{r_i} r^2 \bigg) = 0}
 \end{align*}
 Si tratta di un'equazione differenziale del primo ordine, risolvibile analiticamente. Infatti
-\begin{equation}
+\begin{align*}
 \frac{d}{dr} \bigg( \frac{V_a^2}{2} \bigg) = -2 \bigg( \frac{V_{ti}}{r_i} \bigg) ^2 \cdot r
 \Rightarrow
 \bigg( \frac{V_a^2}{2} \bigg) = -2 V_{ti}^2 \bigg(\frac{r}{r_i} \bigg)^2 +C
 \label{eq:SolCost}
-\end{equation}
+\end{align*}
 Devo andare allora a determinare la costante $C$. Posso dire che nella sezione i-esima la velocità assiale e raggio avranno il valore corrispondente.
 \begin{align*}
 \begin{cases}
@@ -668,9 +660,9 @@ h = h_i \frac{V_i^2 - V^2}{2}
 \frac{h}{h_i} = 1+ \frac{1}{2 h_i} (V_{ti}^2 - V_t^2 + V_{ai}^2 -V_a^2)
 \end{align*}
 Utilizzando poi la \ref{eq:VortForz} e raccogliendo i termini $V_{ti}$ e $V_{ai}$ ottengo
-\begin{equation}
+\begin{align*}
 \boxed{ \frac{h}{h_i} = 1+ \frac{V_{ti}^2}{2 h_i} \bigg[ 1- \bigg( \frac{V_t}{V_{ti}} \bigg)^2 \bigg] + \frac{V_{ai}^2}{2 h_i} \bigg[ 1- \bigg( \frac{V_a}{V_{ai}} \bigg)^2 \bigg] }
-\end{equation}
+\end{align*}
 Posso fare delle ulteriori condsiderazioni ricordando la \ref{eq:RappVol} e le seguenti espressioni
 \begin{align*}
 \begin{cases}
@@ -679,9 +671,9 @@ Posso fare delle ulteriori condsiderazioni ricordando la \ref{eq:RappVol} e le s
 \end{cases}
 \end{align*}
 Con alcuni passaggi algebrici si perviene a
-\begin{equation}
+\begin{align*}
 \boxed{ \frac{h}{h_i} = 1+ \frac{V_{ti}^2}{2h_i} \bigg[ \bigg( \frac{r}{r_i} \bigg)^2 -1 \bigg] }
-\end{equation}
+\end{align*}
 Questo significa che a seconda dell'angolo di incidenza della palettatura, la distribuzione delle velocità assiali non è più uniforme lungo il raggio. Si vede chiaramente nel diagramma in Figura \ref{fig:TurboFan}.
 \begin{figure}
 \centering
@@ -696,13 +688,13 @@ Questo significa che a seconda dell'angolo di incidenza della palettatura, la di
 \label{fig:PVortForz}
 \end{figure}
 Naturalmente si può ricavare l'andamento delle pressioni e delle entalpie (Figura \ref{fig:PVortForz}). Ricordando che
-\begin{equation}
+\begin{align*}
 \frac{p}{p_i} = \frac{h}{h_i}^{\frac{k}{k-1}}
-\end{equation}
+\end{align*}
 Allora
-\begin{equation}
+\begin{align*}
 \frac{h}{h_i} = 1 + \frac{k-1}{2} M_{ti}^2 \bigg[ \bigg(\frac{r}{r_i} \bigg)^2-1 \bigg]
-\end{equation}
+\end{align*}
 L'entalpia varia con il raggio in maniera quadratica con una costante che dipende dal numero di Mach tangenziale. Si vede che a raggio $0$ le pressioni non sono nulle (al contrario del caso di vortice libero). Sebbene non faremo mai una macchina con vortice forzato sappiamo che nel caso il diametro all'albero sia particolarmente ridotto possiamo utilizzare una distribuzione diversa dal vortice libero. 
 
 \subsection{A valle del vortice forzato}
@@ -760,21 +752,21 @@ La portata entrante nella sezione uno deve essere uguale alla portata che entra 
 
 \section{Vortice generico}
 Spesso nella progettazione delle macchine assiali si usa una soluzione mista tra vortice libero e forzato. Si parla di vortice generico:
-\begin{equation}
+\begin{align*}
 \begin{cases}
 V_{t1} = a \cdot r^n - \frac{b}{r}\\
 V_{t2} = a \cdot r^n + \frac{b}{r}
 \end{cases}
-\end{equation}
+\end{align*}
 Definizioni:
 \begin{itemize}
 \item $n=0$: zero power blending
 \item $n=1$: fast power blending
 \end{itemize}
 Il lavoro effettuato vale quindi 
-\begin{equation}
+\begin{align*}
 L_u = h_{02} - h_{01} = u \left( V_{t2} - V_{t1} \right) = 2 \cdot b \cdot \omega
-\end{equation}
+\end{align*}
 Per $n=1$ ho una palettatura a grado di reazione costante, posso scrivere
 \begin{align*}
 R = 1 - \frac{V_2^2 - V_1^2}{2 L_u} = 1 - \frac{V_{t2}^2 + \cancel{V_{a2}^2} - V_{t1}^2 - \cancel{V_{a2}^2}}{2 L_u}
@@ -796,9 +788,9 @@ Si avrà
 \frac{V}{V_i} = \frac{V_a}{V_{ai}} = \frac{V_t}{V_{ti}} = \bigg(\frac{r_i}{r} \bigg)^{\sin \alpha}
 \end{align*}
 Con le solite ipotesi semplificative si ottiene
-\begin{equation}
+\begin{align*}
 \frac{d}{dr} \bigg(\frac{V_a^2}{2} \bigg) + \frac{V_t}{r} \frac{d(rV_t}{dr} = 0
-\end{equation}
+\end{align*}
 Sapendo inoltre che
 \begin{align*}
 \begin{cases}
@@ -807,9 +799,9 @@ V_t = V \sin \alpha
 \end{cases}
 \end{align*}
 e facendo le opportune sostituzioni si perviene a
-\begin{equation}
+\begin{align*}
 \boxed{\frac{dV}{dr} + \frac{V}{r} \sin^2 \alpha = 0}
-\end{equation}
+\end{align*}
 L'equazione differenziale è leggermente più complessa. La soluzione generica è di tipo esponenziale e bisogna sempre andare a determinare la costante generica. Si perviene alla seguente espressione.
 \begin{align*}
 y' + \phi(x)y + \psi(x) = 0 
@@ -825,9 +817,9 @@ Sappiamo poi che per $r=r_i,\; V=V_i$ allora
 \begin{align*}
 C = \frac{V_i}{r_i^{-\sin^2 \alpha}}
 \end{align*}
-\begin{equation}
+\begin{align*}
 \boxed{ \frac{h}{h_i} =  1+ \frac{V_{ti}^2}{2 h_i \sin^2 \alpha} \bigg[1- \bigg(\frac{r_i}{r} \bigg) ^{2 \sin^2 \alpha} \bigg]}
-\end{equation}
+\end{align*}
 Si tratta di una soluzione adottata per le macchine a vapore che possiedono delle palettature molto massicce, si ottiene un andamento delle velocità assiali come in Figura \ref{fig:AngPalCost}. Questa è una distribuzione che non ha limiti teorici, si può sempre fare una macchina a bordo d'ingresso rettilineo. Rappresenta un caso intermedio tra un vortice libero e un vortice forzato.
 \begin{figure}
 \centering
@@ -849,5 +841,134 @@ Si tratta di una soluzione adottata per le macchine a vapore che possiedono dell
 \label{fig:TurbVortLib}
 \end{figure}
 
+\section{Portata in un condotto anulare}
+Vediamo quali sono le altre particolarità del flusso nell'attraversamento della macchina, in particolare quello che accade in un condotto anulare. Definisco la portata generica tra l'hub e lo shroud integrando
+\begin{align*}
+\dot{m} = 2 \pi \int_{rh}^{rs} \rho V_a r dr
+\end{align*}
+$V_a$ dipende dal vortice utilizzato per progettare l'andamento dei triangoli di velocità ai diversi raggi. Questa espressione è limitata al caso di flusso comprimibile. Considero una sezione anulare piccola, quindi $V_a = cost$, posso quindi scrivere 
+\begin{align*}
+\dot{m} = S \rho V_a = S \rho_0 a_0 \Phi = cost \Phi
+\end{align*}
+\begin{equation}\label{eq:portanulare}
+\Phi = \frac{\rho}{\rho_0} \frac{V_a}{a_0}
+\end{equation}
+Vediamo ora i rapporti che compaiono nell'equazione \ref{eq:portanulare} sotto l'ipotesi di gas peretto $p = \rho RT$ e flusso isoentropico $p \rho^{-k} = cost$.
+Posso scrivere il rapporto $\rho/\rho_0$ nel seguente modo
+\begin{align*}
+\frac{\rho}{\rho_0} = \bigg( \frac{T}{T_0} \bigg)^{\frac{1}{k-1}} 
+\end{align*}
+ma scrivendo 
+\begin{align*}
+\begin{cases}
+a = \sqrt{kRT}\\
+a_0 = \sqrt{kRT_0}
+\end{cases}
+\end{align*}
+quindi
+\begin{align*}
+\frac{\rho}{\rho_0} = \bigg( \frac{a}{a_0} \bigg)^{\frac{2}{k-1}}
+\end{align*}
+Sviluppo ora il secondo rapporto
+\begin{align*}
+V^2 = 2 (h_0 - h) = 2 c_p (T_0 - T) = 2 \frac{c_p}{kR} (a_0^2 - a^2)
+\end{align*}
+\begin{align*}
+\frac{V_a^2}{a_0^2} = \frac{2}{k-1} \bigg[ 1- \bigg( \frac{a}{a_0} \bigg)^2 \bigg] = \frac{V_a^2 + V_t^2}{a_0^2}
+\end{align*}
+\begin{align*}
+\boxed{ \frac{V_a}{a_0} = \sqrt{\frac{2}{k-1} \bigg[ 1- \bigg( \frac{a}{a_0} \bigg)^2 \bigg] - \bigg( \frac{V_t}{a_0} \bigg)^2} }
+\end{align*}
+Sostituendo nell'espressione della portata ottengo
+\begin{align*}
+\begin{rcases*}
+\frac{\rho}{\rho_0} = \bigg( \frac{a}{a_0} \bigg)^{\frac{2}{k-1}}\\
+\frac{V_a}{a_0} = \sqrt{\frac{2}{k-1} \bigg[ 1- \bigg( \frac{a}{a_0} \bigg)^2 \bigg] - \bigg( \frac{V_t}{a_0} \bigg)^2}
+\end{rcases*}
+\Phi = \frac{\rho}{\rho_0} \frac{V_a}{a_0} = f \bigg( \frac{a}{a_0} \bigg)
+\end{align*}
+Vado quindi a trovare il rapporto critico tra le velocità soniche che massimizza la portata. Vedo che se avessi velocità tangenziale nulla, l'espressione sarebbe quella della velocità critica di un condotto convergente
+\begin{align*}
+\frac{d\Phi}{d \bigg( \frac{a}{a_0} \bigg)} \; \Rightarrow \; \boxed{ \frac{a^*}{a_0} = \sqrt{\frac{2}{k+1} - \frac{k-1}{k+1} \bigg( \frac{V_t}{a_0} \bigg)^2} }
+\end{align*}
+con
+\begin{align*}
+Ma^* = \bigg( \frac{V_a}{a} \bigg)^* = 1
+\end{align*}
+Diagrammando l'andamento di $\Phi$ in funzione del rapporto di $p/p_0$ mi ritrovo con una portata adimensionale di un flusso elicoidale in funcione della pressione e delle diverse componenti tangenziali (figura \ref{fd:PortCondAn}). Il flusso in un condotto anulare può essere supersonico ma non in condizioni di chocking a patto che la velocità assiale sia inveriore a quella acustica. Il chocking si ha in tre casi:
+\begin{itemize}
+\item raggiungimento di velocità sonica $V$ nello statore;
+\item raggiungimento di velocità sonica $W$ nel rotore;
+\item raggiungimento di velocità sonica assiale nel condotto anulare.
+\end{itemize}
+\begin{figure}
+\centering
+  \includegraphics[width=.7\textwidth]{fig/PortCondAn.pdf}
+\caption{}
+\label{fd:PortCondAn}
+\end{figure}
+\section{Condizioni di ingolfamento}
+Diminuendo la pressione a valle posso aumentare la componente assiale della velocità $V_a$ pur mantenendo $V_t$ mantenendo il moto libero, mentre non è possibile in un moto guidato dalla palettatura. Il segnale di pressione deve riuscire a propagarsi a monte, questo accade solamente se le velocità sono subsoniche. 
 
+Suppongo di avere un punto $P$ l'onda di pressione si propaga all'interno del cono di Mach come mostrato in figura \ref{fd:bloccson1}. Posso avere una velocità $V$ supersonica ma con una velictià $V_a$ subsonica, la perturbazione di pressione si propaga a monte del fronte, in questo modo ad una diminuzione di pressione corrisponde un aumento di velocità a monte (figura \ref{fd:bloccson2} sinistra). Nel caso ci si trovi in condizioni limite la propagazione del segnale di pressione raggiunge esattamente il punto "di partenza $P$" della particella come mostrato in figura \ref{fd:bloccson2} a destra; in questo caso non è quindi possibile trasmettere un segnale di pressione a monte. 
+\begin{figure}
+\centering
+  \includegraphics[width=.8\textwidth]{fig/bloccson1.pdf}
+\caption{}
+\label{fd:bloccson1}
+\end{figure}
+\begin{figure}
+\centering
+  \includegraphics[width=.8\textwidth]{fig/bloccson2.pdf}
+\caption{}
+\label{fig:bloccson2}
+\end{figure}
+\section{Componente radiale non trascurabile}
+Nel caso ci sia nel flusso una componente radiale non trascurabile come nel caso mostrato in figura, in prossimità del mozzo, le equazioni dell'equilibrio radiale imposte sull'elementino di fluido evidenziato, si modifica con l'aggiunta di un termine. 
+\begin{figure}
+\centering
+  \includegraphics[width=.8\textwidth]{fig/comp_rad.pdf}
+\caption{}
+\label{fd:comp_rad}
+\end{figure}
+\begin{align*}
+\frac{d h_0}{dr} - T\frac{ds}{dr} = V_a \frac{dV_a}{dr} - \boxed{V_a \frac{dV_r}{dz}} + \frac{V_t}{r} \frac{d}{dr} ( V_t \cdot r)
+\end{align*}
 
+\section{Moti secondari}
+Fino ad ora abbiamo sempre ragionato su un flusso idealizzato che però non corrisponde alla realtà. Bisogna tenere conto dello strato limite a parete che innesca i moti secondari.
+Abbiamo quattro diverse tipologie di moti secondari:
+\begin{itemize}
+\item Vortici di passaggio;
+\item Vortici a ferro di cavallo;
+\item Vortici al bordo di uscita;
+\item Vortici di passaggio e di trafilamento.
+\end{itemize}
+I vortici di passaggio sono dovuti al fatto che avendo un moto curvato e avendo una perturbazione dovuta allo strato limite si innescano dei vortici mostrati in figura \ref{fig:VortPass}.
+\begin{figure}[h!]
+\centering
+  \includegraphics[width=.8\textwidth]{fig/VortPass.pdf}
+\caption{}
+\label{fig:VortPass}
+\end{figure}
+Il vortice a ferro di cavallo è dovuto all'interazione tra strato limite in ingresso, si innescano vortici detti "a ferro di cavallo" come mostrato in figura \ref{fd:VortFerrCav}.
+\begin{figure}[h!]
+\centering
+  \includegraphics[width=.8\textwidth]{fig/VortFerrCav.pdf}
+\caption{}
+\label{fd:VortFerrCav}
+\end{figure}
+Abbiamo poi vortici secondari a valle del bordo di uscita dovuti alla scia di vorticita per lo strato limite al bordo di uscita della schiera (figura \ref{fd:VortVall})
+\begin{figure}[h!]
+\centering
+  \includegraphics[width=.7\textwidth]{fig/VortVall.pdf}
+\caption{}
+\label{fd:VortVall}
+\end{figure}
+I vortici di passaggio e trascinamento sono dovuti ai giochi tra statore e cassa (figura \ref{fd:VortTraf}).
+\begin{figure}[h!]
+\centering
+  \includegraphics[width=.8\textwidth]{fig/VortTraf.pdf}
+\caption{}
+\label{fd:VortTraf}
+\end{figure}

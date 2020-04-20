@@ -1,15 +1,48 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
-\contentsline {chapter}{\numberline {1}Compressori assiali}{1}% 
-\contentsline {section}{\numberline {1.1}Introduzione}{1}% 
-\contentsline {section}{\numberline {1.2}Lavoro e triangoli di velocità}{2}% 
-\contentsline {section}{\numberline {1.3}Termodinamica}{8}% 
-\contentsline {section}{\numberline {1.4}Progettazione della schiera}{10}% 
-\contentsline {subsection}{\numberline {1.4.1}Correlazioni di Howell}{10}% 
-\contentsline {subsection}{\numberline {1.4.2}Condizioni fuori progetto}{15}% 
-\contentsline {subsection}{\numberline {1.4.3}Criterio di carico}{17}% 
-\contentsline {section}{\numberline {1.5}Schiere supersoniche}{19}% 
-\contentsline {chapter}{\numberline {2}Turbine a flusso assiale e misto}{23}% 
-\contentsline {section}{\numberline {2.1}Calcolo dei rendimenti}{24}% 
-\contentsline {subsection}{\numberline {2.1.1}Rendimenti}{25}% 
-\contentsline {section}{\numberline {2.2}Proprietà termodinamiche del flusso}{28}% 
+\contentsline {chapter}{\numberline {1}Richiami teorici}{1}% 
+\contentsline {section}{\numberline {1.1}Teoria della similitudine}{1}% 
+\contentsline {section}{\numberline {1.2}Influenza di Re}{9}% 
+\contentsline {section}{\numberline {1.3}Flusso comprimibile}{10}% 
+\contentsline {section}{\numberline {1.4}Richiamo di termodinamica}{14}% 
+\contentsline {chapter}{\numberline {2}Turbomacchine assiali - Generalità}{17}% 
+\contentsline {section}{\numberline {2.1}Introduzione}{17}% 
+\contentsline {section}{\numberline {2.2}Nomenclatura}{17}% 
+\contentsline {subsection}{\numberline {2.2.1}Definizioni geometriche}{18}% 
+\contentsline {subsection}{\numberline {2.2.2}Definizioni per la corrente fluida}{18}% 
+\contentsline {subsection}{\numberline {2.2.3}Forze}{18}% 
+\contentsline {subsection}{\numberline {2.2.4}Adimensionalizzazione delle forze}{21}% 
+\contentsline {section}{\numberline {2.3}Ugelli e diffusori}{24}% 
+\contentsline {section}{\numberline {2.4}Schiere palari}{25}% 
+\contentsline {subsection}{\numberline {2.4.1}Schiere di espansione}{26}% 
+\contentsline {subsection}{\numberline {2.4.2}Schiere di compressione}{27}% 
+\contentsline {section}{\numberline {2.5}Equilibrio radiale}{30}% 
+\contentsline {subsection}{\numberline {2.5.1}Termodinamica}{31}% 
+\contentsline {subsection}{\numberline {2.5.2}Ipotesi semplificative}{32}% 
+\contentsline {section}{\numberline {2.6}Condizione di vortice libero}{33}% 
+\contentsline {section}{\numberline {2.7}Vortice forzato}{34}% 
+\contentsline {subsection}{\numberline {2.7.1}A valle del vortice forzato}{37}% 
+\contentsline {section}{\numberline {2.8}Vortice generico}{38}% 
+\contentsline {subsection}{\numberline {2.8.1}Angolo di palettatura costante}{39}% 
+\contentsline {section}{\numberline {2.9}Portata in un condotto anulare}{40}% 
+\contentsline {section}{\numberline {2.10}Condizioni di ingolfamento}{43}% 
+\contentsline {section}{\numberline {2.11}Componente radiale non trascurabile}{44}% 
+\contentsline {section}{\numberline {2.12}Moti secondari}{45}% 
+\contentsline {chapter}{\numberline {3}Compressori assiali}{49}% 
+\contentsline {section}{\numberline {3.1}Introduzione}{49}% 
+\contentsline {section}{\numberline {3.2}Lavoro e triangoli di velocità}{50}% 
+\contentsline {section}{\numberline {3.3}Termodinamica}{56}% 
+\contentsline {section}{\numberline {3.4}Progettazione della schiera}{58}% 
+\contentsline {subsection}{\numberline {3.4.1}Correlazioni di Howell}{58}% 
+\contentsline {subsection}{\numberline {3.4.2}Condizioni fuori progetto}{63}% 
+\contentsline {subsection}{\numberline {3.4.3}Criterio di carico}{65}% 
+\contentsline {section}{\numberline {3.5}Schiere supersoniche}{67}% 
+\contentsline {chapter}{\numberline {4}Turbine a flusso assiale e misto}{71}% 
+\contentsline {section}{\numberline {4.1}Calcolo dei rendimenti}{72}% 
+\contentsline {subsection}{\numberline {4.1.1}Rendimenti}{73}% 
+\contentsline {section}{\numberline {4.2}Proprietà termodinamiche del flusso}{77}% 
+\contentsline {section}{\numberline {4.3}Schiere palari}{78}% 
+\contentsline {section}{\numberline {4.4}Prestazioni della schiera}{79}% 
+\contentsline {subsection}{\numberline {4.4.1}Soderberg}{81}% 
+\contentsline {subsection}{\numberline {4.4.2}Ainley-Mathieson}{82}% 
+\contentsline {section}{\numberline {4.5}Criteri di carico}{85}% 
