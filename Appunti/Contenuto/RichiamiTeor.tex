@@ -233,7 +233,7 @@ Si può estendere questa relazione con i diagrammi di Baliè, intorno alla curva
 \end{figure}
 
 \section{Influenza di Re}
-Queste considerazioni sono state fatte trascurando l'influenza di Re. Ricordando il diagramma di Moody la relazione è fatta rispetto a $\epsilon/D$. Per le macchine è essenzialmente uguale, al variare di Re le curve si spostano più in alto, questo effetto si riflette in un abbassamento di rendimento e quindi di prevalenza.
+Queste considerazioni sono state fatte trascurando l'influenza di Re. Ricordando il diagramma di Moody la relazione è fatta rispetto a $\epsilon/D$. Per le macchine è essenzialmente uguale, al diminuire di Re le curve si spostano più in basso, questo effetto si riflette in un abbassamento di rendimento e quindi di prevalenza.
 
 Questo è un fenomeno prevedibile in termini statistici, storicamente grazie all'accumulazione di dati sono stati definiti due fattori di correzione, di rendimento $f_\eta$ e $f_\psi$ diagrammati ripsetto a $Re$. Man mano che $Re$ scende il loro effetto diventa sempre più importante. 
 \begin{figure}
@@ -252,8 +252,8 @@ Questo è un fenomeno prevedibile in termini statistici, storicamente grazie all
 \end{minipage}
 \end{figure}
 
-Parto dalla $w_s$, scrivo $\Phi$ e $\psi$ nei diversi punti di funzionamento della macchina in funzione di $w_s$. 
-\begin{equation}
+Parto dalla $w_s$, scrivo $\Phi$ e $\psi$ nei diversi punti di funzionamento della macchina in funzione di $w_s$ ($\equiv k$). 
+\begin{align*}
 w_s= \phi^{1/2}\psi^{-3/4} \Rightarrow 
 \begin{cases}
 \psi = \psi(w_s)\\
@@ -264,29 +264,52 @@ w_s= \phi^{1/2}\psi^{-3/4} \Rightarrow
 f_{\psi} = f(Re)\\
 f_{\eta} = f(Re)
 \end{cases}
-\end{equation}
-Con i coefficienti correttivi vado a trovarmi i valori adimensionali corretti \begin{equation}
+\end{align*}
+Con i coefficienti correttivi vado a trovare le cifre adimensionali corrette \begin{align*}
 \begin{cases}
 \psi_{corretto} = f_{\psi} \cdot \psi(w_s)\\
 \eta_{corretto} = f_{\eta} \cdot \eta(w_s)
 \end{cases}
-\end{equation}
-\begin{equation}
+\end{align*}
+A questo punto è possibile procedere a ritroso. Trovato il valore corretto avrò
+\begin{align*}
+\omega_s = \phi^{1/2} \psi^{-3/4} =  \phi_{corretto}^{1/2} \psi_{corretto}^{-3/4} = cost
+\end{align*}
+partendo proprio dalla definizione di $\omega_s$ è possibile costruire le curve di prestazione corrette.
+
+\section{Effetto scala}
+Si considera poi un effetto scala non solo legato alle rugosità superficiali ma anche legato ai giochi. L'effetto scala può essere espresso rispetto ai rapporti dimensionali. Queste relazioni sono sempre costruite per via empirica sulla base dei dati storici.
+
+A parità di bontà di progettazione, geometria, ecc... la macchina grande ha un rendimento maggiore rispetto alla macchina piccola. Questo si spega facendo due osservazioni: a parità di tecnologia produttiva è possibile ritenere costante il valore della rugosità superficiale delle palettature della girante. In una macchina grande la rugosità relativa sarà quindi più bassa, quindi le perdite di carico saranno superiori nella macchina piccola. In secondo luogo bisogna tener conto dei giochi presenti tra parte fissa e parte mobile, che non possono scendere al di sotto di un certo limite. Nelle macchine grandi questi diventeranno trascurabili. 
+\begin{figure}
+\centering
+  \includegraphics[width=.5\textwidth]{fig/dDchart.pdf}
+\caption{}
+\label{fig:dDchart}
+\end{figure}
+
+Facendo riferimento alle pompe possiamo definire un rapporto dimensionale 
+\begin{align*}
+\frac{D_1}{D_2} \triangleq  \mbox{Rapporto di scala}, \; D_1 < D_2
+\end{align*}
+In riferimento alla figura \ref{fig:dDchart} rendimento si può esprimere come
+\begin{align*}
 \eta = \eta_S \cdot f_r(D)
-\end{equation}
-\begin{equation}
-\frac{1-\eta_1}{1-\eta_2} = \left[ \frac{Re_{u,2}}{Re_{u,1}} \right]^n, \; \; n=0.1 - 0.25
-\end{equation}
-\begin{equation}
-\frac{1-\eta_1}{1-\eta_2} =0.5 + 0.5 \left[ \frac{Re_{u,2}}{Re_{u,1}} \right]^{0.2}
-\end{equation}
-\begin{equation}
-\frac{1-\eta_1}{1-\eta_2} = 0.3 + 0.7 \left[ \frac{Re_{u,2}}{Re_{u,1}} \right]^{0.2}
-\end{equation}
-Si considera poi un effetto scala non solo legato alle rugosità superficiali ma anche legato ai giochi. L'effetto scala può essere espresso rispetto ai rapporti dimensionali. Queste relazioni sono sempre costruite per via empirica sulla base dei dati storici. 
+\end{align*}
+E la relazione tra il rendimento tra le pompe di scala diversa è il seguente
 \begin{equation}
 \frac{1-\eta_1}{1-\eta_2} = \left( \frac{D_2}{D_1}\right)^\alpha
 \end{equation}
+La stessa operazione viene fatta per le turbine idrauliche
+\begin{align*}
+\frac{1-\eta_1}{1-\eta_2} = \left[ \frac{Re_{u,2}}{Re_{u,1}} \right]^n, \; \; n=0.1 \div 0.25
+\end{align*}
+\begin{align*}
+\frac{1-\eta_1}{1-\eta_2} =0.5 + 0.5 \left[ \frac{Re_{u,2}}{Re_{u,1}} \right]^{0.2}
+\end{align*}
+\begin{align*}
+\frac{1-\eta_1}{1-\eta_2} = 0.3 + 0.7 \left[ \frac{Re_{u,2}}{Re_{u,1}} \right]^{0.2} \; \to \; \mbox{Turbine Kaplan}
+\end{align*}
 \section{Flusso comprimibile}
 Se si considera il flusso comprimibile le relazioni diventano più complesse. Infatti si ha:
 \begin{equation}
@@ -296,8 +319,8 @@ $\psi$ dipende quindi anche dal numero di Mach.
 Nel diagramma $\phi-\psi$ si ottengono diverse curve al variare del numero di Mach (Figura \ref{fig:ComprMach}), le curve diventano poco leggibili. Posso infatti ottenere lo stesso valore di lavoro giocando sulle grandezze di T-p, non ho più una definizione univoca di lavoro. Si tratta di una rappresentazione poco fisica e di un esercizio esclusivamente accademico.
 \begin{figure}[h!]
 \centering
-  \includegraphics[width=.7\textwidth]{fig/ComprMach.pdf}
-\caption{Curve adimensionali di funzionamento di una famiglia di compressori, per un fluido assegnato, a diversi numeri di Mach periferici. Sono definiti $Ma = \frac{w D}{a_{01}}$, $Mu = \frac{w \frac{D}{2}}{a}$}
+  \includegraphics[width=.85\textwidth]{fig/ComprMach.pdf}
+\caption{Curve adimensionali di funzionamento di una famiglia di compressori, per un fluido assegnato, a diversi numeri di Mach periferici. Sono definiti $Ma = \frac{w \frac{D}{2}}{a_{01}}$, $Mu = \frac{w \frac{D}{2}}{a}$}
 \label{fig:ComprMach}
 \end{figure}
 Per questo tipo di macchine si utilizzaranno curve molto diverse. Per avere una grandezza confrontabile di funzionamento devo rendere qualsiasi prova io faccia a grandezza standard. In questo modo posso rappresentare condizioni di funzionamento in modo univoco. 
@@ -327,7 +350,7 @@ Parametro di portata
 \end{equation}
 Parametro di velocità
 \begin{equation}
-\frac{n}{\sqrt{T_{01}}}=\frac{n_c}{\sqrt{T_{01s}}} \; n_c = n \sqrt{\frac{T_{01s}}{T_{01}}}
+\frac{n}{\sqrt{T_{01}}}=\frac{n_c}{\sqrt{T_{01s}}} \; \Rightarrow \; n_c = n \sqrt{\frac{T_{01s}}{T_{01}}}
 \end{equation}
 Si definiscono quindi le condizioni ambientali standard.
 \begin{multicols}{2}
@@ -360,17 +383,9 @@ Si ottiene così la portata di massa corretta e il numero di giri corretto.
 In questo modo si trovano le mappe di funzionamento delle macchine. Si diagrammano la portata d'aria corretta con il rapporto di compressione. Sono tracciate diverse curve al variare dei giri con le curve di isorendimento.
 
 A questo punto si espande l'espressione di $\phi$.
-\begin{multicols}{3}
 \begin{align*}
-M_{01}=\frac{w D}{a_{01}}= \frac{w D}{\sqrt{k R T_{01}}}
+M_{01}=\frac{w D}{a_{01}}= \frac{w D}{\sqrt{k R T_{01}}}, \;\;\;p = \rho_i RT, \;\;\; a = \sqrt{k R T}
 \end{align*}
-\begin{align*}
-p = \rho_i RT
-\end{align*}
-\begin{align*}
-a = \sqrt{k R T}
-\end{align*}
-\end{multicols}
 \begin{equation}
 \phi = \frac{\dot{m}}{\rho_{01} w D^3} = \frac{\dot{m}}{\rho_{01} M_{01} a_{01} D^2} = \frac{\dot{m} R T_{01}}{\rho_{01} M_{01} \sqrt{k R T_{01}} D^2} = \frac{\dot{m} \sqrt{R T_{01}}}{\rho_{01} M_{01} \sqrt{k} D^2}
 \end{equation}
@@ -384,7 +399,7 @@ Se utilizzo lo stesso fluido posso trascurare $R$ e $k$. Utilizzando la stessa m
 \begin{align*}
 M_{01} \to \frac{w D}{\sqrt{R T_{01}}} \Rightarrow M_{01} \to \frac{w}{\sqrt{T_{01}}}
 \end{align*}
-\begin{align*}\Rightarrow
+\begin{align*}
 \phi \to \frac{\dot{m} \sqrt{RT_{01}}}{\rho_{01} D^2} \Rightarrow \phi \to \frac{\dot{m} \sqrt{T_{01}}}{\rho_{01}}
 \end{align*}
 \begin{align*}

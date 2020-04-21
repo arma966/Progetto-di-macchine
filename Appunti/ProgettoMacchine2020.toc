@@ -3,8 +3,9 @@
 \contentsline {chapter}{\numberline {1}Richiami teorici}{1}% 
 \contentsline {section}{\numberline {1.1}Teoria della similitudine}{1}% 
 \contentsline {section}{\numberline {1.2}Influenza di Re}{9}% 
-\contentsline {section}{\numberline {1.3}Flusso comprimibile}{10}% 
-\contentsline {section}{\numberline {1.4}Richiamo di termodinamica}{14}% 
+\contentsline {section}{\numberline {1.3}Effetto scala}{10}% 
+\contentsline {section}{\numberline {1.4}Flusso comprimibile}{11}% 
+\contentsline {section}{\numberline {1.5}Richiamo di termodinamica}{15}% 
 \contentsline {chapter}{\numberline {2}Turbomacchine assiali - Generalità}{17}% 
 \contentsline {section}{\numberline {2.1}Introduzione}{17}% 
 \contentsline {section}{\numberline {2.2}Nomenclatura}{17}% 
