@@ -164,7 +164,7 @@ Per rappresentare lo stadio al variare del grado di reazione andiamo per prima c
 \caption{}
 \label{fig:StadioRipetuto}
 \end{figure}
-Posso quindi scrivere
+Sempre facendo riferimento alla figura posso quindi scrivere
 \begin{align*}
 r \cdot \tan \beta_{\infty} = R 
 \end{align*}
@@ -174,14 +174,15 @@ r \cdot \tan \beta_{\infty} = R
 \begin{align*}
 \frac{\Delta c_u}{u} = \frac{\Delta w_u}{u} = \frac{\lambda}{2}
 \end{align*}
-Qual'ora si operi un cambio di portata vediamo che i triangoli di velocità non cambiano, quello che cambia è la cifra di flusso che passa da phi design a phi come si vede in figura \ref{fig:CondFuoriProg}.
+Qual'ora si operi un cambio di portata vediamo che gli unici angoli che si conservano sono $\beta_2$ e $\alpha_1$, la cifra si flusso passa dalle condizioni di design $\Phi_d$ alle condizioni generiche $\Phi$ come si vede in figura \ref{fig:CondFuoriProg}.
 \begin{figure}
 \centering
   \includegraphics[width=\textwidth]{fig/CondFuoriProg.pdf}
 \caption{}
 \label{fig:CondFuoriProg}
 \end{figure}
-Possiamo classificare alcune condizioni notevoli riportate in figura .
+
+Possiamo classificare alcune condizioni notevoli riportate in figura \ref{fig:ComprAssTab}.
 \begin{figure}
 \centering
   \includegraphics[width=1.2\textwidth]{fig/ComprAssTab.pdf}
@@ -192,7 +193,7 @@ Il primo caso con $r = 1 + \lambda /4$ è particolare in quanto si ha grado di r
 
 Con grado di reazione $r = 1$ le velocità assolute ingresso uscita sono simmetriche.
 
-Con $r = 1 - \lambda/4$ la velocità assoluta è puramente assiale, mentre quella lallo scarico non lo è. 
+Con $r = 1 - \lambda/4$ la velocità assoluta è puramente assiale, mentre quella allo scarico non lo è. 
 
 Sono poi rappresentate le geometrie per gradi di reazione sempre più ridotti. 
 
@@ -201,7 +202,7 @@ La soluzione $r = 1/2$ è la più diffusa e utilizzata eccetto per il primo e l'
 \section{Termodinamica}
 Vediamo il calcolo del rendimento al variare della portata e del grado di reazione. Partiamo dalla definizione di rendimento isoentropico
 \begin{align*}
-\eta = \frac{\Delta h_{is}}{\Delta h_0} = \frac{\Delta p}{\rho \cdot \Delta h_0}
+\eta_{is} = \frac{\Delta h_{is}}{\Delta h_0} = \frac{\Delta p}{\rho \cdot \Delta h_0}
 \end{align*}
 Dal primo principio:
 \begin{align*}
@@ -219,10 +220,10 @@ L'incremento di pressione totale si può però ulteriormente sviluppare come som
 \begin{align*}
 \Delta p = \Delta p_R + \Delta p_S = \frac{F_{aR}}{s_R} + \frac{F_{aS}}{s_S} = \frac{F_{tR} \cdot \tan(\beta_{\infty} - \varepsilon_R)}{s_R} + \frac{F_{tS} \cdot \tan(\alpha_{\infty} - \varepsilon_S)}{s_S}
 \end{align*}
-Con $\varepsilon_S, \; \varepsilon_R$ indice di efficienza del profilo.
+Con $\varepsilon_S, \; \varepsilon_R$\footnote{Per quanto riguarda i pedici "s" sta per statore, "r" per rotore.} indice di efficienza del profilo.
 Possiamo fare qualche assunzione. I profili hanno drag molto più piccolo del lift quindi
 \begin{align*}
-\tan \varepsilon_R \simeq \varepsilon_R = \frac{D_R}{L_R} \;\;\; \tan \varepsilon_S \simeq \varepsilon_S = \frac{D_S}{L_S}
+\tan \varepsilon_R \simeq \varepsilon_R = \frac{D_R}{L_R} \;\;\;\;\; \tan \varepsilon_S \simeq \varepsilon_S = \frac{D_S}{L_S}
 \end{align*}
 Utilizzando le componenti di forza del triangolo di velocità si ottiene
 \begin{align*}
@@ -234,7 +235,7 @@ F_{tS} = \dot{m} \Delta c_m = s_S \cdot \rho \cdot \lambda \cdot \Phi \cdot u^2 
 \end{align*}
 Andando a sostituire
 \begin{align*}
-\Delta p = \frac{1}{2} \rho \lambda u^2 \big[ \Phi \tan \left( \beta_{\infty} - \varepsilon_R \right) + \Phi \tan \left( \alpha_{\infty} - \varepsilon_S \right( \big] 
+\Delta p = \frac{1}{2} \rho \lambda u^2 \big[ \Phi \tan \left( \beta_{\infty} - \varepsilon_R \right) + \Phi \tan \left( \alpha_{\infty} - \varepsilon_S \right) \big] 
 \end{align*}
 Ricordando le relazioni
 \begin{align*}
@@ -288,7 +289,7 @@ Determino ora il rendimento ottimale in funzione di $\Phi$
 Sono presenti molteplici correlazioni per progettare una macchina assiale. Noi vedremo un filone di correlazioni, sono datate ma non hanno perso di validità. Anche nella progettazione di una nuova macchina è utile partire da un predimensionamento per poi andare a raffinare con strumenti moderni. Verrà quindi usato come passo preliminare.
 Si parte dalle seguenti riflessioni:
 \begin{itemize}
-\item La deflessione imposta alla corrente è limitata: nell'ordine delle decine di gradi (19, 20, 30 al massimo 40);
+\item La deflessione imposta alla corrente è limitata: nell'ordine delle decine di gradi (20, 30 al massimo 40);
 \item Profili sottili a bassa curvatura.
 \end{itemize}
 Le perdite possono quindi essere suddivise in 
@@ -298,7 +299,7 @@ Le perdite possono quindi essere suddivise in
 \item perdite per flussi secondari.
 \end{itemize}
 La perdita di profilo è direttamente correlata al $c_D$, sarà quella in cui si può andare maggiormente a lavorare. 
-Il flusso all'interno del compressore è un moto elicoidale. Il flusso lambisce quindi lacassa della macchina, vi sarà quindi un attrito tra fluido e la partete, queste perdite le chiameremo perdite di ``anello".
+Il flusso all'interno del compressore è un moto elicoidale. Il flusso lambisce la cassa della macchina, vi sarà quindi un attrito tra fluido e la partete, queste perdite le chiameremo perdite di ``anello".
 Le perdite per flussi secondari sono state adeguatamente trattate nel capitolo precedente. 
 Si andrà quindi a lavorare sulle perdite di profilo aggiungendo poi le altre due perdite tramite coefficienti di correlazione.
 
@@ -340,7 +341,7 @@ In figura \ref{fig:SchieraDim} si riportano le nomenclature utilizzate in questo
 \label{fig:SchieraDim}
 \end{figure}
 La prima correlazione di Howell permette di calcolare gli angoli del flusso attesi da una chiera di data solidità ($\varepsilon = \varepsilon*$).
-La seconda correlazione di Howell permette di trovare, noti gli angoli di lusso, i corrispondenti valori degli angoli geometrici della schiera ($\varepsilon = \varepsilon*$).
+La seconda correlazione di Howell permette di trovare, noti gli angoli di flusso, i corrispondenti valori degli angoli geometrici della schiera ($\varepsilon = \varepsilon*$).
 La terza correlazione di Howell permette di calcolare le prestazioni in off-design, quando $\varepsilon \neq \varepsilon*$ 
 In figura \ref{fig:1CorrHowell} è rappresentata la prima correlazione di Howell al variare della solidità della schiera. Si nota che a parità di deflessine nominalre si avrà una maggiore angolo in uscira per schiere più compatte.
 \begin{figure}
