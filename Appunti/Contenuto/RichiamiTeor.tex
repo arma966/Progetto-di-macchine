@@ -45,7 +45,7 @@ totali all’ingresso della macchina (cioè condizioni valutate immaginando il f
 
 Si può allo stesso modo deﬁnire le cifre di ﬂusso $\Phi$ e di pressione $\psi$ andando ad adimensionalizzare rispettivamente la portata e il lavoro unitario:
 \begin{equation}
-\phi = \frac{\dot{m}}{w D^3}(=\frac{Q}{w D^3})
+\phi = \frac{\dot{m}}{w D^3} \left( =\frac{Q}{w D^3} \right)
 \end{equation}
 \begin{equation}
 \psi = \frac{L_i}{\rho_{01} w^2 D^2}
@@ -316,54 +316,58 @@ Se si considera il flusso comprimibile le relazioni diventano più complesse. In
 \psi=f(\phi,Ma)
 \end{equation}
 $\psi$ dipende quindi anche dal numero di Mach. 
-Nel diagramma $\phi-\psi$ si ottengono diverse curve al variare del numero di Mach (Figura \ref{fig:ComprMach}), le curve diventano poco leggibili. Posso infatti ottenere lo stesso valore di lavoro giocando sulle grandezze di T-p, non ho più una definizione univoca di lavoro. Si tratta di una rappresentazione poco fisica e di un esercizio esclusivamente accademico.
+Nel diagramma $\phi-\psi$ si ottengono diverse curve al variare del numero di Mach (Figura \ref{fig:ComprMach}), le curve diventano di difficile lettura e comprensione.Infatti, per diversi valori delle grandezze termodinamiche di temperatura e pressione risulta possibile ottenere le stesse quantità di lavoro unitario, e ciò comporta una mancata definizione univoca dello stesso. Si tratta di una rappresentazione poco fisica e di un esercizio esclusivamente accademico.
 \begin{figure}[h!]
 \centering
   \includegraphics[width=.85\textwidth]{fig/ComprMach.pdf}
 \caption{Curve adimensionali di funzionamento di una famiglia di compressori, per un fluido assegnato, a diversi numeri di Mach periferici. Sono definiti $Ma = \frac{w \frac{D}{2}}{a_{01}}$, $Mu = \frac{w \frac{D}{2}}{a}$}
 \label{fig:ComprMach}
 \end{figure}
-Per questo tipo di macchine si utilizzaranno curve molto diverse. Per avere una grandezza confrontabile di funzionamento devo rendere qualsiasi prova io faccia a grandezza standard. In questo modo posso rappresentare condizioni di funzionamento in modo univoco. 
+Per questo tipo di macchine si utilizzaranno curve molto diverse. Per avere una grandezza confrontabile di funzionamento devo effettuare tutte le prove in condizioni standard. In questo modo posso rappresentare condizioni di funzionamento in modo univoco. 
 Definisco il significato dei pedici:
 \begin{itemize}
 \item $s$: grandezze relative alle condizioni standard;
 \item $c$: valori corretti, cioè riportati alle condizioni standard;
-\item "  ": valori da correggere rilevati nel corso della prova.
+\item ``  ": valori da correggere rilevati nel corso della prova.
 \end{itemize}
-Proprietà di un gas generico miscela di due gas con massa molare M:
-\begin{equation}
-\frac{p}{\rho} = \frac{p_1}{\rho} + \frac{p_2}{\rho} = x_1  \frac{p_1}{\rho_1} + \frac{p_2}{\rho_2} = RT \left( \frac{x_1}{M_1} + \frac{x_2}{M_2} \right) = RT(\frac{1}{M})
-\end{equation}
-\begin{equation}
-c_P = x_1 c_{P1} + x_2 c_{P2}
-\end{equation}
-\begin{equation}
-\cfrac{\gamma}{\gamma -1} = \cfrac{\frac{x_1}{M_1} \cfrac{\gamma_1}{\gamma_1 -1}+\cfrac{x_2}{M_2} \cfrac{\gamma_2}{\gamma_2 -1}}{\cfrac{x_1}{M_1}+\cfrac{x_2}{M_2}}
-\end{equation}
-Rapporto di compressione standard:
-\begin{equation}
+Si elencano di un gas generico miscela di due gas con massa molare $M$\footnote{Nota bene: solo in questo contesto si utilizza $M$ per indicare la massa molare, in tutto il resto del libro viene usato per indicare il numero di Mach}
+\begin{align*}
+\frac{p}{\rho} = \frac{p_1}{\rho} + \frac{p_2}{\rho} = x_1  \frac{p_1}{\rho_1} + x_2  \frac{p_2}{\rho_2} = RT \left( \frac{x_1}{M_1} + \frac{x_2}{M_2} \right) = RT(\frac{1}{M_{tot}})
+\end{align*}
+\begin{align*}
+c_p = x_1 c_{p1} + x_2 c_{p2}
+\end{align*}
+\begin{align*}
+\cfrac{\gamma}{\gamma -1} = \cfrac{\cfrac{x_1}{M_1} \cfrac{\gamma_1}{\gamma_1 -1}+\cfrac{x_2}{M_2} \cfrac{\gamma_2}{\gamma_2 -1}}{\cfrac{x_1}{M_1}+\cfrac{x_2}{M_2}}
+\end{align*}
+Con $M_{1,2,tot}$ numero di moli, $x_{1,2}$ frazione molare e $R$ costante dei gas perfetti. Si ricorda poi che definiti calore specifico a pressione costante $c_p$ e calore specifico a volume costante $c_v$ si ha
+\begin{align*}
+\gamma = \frac{c_p}{c_v}, \;\;\; R = c_p - c_v
+\end{align*}
+
+Di seguito venogono riportate le grandezze significative corrette rispetto alle condizioni standard.\\
+Rapporto di compressione corretto rispetto alle condizioni ambientali standard:
+\begin{align*}
 \frac{p_{02}}{p_{01}} = \frac{p_{01c}}{p_{01s}} \; \Rightarrow \; p_{02c} = p_{02}\frac{p_{01s}}{p_{01}}
-\end{equation}
+\end{align*}
 Parametro di portata
-\begin{equation}
+\begin{align*}
 \frac{\dot{m}\sqrt{T_{01}}}{p_{01}}=\frac{\dot{m_c}\sqrt{T_{01s}}}{p_{01s}} \; \Rightarrow \; \dot{m_c} = \dot{m} \sqrt{\frac{T_{01}}{T_{01s}}} \bigg(\frac{p_{01s}}{p_{01}} \bigg)
-\end{equation}
+\end{align*}
 Parametro di velocità
-\begin{equation}
+\begin{align*}
 \frac{n}{\sqrt{T_{01}}}=\frac{n_c}{\sqrt{T_{01s}}} \; \Rightarrow \; n_c = n \sqrt{\frac{T_{01s}}{T_{01}}}
-\end{equation}
+\end{align*}
 Si definiscono quindi le condizioni ambientali standard.
-\begin{multicols}{2}
 Pressione ridotta
-\begin{equation}
+\begin{align*}
 \delta = \frac{p_{01}}{p_{01s}}
-\end{equation}
+\end{align*}
 Temperatura ridotta
-\begin{equation}
+\begin{align*}
 \theta = \frac{T_{01}}{T_{01s}}
-\end{equation}
-\end{multicols}
-Si ottiene:
+\end{align*}
+Si possono esprimere più sinteticamente le grandezze corrette:
 \begin{align*}
 p_{01c} = \frac{p_{02}}{\delta}
 \end{align*}
@@ -382,20 +386,21 @@ n_c = \frac{n}{\sqrt{\theta}}
 Si ottiene così la portata di massa corretta e il numero di giri corretto.
 In questo modo si trovano le mappe di funzionamento delle macchine. Si diagrammano la portata d'aria corretta con il rapporto di compressione. Sono tracciate diverse curve al variare dei giri con le curve di isorendimento.
 
-A questo punto si espande l'espressione di $\phi$.
+A questo punto si espande l'espressione di $\phi$ tenendo conto delle seguenti espressioni di $M_{01}$, $p$ e $a$
 \begin{align*}
 M_{01}=\frac{w D}{a_{01}}= \frac{w D}{\sqrt{k R T_{01}}}, \;\;\;p = \rho_i RT, \;\;\; a = \sqrt{k R T}
 \end{align*}
 \begin{equation}
 \phi = \frac{\dot{m}}{\rho_{01} w D^3} = \frac{\dot{m}}{\rho_{01} M_{01} a_{01} D^2} = \frac{\dot{m} R T_{01}}{\rho_{01} M_{01} \sqrt{k R T_{01}} D^2} = \frac{\dot{m} \sqrt{R T_{01}}}{\rho_{01} M_{01} \sqrt{k} D^2}
 \end{equation}
+Mentre la cifra $\psi$ è esprimibile in funzione dei soli $M_{01}$, rapporto di compressione e delle caratteristiche del fluido ($k$)
 \begin{equation}
-\psi = \cfrac{L_i}{w^2 D^2} = \cfrac{\Delta h_{0s}}{w^ 2 D^2} = \cfrac{\cfrac{k}{k-1} R T_{01}\left[ \bigg( \cfrac{p_{02}}{p_01} \bigg)^{\frac{k-1}{k}}-1\right]}{M_{01}^2 k R T_{01}} = \cfrac{\cfrac{1}{k-1} \left[ \bigg( \cfrac{p_{02}}{p_01} \bigg)^{\frac{k-1}{k}}-1\right]}{M_{01}^2 }
+\psi = \cfrac{L_i}{w^2 D^2} = \cfrac{\Delta h_{0s}}{w^ 2 D^2} = \cfrac{\cfrac{k}{k-1} R T_{01}\left[ \bigg( \cfrac{p_{02}}{p_{01}} \bigg)^{\frac{k-1}{k}}-1\right]}{M_{01}^2 k R T_{01}} = \cfrac{\cfrac{1}{k-1} \left[ \bigg( \cfrac{p_{02}}{p_{01}} \bigg)^{\frac{k-1}{k}}-1\right]}{M_{01}^2 }
 \end{equation}
 
 L'idea è quella di rappresentare in modo univoco il comportamento del compressore usando i termini $\phi$, $\psi$ ma mantenendo la significatività fisica.
 
-Se utilizzo lo stesso fluido posso trascurare $R$ e $k$. Utilizzando la stessa macchina trascuro anche $D$, riferendosi alle condizioni standard posso considerare $M_{01}=cost$. Ricavo le seguenti relazioni semplificate:
+Se utilizzo lo stesso fluido posso trascurare $R$ e $k$. Utilizzando la stessa macchina trascuro anche $D$, riferendosi alle condizioni standard posso considerare $M_{01}=cost$. Sotto le precedenti ipotesi ottengo le seguenti relazioni semplificate:
 \begin{align*}
 M_{01} \to \frac{w D}{\sqrt{R T_{01}}} \Rightarrow M_{01} \to \frac{w}{\sqrt{T_{01}}}
 \end{align*}
@@ -413,10 +418,13 @@ La mappa di funzionamento del compressore assume quindi una forma più leggibile
 \caption{}
 \label{fig:secondo_8}
 \end{figure}
-Guardando ai diagrammi si vede che abbiamo un fenomeno noto come ingolfamento del compressore. Intendiamo il raggiungimento di quella condizione di funzionamento in cui non è più possibile variare la portata variando il rapporto delle pressioni attorno alla macchina.
+Guardando al diagramma in figura \ref{fig:secondo_8} si vede che abbiamo un fenomeno noto come ingolfamento del compressore, in particolare si vede dalle linee a velocità costante che tendono a diventare verticali in prossimità dele condizioni di ingolfamento . Intendiamo il raggiungimento di quella condizione di funzionamento in cui non è più possibile variare la portata variando il rapporto delle pressioni attorno alla macchina.
 Questo perchè in qualche punto si raggiungono le condizioni di flusso sonico e quindi, ricordando lo studio dell’ugello convergente-divergente, abbiamo un
 blocco sonico delle portata.
 
+L'obiettivo è quello di lavorare il più possibile vicino alla ``operating line" che è la zona di massimo rendimento, il problema è che ci si trova pericolosamente vicino alla ``surge line". Oltre la surge line si innesca il fenomeno del pompaggio che può compromettere la macchina e l'impianto irrimediabilmente.
+
+Riassumendo, nel comprimibile, operativamente si descrive il funzionamento delle turbomacchine non rispetto alle cifre di flusso e pressione, bensì attraverso nuove cifre adimensionali più significative in questo contesto.
 \section{Richiamo di termodinamica}
 Lo scambio termico è trascurabile per i bassi tempi di residenza del fluido nel condotto.
 

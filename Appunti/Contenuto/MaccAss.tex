@@ -112,7 +112,7 @@ Scrivendo la pressione nelle componenti di pressione statica e dinamica posso es
 \begin{align*}
 F_a = s \cdot ( p_1 - p_2) &= s \cdot \left( p_{01} - \frac{1}{2} \rho V_1^2 - p_{02} + \frac{1}{2} \rho V_2^2 \right) = \\
 &= \frac{1}{2} \rho s \left( V_2^2 - V_1^2 \right) + s \left( p_{01} - p_{02} \right) = \\
-&= \frac{1}{2} \rho s \left( V_{t2}^2 + V_a^2 + - V_{t1}^2- V_a^2 \right) + s \Delta p_0 =\\
+&= \frac{1}{2} \rho s \left( V_{t2}^2 + \cancel{V_a^2} + - V_{t1}^2- \cancel{V_a^2} \right) + s \Delta p_0 =\\
 &=\cfrac{1}{2} \rho s (V_{t2}-V_{t1}) (V_{t2}+V_{t1}) + s \Delta p_0
 \end{align*}
 $\Delta p_0$ è la perdita di pressione totale, rappresenta quindi la perdita di carico nel deflusso attraverso la schiera. $(V_{t2}-V_{t1})$ rappresenta il trasferimento di quantità di moto. Se divido il termine $(V_{t2}+V_{t1})$ per $2$ ottengo l'espressione della velocità tangenziale all'infinito (velocità media indisturbata).
@@ -152,19 +152,19 @@ Posso quindi scrivere le espression di lift e drag e le forze nelle componeneti 
 
 \subsection{Adimensionalizzazione delle forze}
 Posso a questo punto definire $c_d$ e $c_L$:
-\begin{equation}
+\begin{align*}
 c_L = \cfrac{L}{\cfrac{1}{2} \rho c V_{\infty}^2}
-\end{equation}
-\begin{equation}
+\end{align*}
+\begin{align*}
 c_D = \cfrac{D}{\cfrac{1}{2} \rho c V_{\infty}^2}
-\end{equation}
+\end{align*}
 Il coefficiente di forza $c_F$ sarà definito come:
 \begin{align*}
-c_F = \cfrac{F_t}{\cfrac{1}{2} \rho c V_{\infty}^2} = \cfrac{s \rho V_a (V_{t1}-V{t2})}{\cfrac{1}{2} c \rho V_{\infty}^2} = ...
+c_F = \cfrac{F_t}{\cfrac{1}{2} \rho c V_{\infty}^2} = \cfrac{s \cancel{\rho} V_a (V_{t1}-V{t2})}{\cfrac{1}{2} c \cancel{\rho} V_{\infty}^2} = ...
 \end{align*}
 \begin{figure}
 \centering
-  \includegraphics[width=.4\textwidth]{fig/trigrel.pdf}
+  \includegraphics[width=.6\textwidth]{fig/trigrel.pdf}
 \caption{}
 \label{fig:trigrel}
 \end{figure}
@@ -172,7 +172,6 @@ Usando le relazioni $V_a = V_{\infty} \cos \alpha_{\infty}$ e $V_{t1,2} = \tan \
 \begin{equation}
 c_F = 2 \bigg(\cfrac{s}{c} \bigg) \cos ^ 2 \alpha_{\infty}(\tan \alpha_1 - \tan \alpha_2)
 \end{equation}
-
 Allo stesso modo posso espandere $c_P$
 \begin{align*}
 c_P = \cfrac{F_a}{\cfrac{1}{2} \rho c V_{\infty}^2} = \cfrac{s \Delta p_0 - F_t \tan \alpha_{\infty}}{\cfrac{1}{2} \rho c V_{\infty}^2} = \cfrac{s \Delta p_0}{\cfrac{1}{2} \rho c V_{\infty}^2} - c_F \tan \alpha_{\infty}
@@ -197,8 +196,8 @@ Nel caso di fluido ideale non viscoso il drag è nullo, in questo caso allora il
 Ipotesi di perdite nulle $\Delta p_0 = 0$
 \begin{align*}
 \begin{cases}
-F_a = s \rho V_{\infty t} (V_{2t}-V{1t})\\
-F_t = s \rho V_a (V_{1t}-V{2t})
+F_a = s \rho V_{\infty t} (V_{2t}-V_{1t})\\
+F_t = s \rho V_a (V_{1t}-V_{2t})
 \end{cases}
 \end{align*}
 
@@ -218,12 +217,15 @@ c_L = 2 \cfrac{s}{c} (tan \alpha_1 - \tan \alpha_2) \cos \alpha_{\infty} - c_D \
 c_D = \cfrac{s}{c} y \cfrac{cos^3 \alpha_{\infty}}{\cos \alpha_2}
 \end{cases}
 \end{align*}
+\section{Ipotesi di flusso a potenziale}
 Sotto le ipotesi di flusso a potenziale non c'è generazione di forze. Si introduce quindi una rotazione nel flusso per modellare matematicamente il profilo (teorema di Kutta-Jukowsky). In questo modo sull'estradosso la velocità sarà maggiore di $V_{\infty}$ mentre nell'intradosso sarà minore. Si calcola quindi la circuitazione. Con $L$ è indicata la forza, con $\Sigma$ la forza della circuitazione.
 \begin{align*}
 \Sigma = \oint \overline{v} \cdot d \overline{l} \;\;\; L = \rho \sigma V_{\infty}
 \end{align*}
 
-In questo modo, anche senza avere la precisione che si avrebbe in una simulazione fluidodinamica del profilo, riesco a modellare in maniera snella anche una schiera di pale. Avrò semplicemente l'integrale all'ingresso e all'uscita della schiera su un volume di controllo. 
+In questo modo, anche senza avere la precisione che si avrebbe in una simulazione fluidodinamica del profilo, riesco a modellare in maniera snella anche una schiera di pale. Avrò semplicemente l'integrale all'ingresso e all'uscita della schiera su un volume di controllo.
+
+\section{Da profilo a schiera} 
 \begin{figure}
 \centering
 \begin{minipage}{.3\textwidth}
@@ -247,7 +249,7 @@ Il range di solidità a quale si fa riferimento varia tra $1$ e$ 1.5 - 1.6$ non 
 
 In fase di progettazione si usano i dati del profilo isolato e si corregge il coefficiente secondo questi diagrammi. In contesto industriale si simula direttamente una schiera. 
 
-\section{Ugelli e diffusori}
+\subsection{Ugelli e diffusori}
 Le definizioni sono note e stranote.
 \begin{figure}
 \centering
@@ -910,7 +912,7 @@ Diagrammando l'andamento di $\Phi$ in funzione del rapporto di $p/p_0$ mi ritrov
 \section{Condizioni di ingolfamento}
 Diminuendo la pressione a valle posso aumentare la componente assiale della velocità $V_a$ pur mantenendo $V_t$ mantenendo il moto libero, mentre non è possibile in un moto guidato dalla palettatura. Il segnale di pressione deve riuscire a propagarsi a monte, questo accade solamente se le velocità sono subsoniche. 
 
-Suppongo di avere un punto $P$ l'onda di pressione si propaga all'interno del cono di Mach come mostrato in figura \ref{fd:bloccson1}. Posso avere una velocità $V$ supersonica ma con una velictià $V_a$ subsonica, la perturbazione di pressione si propaga a monte del fronte, in questo modo ad una diminuzione di pressione corrisponde un aumento di velocità a monte (figura \ref{fd:bloccson2} sinistra). Nel caso ci si trovi in condizioni limite la propagazione del segnale di pressione raggiunge esattamente il punto "di partenza $P$" della particella come mostrato in figura \ref{fd:bloccson2} a destra; in questo caso non è quindi possibile trasmettere un segnale di pressione a monte. 
+Suppongo di avere un punto $P$ l'onda di pressione si propaga all'interno del cono di Mach come mostrato in figura \ref{fd:bloccson1}. Posso avere una velocità $V$ supersonica ma con una velictià $V_a$ subsonica, la perturbazione di pressione si propaga a monte del fronte, in questo modo ad una diminuzione di pressione corrisponde un aumento di velocità a monte (figura \ref{fd:bloccson2} sinistra). Nel caso ci si trovi in condizioni limite la propagazione del segnale di pressione raggiunge esattamente il punto ``di partenza $P$" della particella come mostrato in figura \ref{fd:bloccson2} a destra; in questo caso non è quindi possibile trasmettere un segnale di pressione a monte. 
 \begin{figure}
 \centering
   \includegraphics[width=.8\textwidth]{fig/bloccson1.pdf}
@@ -951,7 +953,7 @@ I vortici di passaggio sono dovuti al fatto che avendo un moto curvato e avendo 
 \caption{}
 \label{fig:VortPass}
 \end{figure}
-Il vortice a ferro di cavallo è dovuto all'interazione tra strato limite in ingresso, si innescano vortici detti "a ferro di cavallo" come mostrato in figura \ref{fd:VortFerrCav}.
+Il vortice a ferro di cavallo è dovuto all'interazione tra strato limite in ingresso, si innescano vortici detti ``a ferro di cavallo" come mostrato in figura \ref{fd:VortFerrCav}.
 \begin{figure}[h!]
 \centering
   \includegraphics[width=.8\textwidth]{fig/VortFerrCav.pdf}
