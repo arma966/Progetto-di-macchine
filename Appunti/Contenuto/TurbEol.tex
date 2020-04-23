@@ -141,6 +141,87 @@ Sottraendo membro a membro si ottiene
 \begin{align*}
 \frac{\rho V_1^2}{2} . \frac{\rho V_2^2}{2} = p - p_1 = \Delta p
 \end{align*}
+Sostituendo le relazioni tra $V_1$ e $V_2$ trovate precedentemente esplicitando $V_1$\footnote{$V_2$ è ignota}
+\begin{align*}
+\Delta P &= \frac{\rho}{2} \left(V_1^2 - V_2^2 \right) = \frac{\rho}{2} \left[ V_1^2 - V_1^2 \left(1-2a \right)^2 \right]=\\
+&= \frac{\rho V_1^2}{2} \left[ 1- \left( 1- 2a \right)^2 \right] = \frac{\rho V_1^2}{2} \left( 1- 1+4a-4a^2 \right)=\\
+&= 2 \rho V_1^2 a \left( 1-a \right)
+\end{align*}
+La forza esercitata dal vento sulla corona differenziale $dS$ si può dunque calcolare come segue
+\begin{align*}
+dF_a &= \Delta P \cdot dS = \\
+&= 2 \rho V_1^2 a \left( 1-a \right) 2 \pi r dr = 
+\end{align*}
+\begin{equation}\label{eq:forza1}
+dF_a = 4 \pi \rho	V_1^2 a \left( 1-a \right) r dr
+\end{equation}
+Ora si applica l'equazione di Bernoulli ad entrambi i lati di una corona circolare di raggio $r$ e area $dS$. Dalla figura \ref{fig:triangEol} si evince che, essendo il flusso bidimensionale, dobbiamo considerare le risultanti vettoriali di dette componenti di velocità $V_m$ e $V_v$\footnote{I pedici indicano rispettivamente "monte" e "valle"}. Si ottiene
+\begin{align*}
+p_1 + \frac{\rho V_m^2}{2} = p_2 + \frac{\rho V_v^2}{2}
+\end{align*}
+Applicando il teorema di pitagora
+\begin{align*}
+\begin{cases}
+V_m^2 = V^2 + \left( \Omega r \right)^2 = V_1^2 \left(1-a \right)^2 + \left( \Omega r \right)^2\\
+V_v^2 = V^2 + \left( \Omega + \omega \right)^2 r^2= V_1^2 \left(1-a \right)^2 + \left( \Omega + \omega \right)^2 r^2
+\end{cases}
+\end{align*}
+Inserendo $V_v$ e $V_m$ nelle equazioni di Bernoulli e riordinando i termini si ottiene
+\begin{align*}
+p_1 - p_2 = \Delta p = \frac{\rho}{2} \left[ V^2 + \left( \Omega + \omega \right)^2 r^2 - V^2 - \left( \Omega r \right)^2 \right]
+\end{align*}
+\begin{align*}
+\Delta p &= \frac{\rho r^2}{2} \left[ \left( \Omega + \omega \right)^2 - \Omega^2 \right]= \\
+&= \frac{\rho r^2}{2} \left[ 2 \Omega \omega + \omega^2 \right]
+\end{align*}
+Utilizzando ora il coefficiente $a'$ precedentemente definito è possibile rimpiazzare la componente ignota $\omega$ per il suo valre in funzione della componente $\Omega$
+\begin{align*}
+\Delta p &= \frac{\rho r^2}{2} \left[ 2 \Omega \left( 2 \Omega a'\right) + \left( 2 \Omega a' \right)^2 \right]=\\
+&= \frac{\rho r^2}{2} \left[ 4 \Omega^2 a' + 4 \Omega^2 a'^2 \right] = \\
+&= 2 \rho r^2 \Omega^2 a' \left[ 1+a' \right]
+\end{align*}
+La spinta assiale sulla corona $dS$ varrà, allora:
+\begin{align*}
+dF_a = \Delta p dS = 2 \rho r^2 \Omega^2 a' \left(1 + a' \right) \left( \pi 2 r dr \right)
+\end{align*}
+\begin{equation}\label{eq:forza2}
+dF_a = = 4 \pi \rho \Omega^2 a' \left( 1+ a' \right) r^3 dr
+\end{equation}
+Sono state ottenute due espressioni equivalenti per la forza $dF_a$, una in funzione del coefficiente $a$ e della velocità $V_1$ e l'altra in funzione del coefficiente $a'$ e della velocità angolare $\Omega$. 
+
+Uguagliando l'equazione \ref{eq:forza1} alla \ref{eq:forza2} si ottiene
+\begin{align*}
+4 \pi \rho V_1^2 a \left( 1 - a \right) r dr = 4 \pi \rho \Omega^2 a' \left( 1 + a' \right) r^3 dr
+\end{align*}
+\begin{align*}
+V_1^2 a \left( 1 - a \right) = \Omega^2 a' \left( 1 + a' \right) r^2
+\end{align*}
+\begin{align*}
+\frac{a \left( 1 - a \right)}{a' \left(1 + a' \right)} = \frac{\Omega^2 r^2}{V_1^2}
+\end{align*}
+ricordando l'espressione del coefficiente di velocità specifica locale $\lambda_R$
+\begin{align*}
+\lambda_r = \frac{a \left(1 - a \right)}{a' \left( 1 + a' \right)}
+\end{align*}
+Ora che si conoscono i rapporti tra $a$, $a'$ e $\lambda_r$ si può calcolare la potenza erogata dal differenziale di pala. Dalla figura \ref{fig:triangEol} si desume che la componente assiale di velocità del vento $V$ rimane costante nell'attraversamento della pala, è solo la componente tangenziale a generare lavoro. Per calcolare la forza tangenziale scrivo l'impulso 
+\begin{align*}
+F \cdot t = m \cdot \Delta V
+\end{align*}
+Dove:\\[1mm]
+$F$: è la forza agente su una porzione di materia di massa \\
+$m$: massa di fluido\\ 
+$\Delta V$: variazione della velocità\\[2mm]
+Deduciamo dunque che
+\begin{align*}
+F = \frac{m}{t} \Delta V = q \Delta V
+\end{align*}
+assumendo che l'aria si comporti come un fluido incompressibile, fatto che si riscontra vero nelle condizioni di operazione abituali di una turbina eolica, la portata $dq$ che attraversa l'area $dS$ si può calcolare come 
+\begin{align*}
+dq = \rho dS V
+\end{align*}
+Dalla 
+
+
 
 \begin{figure}
 \centering
