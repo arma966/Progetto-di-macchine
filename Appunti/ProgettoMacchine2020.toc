@@ -49,3 +49,10 @@
 \contentsline {subsection}{\numberline {4.4.1}Soderberg}{83}{subsection.4.4.1}% 
 \contentsline {subsection}{\numberline {4.4.2}Ainley-Mathieson}{84}{subsection.4.4.2}% 
 \contentsline {section}{\numberline {4.5}Criteri di carico}{87}{section.4.5}% 
+\contentsline {chapter}{\numberline {5}Macchine eoliche}{91}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Il teorema di Betz}{91}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Definizione del problema}{93}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Coefficiente di perdita di velocità}{95}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Coefficiente di velocità specifica locale}{95}{subsection.5.2.2}% 
+\contentsline {subsection}{\numberline {5.2.3}Coefficiente di velocità angolare}{95}{subsection.5.2.3}% 
+\contentsline {section}{\numberline {5.3}Teoria del tubo di flusso anulare con scia vorticosa}{96}{section.5.3}% 
