@@ -426,31 +426,37 @@ L'obiettivo è quello di lavorare il più possibile vicino alla ``operating line
 
 Riassumendo, nel comprimibile, operativamente si descrive il funzionamento delle turbomacchine non rispetto alle cifre di flusso e pressione, bensì attraverso nuove cifre più significative in questo contesto.
 \section{Richiamo di termodinamica}
-Lo scambio termico è trascurabile per i bassi tempi di residenza del fluido nel condotto.
+Lo scambio termico è trascurabile per i bassi tempi di residenza del fluido nel condotto, per questo motivo si considera il rotore adiabatico.
 
-Rotore adiabatico
+In un rotore adiabatico, per il primo principio della termodinamiva, essendo il flusso di calore nullo, il lavoro è dato dal salto entalpico tra gli stati $1$ e $2$
 \begin{equation}
 L_{12}^{'} = h_{t1}-h_{t2}
 \end{equation}
-\begin{equation}
+\begin{equation}\label{eq:ent_tot}
 h_t=h+\frac{c^2}{2}+gz
 \end{equation}
-\begin{equation}
+Con: 
+$h_t$: entalpia totale\\
+$h$: entalpia statica\\
+$c^2/2$: quota cinetica\\
+$gz$: quota gravitazionale\\[2mm]
+Per una macchina motrice\footnote{Nel caso delle macchine operatrici si invertono i pedici $1$ e $2$ così da avere lavori per convenzione sempre positivi} si può scrivere
+\begin{equation}\label{eq:L12}
 L_{12}^{'} = \begin{cases} u_1 c_{u1}-u_2 c_{u2}\\
-\cfrac{c_1^2-c_2^2}{2}+\cfrac{u_1^2-u_2^2}{2}-\cfrac{w_1^2-w^2}{2} \end{cases}
+\cfrac{c_1^2-c_2^2}{2}+\cfrac{u_1^2-u_2^2}{2}-\cfrac{w_1^2-w_2^2}{2} \end{cases}
 \end{equation}
 
 Naturalmente il lavoro è stato scritto, in base alle note convenzioni, per una macchina motrice.
 
-Il lavoro è composto da una parte cinetica ($c$) e da una parte statica ($u,w$). 
+Il lavoro è costituito da una parte cinetica e da una parte statica, il che si può osservare confrontando le espressioni di $L_{12}^{'}$ nelle formule \ref{eq:ent_tot} e \ref{eq:L12}, in particolare la quota parte cinetica dipende dalla componente assoluta della velocità ($c$), mentre quella statica dipende dalle componenti assiale ($u$) e relativa ($w$).
 
-Risulta chiaro che una macchina radiale avrà anche le componenti statiche, a differenza di una macchina puramente assiale, potra quindi, a parità di stadi, eseguire un maggior lavoro.
+Dato che in una macchina puramente assiale si conserva l'omonima componente u della velocità ( $u = cost$ ), allora il contributo $u_1^2 - u_2^2$ nell'espressione del lavoro è nullo: per questo una macchina radiale a parità di numero di stadi e condizioni, elabora più lavoro di una assiale, in quanto $u_1^2 - u_2^2$ è maggiore di zero.
 
-Ponendomi come osservatore relativo rispetto al rotore posso scrivere
+Ponendomi come osservatore relativo rispetto al rotore eguagliando le due espressioni per il lavoro posso scrivere
 \begin{equation}
 u_1 c_{u1} - u_2 c_{u2} = h_1 + \frac{c_1^2}{2}+gz_1-h_2-\frac{c_2^2}{2}-gz_2
 \end{equation}
-Posso quindi definire la rotalpia come grandezza di stato:
+Posso quindi definire la rotalpia\footnote{Grandezza che rappresenta l'entalpia totale del moto relativo} come grandezza di stato ed è tale, proprio in virtù dell'adiabaticità del rotore, e quindi per la conservazione dell'energia vale:
 \begin{equation}
 h+\frac{c^2}{2}+gz-u c_u = cost. = I
 \end{equation}

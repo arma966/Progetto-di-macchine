@@ -1,28 +1,79 @@
 \chapter{Turbomacchine assiali - Generalità}
 
 \section{Introduzione}
-Si possono seguire diversi approcci via via più raffinati.
+Nel corso di Macchine\footnote{Questo paragrafo è stato estratto dagli appunti di Caizzi} le macchine sono state studiate sulla base di una teoria
+che possiamo definire monodimensionale cioè come se ci fosse un flusso privo
+di caratteristiche bi o tridimensionali quindi immagginando che tutti i piani
+meridiani siano uguali a se stessi e trascurando quanto avviene in direzione
+radiale.
 
-Nell'approccio monocimensionale il flusso è rappresentato da un unico tubo di corrente con condizioni di deflusso mediate. Risulta utile in fase di pre dimensionamento. 
+Questa analisi monodimensionale è uno strumento utilissimo che consente di
+capire come funziona una macchina e come si può procedere al
+dimensionamento di massima. Per procedere oltre nel dimensionamento e
+nella verifica delle prestazioni possiamo passare da un approccio
+monodimensionale al un approccio bidimensionale.
 
-Nell'approccio bidimensionale/quasi-tridimensionale il flusso è rappresentato da più tubi di corrente con condizioni di deflusso mediate nella singola regione di deflusso. Si utilizza in fase di dimensionamento. Il piano su cui si va a considerare il fluido è il mantello cilindrico che compone la macchina, aperto a piano. Si analizza l'equilibrio radiale del flusso della macchina. Ho delle corone cilindriche che attraverso la macchina che scambiano energia e impogno l'equilibrio radialmente. 
+L’approccio bidimensionale sarà ancora approssimato perchè il flusso per una
+turbomacchina è tridimensionale. Però questa approssimazione già si avvicina
+alla realtà. Quest’analisi bidimensionale potrebbe essere applicata a qualsiasi
+tipo di macchina ma trova applicazione particolarmente utile proprio nel caso di
+macchine assiali. Per capire con cosa consiste questo approccio osserviamo la
+seguente figura
+\begin{figure}
+\centering
+  \includegraphics[width=.8\textwidth]{fig/ReticoloComp.pdf}
+\caption{Reticolo di calcolo quasi-3D per un compressore assiale bistadio}
+\label{fig:ReticoloComp}
+\end{figure}
+Questa figura mostra la sezione meridiana di un compressore assiale bistadio.
+Possiamo applicare un’analisi di tipo bidimensionale per esempio alla coppia
+$ROTORE\;2$ - $STATORE\;2$ in cui lo sviluppo della macchina è quasi perfettamente assiale. Immagginiamo che le linee di corrente siano parallele all’asse di
+rotazione e che tutte le sezioni meridiane siano uguali a se stesse cioè
+supponiamo che le linee di corrente siano assialsimmetriche.
 
-L'approccio tridimensionale si usa in fase di ottimizzazione per tenere conto dei flussi secondari. Questo è un approccio computazionalmente molto oneroso.
+Quindi nello studio della macchima studiamo separatamente le due sezioni.
+Prendiamo una linea di corrente e sezioniamo la macchina lungo la superficie
+cilindrica di questa linea. Questa superficie cilindrica andrà a sezionare tutte le
+pale in corrispondenza di quel valore di raggio. Se immaginiamo di prendere la
+superficie cilindrica, tagliarla lungo una generatrice e stenderla sul piano
+trasformiamo la stella di pale in una schiera piana di pale.
 
-Si andrà quindi ad approfondire il secondo approccio.
+Poi lo studio è completato con lo studio del piano meridiano dove andremo a
+vedere come cambiano le condizioni del flusso al variare del raggio.
+Quest’analisi verrà fatta in corrispondenza dei punti compresi tra delle sezioni
+tra una pala e l’altra. Le linee verticali sono linee che riusciamo sempre ad
+individuare e che non intersecano le pale ed in corrispondeza di queste sezioni
+ortogonali vengono calcolate le condizioni di equilibrio radiale del flusso.
+Bisogna sempre supporre di avere l’assialsimmetria. Se consideriamo delle
+sezioni che intersecano la pala avremo un flusso periodico e quindi bisogna
+tener conto delle forze scambiate tra fluido e pala.
+
+Quindi i due punti fondamentali dell’analisi bidimensionale sono:
+\begin{itemize}
+\item Studio della schiera di pale;
+\item Studio dell’equilibrio radiale.
+\end{itemize}
+Unendo i risultati di questi due studi otteniamo il comportamento della
+macchina (abbastanza simile a quello reale).
+Con l’approccio bidimensionale trascuriamo il fatto che la linea di corrente non
+è perfettamente assiale (abbiamo una componente radiale) e vedremo che
+nella sezione studiata il flusso non è perfettamente assialsimmetrico. Tutto
+quello che sfugge a questa analisi costituisce una serie di strutture di flusso
+che chiamiamo flussi secondari che sono funzione di come abbiamo modellizato
+i flussi principali.
 
 \section{Nomenclatura}
 \begin{figure}[h!]
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.9\linewidth]{fig/profiloDef.pdf}
+  \includegraphics[width=.98\linewidth]{fig/profiloDef.pdf}
   \captionof{figure}{}
   \label{}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.9\linewidth]{fig/schiera_2.pdf}
+  \includegraphics[width=.98\linewidth]{fig/schiera_2.pdf}
   \captionof{figure}{}
   \label{}
 \end{minipage}
@@ -32,28 +83,33 @@ Per il profilo isolato posso definire le seguenti grandezze adimensionali:
 \begin{align*}
 \cfrac{x}{c} \;\;\; \cfrac{y}{c} \;\;\; \cfrac{t}{c}
 \end{align*}
-Posso poi definire la solidità della schiera come segue:
+Con:\\
+$t$: spessore massimo del proilo isolato;\\
+$c$: lunghezza della corda;\\
+$x,y$: coordinate.\\[2mm]
+Quanto detto per il profilo isolato varrà anche per i profili in schiera. Come è lecito pensare, nelle applicazioni meccaniche non ci limiteremo ad una sola pala, ma avremo macchine che necessitano più pale per assolvere al proprio compito. Posso quindi definire la solidità della schiera come segue:
 \begin{equation}
 \sigma = \cfrac{c}{s}
 \end{equation}
 
 \subsection{Definizioni geometriche}
 $\theta$: deflessione geometrica del profilo (angolo di Camber);\\
-$\gamma$: ancolo di calettamento del profilo della schiera (inclinazione della corda rispetto alla direzione ortogonale);\\
-$\alpha_{1g}, \alpha_{2g}$: inclinazioni delle tangenti alla linea media rispetto alla direzione ortogonale.
+$\gamma$: angolo di calettamento del profilo della schiera (inclinazione della corda rispetto alla direzione ortogonale);\\
+$\alpha_{1g}, \alpha_{2g}$: inclinazioni delle tangenti alla linea media rispetto alla direzione ortogonale\footnote{Il pedice "g" sta per geometrico}.
 \begin{align*}
 \theta = \alpha_{1g} - \alpha_{2g} = \Delta \alpha_{g}
 \end{align*}
 
 \subsection{Definizioni per la corrente fluida}
+Immagino poi di investire la mia schiera di pale con una corrente fluida, dotata di un certo angolo di incidenza. Si ricavano quindi i seguenti parametri:\\[2mm]
 $\alpha_1$: inclinazione del vettore velocità rispetto alla direzione di riferimento ortogonale alla schiera, una palettatura non riuscirà mai a deviare la corrente tanto quanto è inclinata geometricamente;\\
 $\alpha$: inclinazione del vettore velocità con riferimento alla corda (angolo di attacco del flusso rispetto la schiera);\\
 $i$: inclinazione del vettore velocità rispetto la tangente alla linea media (angolo di incidenza);\\
 $\delta$: angolo di deviazione o deviazione (angolo di deviazione del flusso in uscita rispetto la tangente alla linea media);\\
-$\epsilon = \Delta \alpha$: entità della deflessione subita dal flusso tra ingresso e uscita.
+$\epsilon = \Delta \alpha$: entità della deflessione subita dal flusso tra ingresso e uscita.\\[2mm]
 \begin{figure}
 \centering
-  \includegraphics[width=.35\textwidth]{fig/palasing.pdf}
+  \includegraphics[width=.45\textwidth]{fig/palasing.pdf}
 \caption{}
 \label{fig:palasing}
 \end{figure}
@@ -65,7 +121,7 @@ Dalle considerazioni geometriche viste prima si può scrivere
 \end{align*}
 
 \subsection{Forze}
-Le forze agenti sulla schiera di pale posso scriverle rispetto al sistema di rif assiale tangenziale per determinare la coppia, ovvero la potenza fornita all'albero nel caso di compressore. La componente assiale sarà la spinta che i cuscinetti dovranno sopportare per il funzionamento ma ri riperquotono anche sulle perdite di carico. 
+Posso scrivere le forze agenti sulla schiera di pale rispetto al sistema di rif assiale tangenziale per determinare la coppia, ovvero la potenza fornita all'albero nel caso di compressore. La componente assiale sarà la spinta che i cuscinetti dovranno sopportare per il funzionamento e si riperquotono anche sulle perdite di carico. Le stesse forze, poste in un sistema di riferimento diverso (vedi figura \ref{fig:LDref}), sono comunemente note come portanza (lift) e resistenza (drag).
 
 Le forze vanno anche declinate sotto il profilo di portanza e resistenza. Si tratta delle stesse forze su due sistemi di riferimento diversi. 
 \begin{align*}
@@ -81,26 +137,27 @@ Le forze vanno anche declinate sotto il profilo di portanza e resistenza. Si tra
 	\end{cases}
 \end{align*}
 Considero una schiera palare e considero un volume di controllo ($ABCD$) che segue la linea media del profilo. Le velocità in ingresso e in uscita le scompongo nella direzioe assiale e radiale. 
-\begin{figure}[h!]
+\begin{figure}
 \centering
 \begin{minipage}{.4\textwidth}
   \centering
-  \includegraphics[width=.85\linewidth]{fig/schiera1.pdf}
+  \includegraphics[width=.95\linewidth]{fig/schiera1.pdf}
   \captionof{figure}{}
-  \label{}
+  \label{fig:schiera1}
 \end{minipage}%
 \begin{minipage}{.6\textwidth}
   \centering
   \includegraphics[width=.85\linewidth]{fig/LDref.pdf}
   \captionof{figure}{}
-  \label{}
+  \label{fig:LDref}
 \end{minipage}
 \end{figure}
-Applico le equazioni di conservazione. Per continuità ho:
+Applico le equazioni di conservazione. 
+Per continuità si ha:
 \begin{equation}
 s \rho V_{1a} = s \rho V_{2a} \Rightarrow V_{1a} = V_{2a} = V_a
 \end{equation}
-Dove ho ipotizzato $\rho$ costante, per un compressore assiale i rapporti di compressione per stadio sono modesti, nel caso di una turbina non sarebbe valido. Per quanto riguarda la quantità di moto in direzione tangenziale:
+Dove ho ipotizzato $\rho$ costante, in quanto per un compressore assiale i rapporti di compressione per stadio sono modesti, mentre nel caso di una turbina non sarebbe valido. Per quanto riguarda la quantità di moto in direzione tangenziale:
 \begin{align*}
 F_t= \dot{m} \Delta V_t = s \rho	V_a (V_{1t}-V_{2t})
 \end{align*}
@@ -110,16 +167,18 @@ F_a = s (p_1 - p_2)
 \end{align*}
 Scrivendo la pressione nelle componenti di pressione statica e dinamica posso espandere l'espressione delle forze assiali ottenendo:
 \begin{align*}
-F_a = s \cdot ( p_1 - p_2) &= s \cdot \left( p_{01} - \frac{1}{2} \rho V_1^2 - p_{02} + \frac{1}{2} \rho V_2^2 \right) = \\
-&= \frac{1}{2} \rho s \left( V_2^2 - V_1^2 \right) + s \left( p_{01} - p_{02} \right) = \\
-&= \frac{1}{2} \rho s \left( V_{t2}^2 + \cancel{V_a^2} + - V_{t1}^2- \cancel{V_a^2} \right) + s \Delta p_0 =\\
+F_a = s \cdot ( p_1 - p_2) &= s \cdot \left( p_{01} - \frac{1}{2} \rho V_1^2 - p_{02} + \frac{1}{2} \rho V_2^2 \right)\\
+&= \frac{1}{2} \rho s \left( V_2^2 - V_1^2 \right) + s \left( p_{01} - p_{02} \right)\\
+&= \frac{1}{2} \rho s \left( V_{t2}^2 + \cancel{V_a^2} + - V_{t1}^2- \cancel{V_a^2} \right) + s \Delta p_0\\
 &=\cfrac{1}{2} \rho s (V_{t2}-V_{t1}) (V_{t2}+V_{t1}) + s \Delta p_0
 \end{align*}
-$\Delta p_0$ è la perdita di pressione totale, rappresenta quindi la perdita di carico nel deflusso attraverso la schiera. $(V_{t2}-V_{t1})$ rappresenta il trasferimento di quantità di moto. Se divido il termine $(V_{t2}+V_{t1})$ per $2$ ottengo l'espressione della velocità tangenziale all'infinito (velocità media indisturbata).
+$\Delta p_0$ è la perdita di pressione totale, rappresenta quindi la perdita di carico nel deflusso attraverso la schiera. \\
+$(V_{t2}-V_{t1})$ rappresenta il trasferimento di quantità di moto. \\
+Dividendo il termine $(V_{t2}+V_{t1})$ per $2$ si ottiene l'espressione della velocità tangenziale all'infinito (velocità media indisturbata).
 \begin{align*}
 \cfrac{(V_{t2}+V_{t1})}{2} = V_{t \infty}
 \end{align*}
-Eseguendo ulteriori semplificazioni posso scrivere
+Eseguendo ulteriori sostituzioni posso trovare la relazione fra le due forze (assiale e tangenziale).
 \begin{align*}
 F_a = -F_t \cfrac{V_{t \infty}}{V_a} + \Delta p_0 = - F_t \tan \alpha_{\infty} + s \Delta p_0
 \end{align*}
@@ -129,14 +188,14 @@ y = \cfrac{\Delta p_0}{p_{02}-p_2} = \cfrac{\Delta p_0}{\cfrac{1}{2} \rho V_2^2}
 \end{align*}
 Nota bene: è stato usato lo stesso simbolo ma non deve essere confuso con il nuemro di Camber.
 
-Nel sistema di riferimento relativo, le forze vengono scomposte nella componente di \textit{Lift} (ortogonale alla velocità incidente) e nella componente di \textit{Drag} (parallela alla velocità incidente. 
+Nel sistema di riferimento relativo, le forze vengono scomposte nella componente di \textit{Lift} (ortogonale alla velocità incidente) e nella componente di \textit{Drag} (parallela alla velocità incidente). 
 \begin{figure}
 \centering
   \includegraphics[width=.7\textwidth]{fig/triang1.pdf}
 \caption{}
 \label{fig:triang1}
 \end{figure}
-Posso quindi scrivere le espression di lift e drag e le forze nelle componeneti assiali:
+Risulta quindi possibile scrivere le espression di lift e drag e le forze nelle componeneti assiali:
 \begin{equation}
 	\begin{cases} 
 		L = F_t \cos \alpha_{\infty} -  F_a \sin \alpha_{\infty}\\
@@ -145,13 +204,14 @@ Posso quindi scrivere le espression di lift e drag e le forze nelle componeneti 
 \end{equation}
 \begin{equation}
 	\begin{cases} 
-		L = - (\sin \alpha_{\infty} -  D \cos \alpha_{\infty})\\
-		D = L \cos \alpha_{\infty} +  D \sin \alpha_{\infty}
+		F_a = - (\sin \alpha_{\infty} -  D \cos \alpha_{\infty})\\
+		F_t = L \cos \alpha_{\infty} +  D \sin \alpha_{\infty}
 	\end{cases}
 \end{equation}
 
 \subsection{Adimensionalizzazione delle forze}
-Posso a questo punto definire $c_d$ e $c_L$:
+Posso a questo punto definire $c_d$ e $c_L$\footnote{Ricordando che manca lo "span", cioè sono forze per unità di lunghezza. Questo perchè la lunghezza della palettatura è considerata unitaria
+}
 \begin{align*}
 c_L = \cfrac{L}{\cfrac{1}{2} \rho c V_{\infty}^2}
 \end{align*}
@@ -160,7 +220,7 @@ c_D = \cfrac{D}{\cfrac{1}{2} \rho c V_{\infty}^2}
 \end{align*}
 Il coefficiente di forza $c_F$ sarà definito come:
 \begin{align*}
-c_F = \cfrac{F_t}{\cfrac{1}{2} \rho c V_{\infty}^2} = \cfrac{s \cancel{\rho} V_a (V_{t1}-V{t2})}{\cfrac{1}{2} c \cancel{\rho} V_{\infty}^2} = ...
+c_F = \cfrac{F_t}{\cfrac{1}{2} \rho c V_{\infty}^2} = \cfrac{s \cancel{\rho} V_a (V_{t1}-V_{t2})}{\cfrac{1}{2} c \cancel{\rho} V_{\infty}^2} = ...
 \end{align*}
 \begin{figure}
 \centering
@@ -172,7 +232,7 @@ Usando le relazioni $V_a = V_{\infty} \cos \alpha_{\infty}$ e $V_{t1,2} = \tan \
 \begin{equation}
 c_F = 2 \bigg(\cfrac{s}{c} \bigg) \cos ^ 2 \alpha_{\infty}(\tan \alpha_1 - \tan \alpha_2)
 \end{equation}
-Allo stesso modo posso espandere $c_P$
+Alla luce di ciò, detto $c_P$ il coefficiente di pressione, posso ottenere una sua formulazione in maniera analoga:
 \begin{align*}
 c_P = \cfrac{F_a}{\cfrac{1}{2} \rho c V_{\infty}^2} = \cfrac{s \Delta p_0 - F_t \tan \alpha_{\infty}}{\cfrac{1}{2} \rho c V_{\infty}^2} = \cfrac{s \Delta p_0}{\cfrac{1}{2} \rho c V_{\infty}^2} - c_F \tan \alpha_{\infty}
 \end{align*}
@@ -218,12 +278,16 @@ c_D = \cfrac{s}{c} y \cfrac{cos^3 \alpha_{\infty}}{\cos \alpha_2}
 \end{cases}
 \end{align*}
 \section{Ipotesi di flusso a potenziale}
-Sotto le ipotesi di flusso a potenziale non c'è generazione di forze. Si introduce quindi una rotazione nel flusso per modellare matematicamente il profilo (teorema di Kutta-Jukowsky). In questo modo sull'estradosso la velocità sarà maggiore di $V_{\infty}$ mentre nell'intradosso sarà minore. Si calcola quindi la circuitazione. Con $L$ è indicata la forza, con $\Sigma$ la forza della circuitazione.
+Sotto le ipotesi di flusso a potenziale non c'è generazione di forze. Si introduce quindi una singolarità nel flusso (una rotazione) per modellare matematicamente il profilo (teorema di Kutta-Jukowsky). Da un punto di vista del potenziale, si somma alla corrente uniforme, un vortice libero, che causerà una certa circuitazione (cicuitazione non nulla attorno ad una qualsiasi linea che racchiude il profilo). In questo modo sull'estradosso la velocità sarà maggiore di $V_{\infty}$ mentre nell'intradosso sarà minore. Si calcola quindi la circuitazione. 
+
+Con $L$ è indicata la forza, con $\Sigma$ la portanza della circuitazione.
 \begin{align*}
 \Sigma = \oint \overline{v} \cdot d \overline{l} \;\;\; L = \rho \sigma V_{\infty}
 \end{align*}
+Si ricorda che l'introduzione del vortice libero serve per simulare l'effetto della presenza dello strato limite, il quale non viene considerato nelle ipotesi di flusso a potenziale con moto uniforme; è appunto questa vorticità che, separandosi dalla superficie del profilo, causa il diverso comportamento delle velocità in uscita tra intradosso ed estradosso
 
-In questo modo, anche senza avere la precisione che si avrebbe in una simulazione fluidodinamica del profilo, riesco a modellare in maniera snella anche una schiera di pale. Avrò semplicemente l'integrale all'ingresso e all'uscita della schiera su un volume di controllo.
+In questo modo, anche senza avere la precisione che si avrebbe in una simulazione fluidodinamica del profilo, riesco a modellare in maniera snella anche una schiera di pale. Basterà prendere un volume di controllo attorno alla singola pala della schiera ed individuare come linea di circuitazione una che segua esattamente la linea di corrente di attraversamento della schiera (AD e CB in figura \ref{fig:schiera1}).
+
 
 \section{Da profilo a schiera} 
 \begin{figure}
@@ -242,10 +306,10 @@ In questo modo, anche senza avere la precisione che si avrebbe in una simulazion
 \end{minipage}
 \end{figure}
 
-Abbiamo poi la possibilità di correlare il comportamento del profilo isolato tra angolo di attacco e coefficienti di lift e di drag (Figura \ref{fig:cdcl}). Per quanto riguarda il $c_L$ si avrà una parte sostanzialmente lineare mentre il coefficiente di drag è via via crescente. Si arriva infine ad un punto di stallo. Le schiere lavorano nella parte lineare ma posso valutare le prestazioni tentando di correlare quello che succede su un profilo a quello che succede su una schera di assegnara solidità.
+Abbiamo poi la possibilità di correlare il comportamento del profilo isolato tra angolo di attacco e coefficienti di lift e di drag (Figura \ref{fig:cdcl}). Per quanto riguarda il $c_L$ si avrà una parte sostanzialmente lineare mentre il coefficiente di drag è via via crescente. Si arriva infine ad un punto di stallo. Le schiere lavorano nella parte lineare ma posso valutare le prestazioni tentando di correlare quello che succede su un profilo a quello che succede su una schera di assegnata solidità.
 
 Statisticamente si diagramma anche cosa succede tra il rapporto coefficiente di lift e coefficiente di lift di profilo isolato e l'angolo di attacco rispetto al rapporto solidità su corda (Figura \ref{fig:EffSchiera}). 
-Il range di solidità a quale si fa riferimento varia tra $1$ e$ 1.5 - 1.6$ non si va oltre a $2$. L'angolo di schiera è tra i $45 - 52 \; gradi$. In questo range il coefficiente $c_L / c_{L \infty}$ è molto vicino all'unità. 
+Il range di solidità a quale si fa riferimento varia tra $1$ e$ 1.5 - 1.6$ non si va oltre a $2$. L'angolo di calettamento della schiera è tra i $4^{\circ}5 - 52^{\circ}$ come si vede tracciando le linee orizzontali della zona evidenziata nella figura \ref{fig:EffSchiera}. In questo range il coefficiente $c_L / c_{L \infty}$ è molto vicino all'unità. 
 
 In fase di progettazione si usano i dati del profilo isolato e si corregge il coefficiente secondo questi diagrammi. In contesto industriale si simula direttamente una schiera. 
 

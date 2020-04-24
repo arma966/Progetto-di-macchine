@@ -8,52 +8,52 @@
 \contentsline {section}{\numberline {1.5}Richiamo di termodinamica}{16}{section.1.5}% 
 \contentsline {chapter}{\numberline {2}Turbomacchine assiali - Generalità}{19}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Introduzione}{19}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}Nomenclatura}{19}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}Definizioni geometriche}{20}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}Definizioni per la corrente fluida}{20}{subsection.2.2.2}% 
-\contentsline {subsection}{\numberline {2.2.3}Forze}{20}{subsection.2.2.3}% 
-\contentsline {subsection}{\numberline {2.2.4}Adimensionalizzazione delle forze}{23}{subsection.2.2.4}% 
-\contentsline {section}{\numberline {2.3}Ipotesi di flusso a potenziale}{25}{section.2.3}% 
-\contentsline {section}{\numberline {2.4}Da profilo a schiera}{25}{section.2.4}% 
-\contentsline {subsection}{\numberline {2.4.1}Ugelli e diffusori}{26}{subsection.2.4.1}% 
-\contentsline {section}{\numberline {2.5}Schiere palari}{28}{section.2.5}% 
-\contentsline {subsection}{\numberline {2.5.1}Schiere di espansione}{28}{subsection.2.5.1}% 
-\contentsline {subsection}{\numberline {2.5.2}Schiere di compressione}{29}{subsection.2.5.2}% 
-\contentsline {section}{\numberline {2.6}Equilibrio radiale}{32}{section.2.6}% 
-\contentsline {subsection}{\numberline {2.6.1}Termodinamica}{33}{subsection.2.6.1}% 
-\contentsline {subsection}{\numberline {2.6.2}Ipotesi semplificative}{34}{subsection.2.6.2}% 
-\contentsline {section}{\numberline {2.7}Condizione di vortice libero}{35}{section.2.7}% 
-\contentsline {section}{\numberline {2.8}Vortice forzato}{36}{section.2.8}% 
-\contentsline {subsection}{\numberline {2.8.1}A valle del vortice forzato}{39}{subsection.2.8.1}% 
-\contentsline {section}{\numberline {2.9}Vortice generico}{40}{section.2.9}% 
-\contentsline {subsection}{\numberline {2.9.1}Angolo di palettatura costante}{41}{subsection.2.9.1}% 
-\contentsline {section}{\numberline {2.10}Portata in un condotto anulare}{42}{section.2.10}% 
-\contentsline {section}{\numberline {2.11}Condizioni di ingolfamento}{45}{section.2.11}% 
-\contentsline {section}{\numberline {2.12}Componente radiale non trascurabile}{47}{section.2.12}% 
-\contentsline {section}{\numberline {2.13}Moti secondari}{47}{section.2.13}% 
-\contentsline {chapter}{\numberline {3}Compressori assiali}{51}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Introduzione}{51}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Lavoro e triangoli di velocità}{53}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Termodinamica}{59}{section.3.3}% 
-\contentsline {section}{\numberline {3.4}Progettazione della schiera}{62}{section.3.4}% 
-\contentsline {subsection}{\numberline {3.4.1}Correlazioni di Howell}{62}{subsection.3.4.1}% 
-\contentsline {subsection}{\numberline {3.4.2}Condizioni fuori progetto}{66}{subsection.3.4.2}% 
-\contentsline {subsection}{\numberline {3.4.3}Criterio di carico}{68}{subsection.3.4.3}% 
-\contentsline {section}{\numberline {3.5}Schiere supersoniche}{70}{section.3.5}% 
-\contentsline {chapter}{\numberline {4}Turbine a flusso assiale e misto}{73}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Calcolo dei rendimenti}{74}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}Rendimenti}{75}{subsection.4.1.1}% 
-\contentsline {section}{\numberline {4.2}Proprietà termodinamiche del flusso}{79}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}Schiere palari}{80}{section.4.3}% 
-\contentsline {section}{\numberline {4.4}Prestazioni della schiera}{82}{section.4.4}% 
-\contentsline {subsection}{\numberline {4.4.1}Soderberg}{83}{subsection.4.4.1}% 
-\contentsline {subsection}{\numberline {4.4.2}Ainley-Mathieson}{84}{subsection.4.4.2}% 
-\contentsline {section}{\numberline {4.5}Criteri di carico}{87}{section.4.5}% 
-\contentsline {chapter}{\numberline {5}Macchine eoliche}{91}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Riferimenti}{91}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Il teorema di Betz}{91}{section.5.2}% 
-\contentsline {section}{\numberline {5.3}Definizione del problema}{93}{section.5.3}% 
-\contentsline {subsection}{\numberline {5.3.1}Coefficiente di perdita di velocità}{95}{subsection.5.3.1}% 
-\contentsline {subsection}{\numberline {5.3.2}Coefficiente di velocità specifica locale}{95}{subsection.5.3.2}% 
-\contentsline {subsection}{\numberline {5.3.3}Coefficiente di velocità angolare}{95}{subsection.5.3.3}% 
-\contentsline {section}{\numberline {5.4}Teoria del tubo di flusso anulare con scia vorticosa}{96}{section.5.4}% 
+\contentsline {section}{\numberline {2.2}Nomenclatura}{20}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Definizioni geometriche}{21}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Definizioni per la corrente fluida}{21}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.3}Forze}{22}{subsection.2.2.3}% 
+\contentsline {subsection}{\numberline {2.2.4}Adimensionalizzazione delle forze}{25}{subsection.2.2.4}% 
+\contentsline {section}{\numberline {2.3}Ipotesi di flusso a potenziale}{27}{section.2.3}% 
+\contentsline {section}{\numberline {2.4}Da profilo a schiera}{27}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.4.1}Ugelli e diffusori}{28}{subsection.2.4.1}% 
+\contentsline {section}{\numberline {2.5}Schiere palari}{30}{section.2.5}% 
+\contentsline {subsection}{\numberline {2.5.1}Schiere di espansione}{31}{subsection.2.5.1}% 
+\contentsline {subsection}{\numberline {2.5.2}Schiere di compressione}{31}{subsection.2.5.2}% 
+\contentsline {section}{\numberline {2.6}Equilibrio radiale}{34}{section.2.6}% 
+\contentsline {subsection}{\numberline {2.6.1}Termodinamica}{35}{subsection.2.6.1}% 
+\contentsline {subsection}{\numberline {2.6.2}Ipotesi semplificative}{36}{subsection.2.6.2}% 
+\contentsline {section}{\numberline {2.7}Condizione di vortice libero}{37}{section.2.7}% 
+\contentsline {section}{\numberline {2.8}Vortice forzato}{38}{section.2.8}% 
+\contentsline {subsection}{\numberline {2.8.1}A valle del vortice forzato}{40}{subsection.2.8.1}% 
+\contentsline {section}{\numberline {2.9}Vortice generico}{42}{section.2.9}% 
+\contentsline {subsection}{\numberline {2.9.1}Angolo di palettatura costante}{43}{subsection.2.9.1}% 
+\contentsline {section}{\numberline {2.10}Portata in un condotto anulare}{44}{section.2.10}% 
+\contentsline {section}{\numberline {2.11}Condizioni di ingolfamento}{48}{section.2.11}% 
+\contentsline {section}{\numberline {2.12}Componente radiale non trascurabile}{48}{section.2.12}% 
+\contentsline {section}{\numberline {2.13}Moti secondari}{50}{section.2.13}% 
+\contentsline {chapter}{\numberline {3}Compressori assiali}{53}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Introduzione}{53}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Lavoro e triangoli di velocità}{55}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}Termodinamica}{61}{section.3.3}% 
+\contentsline {section}{\numberline {3.4}Progettazione della schiera}{64}{section.3.4}% 
+\contentsline {subsection}{\numberline {3.4.1}Correlazioni di Howell}{64}{subsection.3.4.1}% 
+\contentsline {subsection}{\numberline {3.4.2}Condizioni fuori progetto}{68}{subsection.3.4.2}% 
+\contentsline {subsection}{\numberline {3.4.3}Criterio di carico}{70}{subsection.3.4.3}% 
+\contentsline {section}{\numberline {3.5}Schiere supersoniche}{72}{section.3.5}% 
+\contentsline {chapter}{\numberline {4}Turbine a flusso assiale e misto}{75}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Calcolo dei rendimenti}{76}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Rendimenti}{77}{subsection.4.1.1}% 
+\contentsline {section}{\numberline {4.2}Proprietà termodinamiche del flusso}{81}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Schiere palari}{82}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}Prestazioni della schiera}{84}{section.4.4}% 
+\contentsline {subsection}{\numberline {4.4.1}Soderberg}{85}{subsection.4.4.1}% 
+\contentsline {subsection}{\numberline {4.4.2}Ainley-Mathieson}{86}{subsection.4.4.2}% 
+\contentsline {section}{\numberline {4.5}Criteri di carico}{89}{section.4.5}% 
+\contentsline {chapter}{\numberline {5}Macchine eoliche}{93}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Riferimenti}{93}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Il teorema di Betz}{93}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Definizione del problema}{95}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}Coefficiente di perdita di velocità}{97}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}Coefficiente di velocità specifica locale}{97}{subsection.5.3.2}% 
+\contentsline {subsection}{\numberline {5.3.3}Coefficiente di velocità angolare}{97}{subsection.5.3.3}% 
+\contentsline {section}{\numberline {5.4}Teoria del tubo di flusso anulare con scia vorticosa}{98}{section.5.4}% 
