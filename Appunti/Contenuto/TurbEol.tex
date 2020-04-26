@@ -120,9 +120,9 @@ Si definisce ora il coefficiente di velocità specifica locale all'estremità de
 \lambda = \frac{u}{V_1} = \frac{\Omega R}{V_1} 
 \end{align*}
 Lo stesso coefficiente per un punto $r$ generico lo posso esprimere in funzione di $\lambda$
-\begin{align*}
+\begin{equation}\label{eq:deflambdar}
 \lambda_r = \frac{\Omega \cdot r}{V_1} = \frac{\lambda \cdot r}{R} 
-\end{align*}
+\end{equation}
 \subsection{Coefficiente di velocità angolare}
 La velocità angolare della turbina è pari a $\Omega$. L'interazione delle pale del rotore con l'aria introduce su quest'ultima una componente rotazionale, la cui velocità angolare è pari a $\omega$. Si definisce la relazione tra dette velocità angolari come 
 \begin{align*}
@@ -202,9 +202,9 @@ V_1^2 a \left( 1 - a \right) = \Omega^2 a' \left( 1 + a' \right) r^2
 \frac{a \left( 1 - a \right)}{a' \left(1 + a' \right)} = \frac{\Omega^2 r^2}{V_1^2}
 \end{align*}
 ricordando l'espressione del coefficiente di velocità specifica locale $\lambda_R$
-\begin{align*}
+\begin{equation}\label{eq:lambdara}
 \lambda_r = \frac{a \left(1 - a \right)}{a' \left( 1 + a' \right)}
-\end{align*}
+\end{equation}
 Ora che si conoscono i rapporti tra $a$, $a'$ e $\lambda_r$ si può calcolare la potenza erogata dal differenziale di pala. Dalla figura \ref{fig:triangEol} si desume che la componente assiale di velocità del vento $V$ rimane costante nell'attraversamento della pala, è solo la componente tangenziale a generare lavoro. Per calcolare la forza tangenziale scrivo l'impulso 
 \begin{align*}
 F \cdot t = m \cdot \Delta V
@@ -221,7 +221,114 @@ assumendo che l'aria si comporti come un fluido incompressibile, fatto che si ri
 \begin{align*}
 dq = \rho dS V
 \end{align*}
-Dalla 
+Quando l'aria attraversa la turbina, la componente di flusso assiale non subisce variazioni di velocità (per le ipotesi del teorema di Betz) mentre la componente di flusso tangenziale subisce una variazione di velocità $\Delta V$ data da
+\begin{align*}
+\Delta V = \left( \Omega + \omega \right) \cdot r - \Omega \cdot r = \omega \cdot r
+\end{align*}
+per cui è possibile esprimere la forza tangenziale esercitata dall'aria sull0elemento differenziale di pala all'interno della corona di area $dS$ come:
+\begin{align*}
+dF_t = \rho dS V \omega r
+\end{align*}
+Si piò dunque rimpiazzare $dS$ per la sua espressione completa, e e $V$ per il suo equivalente in funzione della velocità del vento nota, $V_1$, utilizzando questo scopo il coefficiente $a$
+\begin{align*}
+dF_t &= \rho \left( 2 \pi r dr \right) \left[ V_1 \left(1 -a \right) \right] \omega r\\
+& = 2 \pi \rho V_1 \left( 1-a \right) \omega r^2 dr
+\end{align*}
+Rimpiazziamo ora la grandezza ignota $\omega$ per il suo equivalente, utilizzando il coefficiente $a'$
+\begin{align*}
+dF_t &= 2 \pi \rho V_1 \left( 1- a \right) 2 \Omega a' r^2 dr = \\
+&= 4 \pi \rho V_1 \left(1-a \right) \Omega a' r^2 dr
+\end{align*}
+La potenza generata da questa forza, per definizione, è uguale al prodotto fra il momento che produce rispetto al centro di rotazione e la sua velocità angolare, si avrà quindi
+\begin{align*}
+dP &= 4 \pi \rho V_1 \left( 1-a \right) \Omega a' r^2 dr r \Omega \\
+&= 4 \pi \rho V_1 \left( 1-a \right) \Omega^2 a' r^3 dr
+\end{align*}
+Si rimpiazza ora $\Omega^2$ per il suo equivalente in funzione di $\lambda_r$
+\begin{align*}
+dP &= 4 \pi \rho V_1^3 \left( 1- a \right) \frac{\lambda_r^2}{r^2} a' r^3 dr\\
+&= 4 \pi \rho V_1^3 \left( 1 - a \right) \lambda_r^2 a' r dr
+\end{align*}
+Siccome $\lambda_r > 0$, la potenza sarà massima quando il prodotto $a' \left( 1- a' \right)$ sarà massimo, cioè quando la sua derivata sarà nulla. Siccome $a$ e $a'$ sono funzioni una dell'altra, allora la derivata del prodotto di due funzioni si calcola la derivata con la regola del prodotto
+\begin{align*}
+\frac{d}{da} \left( 1-a \right) a' + \left( 1 -a \right) \frac{da'}{da} = 0
+\end{align*}
+\begin{align*}
+\left( 1- a \right) \frac{da'}{da} = a'
+\end{align*}
+\begin{equation}\label{eq:aa'}
+\left(1 - a \right) da' = a' da
+\end{equation}
+Sappiamo che $a$ e $a'$ sono legate dall'equazione \ref{eq:lambdara}, la quale possiamo riscrivere come
+\begin{align*}
+\lambda_r^2 a' \left( 1+ a' \right) = a \left( 1 - a \right)
+\end{align*}
+Siccome $a'$ è funzione di $a$, possiamo differenziare membro a membro rispetto a quest'ultima
+\begin{align*}
+\lambda_r^2 \left( 1+ 2a' \right) \frac{da'}{da} = \left( 1 - 2a \right)
+\end{align*}
+\begin{equation}\label{eq:lambdaaa'}
+\lambda_r^2 \left( 1+ 2a' \right) da' = \left( 1 - 2a \right)da
+\end{equation}
+Moltiplicando membro a membro la \ref{eq:aa'} e la \ref{eq:lambdaaa'} si ottiene
+\begin{align*}
+\lambda_r^2 \left( 1 + 2a' \right) a' da da' = \left( 1 - 2a \right) \left( 1-a \right) da da'
+\end{align*}
+\begin{align*}
+\lambda_r^2 \left( 1 + 2a' \right) a' = \left( 1- 2a \right) \left(1 -a \right)
+\end{align*}
+Rimpiazzando ora il valore $\lambda_r^2$ dall'equazione \ref{eq:lambdara} risulta
+\begin{align*}
+\frac{a \left(1 - a \right)}{a' \left(1 + a' \right)} = \frac{\left( 1 - 2a \right) \left( 1 -a \right)}{\left(1 + 2a' \right) a'}
+\end{align*}
+\begin{align*}
+\frac{a}{\left( 1 + a' \right)} = \frac{\left( 1 - 2a \right)}{\left( 1 + 2a' \right)}
+\end{align*}
+\begin{align*}
+a + 2 a a' = 1 - 2a + a' - 2aa'
+\end{align*}
+\begin{align*}
+4aa' -a' = 1 - 3a
+\end{align*}
+\begin{equation}\label{eq:finala'a}
+a' = \frac{1 - 3a}{4a -1}
+\end{equation}
+Riassumendo, le equazioni \ref{eq:lambdara} e \ref{eq:finala'a} vincolano $a$, $a'$ e $\lambda$ affinchè la potenza estratta sia massima.
+
+Si rimpiazza ora $r$ nell'equazione \ref{eq:deflambdar} per il suo equivalente in funzione di $\lambda_r$ definito nella \ref{eq:deflambdar}
+\begin{align*}
+dP = 4 \pi \rho V_1^3 a' \left( 1 - a \right) \lambda_r^2 \frac{R \lambda_r}{\lambda} dr
+\end{align*}
+Si può poi sostituire $dr$ come segue
+\begin{align*}
+\frac{dr}{d \lambda_r} = \frac{R}{\lambda} \; \Rightarrow \; dr = \frac{R}{\lambda} d \lambda_r
+\end{align*}
+\begin{align*}
+dP &= 4 \pi \rho V_1^3 a' \left(1 - a \right) \lambda_r^2 \frac{R \lambda_r}{\lambda} \frac{R}{\lambda} d \lambda_r\\
+&= 4 \pi \rho V_1^3 \frac{R^2}{\lambda^2} a' \left( 1 - a \right) \lambda_r^3 d\lambda_r
+\end{align*}
+Pertanto è possibile ottenere la potenza totale prodotta dalla turbina integrando tra $\lambda_r = 0$ (centro del rotore) e $\lambda_r = \lambda$ (estremità della pala). Quindi:
+\begin{align*}
+P = 4 \pi \rho V_1^3 \frac{R^2}{\lambda^2} \int_0^{\lambda} a' \left( 1 - a \right) \lambda_r^3 d \lambda_r
+\end{align*}
+In queste condizioni il coefficiente di potenza $c_p$ vale:
+\begin{align*}
+c_p = \cfrac{P}{\cfrac{\rho}{2} V_1^3 \pi R^2} = \cfrac{4 \pi \rho V_1^3 R^2}{\cfrac{\rho}{2} V_1^3 \pi R^2 \lambda^2} \int_0^{\lambda} a' \left(1 - a \right) \lambda_r^3 d \lambda_r
+\end{align*}
+\begin{equation}
+c_p = \frac{8}{\lambda^2} \int_0^{\lambda} a' \left( 1 - a \right) \lambda_r^3 d \lambda_r
+\end{equation}
+La risoluzione algebrica dell'integrale di Glauert è estremamente difficile, la soluzione deve essere quindi rivavata per via numerica.
+
+La teoria di Glauert evidenzia che il rendimento aerodinamico cresce con $\lambda$ e si avvicina in modo asintotico al limite di Betz. Con questa teoria non siamo ancora in grado di progettare una pala, ma le espressioni ottenute in precedenza ci servono a definire le condizioni al contorno che ogni elemento di pala deve soddisfare affinchè la pala, nel suo insieme, risulti ottima.
+
+\section{Forze aerodinamiche sull'elemento di pala}
+Ora verrà affrontata la progettazione delle pale dal punto di vista delle forze aerodinamiche agenti sull'elemento differenziale della pala già definito nella figura \ref{fig:frontlatEol}. 
+
+Risulta doveroso fare una premessa: nella progettazione di turbine commerciali di grande taglia generalmente si utilizzano modelli di calcolo più sofisticati di quello che esporremo in seguito. Poichè i profili delle pale delle turbine di piccola potenza operano in condizioni di basso $Re$ e, considerando che in prossimità del suolo il profilo di velocità del vento è irregolare, non ha senso basare il progetto delle pale su teorie più complesse. La validità del metodo descritto di seguito è stata counque verificata in galleria del vento, per maggiori approfondimenti si faccia riferimento alla bibliografia del libro citato all'inizio di questo capitolo. 
+
+
+
 
 
 
@@ -231,3 +338,4 @@ Dalla
 \caption{}
 \label{fig:triangEol2}
 \end{figure}
+

@@ -5,7 +5,8 @@
 \contentsline {section}{\numberline {1.2}Influenza di Re}{9}{section.1.2}% 
 \contentsline {section}{\numberline {1.3}Effetto scala}{10}{section.1.3}% 
 \contentsline {section}{\numberline {1.4}Flusso comprimibile}{11}{section.1.4}% 
-\contentsline {section}{\numberline {1.5}Richiamo di termodinamica}{16}{section.1.5}% 
+\contentsline {section}{\numberline {1.5}Richiamo di termodinamica}{15}{section.1.5}% 
+\contentsline {section}{\numberline {1.6}Rendimenti per i compressori}{17}{section.1.6}% 
 \contentsline {chapter}{\numberline {2}Turbomacchine assiali - Generalità}{19}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Introduzione}{19}{section.2.1}% 
 \contentsline {section}{\numberline {2.2}Nomenclatura}{20}{section.2.2}% 
@@ -35,18 +36,18 @@
 \contentsline {section}{\numberline {3.1}Introduzione}{53}{section.3.1}% 
 \contentsline {section}{\numberline {3.2}Lavoro e triangoli di velocità}{55}{section.3.2}% 
 \contentsline {section}{\numberline {3.3}Termodinamica}{61}{section.3.3}% 
-\contentsline {section}{\numberline {3.4}Progettazione della schiera}{64}{section.3.4}% 
-\contentsline {subsection}{\numberline {3.4.1}Correlazioni di Howell}{64}{subsection.3.4.1}% 
+\contentsline {section}{\numberline {3.4}Progettazione della schiera}{63}{section.3.4}% 
+\contentsline {subsection}{\numberline {3.4.1}Correlazioni di Howell}{63}{subsection.3.4.1}% 
 \contentsline {subsection}{\numberline {3.4.2}Condizioni fuori progetto}{68}{subsection.3.4.2}% 
 \contentsline {subsection}{\numberline {3.4.3}Criterio di carico}{70}{subsection.3.4.3}% 
 \contentsline {section}{\numberline {3.5}Schiere supersoniche}{72}{section.3.5}% 
 \contentsline {chapter}{\numberline {4}Turbine a flusso assiale e misto}{75}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Calcolo dei rendimenti}{76}{section.4.1}% 
 \contentsline {subsection}{\numberline {4.1.1}Rendimenti}{77}{subsection.4.1.1}% 
-\contentsline {section}{\numberline {4.2}Proprietà termodinamiche del flusso}{81}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}Schiere palari}{82}{section.4.3}% 
-\contentsline {section}{\numberline {4.4}Prestazioni della schiera}{84}{section.4.4}% 
-\contentsline {subsection}{\numberline {4.4.1}Soderberg}{85}{subsection.4.4.1}% 
+\contentsline {section}{\numberline {4.2}Proprietà termodinamiche del flusso}{80}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Schiere palari}{81}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}Prestazioni della schiera}{83}{section.4.4}% 
+\contentsline {subsection}{\numberline {4.4.1}Soderberg}{86}{subsection.4.4.1}% 
 \contentsline {subsection}{\numberline {4.4.2}Ainley-Mathieson}{86}{subsection.4.4.2}% 
 \contentsline {section}{\numberline {4.5}Criteri di carico}{89}{section.4.5}% 
 \contentsline {chapter}{\numberline {5}Macchine eoliche}{93}{chapter.5}% 
@@ -57,3 +58,4 @@
 \contentsline {subsection}{\numberline {5.3.2}Coefficiente di velocità specifica locale}{97}{subsection.5.3.2}% 
 \contentsline {subsection}{\numberline {5.3.3}Coefficiente di velocità angolare}{97}{subsection.5.3.3}% 
 \contentsline {section}{\numberline {5.4}Teoria del tubo di flusso anulare con scia vorticosa}{98}{section.5.4}% 
+\contentsline {section}{\numberline {5.5}Forze aerodinamiche sull'elemento di pala}{103}{section.5.5}% 
