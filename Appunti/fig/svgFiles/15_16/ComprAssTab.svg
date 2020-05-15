@@ -914,9 +914,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="948.01031"
-     inkscape:cy="383.38278"
+     inkscape:zoom="0.7"
+     inkscape:cx="503.80375"
+     inkscape:cy="1496.3665"
      inkscape:document-units="mm"
      inkscape:current-layer="layer24"
      showgrid="false"
@@ -1486,7 +1486,7 @@
          id="tspan19364"
          x="-72.878899"
          y="89.774559"
-         style="stroke-width:0.26458332">r = 1+λ/4</tspan></text>
+         style="stroke-width:0.26458332">R = 1+λ/4</tspan></text>
     <text
        id="text19370"
        y="158.46283"
@@ -1497,7 +1497,7 @@
          y="158.46283"
          x="-72.878899"
          id="tspan19368"
-         sodipodi:role="line">r = 1</tspan></text>
+         sodipodi:role="line">R = 1</tspan></text>
     <text
        id="text19374"
        y="223.94386"
@@ -1508,7 +1508,7 @@
          y="223.94386"
          x="-72.878899"
          id="tspan19372"
-         sodipodi:role="line">r = 1-λ/4</tspan></text>
+         sodipodi:role="line">R = 1-λ/4</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -2373,7 +2373,7 @@
          id="tspan26227"
          x="-72.878899"
          y="282.07498"
-         style="stroke-width:0.26458332">r = 1/2</tspan></text>
+         style="stroke-width:0.26458332">R = 1/2</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -2384,7 +2384,7 @@
          id="tspan26231"
          x="-72.878899"
          y="347.42239"
-         style="stroke-width:0.26458332">r = λ/4</tspan></text>
+         style="stroke-width:0.26458332">R = λ/4</tspan></text>
     <text
        id="text26237"
        y="414.70215"
@@ -2395,7 +2395,7 @@
          y="414.70215"
          x="-72.878899"
          id="tspan26235"
-         sodipodi:role="line">r = 0</tspan></text>
+         sodipodi:role="line">R = 0</tspan></text>
     <text
        id="text26241"
        y="477.58264"
@@ -2406,7 +2406,7 @@
          y="477.58264"
          x="-72.878899"
          id="tspan26239"
-         sodipodi:role="line">r = -λ/4</tspan></text>
+         sodipodi:role="line">R = -λ/4</tspan></text>
     <path
        sodipodi:nodetypes="ssscs"
        inkscape:connector-curvature="0"

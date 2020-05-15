@@ -474,7 +474,7 @@ Riassumento:
 Posso esprimere tutte le grandezze fin'ora viste in un piano $T-s$ o $h-s$.
 
 \section{Rendimenti per i compressori}
-Si riporta la trattazione dei rendimenti fatta per i compressori, i concetti riposrtati valgono anche per le turbine, cambiano solamente le condizioni al contorno. La seguente trattazione è un estratto del libro Macchine a fluido, ISBN 978-88-251-7397-0. 
+Si riporta la trattazione dei rendimenti fatta per i compressori, i concetti riposrtati valgono anche per le turbine, cambia solamente le convenzione nei segni. La seguente trattazione è un estratto del libro Macchine a fluido, ISBN 978-88-251-7397-0. 
 
 Il rendimento è definito qualitativamente come il rapporto tra l'effetto utile ed il lavoro svolto dalla macchina. Sul lavoro svolto non ci sono ambiguità mentre in merito all'effetto utile si possono avere diverse formulazioni. Il lavoro utile può essere preso come il salto entalpico associato al rapporto di compressione tra le pressioni statiche o totali ingresso-uscita, oppure come combinazione tra grandezze statiche e totali tra ingresso e uscita. Le diverse definizioni di rendimento sono sostanzialmente da imputare alle quote cinetiche ingresso/uscita che possono essere contate o meno come effetto utile.
 \begin{figure}
@@ -483,4 +483,73 @@ Il rendimento è definito qualitativamente come il rapporto tra l'effetto utile 
 \caption{}
 \label{fig:schieraTComp}
 \end{figure}
+Con riferimento alla trasformazione termodinamica, trascurando i contributi cinetici all'ingresso e all'uscita, si possono definire il rendimento adiabatico ed il rendimento poitropico. Tale approccio è spesso utilizzato quando non si vuole entrare nel dettaglio della macchina come invece è necessario fare quando si vogliono studiare le prestazioni dei singoli stadi. 
+
+Nel caso di rendimento adiabatico, definendo con $l_{is}$ il lavoro lungo la trasformazione isoentropica e con $l_r$ quello lungo l'adiabatica reale e facendo rifermimento alla \ref{fig:Rend1}, la definizione diventa
+\begin{align*}
+\eta_{ad} = \frac{h_{2'} - h_1}{h_2 - h_1} = \frac{c_p \left( T_{2'} - T_1 \right)}{c_p \left( T_2 - T_1 \right)} = \frac{\left( \beta^{\cfrac{\gamma -1}{\gamma}} -1 \right)}{\left( \beta^{\cfrac{n -1}{n}} -1 \right)} = \frac{l_{is}}{l_r}
+\end{align*}
+Avendo assunto $c_p = cost$ con la temperatura e pressione, ed essendo $\gamma$ l'indice dell'isoentropica ed $n$ quello della politropica corrispondente alla trasformazione reale. La scelta di questa definizione, oltre al facile utilizzo, è quella di fornire una indicazione diretta dello scostamento della trasformazione da quella migliore possibile che è l'isoentropica, senza dedicare particolare attenzione alle energie cinetiche presenti all'interno del sistema macchina.
+\begin{figure}
+\centering
+\begin{minipage}{.45\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{fig/Rend1.pdf}
+  \captionof{figure}{}
+  \label{fig:Rend1}
+\end{minipage}%
+\begin{minipage}{.55\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{fig/Rend2.pdf}
+  \captionof{figure}{}
+  \label{fig:Rend2}
+\end{minipage}
+\end{figure}
+Un'altra applicazione è il rendimento politropico che assume la trasformazione politropica reversibile tra i punti $1$ e $2$ come rierimento per la trasformazione reale. Tale assunzione viene incontro alla necessità, nel caso di macchine multistadio - o a singolo stadio ma con elevato rapporto di compressione - di non imputare ad una porzione di trasformazione la storia dei volumi specifici precedenti ed in particolar modo le irreversibilità precedenti. Con riferimento alla \ref{fig:Rend2}, dividendo la trasformazione in 3 porzioni, l'ultima parte della compressione richiede un salto entalpico pari a $\Delta h_r = h_3 - h_2$ che può essere confrontato con $\Delta h_{is} = h_{3'} - h_{2'}$ oppure con $\Delta h_is = h_{3''} - h_2$ a seconda dell'analisi che si vuole compiere sulla macchina.
+
+Qualora si voglia analizzare il singolo stadio, o la singola porszione di trasformazione, allora appare corretto confrontare il salto reale con quello tra i punti $3''$ e $2$ in quanto più attinente alla trasformazione reale oggetto dell'attenzione. A causa della divergenza delle isobare il salto entalpico $3''$ e $2$ risulta maggiore di quello $3'$ e $2'$, dando luogo ad un rendimento maggiore. Se tale ragionamento viene esteso a porzioni infinitesime di compressione ci si avvicina alla definizione di rendimento politropico.
+
+La scelta della trasformazione politropica reversibile - che tiene conto al suo interno di un riscaldamento del fluido operato da una sorgente esterna ma equivalente a quello causato dalle irreversibilità - consente di evidenziare il solo contributo delle irreversibilità e cioè del termine $\int Tds$.
+
+Considerata allora la trasformazione 1-2, chiamato $l_p$ il lavoro lungo la politropica reversibile e $l_r$ il lavoro lungo la trasformazione adiabatica reale, il rendimento assume la seguente forma
+%\begin{align*}
+%\eta_p = \frac{l_p}{l_r} = \frac{\frac{nRT_1}{n-1} \left[ \left( \frac{p_2}{p_1} \right)^{\frac{n-1}{n} -1 \right]}{\frac{ \gamma RT_1}{\gamma-1} \left[ \left( \frac{p_2}{p_1} \right)^{\frac{n-1}{n} -1 \right]} = \frac{n}{\gamma} \frac{\gamma -1}{n -1}
+%\end{align*}
+Confrontando i due rendimenti a pari rapporto di compresisone si vede come la differenza tra rendimento politropico e adiabatico aumenti al crescere del rapporto di compressione e che il rendimento adiabatico è sempre minore del politropico.
+\begin{figure}
+\centering
+\begin{minipage}{.45\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{fig/Rend3.pdf}
+  \captionof{figure}{}
+  \label{fig:Rend3}
+\end{minipage}%
+\begin{minipage}{.55\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{fig/Rend4.pdf}
+  \captionof{figure}{}
+  \label{fig:Rend4}
+\end{minipage}
+\end{figure}
+Infatti poichè $\eta_p = l_p / l_r$ e $\eta_{ad} = l_{is} / l_r$, si ottiene
+\begin{align*}
+\eta_{ad} = \eta_p \frac{l_is}{l_r} = \eta_p \frac{\frac{\gamma}{\gamma-1} \left(\beta^{\frac{\gamma -1}{\gamma}}-1 \right)}{\frac{n}{n-1} \left(\beta^{\frac{n -1}{n}}-1 \right)}
+\end{align*}
+ed essendo $l_p$> $l_{is}$ si ottiene $\eta_{ad} < \eta_p$. Al fine di evidenziare al differenza tra le due trasformazioni è possibile definire il lavoro di controrecupero definito come
+\begin{align*}
+f = \frac{l_p - l_{is}}{l_{is}} = \frac{l_p}{l_{is}} -1 = \eta_p \frac{\left( \beta^{\frac{n-1}{n}} -1 \right)}{\left( \beta^{\frac{\gamma-1}{\gamma}} -1 \right)} -1 = \frac{\eta_p}{\eta_{ad}} -1
+\end{align*}
+Al crescere della diferenza tra i due rendimenti, il fattore di controrecupero aumenta. Tale fattore è sempre maggiore di zero e si annulla quando i due rendimenti sono uguali, cioè quando non ci sono effetti termici sulla densità come avviene per le macchine idrauliche.
+
+Qualora si voglia studiare gli effetti delle quote cinetiche, è possibile definire diversi tipi di rendimento, sempre definiti nella scia del rendimento adiabatico, denominati "total to total" e "total to static". Con rierimento alla \ref{fig:Rend4} si definiscono
+\begin{itemize}
+\item Rendimento total to total
+\begin{align*}
+\eta_{T,T} = \frac{\Delta h_{T,is}}{\Delta h_T} = \frac{h_{T,2'} - h_{T,1}}{h_{T,2} - h_{T,1}} = \frac{h_{2'} - h_1 + \left( \frac{c_2^2 - c_1^2}{2} \right)}{h_2 - h_1 + \left( \frac{c_2^2 - c_1^2}{2} \right)} = \frac{h_{2'} - h_1 + \left( \frac{c_2^2 - c_1^2}{2} \right)}{l_r} = \frac{l_{is}}{l_r}
+\end{align*}
+\item Rentimento Total to Static
+\begin{align*}
+\eta_{T,S} = \frac{h_{2'} - h_{T,1}}{h_{T,2} - h_{T,1}} = \frac{h_{2'} - h_1 - \left( \frac{ c_1^2}{2} \right)}{h_2 - h_1 + \left( \frac{c_2^2 - c_1^2}{2} \right)} = \frac{h_{2'} - h_1 + \left( \frac{c_2^2 - c_1^2}{2} \right)}{l_r} = \frac{l_{is}}{l_r}
+\end{align*}
+\end{itemize}
 \pagebreak
