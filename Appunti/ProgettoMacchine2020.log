@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.25)  19 MAY 2020 20:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.25)  20 MAY 2020 16:36
 entering extended mode
 **./ProgettoMacchine2020.tex
 (ProgettoMacchine2020.tex
@@ -529,9 +529,6 @@ LaTeX Warning: Label `' multiply defined.
 
 LaTeX Warning: Label `fig:ReticoloComp' multiply defined.
 
-
-LaTeX Warning: Label `fig:TurboFan' multiply defined.
-
 ) (Contenuto/ComprAss.aux
 
 LaTeX Warning: Label `' multiply defined.
@@ -931,33 +928,33 @@ File: fig/trigrel.pdf Graphic file (type pdf)
 <use fig/trigrel.pdf>
 Package pdftex.def Info: fig/trigrel.pdf  used on input line 229.
 (pdftex.def)             Requested size: 201.60205pt x 75.7322pt.
- [27 <./fig/triang1.pdf>] [28 <./fig/trigrel.pdf>]
-<fig/cdcl.pdf, id=1022, 386.3002pt x 345.43784pt>
+ [27 <./fig/triang1.pdf>] [28 <./fig/trigrel.pdf>] [29]
+<fig/cdcl.pdf, id=1026, 386.3002pt x 345.43784pt>
 File: fig/cdcl.pdf Graphic file (type pdf)
 <use fig/cdcl.pdf>
-Package pdftex.def Info: fig/cdcl.pdf  used on input line 298.
+Package pdftex.def Info: fig/cdcl.pdf  used on input line 309.
 (pdftex.def)             Requested size: 95.76067pt x 85.62657pt.
-<fig/EffSchiera.pdf, id=1023, 913.43216pt x 548.2118pt>
+<fig/EffSchiera.pdf, id=1027, 913.43216pt x 548.2118pt>
 File: fig/EffSchiera.pdf Graphic file (type pdf)
 <use fig/EffSchiera.pdf>
-Package pdftex.def Info: fig/EffSchiera.pdf  used on input line 304.
+Package pdftex.def Info: fig/EffSchiera.pdf  used on input line 315.
 (pdftex.def)             Requested size: 223.4383pt x 134.09975pt.
- [29]
-<fig/Ugello.pdf, id=1032, 236.99152pt x 302.46353pt>
-File: fig/Ugello.pdf Graphic file (type pdf)
-<use fig/Ugello.pdf>
-Package pdftex.def Info: fig/Ugello.pdf  used on input line 323.
-(pdftex.def)             Requested size: 100.80103pt x 128.64914pt.
-<fig/Diffusore.pdf, id=1033, 236.99152pt x 302.46353pt>
-File: fig/Diffusore.pdf Graphic file (type pdf)
-<use fig/Diffusore.pdf>
-Package pdftex.def Info: fig/Diffusore.pdf  used on input line 329.
-(pdftex.def)             Requested size: 100.80103pt x 128.64914pt.
  [30 <./fig/cdcl.pdf> <./fig/EffSchiera.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/EffSchiera.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
->] [31 <./fig/Ugello.pdf> <./fig/Diffusore.pdf
+>]
+<fig/Ugello.pdf, id=1083, 236.99152pt x 302.46353pt>
+File: fig/Ugello.pdf Graphic file (type pdf)
+<use fig/Ugello.pdf>
+Package pdftex.def Info: fig/Ugello.pdf  used on input line 334.
+(pdftex.def)             Requested size: 100.80103pt x 128.64914pt.
+<fig/Diffusore.pdf, id=1084, 236.99152pt x 302.46353pt>
+File: fig/Diffusore.pdf Graphic file (type pdf)
+<use fig/Diffusore.pdf>
+Package pdftex.def Info: fig/Diffusore.pdf  used on input line 340.
+(pdftex.def)             Requested size: 100.80103pt x 128.64914pt.
+ [31 <./fig/Ugello.pdf> <./fig/Diffusore.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/Diffusore.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
@@ -965,245 +962,222 @@ e pdfs with page group included in a single page
 <fig/stallo.pdf, id=1106, 877.97775pt x 506.05186pt>
 File: fig/stallo.pdf Graphic file (type pdf)
 <use fig/stallo.pdf>
-Package pdftex.def Info: fig/stallo.pdf  used on input line 384.
+Package pdftex.def Info: fig/stallo.pdf  used on input line 394.
 (pdftex.def)             Requested size: 235.19897pt x 135.5625pt.
 <fig/DiffPerf.pdf, id=1107, 663.02779pt x 512.49414pt>
 File: fig/DiffPerf.pdf Graphic file (type pdf)
 <use fig/DiffPerf.pdf>
-Package pdftex.def Info: fig/DiffPerf.pdf  used on input line 390.
+Package pdftex.def Info: fig/DiffPerf.pdf  used on input line 400.
 (pdftex.def)             Requested size: 168.0pt x 129.85925pt.
- [32 <./fig/stallo.pdf>] [33 <./fig/DiffPerf.pdf>]
-Overfull \hbox (9.8935pt too wide) detected at line 460
+ [32] [33 <./fig/stallo.pdf> <./fig/DiffPerf.pdf
+
+pdfTeX warning: pdflatex.exe (file ./fig/DiffPerf.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+>] [34]
+Overfull \hbox (11.10526pt too wide) detected at line 473
 []
  []
 
-<fig/SchiereCompr.pdf, id=1155, 947.38213pt x 435.50464pt>
+<fig/SchiereCompr.pdf, id=1159, 947.38213pt x 435.50464pt>
 File: fig/SchiereCompr.pdf Graphic file (type pdf)
 <use fig/SchiereCompr.pdf>
-Package pdftex.def Info: fig/SchiereCompr.pdf  used on input line 476.
+Package pdftex.def Info: fig/SchiereCompr.pdf  used on input line 487.
 (pdftex.def)             Requested size: 336.0pt x 154.4557pt.
-[34] [35 <./fig/SchiereCompr.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 520--523
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 531--534
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 542--545
+[36 <./fig/SchiereCompr.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 553--556
 
  []
 
 File: fig/ReticoloComp.pdf Graphic file (type pdf)
 <use fig/ReticoloComp.pdf>
-Package pdftex.def Info: fig/ReticoloComp.pdf  used on input line 556.
+Package pdftex.def Info: fig/ReticoloComp.pdf  used on input line 568.
 (pdftex.def)             Requested size: 268.80103pt x 160.57735pt.
-<fig/concio.pdf, id=1180, 617.30624pt x 384.6872pt>
+<fig/concio.pdf, id=1184, 617.30624pt x 384.6872pt>
 File: fig/concio.pdf Graphic file (type pdf)
 <use fig/concio.pdf>
-Package pdftex.def Info: fig/concio.pdf  used on input line 562.
+Package pdftex.def Info: fig/concio.pdf  used on input line 574.
 (pdftex.def)             Requested size: 201.60205pt x 125.63231pt.
-[36] [37 <./fig/concio.pdf>]
-
-LaTeX Warning: Reference `eq:PrimoPrinc' on page 38 undefined on input line 596
-.
-
-
-LaTeX Warning: Reference `eq:EquilibrioRad' on page 38 undefined on input line 
-600.
-
-[38] [39]
-<fig/VorticeLibero.pdf, id=1209, 725.71124pt x 551.05875pt>
+[37] [38 <./fig/concio.pdf>] [39] [40]
+<fig/VorticeLibero.pdf, id=1220, 725.71124pt x 551.05875pt>
 File: fig/VorticeLibero.pdf Graphic file (type pdf)
 <use fig/VorticeLibero.pdf>
-Package pdftex.def Info: fig/VorticeLibero.pdf  used on input line 669.
+Package pdftex.def Info: fig/VorticeLibero.pdf  used on input line 684.
 (pdftex.def)             Requested size: 268.80103pt x 204.11557pt.
- [40 <./fig/VorticeLibero.pdf>]
-
-LaTeX Warning: Reference `eq:SolCost' on page 41 undefined on input line 716.
-
-[41]
-<fig/VortForz.pdf, id=1237, 598.03731pt x 522.66887pt>
+ [41 <./fig/VorticeLibero.pdf>] [42]
+<fig/VortForz.pdf, id=1251, 598.03731pt x 522.66887pt>
 File: fig/VortForz.pdf Graphic file (type pdf)
 <use fig/VortForz.pdf>
-Package pdftex.def Info: fig/VortForz.pdf  used on input line 747.
+Package pdftex.def Info: fig/VortForz.pdf  used on input line 765.
 (pdftex.def)             Requested size: 268.80103pt x 234.91968pt.
-<fig/PVortForz.pdf, id=1238, 558.58687pt x 490.0809pt>
+<fig/PVortForz.pdf, id=1252, 558.58687pt x 490.0809pt>
 File: fig/PVortForz.pdf Graphic file (type pdf)
 <use fig/PVortForz.pdf>
-Package pdftex.def Info: fig/PVortForz.pdf  used on input line 753.
+Package pdftex.def Info: fig/PVortForz.pdf  used on input line 771.
 (pdftex.def)             Requested size: 268.80103pt x 235.84187pt.
- [42] [43 <./fig/VortForz.pdf> <./fig/PVortForz.pdf
+
+[43] [44 <./fig/VortForz.pdf> <./fig/PVortForz.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/PVortForz.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 780--783
-
- []
-
-<fig/HubShroud.pdf, id=1287, 385.08075pt x 288.21297pt>
+<fig/HubShroud.pdf, id=1300, 385.08075pt x 288.21297pt>
 File: fig/HubShroud.pdf Graphic file (type pdf)
 <use fig/HubShroud.pdf>
-Package pdftex.def Info: fig/HubShroud.pdf  used on input line 814.
+Package pdftex.def Info: fig/HubShroud.pdf  used on input line 828.
 (pdftex.def)             Requested size: 134.39795pt x 100.59018pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[44] [45 <./fig/HubShroud.pdf>]
-<fig/AngPalCost.pdf, id=1307, 609.77812pt x 514.92375pt>
+ [45 <./fig/HubShroud.pdf>] [46]
+<fig/AngPalCost.pdf, id=1323, 609.77812pt x 514.92375pt>
 File: fig/AngPalCost.pdf Graphic file (type pdf)
 <use fig/AngPalCost.pdf>
-Package pdftex.def Info: fig/AngPalCost.pdf  used on input line 893.
+Package pdftex.def Info: fig/AngPalCost.pdf  used on input line 916.
 (pdftex.def)             Requested size: 268.80103pt x 226.99142pt.
-<fig/TurboFan.pdf, id=1308, 858.95906pt x 625.58719pt>
+<fig/TurboFan.pdf, id=1324, 858.95906pt x 625.58719pt>
 File: fig/TurboFan.pdf Graphic file (type pdf)
 <use fig/TurboFan.pdf>
-Package pdftex.def Info: fig/TurboFan.pdf  used on input line 899.
+Package pdftex.def Info: fig/TurboFan.pdf  used on input line 922.
 (pdftex.def)             Requested size: 268.80103pt x 195.77234pt.
-<fig/TurbVortLib.pdf, id=1309, 614.295pt x 459.21562pt>
+ [47]
+<fig/TurbVortLib.pdf, id=1331, 614.295pt x 459.21562pt>
 File: fig/TurbVortLib.pdf Graphic file (type pdf)
 <use fig/TurbVortLib.pdf>
-Package pdftex.def Info: fig/TurbVortLib.pdf  used on input line 906.
+Package pdftex.def Info: fig/TurbVortLib.pdf  used on input line 929.
 (pdftex.def)             Requested size: 268.80103pt x 200.94138pt.
- [46] [47 <./fig/AngPalCost.pdf> <./fig/TurboFan.pdf
+ [48 <./fig/AngPalCost.pdf>] [49 <./fig/TurboFan.pdf> <./fig/TurbVortLib.pdf
 
-pdfTeX warning: pdflatex.exe (file ./fig/TurboFan.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
->] [48 <./fig/TurbVortLib.pdf>]
-<fig/PortCondAn.pdf, id=1372, 698.64554pt x 506.23004pt>
+pdfTeX warning: pdflatex.exe (file ./fig/TurbVortLib.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>] [50]
+<fig/PortCondAn.pdf, id=1394, 698.64554pt x 506.23004pt>
 File: fig/PortCondAn.pdf Graphic file (type pdf)
 <use fig/PortCondAn.pdf>
-Package pdftex.def Info: fig/PortCondAn.pdf  used on input line 973.
+Package pdftex.def Info: fig/PortCondAn.pdf  used on input line 992.
 (pdftex.def)             Requested size: 235.19897pt x 170.41655pt.
- [49]
-
-LaTeX Warning: Reference `fd:bloccson2' on page 50 undefined on input line 980.
-
-
-
-LaTeX Warning: Reference `fd:bloccson2' on page 50 undefined on input line 980.
-
-
-<fig/bloccson1.pdf, id=1380, 879.05495pt x 325.5979pt>
+<fig/bloccson1.pdf, id=1398, 879.05495pt x 325.5979pt>
 File: fig/bloccson1.pdf Graphic file (type pdf)
 <use fig/bloccson1.pdf>
-Package pdftex.def Info: fig/bloccson1.pdf  used on input line 983.
+Package pdftex.def Info: fig/bloccson1.pdf  used on input line 1002.
 (pdftex.def)             Requested size: 268.80103pt x 99.56306pt.
-<fig/bloccson2.pdf, id=1381, 927.63292pt x 366.36053pt>
+<fig/bloccson2.pdf, id=1399, 927.63292pt x 366.36053pt>
 File: fig/bloccson2.pdf Graphic file (type pdf)
 <use fig/bloccson2.pdf>
-Package pdftex.def Info: fig/bloccson2.pdf  used on input line 989.
+Package pdftex.def Info: fig/bloccson2.pdf  used on input line 1008.
 (pdftex.def)             Requested size: 268.80103pt x 106.15797pt.
-<fig/comp_rad.pdf, id=1382, 1318.9313pt x 800.99072pt>
+ [51 <./fig/PortCondAn.pdf>]
+<fig/comp_rad.pdf, id=1422, 1318.9313pt x 800.99072pt>
 File: fig/comp_rad.pdf Graphic file (type pdf)
 <use fig/comp_rad.pdf>
-Package pdftex.def Info: fig/comp_rad.pdf  used on input line 997.
+Package pdftex.def Info: fig/comp_rad.pdf  used on input line 1016.
 (pdftex.def)             Requested size: 268.80103pt x 163.23862pt.
-[50 <./fig/PortCondAn.pdf>]
-<fig/VortPass.pdf, id=1404, 590.5686pt x 299.5525pt>
-File: fig/VortPass.pdf Graphic file (type pdf)
-<use fig/VortPass.pdf>
-Package pdftex.def Info: fig/VortPass.pdf  used on input line 1017.
-(pdftex.def)             Requested size: 268.80103pt x 136.3423pt.
-<fig/VortFerrCav.pdf, id=1406, 716.81883pt x 349.30313pt>
-File: fig/VortFerrCav.pdf Graphic file (type pdf)
-<use fig/VortFerrCav.pdf>
-Package pdftex.def Info: fig/VortFerrCav.pdf  used on input line 1024.
-(pdftex.def)             Requested size: 268.80103pt x 130.98302pt.
-<fig/VortVall.pdf, id=1408, 533.03003pt x 417.34236pt>
-File: fig/VortVall.pdf Graphic file (type pdf)
-<use fig/VortVall.pdf>
-Package pdftex.def Info: fig/VortVall.pdf  used on input line 1031.
-(pdftex.def)             Requested size: 235.19897pt x 184.15338pt.
-<fig/VortTraf.pdf, id=1410, 788.19463pt x 350.81062pt>
-File: fig/VortTraf.pdf Graphic file (type pdf)
-<use fig/VortTraf.pdf>
-Package pdftex.def Info: fig/VortTraf.pdf  used on input line 1038.
-(pdftex.def)             Requested size: 268.80103pt x 119.63802pt.
-) [51 <./fig/bloccson1.pdf> <./fig/bloccson2.pdf
+ [52 <./fig/bloccson1.pdf> <./fig/bloccson2.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/bloccson2.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
 >]
+<fig/VortPass.pdf, id=1467, 590.5686pt x 299.5525pt>
+File: fig/VortPass.pdf Graphic file (type pdf)
+<use fig/VortPass.pdf>
+Package pdftex.def Info: fig/VortPass.pdf  used on input line 1036.
+(pdftex.def)             Requested size: 235.19897pt x 119.29779pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+<fig/VortFerrCav.pdf, id=1468, 716.81883pt x 349.30313pt>
+File: fig/VortFerrCav.pdf Graphic file (type pdf)
+<use fig/VortFerrCav.pdf>
+Package pdftex.def Info: fig/VortFerrCav.pdf  used on input line 1043.
+(pdftex.def)             Requested size: 235.19897pt x 114.60947pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+<fig/VortVall.pdf, id=1469, 533.03003pt x 417.34236pt>
+File: fig/VortVall.pdf Graphic file (type pdf)
+<use fig/VortVall.pdf>
+Package pdftex.def Info: fig/VortVall.pdf  used on input line 1049.
+(pdftex.def)             Requested size: 201.60205pt x 157.84666pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[52 <./fig/comp_rad.pdf> <./fig/VortPass.pdf
+<fig/VortTraf.pdf, id=1470, 788.19463pt x 350.81062pt>
+File: fig/VortTraf.pdf Graphic file (type pdf)
+<use fig/VortTraf.pdf>
+Package pdftex.def Info: fig/VortTraf.pdf  used on input line 1055.
+(pdftex.def)             Requested size: 268.80103pt x 119.63802pt.
 
-pdfTeX warning: pdflatex.exe (file ./fig/VortPass.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
->] [53 <./fig/VortFerrCav.pdf> <./fig/VortVall.pdf
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [53 <./fig/comp_rad.pdf>] [54 <./fig/VortPass.pdf> <./fig/VortFerrCav.pdf
+
+pdfTeX warning: pdflatex.exe (file ./fig/VortFerrCav.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./fig/VortVall.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/VortVall.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
-> <./fig/VortTraf.pdf
-
-pdfTeX warning: pdflatex.exe (file ./fig/VortTraf.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
->]
+>] [55 <./fig/VortTraf.pdf>]
 \openout2 = `Contenuto/ComprAss.aux'.
 
- (Contenuto/ComprAss.tex [54
+ (Contenuto/ComprAss.tex [56
 
 
 
 
 ]
 Capitolo 3.
-<fig/PrestComp.pdf, id=1549, 856.3951pt x 511.7788pt>
+<fig/PrestComp.pdf, id=1575, 856.3951pt x 511.7788pt>
 File: fig/PrestComp.pdf Graphic file (type pdf)
 <use fig/PrestComp.pdf>
 Package pdftex.def Info: fig/PrestComp.pdf  used on input line 7.
 (pdftex.def)             Requested size: 268.80103pt x 160.6333pt.
-<fig/hsComp.pdf, id=1551, 469.2728pt x 583.85939pt>
+<fig/hsComp.pdf, id=1577, 469.2728pt x 583.85939pt>
 File: fig/hsComp.pdf Graphic file (type pdf)
 <use fig/hsComp.pdf>
 Package pdftex.def Info: fig/hsComp.pdf  used on input line 14.
 (pdftex.def)             Requested size: 134.39795pt x 167.21236pt.
-[55 <./fig/PrestComp.pdf>] [56 <./fig/hsComp.pdf>]
-<fig/triangComp.pdf, id=1593, 615.46214pt x 303.24281pt>
+[57 <./fig/PrestComp.pdf>] [58 <./fig/hsComp.pdf>]
+<fig/triangComp.pdf, id=1618, 615.46214pt x 303.24281pt>
 File: fig/triangComp.pdf Graphic file (type pdf)
 <use fig/triangComp.pdf>
 Package pdftex.def Info: fig/triangComp.pdf  used on input line 58.
 (pdftex.def)             Requested size: 268.80103pt x 132.44167pt.
- [57 <./fig/triangComp.pdf>]
-<fig/CondProg.pdf, id=1619, 562.82108pt x 477.22789pt>
+ [59 <./fig/triangComp.pdf>]
+<fig/CondProg.pdf, id=1644, 562.82108pt x 477.22789pt>
 File: fig/CondProg.pdf Graphic file (type pdf)
 <use fig/CondProg.pdf>
 Package pdftex.def Info: fig/CondProg.pdf  used on input line 87.
 (pdftex.def)             Requested size: 134.39795pt x 113.95448pt.
-<fig/LambdaPhiChart.pdf, id=1621, 569.72786pt x 526.02724pt>
+<fig/LambdaPhiChart.pdf, id=1646, 569.72786pt x 526.02724pt>
 File: fig/LambdaPhiChart.pdf Graphic file (type pdf)
 <use fig/LambdaPhiChart.pdf>
 Package pdftex.def Info: fig/LambdaPhiChart.pdf  used on input line 104.
 (pdftex.def)             Requested size: 151.19897pt x 139.59721pt.
-<fig/CarattReal.pdf, id=1622, 403.71432pt x 527.39514pt>
+<fig/CarattReal.pdf, id=1647, 403.71432pt x 527.39514pt>
 File: fig/CarattReal.pdf Graphic file (type pdf)
 <use fig/CarattReal.pdf>
 Package pdftex.def Info: fig/CarattReal.pdf  used on input line 110.
 (pdftex.def)             Requested size: 151.19897pt x 197.52322pt.
 
-[58 <./fig/CondProg.pdf>] [59 <./fig/LambdaPhiChart.pdf> <./fig/CarattReal.pdf
+[60 <./fig/CondProg.pdf>] [61 <./fig/LambdaPhiChart.pdf> <./fig/CarattReal.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/CarattReal.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >]
-<fig/StadioRipetuto.pdf, id=1690, 1274.7434pt x 484.0131pt>
+<fig/StadioRipetuto.pdf, id=1716, 1274.7434pt x 484.0131pt>
 File: fig/StadioRipetuto.pdf Graphic file (type pdf)
 <use fig/StadioRipetuto.pdf>
 Package pdftex.def Info: fig/StadioRipetuto.pdf  used on input line 163.
 (pdftex.def)             Requested size: 336.0pt x 127.576pt.
-<fig/CondFuoriProg.pdf, id=1692, 832.75912pt x 521.38399pt>
+<fig/CondFuoriProg.pdf, id=1718, 832.75912pt x 521.38399pt>
 File: fig/CondFuoriProg.pdf Graphic file (type pdf)
 <use fig/CondFuoriProg.pdf>
 Package pdftex.def Info: fig/CondFuoriProg.pdf  used on input line 180.
 (pdftex.def)             Requested size: 336.0pt x 210.36378pt.
-<fig/ComprAssTab.pdf, id=1694, 1076.7869pt x 1328.79543pt>
+<fig/ComprAssTab.pdf, id=1720, 1076.7869pt x 1328.79543pt>
 File: fig/ComprAssTab.pdf Graphic file (type pdf)
 <use fig/ComprAssTab.pdf>
 Package pdftex.def Info: fig/ComprAssTab.pdf  used on input line 188.
@@ -1213,73 +1187,73 @@ Overfull \hbox (67.19897pt too wide) in paragraph at lines 188--189
  [][] 
  []
 
-[60] [61 <./fig/StadioRipetuto.pdf> <./fig/CondFuoriProg.pdf
+[62] [63 <./fig/StadioRipetuto.pdf> <./fig/CondFuoriProg.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/CondFuoriProg.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
->] [62 <./fig/ComprAssTab.pdf>] [63]
-<fig/IsoRendCompAss.pdf, id=1751, 593.96906pt x 575.90157pt>
+>] [64 <./fig/ComprAssTab.pdf>] [65]
+<fig/IsoRendCompAss.pdf, id=1776, 593.96906pt x 575.90157pt>
 File: fig/IsoRendCompAss.pdf Graphic file (type pdf)
 <use fig/IsoRendCompAss.pdf>
 Package pdftex.def Info: fig/IsoRendCompAss.pdf  used on input line 282.
 (pdftex.def)             Requested size: 336.0pt x 325.78922pt.
- [64] [65 <./fig/IsoRendCompAss.pdf>]
-<fig/ComprStageLoss.pdf, id=1810, 848.4197pt x 585.68813pt>
+ [66] [67 <./fig/IsoRendCompAss.pdf>]
+<fig/ComprStageLoss.pdf, id=1836, 848.4197pt x 585.68813pt>
 File: fig/ComprStageLoss.pdf Graphic file (type pdf)
 <use fig/ComprStageLoss.pdf>
 Package pdftex.def Info: fig/ComprStageLoss.pdf  used on input line 321.
 (pdftex.def)             Requested size: 336.0pt x 231.94751pt.
-<fig/Howell.pdf, id=1812, 907.89188pt x 514.92375pt>
+<fig/Howell.pdf, id=1838, 907.89188pt x 514.92375pt>
 File: fig/Howell.pdf Graphic file (type pdf)
 <use fig/Howell.pdf>
 Package pdftex.def Info: fig/Howell.pdf  used on input line 332.
 (pdftex.def)             Requested size: 336.0pt x 190.56593pt.
-<fig/SchieraDim.pdf, id=1814, 995.21812pt x 462.97969pt>
+<fig/SchieraDim.pdf, id=1840, 995.21812pt x 462.97969pt>
 File: fig/SchieraDim.pdf Graphic file (type pdf)
 <use fig/SchieraDim.pdf>
 Package pdftex.def Info: fig/SchieraDim.pdf  used on input line 339.
 (pdftex.def)             Requested size: 336.0pt x 156.30894pt.
-<fig/1CorrHowell.pdf, id=1816, 434.16702pt x 515.81238pt>
+<fig/1CorrHowell.pdf, id=1842, 434.16702pt x 515.81238pt>
 File: fig/1CorrHowell.pdf Graphic file (type pdf)
 <use fig/1CorrHowell.pdf>
 Package pdftex.def Info: fig/1CorrHowell.pdf  used on input line 349.
 (pdftex.def)             Requested size: 134.39795pt x 159.67194pt.
 
-[66] [67 <./fig/ComprStageLoss.pdf> <./fig/Howell.pdf
+[68] [69 <./fig/ComprStageLoss.pdf> <./fig/Howell.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/Howell.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
->] [68 <./fig/SchieraDim.pdf> <./fig/1CorrHowell.pdf
+>] [70 <./fig/SchieraDim.pdf> <./fig/1CorrHowell.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/1CorrHowell.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
 >]
-<fig/FuoriProg1.pdf, id=1880, 578.16pt x 651.93562pt>
+<fig/FuoriProg1.pdf, id=1905, 578.16pt x 651.93562pt>
 File: fig/FuoriProg1.pdf Graphic file (type pdf)
 <use fig/FuoriProg1.pdf>
 Package pdftex.def Info: fig/FuoriProg1.pdf  used on input line 396.
 (pdftex.def)             Requested size: 336.0pt x 378.869pt.
-<fig/FuoriProg2.pdf, id=1882, 605.178pt x 558.17365pt>
+<fig/FuoriProg2.pdf, id=1907, 605.178pt x 558.17365pt>
 File: fig/FuoriProg2.pdf Graphic file (type pdf)
 <use fig/FuoriProg2.pdf>
 Package pdftex.def Info: fig/FuoriProg2.pdf  used on input line 405.
 (pdftex.def)             Requested size: 191.52133pt x 176.64325pt.
-<fig/FuoriProgMach.pdf, id=1883, 384.20102pt x 600.93694pt>
+<fig/FuoriProgMach.pdf, id=1908, 384.20102pt x 600.93694pt>
 File: fig/FuoriProgMach.pdf Graphic file (type pdf)
 <use fig/FuoriProgMach.pdf>
 Package pdftex.def Info: fig/FuoriProgMach.pdf  used on input line 411.
 (pdftex.def)             Requested size: 127.67763pt x 199.70357pt.
-<fig/FuoriProg3.pdf, id=1884, 523.9575pt x 557.08125pt>
+<fig/FuoriProg3.pdf, id=1909, 523.9575pt x 557.08125pt>
 File: fig/FuoriProg3.pdf Graphic file (type pdf)
 <use fig/FuoriProg3.pdf>
 Package pdftex.def Info: fig/FuoriProg3.pdf  used on input line 419.
 (pdftex.def)             Requested size: 134.39795pt x 142.89113pt.
-<fig/FuoriProg4.pdf, id=1887, 385.79883pt x 550.32051pt>
+<fig/FuoriProg4.pdf, id=1912, 385.79883pt x 550.32051pt>
 File: fig/FuoriProg4.pdf Graphic file (type pdf)
 <use fig/FuoriProg4.pdf>
 Package pdftex.def Info: fig/FuoriProg4.pdf  used on input line 426.
 (pdftex.def)             Requested size: 134.39795pt x 191.70816pt.
- [69] [70 <./fig/FuoriProg1.pdf>] [71 <./fig/FuoriProg2.pdf> <./fig/FuoriProgMa
+ [71] [72 <./fig/FuoriProg1.pdf>] [73 <./fig/FuoriProg2.pdf> <./fig/FuoriProgMa
 ch.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/FuoriProgMach.pdf): PDF inclusion: mul
@@ -1289,37 +1263,37 @@ tiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex.exe (file ./fig/FuoriProg3.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >]
-<fig/CritCarico1.pdf, id=1945, 542.025pt x 296.6081pt>
+<fig/CritCarico1.pdf, id=1971, 542.025pt x 296.6081pt>
 File: fig/CritCarico1.pdf Graphic file (type pdf)
 <use fig/CritCarico1.pdf>
 Package pdftex.def Info: fig/CritCarico1.pdf  used on input line 436.
 (pdftex.def)             Requested size: 336.0pt x 183.87248pt.
-<fig/CritCarico2.pdf, id=1946, 710.88646pt x 568.2373pt>
+<fig/CritCarico2.pdf, id=1972, 710.88646pt x 568.2373pt>
 File: fig/CritCarico2.pdf Graphic file (type pdf)
 <use fig/CritCarico2.pdf>
 Package pdftex.def Info: fig/CritCarico2.pdf  used on input line 449.
 (pdftex.def)             Requested size: 134.39795pt x 107.42862pt.
-<fig/CritCarico3.pdf, id=1947, 1242.89343pt x 502.12593pt>
+<fig/CritCarico3.pdf, id=1973, 1242.89343pt x 502.12593pt>
 File: fig/CritCarico3.pdf Graphic file (type pdf)
 <use fig/CritCarico3.pdf>
 Package pdftex.def Info: fig/CritCarico3.pdf  used on input line 460.
 (pdftex.def)             Requested size: 336.0pt x 135.74437pt.
- [72 <./fig/FuoriProg4.pdf>]
-<fig/CritCarico4.pdf, id=1964, 715.92468pt x 514.17094pt>
+ [74 <./fig/FuoriProg4.pdf>]
+<fig/CritCarico4.pdf, id=1990, 715.92468pt x 514.17094pt>
 File: fig/CritCarico4.pdf Graphic file (type pdf)
 <use fig/CritCarico4.pdf>
 Package pdftex.def Info: fig/CritCarico4.pdf  used on input line 471.
 (pdftex.def)             Requested size: 134.39795pt x 96.51665pt.
- [73 <./fig/CritCarico1.pdf> <./fig/CritCarico2.pdf
+ [75 <./fig/CritCarico1.pdf> <./fig/CritCarico2.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/CritCarico2.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
->] [74 <./fig/CritCarico3.pdf> <./fig/CritCarico4.pdf
+>] [76 <./fig/CritCarico3.pdf> <./fig/CritCarico4.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/CritCarico4.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
 >]
-<fig/Schlieren1.pdf, id=2044, 927.16016pt x 709.35039pt>
+<fig/Schlieren1.pdf, id=2069, 927.16016pt x 709.35039pt>
 File: fig/Schlieren1.pdf Graphic file (type pdf)
 <use fig/Schlieren1.pdf>
 Package pdftex.def Info: fig/Schlieren1.pdf  used on input line 524.
@@ -1328,7 +1302,7 @@ Package pdftex.def Info: fig/Schlieren1.pdf  used on input line 524.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig/Schlieren2.png, id=2045, 133.2177pt x 38.544pt>
+<fig/Schlieren2.png, id=2070, 133.2177pt x 38.544pt>
 File: fig/Schlieren2.png Graphic file (type png)
 <use fig/Schlieren2.png>
 Package pdftex.def Info: fig/Schlieren2.png  used on input line 530.
@@ -1336,177 +1310,177 @@ Package pdftex.def Info: fig/Schlieren2.png  used on input line 530.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [75] [76 <./fig/Schlieren1.pdf> <./fig/Schlieren2.png (PNG copy)>]
+) [77] [78 <./fig/Schlieren1.pdf> <./fig/Schlieren2.png (PNG copy)>]
 \openout2 = `Contenuto/TurbAss.aux'.
 
 
 (Contenuto/TurbAss.tex
 Capitolo 4.
-<fig/TurboGas.png, id=2067, 240.6591pt x 159.9576pt>
+<fig/TurboGas.png, id=2092, 240.6591pt x 159.9576pt>
 File: fig/TurboGas.png Graphic file (type png)
 <use fig/TurboGas.png>
 Package pdftex.def Info: fig/TurboGas.png  used on input line 7.
 (pdftex.def)             Requested size: 302.39795pt x 200.99358pt.
-[77
+[79
 
 
 
 
  <./fig/TurboGas.png>]
-<fig/SezioneTurbina.pdf, id=2077, 574.39594pt x 530.73282pt>
+<fig/SezioneTurbina.pdf, id=2103, 574.39594pt x 530.73282pt>
 File: fig/SezioneTurbina.pdf Graphic file (type pdf)
 <use fig/SezioneTurbina.pdf>
 Package pdftex.def Info: fig/SezioneTurbina.pdf  used on input line 39.
 (pdftex.def)             Requested size: 159.59949pt x 147.46231pt.
-<fig/hsturbine.pdf, id=2078, 562.35094pt x 600.74437pt>
+<fig/hsturbine.pdf, id=2104, 562.35094pt x 600.74437pt>
 File: fig/hsturbine.pdf Graphic file (type pdf)
 <use fig/hsturbine.pdf>
 Package pdftex.def Info: fig/hsturbine.pdf  used on input line 45.
 (pdftex.def)             Requested size: 159.59949pt x 170.48976pt.
- [78] [79 <./fig/SezioneTurbina.pdf> <./fig/hsturbine.pdf
+ [80] [81 <./fig/SezioneTurbina.pdf> <./fig/hsturbine.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/hsturbine.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
 >]
-<fig/triangTurb.pdf, id=2114, 944.6362pt x 408.70276pt>
+<fig/triangTurb.pdf, id=2139, 944.6362pt x 408.70276pt>
 File: fig/triangTurb.pdf Graphic file (type pdf)
 <use fig/triangTurb.pdf>
 Package pdftex.def Info: fig/triangTurb.pdf  used on input line 102.
 (pdftex.def)             Requested size: 268.80103pt x 116.2944pt.
- [80 <./fig/triangTurb.pdf>] [81]
-<fig/Rendimenti_ts_tt.pdf, id=2130, 891.33pt x 526.21594pt>
+ [82 <./fig/triangTurb.pdf>] [83]
+<fig/Rendimenti_ts_tt.pdf, id=2155, 891.33pt x 526.21594pt>
 File: fig/Rendimenti_ts_tt.pdf Graphic file (type pdf)
 <use fig/Rendimenti_ts_tt.pdf>
 Package pdftex.def Info: fig/Rendimenti_ts_tt.pdf  used on input line 166.
 (pdftex.def)             Requested size: 268.80103pt x 158.69302pt.
- [82 <./fig/Rendimenti_ts_tt.pdf>]
-<fig/SchierePaleTab.pdf, id=2152, 563.10374pt x 638.385pt>
+ [84 <./fig/Rendimenti_ts_tt.pdf>]
+<fig/SchierePaleTab.pdf, id=2177, 563.10374pt x 638.385pt>
 File: fig/SchierePaleTab.pdf Graphic file (type pdf)
 <use fig/SchierePaleTab.pdf>
 Package pdftex.def Info: fig/SchierePaleTab.pdf  used on input line 209.
 (pdftex.def)             Requested size: 336.0pt x 380.92015pt.
-<fig/palaBassaDef.pdf, id=2154, 578.31708pt x 554.10645pt>
+<fig/palaBassaDef.pdf, id=2179, 578.31708pt x 554.10645pt>
 File: fig/palaBassaDef.pdf Graphic file (type pdf)
 <use fig/palaBassaDef.pdf>
 Package pdftex.def Info: fig/palaBassaDef.pdf  used on input line 218.
 (pdftex.def)             Requested size: 201.60205pt x 193.1623pt.
-<fig/ou_schiera.png, id=2155, 120.45pt x 103.8279pt>
+<fig/ou_schiera.png, id=2180, 120.45pt x 103.8279pt>
 File: fig/ou_schiera.png Graphic file (type png)
 <use fig/ou_schiera.png>
 Package pdftex.def Info: fig/ou_schiera.png  used on input line 227.
 (pdftex.def)             Requested size: 159.59949pt x 137.58714pt.
-<fig/SupSonic.pdf, id=2156, 601.00928pt x 461.95851pt>
+<fig/SupSonic.pdf, id=2181, 601.00928pt x 461.95851pt>
 File: fig/SupSonic.pdf Graphic file (type pdf)
 <use fig/SupSonic.pdf>
 Package pdftex.def Info: fig/SupSonic.pdf  used on input line 233.
 (pdftex.def)             Requested size: 159.59949pt x 122.67218pt.
-<fig/PaleSup.pdf, id=2157, 1129.21875pt x 529.22719pt>
+<fig/PaleSup.pdf, id=2182, 1129.21875pt x 529.22719pt>
 File: fig/PaleSup.pdf Graphic file (type pdf)
 <use fig/PaleSup.pdf>
 Package pdftex.def Info: fig/PaleSup.pdf  used on input line 241.
 (pdftex.def)             Requested size: 336.0pt x 157.46924pt.
- [83]
-[84 <./fig/SchierePaleTab.pdf>]
-<fig/PrestSchieraTurb.pdf, id=2175, 960.58875pt x 530.73282pt>
+ [85]
+[86 <./fig/SchierePaleTab.pdf>]
+<fig/PrestSchieraTurb.pdf, id=2201, 960.58875pt x 530.73282pt>
 File: fig/PrestSchieraTurb.pdf Graphic file (type pdf)
 <use fig/PrestSchieraTurb.pdf>
 Package pdftex.def Info: fig/PrestSchieraTurb.pdf  used on input line 254.
 (pdftex.def)             Requested size: 336.0pt x 185.64589pt.
- [85 <./fig/palaBassaDef.pdf>] [86 <./fig/ou_schiera.png> <./fig/SupSonic.pdf> 
+ [87 <./fig/palaBassaDef.pdf>] [88 <./fig/ou_schiera.png> <./fig/SupSonic.pdf> 
 <./fig/PaleSup.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/PaleSup.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
 >]
-<fig/PerditeSchiera.pdf, id=2294, 852.18375pt x 619.56468pt>
+<fig/PerditeSchiera.pdf, id=2319, 852.18375pt x 619.56468pt>
 File: fig/PerditeSchiera.pdf Graphic file (type pdf)
 <use fig/PerditeSchiera.pdf>
 Package pdftex.def Info: fig/PerditeSchiera.pdf  used on input line 275.
 (pdftex.def)             Requested size: 218.39795pt x 158.77629pt.
- [87 <./fig/PrestSchieraTurb.pdf> <./fig/PerditeSchiera.pdf
+ [89 <./fig/PrestSchieraTurb.pdf> <./fig/PerditeSchiera.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/PerditeSchiera.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
 >]
-<fig/Soderberg.pdf, id=2330, 950.04938pt x 583.42969pt>
+<fig/Soderberg.pdf, id=2355, 950.04938pt x 583.42969pt>
 File: fig/Soderberg.pdf Graphic file (type pdf)
 <use fig/Soderberg.pdf>
 Package pdftex.def Info: fig/Soderberg.pdf  used on input line 310.
 (pdftex.def)             Requested size: 336.0pt x 206.34003pt.
- [88]
-<fig/Mathieson.pdf, id=2337, 907.96515pt x 349.8395pt>
+ [90]
+<fig/Mathieson.pdf, id=2362, 907.96515pt x 349.8395pt>
 File: fig/Mathieson.pdf Graphic file (type pdf)
 <use fig/Mathieson.pdf>
 Package pdftex.def Info: fig/Mathieson.pdf  used on input line 356.
 (pdftex.def)             Requested size: 336.0pt x 129.45993pt.
- [89 <./fig/Soderberg.pdf>]
-<fig/lambdaPerditeSchiera.pdf, id=2358, 688.09973pt x 426.88702pt>
+ [91 <./fig/Soderberg.pdf>]
+<fig/lambdaPerditeSchiera.pdf, id=2384, 688.09973pt x 426.88702pt>
 File: fig/lambdaPerditeSchiera.pdf Graphic file (type pdf)
 <use fig/lambdaPerditeSchiera.pdf>
 Package pdftex.def Info: fig/lambdaPerditeSchiera.pdf  used on input line 385.
 (pdftex.def)             Requested size: 201.60205pt x 125.07076pt.
-<fig/FuoriProgT1.pdf, id=2360, 731.99638pt x 449.76913pt>
+<fig/FuoriProgT1.pdf, id=2386, 731.99638pt x 449.76913pt>
 File: fig/FuoriProgT1.pdf Graphic file (type pdf)
 <use fig/FuoriProgT1.pdf>
 Package pdftex.def Info: fig/FuoriProgT1.pdf  used on input line 393.
 (pdftex.def)             Requested size: 336.0pt x 206.45708pt.
-<fig/Ainley.pdf, id=2361, 515.0121pt x 505.68973pt>
+<fig/Ainley.pdf, id=2387, 515.0121pt x 505.68973pt>
 File: fig/Ainley.pdf Graphic file (type pdf)
 <use fig/Ainley.pdf>
 Package pdftex.def Info: fig/Ainley.pdf  used on input line 401.
 (pdftex.def)             Requested size: 336.0pt x 329.9213pt.
- [90 <./fig/Mathieson.pdf>] [91 <./fig/lambdaPerditeSchiera.pdf> <./fig/FuoriPr
+ [92 <./fig/Mathieson.pdf>] [93 <./fig/lambdaPerditeSchiera.pdf> <./fig/FuoriPr
 ogT1.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/FuoriProgT1.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
 >]
-<fig/CritCaricoT.pdf, id=2420, 982.56618pt x 488.96826pt>
+<fig/CritCaricoT.pdf, id=2445, 982.56618pt x 488.96826pt>
 File: fig/CritCaricoT.pdf Graphic file (type pdf)
 <use fig/CritCaricoT.pdf>
 Package pdftex.def Info: fig/CritCaricoT.pdf  used on input line 412.
 (pdftex.def)             Requested size: 336.0pt x 167.20201pt.
-) [92 <./fig/Ainley.pdf>] [93 <./fig/CritCaricoT.pdf>]
+) [94 <./fig/Ainley.pdf>] [95 <./fig/CritCaricoT.pdf>]
 \openout2 = `Contenuto/TurbEol.aux'.
 
- (Contenuto/TurbEol.tex [94
+ (Contenuto/TurbEol.tex [96
 
 
 
 
 ]
 Capitolo 5.
-<fig/Betz.pdf, id=2469, 830.35219pt x 429.85594pt>
+<fig/Betz.pdf, id=2494, 830.35219pt x 429.85594pt>
 File: fig/Betz.pdf Graphic file (type pdf)
 <use fig/Betz.pdf>
 Package pdftex.def Info: fig/Betz.pdf  used on input line 16.
 (pdftex.def)             Requested size: 201.60205pt x 104.36128pt.
-[95]
+[97]
 
-LaTeX Warning: Reference `eq:enEol' on page 96 undefined on input line 57.
+LaTeX Warning: Reference `eq:enEol' on page 98 undefined on input line 57.
 
-[96 <./fig/Betz.pdf>]
-<fig/frontlatEol.pdf, id=2493, 1144.55608pt x 412.45659pt>
+[98 <./fig/Betz.pdf>]
+<fig/frontlatEol.pdf, id=2519, 1144.55608pt x 412.45659pt>
 File: fig/frontlatEol.pdf Graphic file (type pdf)
 <use fig/frontlatEol.pdf>
 Package pdftex.def Info: fig/frontlatEol.pdf  used on input line 87.
 (pdftex.def)             Requested size: 336.0pt x 121.08203pt.
-<fig/triangEol.pdf, id=2494, 796.47563pt x 495.35066pt>
+<fig/triangEol.pdf, id=2520, 796.47563pt x 495.35066pt>
 File: fig/triangEol.pdf Graphic file (type pdf)
 <use fig/triangEol.pdf>
 Package pdftex.def Info: fig/triangEol.pdf  used on input line 93.
 (pdftex.def)             Requested size: 336.0pt x 208.96799pt.
- [97] [98 <./fig/frontlatEol.pdf> <./fig/triangEol.pdf
+ [99] [100 <./fig/frontlatEol.pdf> <./fig/triangEol.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/triangEol.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
->] [99]
+>] [101]
 Underfull \hbox (badness 10000) in paragraph at lines 137--139
 
  []
 
-[100] [101] [102] [103]
-<fig/limBetz.pdf, id=2606, 955.12982pt x 552.7562pt>
+[102] [103] [104] [105]
+<fig/limBetz.pdf, id=2631, 955.12982pt x 552.7562pt>
 File: fig/limBetz.pdf Graphic file (type pdf)
 <use fig/limBetz.pdf>
 Package pdftex.def Info: fig/limBetz.pdf  used on input line 326.
@@ -1515,8 +1489,8 @@ Package pdftex.def Info: fig/limBetz.pdf  used on input line 326.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[104]
-<fig/triangEol2.pdf, id=2614, 679.84715pt x 557.39597pt>
+[106]
+<fig/triangEol2.pdf, id=2639, 679.84715pt x 557.39597pt>
 File: fig/triangEol2.pdf Graphic file (type pdf)
 <use fig/triangEol2.pdf>
 Package pdftex.def Info: fig/triangEol2.pdf  used on input line 341.
@@ -1525,17 +1499,17 @@ Package pdftex.def Info: fig/triangEol2.pdf  used on input line 341.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[105 <./fig/limBetz.pdf>]
+[107 <./fig/limBetz.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 362--366
 
  []
 
-<fig/forzeEol.pdf, id=2634, 640.05566pt x 472.38188pt>
+<fig/forzeEol.pdf, id=2659, 640.05566pt x 472.38188pt>
 File: fig/forzeEol.pdf Graphic file (type pdf)
 <use fig/forzeEol.pdf>
 Package pdftex.def Info: fig/forzeEol.pdf  used on input line 379.
 (pdftex.def)             Requested size: 235.19897pt x 173.58203pt.
-[106 <./fig/triangEol2.pdf>] [107 <./fig/forzeEol.pdf>] [108] [109] [110]
+[108 <./fig/triangEol2.pdf>] [109 <./fig/forzeEol.pdf>] [110] [111] [112]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 528.
@@ -1548,7 +1522,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 528.
 
-<fig/lambdatheta.pdf, id=2727, 859.77736pt x 554.64551pt>
+<fig/lambdatheta.pdf, id=2752, 859.77736pt x 554.64551pt>
 File: fig/lambdatheta.pdf Graphic file (type pdf)
 <use fig/lambdatheta.pdf>
 Package pdftex.def Info: fig/lambdatheta.pdf  used on input line 533.
@@ -1556,7 +1530,7 @@ Package pdftex.def Info: fig/lambdatheta.pdf  used on input line 533.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[111]
+[113]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 562.
@@ -1577,8 +1551,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 562.
 
-[112 <./fig/lambdatheta.pdf>]
-<fig/lambdacz.pdf, id=2770, 778.9094pt x 455.74542pt>
+[114 <./fig/lambdatheta.pdf>]
+<fig/lambdacz.pdf, id=2795, 778.9094pt x 455.74542pt>
 File: fig/lambdacz.pdf Graphic file (type pdf)
 <use fig/lambdacz.pdf>
 Package pdftex.def Info: fig/lambdacz.pdf  used on input line 569.
@@ -1587,8 +1561,8 @@ Package pdftex.def Info: fig/lambdacz.pdf  used on input line 569.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[113]
-<fig/sigmalambda.pdf, id=2778, 729.376pt x 455.74542pt>
+[115]
+<fig/sigmalambda.pdf, id=2804, 729.376pt x 455.74542pt>
 File: fig/sigmalambda.pdf Graphic file (type pdf)
 <use fig/sigmalambda.pdf>
 Package pdftex.def Info: fig/sigmalambda.pdf  used on input line 606.
@@ -1597,13 +1571,13 @@ Package pdftex.def Info: fig/sigmalambda.pdf  used on input line 606.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[114 <./fig/lambdacz.pdf>]
-<fig/cplambda.pdf, id=2805, 811.3982pt x 477.53278pt>
+[116 <./fig/lambdacz.pdf>]
+<fig/cplambda.pdf, id=2831, 811.3982pt x 477.53278pt>
 File: fig/cplambda.pdf Graphic file (type pdf)
 <use fig/cplambda.pdf>
 Package pdftex.def Info: fig/cplambda.pdf  used on input line 622.
 (pdftex.def)             Requested size: 302.39795pt x 177.97408pt.
- [115 <./fig/sigmalambda.pdf>]) [116 <./fig/cplambda.pdf>]
+ [117 <./fig/sigmalambda.pdf>]) [118 <./fig/cplambda.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
  (ProgettoMacchine2020.aux (Contenuto/pref_it.aux)
@@ -1612,7 +1586,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
 Package rerunfilecheck Info: File `ProgettoMacchine2020.out' has not changed.
-(rerunfilecheck)             Checksum: A622F0335CF6856BD7C5909AF1C9E944;5030.
+(rerunfilecheck)             Checksum: 639D6EAEA2187A9534155D4867327B68;5042.
 
 
 LaTeX Warning: There were undefined references.
@@ -1622,10 +1596,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10366 strings out of 492969
- 162099 string characters out of 3126585
- 273838 words of memory out of 3000000
- 13548 multiletter control sequences out of 15000+200000
+ 10378 strings out of 492969
+ 162273 string characters out of 3126585
+ 274251 words of memory out of 3000000
+ 13552 multiletter control sequences out of 15000+200000
  13352 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,20n,41p,1456b,492s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1658,9 +1632,9 @@ fonts/cm/cmsy5.pfb><C:/Users/giona/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 ams/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Users/giona/
 AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pf
 b>
-Output written on ProgettoMacchine2020.pdf (122 pages, 5542583 bytes).
+Output written on ProgettoMacchine2020.pdf (124 pages, 5549982 bytes).
 PDF statistics:
- 3048 PDF objects out of 3580 (max. 8388607)
- 394 named destinations out of 1000 (max. 500000)
+ 3075 PDF objects out of 3580 (max. 8388607)
+ 402 named destinations out of 1000 (max. 500000)
  1062 words of extra memory for PDF output out of 10000 (max. 10000000)
 
