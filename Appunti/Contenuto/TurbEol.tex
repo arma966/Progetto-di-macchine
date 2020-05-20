@@ -248,9 +248,11 @@ dP &= 4 \pi \rho V_1 \left( 1-a \right) \Omega a' r^2 dr r \Omega \\
 \end{align*}
 Si rimpiazza ora $\Omega^2$ per il suo equivalente in funzione di $\lambda_r$
 \begin{align*}
-dP &= 4 \pi \rho V_1^3 \left( 1- a \right) \frac{\lambda_r^2}{r^2} a' r^3 dr\\
-&= 4 \pi \rho V_1^3 \left( 1 - a \right) \lambda_r^2 a' r dr
+dP = 4 \pi \rho V_1^3 \left( 1- a \right) \frac{\lambda_r^2}{r^2} a' r^3 dr
 \end{align*}
+\begin{equation}\label{eq:dP}
+dP = 4 \pi \rho V_1^3 \left( 1 - a \right) \lambda_r^2 a' r dr
+\end{equation}
 Siccome $\lambda_r > 0$, la potenza sarà massima quando il prodotto $a' \left( 1- a \right)$ sarà massimo, cioè quando la sua derivata sarà nulla. Siccome $a$ e $a'$ sono funzioni una dell'altra, allora la derivata del prodotto di due funzioni si calcola la derivata con la regola del prodotto
 \begin{align*}
 \frac{d}{da} \left( 1-a \right) a' + \left( 1 -a \right) \frac{da'}{da} = 0
@@ -297,7 +299,7 @@ a' = \frac{1 - 3a}{4a -1}
 \end{equation}
 Riassumendo, le equazioni \ref{eq:lambdara} e \ref{eq:finala'a} vincolano $a$, $a'$ e $\lambda$ affinchè la potenza estratta sia massima.
 
-Si rimpiazza ora $r$ nell'equazione \ref{eq:deflambdar} per il suo equivalente in funzione di $\lambda_r$ definito nella \ref{eq:deflambdar}
+Si rimpiazza ora $r$ nell'equazione \ref{eq:dP} per il suo equivalente in funzione di $\lambda_r$
 \begin{align*}
 dP = 4 \pi \rho V_1^3 a' \left( 1 - a \right) \lambda_r^2 \frac{R \lambda_r}{\lambda} dr
 \end{align*}
@@ -396,10 +398,10 @@ dF_f = \frac{\rho}{2} C_z l W^2 dr \cos \theta + \frac{\rho}{2} C_x l W^2 dr \si
 \end{equation}
 In un profilo alare operante in condizioni ottimali, si ha sempre che $C_z \gg C_x$, e perquesto motivo le equazioni \ref{eq:dF_u1} e \ref{eq:dF_f1} possono essere semplificate come segue:
 \begin{equation}\label{eq:dF_u2}
-dF_u \approx \frac{rho}{2} C_zl W^2 dr \sin \theta
+dF_u \approx \frac{\rho}{2} C_zl W^2 dr \sin \theta
 \end{equation}
 \begin{equation}\label{eq:dF_f2}
-dF_f \approx \frac{rho}{2} C_zl W^2 dr \cos \theta
+dF_f \approx \frac{\rho}{2} C_zl W^2 dr \cos \theta
 \end{equation}
 Se il numero di pale è pari a $z$, possiamo dunque scrivere che la forza assiale $dF$ sulla corona differenziale di pala è pari a
 \begin{align*}
@@ -436,7 +438,7 @@ e se eguagliamo questa espressione con l'equazione \ref{eq:dM}, otteniamo
 \begin{align*}
 4 \pi \rho V_1 \left(1-a \right) \Omega a' r^3 dr = z r dF_u
 \end{align*}
-Rimpiazzando l'espressione di $dF_u$ secondo l'equazione trepuntotredici nell'equazione precedente, risulta
+Rimpiazzando l'espressione di $dF_u$ secondo l'equazione \ref{eq:dF_u2} nell'equazione precedente, risulta
 \begin{align*}
 4 \pi \rho V_1 \left(1-a \right) \Omega a' r^3 dr = z r C_z \cfrac{\rho}{2} l W^2 \sin \theta
 \end{align*}
@@ -508,7 +510,7 @@ La prima non ha significato fisico poichè nell'intervallo di interesse, si deve
 
 Abbiamo ottenuto dunque un'equazione che lega direttamente la solidità locale $\sigma_l$ e quindi la corda del profilo, $l$, con l'angolo $\theta$.
 
-Il coefficiente $C_z$ viene scelto arbitrariamente dal progettista sulla base di determinati criteri prestazionali, ed il valore di $C_x$ risulta di conseguenza, in quanto la loro relazione è univoca. Per esempio si può scegliere il valore ottimo, ossia il $C_z$ che corrisponde al massimo del rapporto $C_z/C_x$ (massima eficienza aerodinamica del profilo). Va sottolineato però che i valori di $C_z$ e $C_x$ riscontrabili, nella letteratura aerodinamica, valgono per un profilo di lunghezza infinita. In un profilo reale, e precisamente nella punta della pala, si produce un vortice, dovuto alla differenza di pressione tra l'intradosso e l'estradosso dello stesso e all'assenza di una condizione al contorno che ne impedisca la formazione. Sono state proposte pale con deflattori situati nella punta per evitare proprio questo effetto, però in pratica non sono utilizzati. Dalla teoria aerodinamica, è noto che l'attrito indotto dai vortici di punta di pala si può calcolare con la formula di Oswald
+Il coefficiente $C_z$ viene scelto arbitrariamente dal progettista sulla base di determinati criteri prestazionali, ed il valore di $C_x$ risulta di conseguenza, in quanto la loro relazione è univoca. Per esempio si può scegliere il valore ottimo, ossia il $C_z$ che corrisponde al massimo del rapporto $C_z/C_x$ (massima efficienza aerodinamica del profilo). Va sottolineato però che i valori di $C_z$ e $C_x$ riscontrabili, nella letteratura aerodinamica, valgono per un profilo di lunghezza infinita. In un profilo reale, e precisamente nella punta della pala, si produce un vortice, dovuto alla differenza di pressione tra l'intradosso e l'estradosso dello stesso e all'assenza di una condizione al contorno che ne impedisca la formazione. Sono state proposte pale con deflattori situati nella punta per evitare proprio questo effetto, però in pratica non sono utilizzati. Dalla teoria aerodinamica, è noto che l'attrito indotto dai vortici di punta di pala si può calcolare con la formula di Oswald
 \begin{align*}
 C_{xi} = \frac{C_z^2}{\pi \cdot e \cdot AR}
 \end{align*}
@@ -526,7 +528,13 @@ C_{xr} = C_x + C_{xi}
 A questo punto abbiamo tutti gli elementi necessari per progettare ogni sezione della pala, ciononostante, le considerazioni esposte nei paragrafi successivi ci aiuteranno nella definizione dei criteri progettuali.
 
 \subsection{Variazione ottimale di $\theta$}
-Poichè in ogni posizione $r$ della pala desideriamo estrarre il massimo di energia dal vento, ne consegue che $a$ e $a'$ devono soddisfare le equazioni \ref{eq:deflambdar}  e \ref{eq:finala'a}. 
+Poichè in ogni posizione $r$ della pala desideriamo estrarre il massimo di energia dal vento, ne consegue che $a$ e $a'$ devono soddisfare le equazioni \ref{eq:deflambdar}  e \ref{eq:finala'a} che ricordiamo di seguito
+\begin{align*}
+\lambda_r = \frac{\lambda r}{R}
+\end{align*}
+\begin{align*}
+a' = \frac{1-3a}{4a-1}
+\end{align*}
 Poichè l'angolo $\theta$ si ricava dell'equazione \ref{eq:tantheta}, ne consegue che $\theta$ è funzione di $\lambda_r$. Allo stesso modo che abbiamo tabulato il coefficiente di potenza locale in funzione di $a$, $a'$ e $\lambda_r$ possiamo calcolare l'angolo $\theta$ ottimale in ogni posizione $r$ della pala, perchè $\lambda_r$ è direttamente proporzionale a $r$ secondo la definizione data precedentemente. La figura \ref{fig:lambdatheta} mostra come varia $\theta$ in funzione di $\lambda_r$.
 \begin{figure}[h!]
 \centering
