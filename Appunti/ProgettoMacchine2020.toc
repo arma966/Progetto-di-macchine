@@ -45,10 +45,10 @@
 \contentsline {section}{\numberline {4.1}Calcolo dei rendimenti}{80}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Rendimenti}{81}{subsection.4.1.1}
 \contentsline {section}{\numberline {4.2}Propriet\IeC {\`a} termodinamiche del flusso}{84}{section.4.2}
-\contentsline {section}{\numberline {4.3}Schiere palari}{85}{section.4.3}
-\contentsline {section}{\numberline {4.4}Prestazioni della schiera}{87}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Soderberg}{90}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Ainley-Mathieson}{90}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.3}Schiere palari}{86}{section.4.3}
+\contentsline {section}{\numberline {4.4}Prestazioni della schiera}{88}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Soderberg}{89}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Ainley-Mathieson}{91}{subsection.4.4.2}
 \contentsline {section}{\numberline {4.5}Criteri di carico}{93}{section.4.5}
 \contentsline {chapter}{\numberline {5}Macchine eoliche}{97}{chapter.5}
 \contentsline {section}{\numberline {5.1}Riferimenti}{97}{section.5.1}
