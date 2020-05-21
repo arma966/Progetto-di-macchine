@@ -5,7 +5,7 @@
 \contentsline {section}{\numberline {1.2}Influenza di Re}{9}{section.1.2}
 \contentsline {section}{\numberline {1.3}Effetto scala}{10}{section.1.3}
 \contentsline {section}{\numberline {1.4}Flusso comprimibile}{11}{section.1.4}
-\contentsline {section}{\numberline {1.5}Richiamo di termodinamica}{15}{section.1.5}
+\contentsline {section}{\numberline {1.5}Richiamo di termodinamica}{16}{section.1.5}
 \contentsline {section}{\numberline {1.6}Rendimenti per i compressori}{17}{section.1.6}
 \contentsline {chapter}{\numberline {2}Turbomacchine assiali - Generalit\IeC {\`a}}{21}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduzione}{21}{section.2.1}
@@ -15,55 +15,55 @@
 \contentsline {subsection}{\numberline {2.2.3}Forze}{24}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Adimensionalizzazione delle forze}{27}{subsection.2.2.4}
 \contentsline {section}{\numberline {2.3}Ipotesi di flusso a potenziale}{29}{section.2.3}
-\contentsline {section}{\numberline {2.4}Da profilo a schiera}{29}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Ugelli e diffusori}{30}{subsection.2.4.1}
-\contentsline {section}{\numberline {2.5}Schiere palari}{32}{section.2.5}
+\contentsline {section}{\numberline {2.4}Da profilo a schiera}{30}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Ugelli e diffusori}{31}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.5}Schiere palari}{33}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Schiere di espansione}{33}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Schiere di compressione}{33}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}Equilibrio radiale}{36}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Termodinamica}{37}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Ipotesi semplificative}{38}{subsection.2.6.2}
-\contentsline {section}{\numberline {2.7}Condizione di vortice libero}{39}{section.2.7}
-\contentsline {section}{\numberline {2.8}Vortice forzato}{40}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}A valle del vortice forzato}{42}{subsection.2.8.1}
-\contentsline {section}{\numberline {2.9}Vortice generico}{44}{section.2.9}
-\contentsline {subsection}{\numberline {2.9.1}Angolo di palettatura costante}{45}{subsection.2.9.1}
-\contentsline {section}{\numberline {2.10}Portata in un condotto anulare}{46}{section.2.10}
-\contentsline {section}{\numberline {2.11}Condizioni di ingolfamento}{50}{section.2.11}
-\contentsline {section}{\numberline {2.12}Componente radiale non trascurabile}{50}{section.2.12}
-\contentsline {section}{\numberline {2.13}Moti secondari}{52}{section.2.13}
-\contentsline {chapter}{\numberline {3}Compressori assiali}{55}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduzione}{55}{section.3.1}
-\contentsline {section}{\numberline {3.2}Lavoro e triangoli di velocit\IeC {\`a}}{57}{section.3.2}
-\contentsline {section}{\numberline {3.3}Termodinamica}{63}{section.3.3}
-\contentsline {section}{\numberline {3.4}Progettazione della schiera}{65}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Correlazioni di Howell}{65}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Condizioni fuori progetto}{70}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Criterio di carico}{72}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}Schiere supersoniche}{74}{section.3.5}
-\contentsline {chapter}{\numberline {4}Turbine a flusso assiale e misto}{77}{chapter.4}
-\contentsline {section}{\numberline {4.1}Calcolo dei rendimenti}{78}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Rendimenti}{79}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Propriet\IeC {\`a} termodinamiche del flusso}{82}{section.4.2}
-\contentsline {section}{\numberline {4.3}Schiere palari}{83}{section.4.3}
-\contentsline {section}{\numberline {4.4}Prestazioni della schiera}{85}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Soderberg}{88}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Ainley-Mathieson}{88}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Criteri di carico}{91}{section.4.5}
-\contentsline {chapter}{\numberline {5}Macchine eoliche}{95}{chapter.5}
-\contentsline {section}{\numberline {5.1}Riferimenti}{95}{section.5.1}
-\contentsline {section}{\numberline {5.2}Il teorema di Betz}{95}{section.5.2}
-\contentsline {section}{\numberline {5.3}Definizione del problema}{97}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Coefficiente di perdita di velocit\IeC {\`a}}{99}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Coefficiente di velocit\IeC {\`a} specifica locale}{99}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Coefficiente di velocit\IeC {\`a} angolare}{99}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}Teoria del tubo di flusso anulare con scia vorticosa}{100}{section.5.4}
-\contentsline {section}{\numberline {5.5}Forze aerodinamiche sull'elemento di pala}{105}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Variazione ottimale di $\theta $}{111}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Variazione ottimale del prodotto $\sigma _l C_z$}{113}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Pala ottimale con massima efficienza aerodinamica}{113}{subsection.5.5.3}
-\contentsline {subsection}{\numberline {5.5.4}Variazione della corda}{113}{subsection.5.5.4}
-\contentsline {subsection}{\numberline {5.5.5}Relazione tra solidit\IeC {\`a}, velocit\IeC {\`a} specifica ed efficienza della turbina}{113}{subsection.5.5.5}
-\contentsline {subsection}{\numberline {5.5.6}Solidit\IeC {\`a} e velocit\IeC {\`a} specifica}{115}{subsection.5.5.6}
-\contentsline {subsection}{\numberline {5.5.7}Solidit\IeC {\`a} ed efficienza aerodinamica}{115}{subsection.5.5.7}
-\contentsline {subsection}{\numberline {5.5.8}Influenza del coefficiente di finezza del profilo}{115}{subsection.5.5.8}
+\contentsline {subsection}{\numberline {2.5.2}Schiere di compressione}{34}{subsection.2.5.2}
+\contentsline {section}{\numberline {2.6}Equilibrio radiale}{37}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Termodinamica}{38}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Ipotesi semplificative}{39}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.7}Condizione di vortice libero}{40}{section.2.7}
+\contentsline {section}{\numberline {2.8}Vortice forzato}{41}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}A valle del vortice forzato}{43}{subsection.2.8.1}
+\contentsline {section}{\numberline {2.9}Vortice generico}{46}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Angolo di palettatura costante}{46}{subsection.2.9.1}
+\contentsline {section}{\numberline {2.10}Portata in un condotto anulare}{48}{section.2.10}
+\contentsline {section}{\numberline {2.11}Condizioni di ingolfamento (choking)}{51}{section.2.11}
+\contentsline {section}{\numberline {2.12}Componente radiale non trascurabile}{52}{section.2.12}
+\contentsline {section}{\numberline {2.13}Moti secondari}{53}{section.2.13}
+\contentsline {chapter}{\numberline {3}Compressori assiali}{57}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduzione}{57}{section.3.1}
+\contentsline {section}{\numberline {3.2}Lavoro e triangoli di velocit\IeC {\`a}}{59}{section.3.2}
+\contentsline {section}{\numberline {3.3}Termodinamica}{65}{section.3.3}
+\contentsline {section}{\numberline {3.4}Progettazione della schiera}{67}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Correlazioni di Howell}{67}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Condizioni fuori progetto}{72}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Criterio di carico}{74}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}Schiere supersoniche}{76}{section.3.5}
+\contentsline {chapter}{\numberline {4}Turbine a flusso assiale e misto}{79}{chapter.4}
+\contentsline {section}{\numberline {4.1}Calcolo dei rendimenti}{80}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Rendimenti}{81}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Propriet\IeC {\`a} termodinamiche del flusso}{84}{section.4.2}
+\contentsline {section}{\numberline {4.3}Schiere palari}{85}{section.4.3}
+\contentsline {section}{\numberline {4.4}Prestazioni della schiera}{87}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Soderberg}{90}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Ainley-Mathieson}{90}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Criteri di carico}{93}{section.4.5}
+\contentsline {chapter}{\numberline {5}Macchine eoliche}{97}{chapter.5}
+\contentsline {section}{\numberline {5.1}Riferimenti}{97}{section.5.1}
+\contentsline {section}{\numberline {5.2}Il teorema di Betz}{97}{section.5.2}
+\contentsline {section}{\numberline {5.3}Definizione del problema}{99}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Coefficiente di perdita di velocit\IeC {\`a}}{101}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Coefficiente di velocit\IeC {\`a} specifica locale}{101}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Coefficiente di velocit\IeC {\`a} angolare}{101}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Teoria del tubo di flusso anulare con scia vorticosa}{102}{section.5.4}
+\contentsline {section}{\numberline {5.5}Forze aerodinamiche sull'elemento di pala}{107}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Variazione ottimale di $\theta $}{113}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Variazione ottimale del prodotto $\sigma _l C_z$}{115}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Pala ottimale con massima efficienza aerodinamica}{115}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.4}Variazione della corda}{115}{subsection.5.5.4}
+\contentsline {subsection}{\numberline {5.5.5}Relazione tra solidit\IeC {\`a}, velocit\IeC {\`a} specifica ed efficienza della turbina}{115}{subsection.5.5.5}
+\contentsline {subsection}{\numberline {5.5.6}Solidit\IeC {\`a} e velocit\IeC {\`a} specifica}{117}{subsection.5.5.6}
+\contentsline {subsection}{\numberline {5.5.7}Solidit\IeC {\`a} ed efficienza aerodinamica}{117}{subsection.5.5.7}
+\contentsline {subsection}{\numberline {5.5.8}Influenza del coefficiente di finezza del profilo}{117}{subsection.5.5.8}
