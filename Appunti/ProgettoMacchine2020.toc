@@ -17,38 +17,38 @@
 \contentsline {section}{\numberline {2.3}Ipotesi di flusso a potenziale}{29}{section.2.3}
 \contentsline {section}{\numberline {2.4}Da profilo a schiera}{30}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Ugelli e diffusori}{31}{subsection.2.4.1}
-\contentsline {section}{\numberline {2.5}Schiere palari}{33}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Schiere di espansione}{33}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.5}Schiere palari}{34}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Schiere di espansione}{34}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Schiere di compressione}{34}{subsection.2.5.2}
 \contentsline {section}{\numberline {2.6}Equilibrio radiale}{37}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Termodinamica}{38}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Ipotesi semplificative}{39}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.1}Termodinamica}{39}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Ipotesi semplificative}{40}{subsection.2.6.2}
 \contentsline {section}{\numberline {2.7}Condizione di vortice libero}{40}{section.2.7}
-\contentsline {section}{\numberline {2.8}Vortice forzato}{41}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}A valle del vortice forzato}{43}{subsection.2.8.1}
-\contentsline {section}{\numberline {2.9}Vortice generico}{46}{section.2.9}
+\contentsline {section}{\numberline {2.8}Vortice forzato}{42}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}A valle del vortice forzato}{45}{subsection.2.8.1}
+\contentsline {section}{\numberline {2.9}Vortice generico}{45}{section.2.9}
 \contentsline {subsection}{\numberline {2.9.1}Angolo di palettatura costante}{46}{subsection.2.9.1}
 \contentsline {section}{\numberline {2.10}Portata in un condotto anulare}{48}{section.2.10}
-\contentsline {section}{\numberline {2.11}Condizioni di ingolfamento (choking)}{51}{section.2.11}
-\contentsline {section}{\numberline {2.12}Componente radiale non trascurabile}{52}{section.2.12}
+\contentsline {section}{\numberline {2.11}Condizioni di ingolfamento (choking)}{52}{section.2.11}
+\contentsline {section}{\numberline {2.12}Componente radiale non trascurabile}{53}{section.2.12}
 \contentsline {section}{\numberline {2.13}Moti secondari}{53}{section.2.13}
 \contentsline {chapter}{\numberline {3}Compressori assiali}{57}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduzione}{57}{section.3.1}
 \contentsline {section}{\numberline {3.2}Lavoro e triangoli di velocit\IeC {\`a}}{59}{section.3.2}
 \contentsline {section}{\numberline {3.3}Termodinamica}{65}{section.3.3}
 \contentsline {section}{\numberline {3.4}Progettazione della schiera}{67}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Correlazioni di Howell}{67}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.1}Correlazioni di Howell}{68}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Condizioni fuori progetto}{72}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Criterio di carico}{74}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.3}Criterio di carico}{72}{subsection.3.4.3}
 \contentsline {section}{\numberline {3.5}Schiere supersoniche}{76}{section.3.5}
 \contentsline {chapter}{\numberline {4}Turbine a flusso assiale e misto}{79}{chapter.4}
 \contentsline {section}{\numberline {4.1}Calcolo dei rendimenti}{80}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Rendimenti}{81}{subsection.4.1.1}
 \contentsline {section}{\numberline {4.2}Propriet\IeC {\`a} termodinamiche del flusso}{84}{section.4.2}
-\contentsline {section}{\numberline {4.3}Schiere palari}{85}{section.4.3}
-\contentsline {section}{\numberline {4.4}Prestazioni della schiera}{87}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Soderberg}{90}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Ainley-Mathieson}{90}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.3}Schiere palari}{86}{section.4.3}
+\contentsline {section}{\numberline {4.4}Prestazioni della schiera}{88}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Soderberg}{89}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Ainley-Mathieson}{91}{subsection.4.4.2}
 \contentsline {section}{\numberline {4.5}Criteri di carico}{93}{section.4.5}
 \contentsline {chapter}{\numberline {5}Macchine eoliche}{97}{chapter.5}
 \contentsline {section}{\numberline {5.1}Riferimenti}{97}{section.5.1}
