@@ -18,7 +18,7 @@
 \contentsline {section}{\numberline {2.4}Da profilo a schiera}{30}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Ugelli e diffusori}{31}{subsection.2.4.1}
 \contentsline {section}{\numberline {2.5}Schiere palari}{33}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Schiere di espansione}{33}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.1}Schiere di espansione}{34}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Schiere di compressione}{34}{subsection.2.5.2}
 \contentsline {section}{\numberline {2.6}Equilibrio radiale}{38}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}Termodinamica}{39}{subsection.2.6.1}
@@ -26,7 +26,7 @@
 \contentsline {section}{\numberline {2.7}Condizione di vortice libero}{40}{section.2.7}
 \contentsline {section}{\numberline {2.8}Vortice forzato}{42}{section.2.8}
 \contentsline {subsection}{\numberline {2.8.1}A valle del vortice forzato}{45}{subsection.2.8.1}
-\contentsline {section}{\numberline {2.9}Vortice generico}{45}{section.2.9}
+\contentsline {section}{\numberline {2.9}Vortice generico}{46}{section.2.9}
 \contentsline {subsection}{\numberline {2.9.1}Angolo di palettatura costante}{46}{subsection.2.9.1}
 \contentsline {section}{\numberline {2.10}Portata in un condotto anulare}{48}{section.2.10}
 \contentsline {section}{\numberline {2.11}Condizioni di ingolfamento (choking)}{52}{section.2.11}
@@ -39,7 +39,7 @@
 \contentsline {section}{\numberline {3.4}Progettazione della schiera}{67}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Correlazioni di Howell}{68}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Condizioni fuori progetto}{72}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Criterio di carico}{72}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.3}Criterio di carico}{74}{subsection.3.4.3}
 \contentsline {section}{\numberline {3.5}Schiere supersoniche}{76}{section.3.5}
 \contentsline {chapter}{\numberline {4}Turbine a flusso assiale e misto}{79}{chapter.4}
 \contentsline {section}{\numberline {4.1}Calcolo dei rendimenti}{80}{section.4.1}
@@ -55,12 +55,12 @@
 \contentsline {section}{\numberline {5.2}Il teorema di Betz}{97}{section.5.2}
 \contentsline {section}{\numberline {5.3}Definizione del problema}{100}{section.5.3}
 \contentsline {section}{\numberline {5.4}Teoria del tubo di flusso anulare con scia vorticosa}{102}{section.5.4}
-\contentsline {section}{\numberline {5.5}Forze aerodinamiche sull'elemento di pala}{108}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Variazione ottimale di $\theta $}{114}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Variazione ottimale del prodotto $\sigma _l C_z$}{116}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Pala ottimale con massima efficienza aerodinamica}{116}{subsection.5.5.3}
-\contentsline {subsection}{\numberline {5.5.4}Variazione della corda}{117}{subsection.5.5.4}
-\contentsline {subsection}{\numberline {5.5.5}Relazione tra solidit\IeC {\`a}, velocit\IeC {\`a} specifica ed efficienza della turbina}{117}{subsection.5.5.5}
-\contentsline {subsection}{\numberline {5.5.6}Solidit\IeC {\`a} e velocit\IeC {\`a} specifica}{118}{subsection.5.5.6}
-\contentsline {subsection}{\numberline {5.5.7}Solidit\IeC {\`a} ed efficienza aerodinamica}{119}{subsection.5.5.7}
-\contentsline {subsection}{\numberline {5.5.8}Influenza del coefficiente di finezza del profilo}{119}{subsection.5.5.8}
+\contentsline {section}{\numberline {5.5}Forze aerodinamiche sull'elemento di pala}{107}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Variazione ottimale di $\theta $}{113}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Variazione ottimale del prodotto $\sigma _l C_z$}{115}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Pala ottimale con massima efficienza aerodinamica}{115}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.4}Variazione della corda}{115}{subsection.5.5.4}
+\contentsline {subsection}{\numberline {5.5.5}Relazione tra solidit\IeC {\`a}, velocit\IeC {\`a} specifica ed efficienza della turbina}{116}{subsection.5.5.5}
+\contentsline {subsection}{\numberline {5.5.6}Solidit\IeC {\`a} e velocit\IeC {\`a} specifica}{117}{subsection.5.5.6}
+\contentsline {subsection}{\numberline {5.5.7}Solidit\IeC {\`a} ed efficienza aerodinamica}{117}{subsection.5.5.7}
+\contentsline {subsection}{\numberline {5.5.8}Influenza del coefficiente di finezza del profilo}{118}{subsection.5.5.8}
