@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.25)  26 MAY 2020 15:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.25)  26 MAY 2020 15:39
 entering extended mode
 **./ProgettoMacchine2020.tex
 (ProgettoMacchine2020.tex
@@ -714,11 +714,11 @@ Package pdftex.def Info: fig/hq.pdf  used on input line 100.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [4]
-<fig/adim.pdf, id=415, 597.50786pt x 569.05513pt>
+<fig/adim.pdf, id=415, 474.12178pt x 421.8033pt>
 File: fig/adim.pdf Graphic file (type pdf)
 <use fig/adim.pdf>
 Package pdftex.def Info: fig/adim.pdf  used on input line 124.
-(pdftex.def)             Requested size: 100.80103pt x 96.00003pt.
+(pdftex.def)             Requested size: 100.80103pt x 89.67545pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1671,7 +1671,7 @@ fonts/cm/cmsy5.pfb><C:/Users/giona/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 ams/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Users/giona/
 AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pf
 b>
-Output written on ProgettoMacchine2020.pdf (124 pages, 5576978 bytes).
+Output written on ProgettoMacchine2020.pdf (124 pages, 5577069 bytes).
 PDF statistics:
  3099 PDF objects out of 3580 (max. 8388607)
  410 named destinations out of 1000 (max. 500000)
