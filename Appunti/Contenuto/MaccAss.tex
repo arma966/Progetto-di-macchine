@@ -227,9 +227,11 @@ e quindi risalire al valore di portanza:
 L=\rho \Gamma V_\infty
 \end{align*}
 
-Si ricorda che l'introduzione del vortice libero serve per simulare l'effetto della presenza dello strato limite, il quale non viene considerato nelle ipotesi di flusso a potenziale con moto uniforme; è appunto questa vorticità che, separandosi dalla superficie del profilo, causa il diverso comportamento delle velocità in uscita tra intradosso ed estradosso.\\
-In questo modo, anche senza avere la precisione che si avrebbe in una simulazione fluidodinamica del profilo, è possibile modellare in maniera snella anche una schiera di pale. Basterà considerare un volume di controllo attorno alla singola pala della schiera ed individuare come linea di circuitazione, una che segua esattamente la linea di corrente di attraversamento della schiera (AD e CB in figura \ref{fig:schiera1}).\\
-\'E possibile utilizzare questa espressione per definire anche la portanza di una schiera. Il teorema di Kutta - Jukowsky può essere applicato in maniera precisa nel caso in cui non ci siano perdite di carico, $\Delta p_0=0$; in questo modo la forza risultante coinciderà con la portanza. Sotto le ipotesi di perdite di carico nulle vale:
+Si ricorda che l'introduzione del vortice libero serve per simulare l'effetto della presenza dello strato limite, il quale non viene considerato nelle ipotesi di flusso a potenziale con moto uniforme; è appunto questa vorticità che, separandosi dalla superficie del profilo, causa il diverso comportamento delle velocità in uscita tra intradosso ed estradosso.
+
+In questo modo, anche senza avere la precisione che si avrebbe in una simulazione fluidodinamica del profilo, è possibile modellare in maniera snella anche una schiera di pale. Basterà considerare un volume di controllo attorno ad una singola pala della schiera ed individuare come linea di circuitazione, una che segua esattamente la linea di corrente di attraversamento della schiera (AD e CB in figura \ref{fig:schiera1}).\\
+Per definire la portanza di una schiera il teorema di Kutta - Jukowsky può essere applicato in maniera precisa nel caso in cui non ci siano perdite di carico, $\Delta p_0=0$; in questo modo la forza risultante coinciderà con la portanza.\\
+Sotto le ipotesi di perdite di carico nulle vale:
 \begin{align*}
 \begin{cases}
 F_a = s \rho V_{\infty t} (V_{2t}-V_{1t})\\
@@ -249,11 +251,11 @@ Si trova il rapporto:
 		\label{fig:forzaKJ}
 	\end{minipage}
 \end{figure}
-La forza risultante $F$ è ortogonale a $V_\infty$ e vale:
+Questo parallelismo tra forze e velocità ci permette di individuare le forze agenti su una schiera di un compressore, figura \ref{fig:forzaKJ}. La forza risultante $F$ è perciò ortogonale a $V_\infty$ e vale:
 \begin{align*}
 F=\frac{F_t}{\cos \alpha_{\infty}}=\rho \frac{V_a}{\cos \alpha_{\infty}}s(V_{1t}-V_{2t})=\rho V_\infty s (V_{1t}-V_{2t})=L
 \end{align*}
-Infatti, calcolando la circuitazione lunga una linea s che racchiude un profilo di una schiera di pale e calcolando la portanza con il teorema di Kutta - Jukowsky, viene confermata questa espressione:
+Calcolando la circuitazione lungo una linea s che racchiude un profilo di una schiera di pale e calcolando la portanza con il teorema di Kutta - Jukowsky, viene confermata questa espressione:
 \begin{align*}
 \Gamma=s(V_{1t}-V_{2t}) \;\;\;\; \rightarrow \;\;\;\; L=\rho V_\infty \Gamma
 \end{align*}
@@ -274,11 +276,13 @@ Questo significa che si trova lo stesso valore di portanza sia nel caso si consi
   \label{fig:EffSchiera}
 \end{minipage}
 \end{figure}
-C'è poi la possibilità di correlare per un profilo isolato le relazioni tra angolo di attacco e coefficienti di lift e di drag (Figura \ref{fig:cdcl}). Per quanto riguarda il coefficiente di lift si avrà una parte sostanzialmente lineare mentre il coefficiente di drag è via via crescente. Si arriva ad un punto di stallo in cui c'è una rapida diminuzione del valore di $c_L$ e un rapido aumento di $c_D$; per questo motivo si preferisce lavorare nella zona lineare di variazione di $c_L$. \'E possibile valutare le prestazioni tentando di correlare quello che succede su un profilo e quello che succede su una schiera di assegnata solidità.\\
-Statisticamente si diagramma anche cosa succede tra il rapporto tra il coefficiente di lift e coefficiente di lift di profilo isolato, $c_{L \infty}$, e l'inverso della solidità della schiera al variare dell'angolo di attacco (Figura \ref{fig:EffSchiera}). Il range di solidità al quale si fa riferimento varia tra $1$ e $ 1.5 \div 1.6$ non si va oltre $2$. L'angolo di calettamento della schiera è tra i $45^{\circ} \div 52^{\circ}$ come si vede tracciando le linee orizzontali della zona evidenziata nella figura \ref{fig:EffSchiera}. In questo range il rapporto $c_L / c_{L \infty}$ è molto vicino all'unità.\\
-In fase di progettazione si usano i dati del profilo isolato e si corregge il coefficiente secondo questi diagrammi. In contesto industriale si simula direttamente una schiera.
+C'è poi la possibilità di correlare per un profilo isolato le relazioni tra angolo di attacco e coefficienti di lift e di drag (Figura \ref{fig:cdcl}). Per quanto riguarda il coefficiente di lift si avrà una parte sostanzialmente lineare mentre il coefficiente di drag è via via crescente. Si arriva ad un punto di stallo in cui c'è una rapida diminuzione del valore di $c_L$ e un rapido aumento di $c_D$; per questo motivo si preferisce lavorare nella zona lineare di variazione di $c_L$.\\
+\'E possibile valutare le prestazioni tentando di correlare quello che succede su un profilo e quello che succede su una schiera di assegnata solidità. Statisticamente si diagramma anche cosa succede tra un coefficiente $k$ (definito come il rapporto tra il coefficiente di lift del profilo in schiera e coefficiente di lift di profilo isolato $c_{L \infty}$) e l'inverso della solidità della schiera al variare dell'angolo di calettamento (Figura \ref{fig:EffSchiera}). Il range di solidità al quale si fa riferimento varia tra $1$ e $ 1.5 \div 1.6$, non si va oltre $2$. L'angolo di calettamento della schiera è tra i $45^{\circ} \div 52^{\circ}$ come si vede tracciando le linee orizzontali della zona evidenziata nella figura \ref{fig:EffSchiera}. In questo range il rapporto $c_L / c_{L \infty}$ è molto vicino all'unità.\\
+Lavorando all'interno di questi range quindi, in fase di progettazione è possibile usare i dati del profilo isolato e correggere il coefficiente utilizzato nella valutazione della schiera secondo questi diagrammi. In contesto industriale si simula fluidodinamicamente direttamente la schiera.
 \subsection{Ugelli e diffusori}
-Le definizioni sono note e stranote (ugelli portano ad un aumento di velocità a fronte di una riduzione di pressione e vengono utilizzati soprattutto nelle turbine, diffusori viceversa e vengono utilizzati soprattutto nei compressori). \'E possibile rappresentare le trasformazioni che si verificano all'interno di ugelli e diffusori sul piano $h-s$ con una trasformazione non isoentropica.
+Le definizioni sono note e stranote (ugelli portano ad un aumento di velocità a fronte di una riduzione di pressione e vengono utilizzati soprattutto nelle turbine, diffusori viceversa e vengono utilizzati soprattutto nei compressori). 
+
+\'E possibile rappresentare le trasformazioni che si verificano all'interno di ugelli e diffusori sul piano $h-s$ con una trasformazione non isoentropica.
 \begin{figure}
 \centering
 \begin{minipage}{.5\textwidth}
@@ -296,33 +300,34 @@ Le definizioni sono note e stranote (ugelli portano ad un aumento di velocità a
 \end{figure}
 \\Nel caso di ugelli per $Ma < 0.3$ si può scrivere:
 \begin{align*}
-\eta_{is} = \cfrac{h_{2s} - h_1}{h_2-h_1} = \cfrac{c_2^2 - c_1^2}{c_{2s}^2 - c_1^2}
+\eta_{is} = \cfrac{h_{1} - h_2}{h_1-h_{2s}} =\cfrac{\frac{c_2^2}{2}-\frac{c_1^2}{2}}{\frac{c_{2s}^2}{2}-\frac{c_1^2}{2}} = \cfrac{c_2^2 - c_1^2}{c_{2s}^2 - c_1^2}
 \end{align*}
 \begin{align*}
 \begin{cases}
 p_{01} = p_1 + \cfrac{1}{2} \rho c_1^2 \;\;\;\;& \to  \;\;\;\; c_1^2 = \cfrac{2}{\rho} (p_{01} - p_1)\\
-p_{02} = p_2 + \cfrac{1}{2} \rho c_{2s}^2 \;\;\;\;& \to  \;\;\;\; c_{2s}^2 = \cfrac{2}{\rho} (p_{01} - p_1)\\
+p_{01} = p_2 + \cfrac{1}{2} \rho c_{2s}^2 \;\;\;\;& \to  \;\;\;\; c_{2s}^2 = \cfrac{2}{\rho} (p_{01} - p_2)\\
 p_{02} = p_2 + \cfrac{1}{2} \rho c_2^2 \;\;\;\;& \to  \;\;\;\; c_2^2 = \cfrac{2}{\rho} (p_{02} - p_2)
 \end{cases}
 \end{align*}
 Sostituendo queste relazioni nell'espressione del rendimento si ottiene:
 \begin{align*}
-\eta_{is} = \cfrac{p_{02} - p_2 - (p_{01} - p_1)}{\cancel{p_{01}} - p_2 - (\cancel{p_{01}} - p_1)}=\cfrac{p_{02} - p_2 -(p_{01} - p_1)}{p_1-p_2}=1- \cfrac{\Delta p_0}{p_1 - p_2}
+\eta_{is} = \cfrac{p_{02} - p_2 - (p_{01} - p_1)}{\cancel{p_{01}} - p_2 - (\cancel{p_{01}} - p_1)}=\cfrac{p_{02} - p_2 -p_{01} + p_1}{p_1-p_2}=1- \cfrac{\Delta p_0}{p_1 - p_2}
 \end{align*}
-con $\Delta p_0$ che rappresenta la perdita tra ingresso e uscita.\\
+con $\Delta p_0=p_{01}-p_{02}$ che rappresenta la perdita tra ingresso e uscita.
+
 Per i diffusori si consideri sempre $Ma<0.3$ e si possono usare le stesse espressioni; si ottiene un rendimento isoentropico come segue:
 \begin{align*}
-\eta_{is} = \cfrac{p_2 - p_1}{p_2-p_1 + (p_{01}-p_{02})} = \cfrac{c_1^2 - c_{2s}^2}{c_1^2 - c_2^2}
+\eta_{is} = \cfrac{h_{2s}-h_1}{h_2-h_1} =\cfrac{\frac{c_1^2}{2}-\frac{c_{2s}^2}{2}}{\frac{c_1^2}{2}-\frac{c_2^2}{2}}= \cfrac{c_1^2 - c_{2s}^2}{c_1^2 - c_2^2}
 \end{align*}
-L'utilizzo di un rendimento isoentropico è meno espressivo nel caso di un diffusore, in quanto ha maggior significato fisico qual è l'entità di $ \Delta p$ recuperabile della parte eccedente la pressione statica in ingresso; quindi:
+L'utilizzo di un rendimento isoentropico è meno espressivo nel caso di un diffusore, in quanto ha maggior significato fisico qual è l'entità di $ \Delta p$ recuperabile rispetto la parte eccedente la pressione statica in ingresso; quindi:
 \begin{align*}
-\eta_{is} = \cfrac{p_{01} - p_1 - (p_{01} - p_2)}{p_{01} - p_1-(p_{02} - p_2)} = \cfrac{p_2 - p_1}{p_2 - p_1 + (p_{01} - p_{02})} = \cfrac{1}{1- \cfrac{\Delta p_0}{p_2 - p_1}}
+\eta_{is} = \cfrac{\cancel{p_{01}} - p_1 - (\cancel{p_{01}} - p_2)}{p_{01} - p_1-(p_{02} - p_2)} = \cfrac{p_2 - p_1}{p_2 - p_1 + (p_{01} - p_{02})} = \cfrac{1}{1+ \cfrac{\Delta p_0}{p_2 - p_1}}
 \end{align*}
 Definendo il coefficiente di recupero di pressione come:
 \begin{align*}
 c_p = \cfrac{p_2 - p_1}{p_{01} - p_1}
 \end{align*}
-si cerca il legame tra coefficiente di recupero di pressione e rendimento isoentropico:
+si cerca il legame tra coefficiente di recupero di pressione e rendimento isoentropico di un diffusore:
 \begin{align*}
 \cfrac{1}{\eta_{is}} = \cfrac{p_2 - p_1 + (p_{01} - p_{02})}{p_2 - p_1} = \cfrac{p_{01} - p_1 - (p_{02} - p_2)}{p_2-p_1} = \cfrac{1}{c_P} - \cfrac{p_{02} - p_2}{p_2 - p_1}
 \end{align*}
@@ -330,13 +335,20 @@ Si può definire un coefficiente di pressione ideale ottenuto ipotizzando di ave
 \begin{align*}
 c_{pi} = \cfrac{p_2 - p_1 + (p_{01} - p_{02})}{p_{01} - p_1}
 \end{align*}
-che può essere espresso in funzione di $A_1$ e $A_2$, aree di ingresso e uscita del diffusore:
+Considerando:
+\begin{align*}
+\begin{cases}
+p_{2} = p_{02} - \cfrac{1}{2} \rho c_2^2\\
+p_{1} = p_{01} - \cfrac{1}{2} \rho c_1^2
+\end{cases}
+\end{align*}
+e considerando la conservazione della portata in massa ($\rho c A=cost$), si può scrivere $c_{pi}$ in funzione di $A_1$ e $A_2$, aree di ingresso e uscita del diffusore:
 \begin{align*}
 c_{pi} = \cfrac{c_1^2 - c_2^2}{c_1^2} = 1 - \left( \cfrac{c_2}{c_1}\right)^2 = 1- \left(\cfrac{A_1}{A_2} \right)^2 =1-\cfrac{1}{A_R^2}
 \end{align*}
 con $A_R$ aspect ratio (rapporto tra sezione di uscita e sezione di ingresso). A questo punto si ottiene un rapporto:
 \begin{align*}
-\cfrac{c_P}{c_{pi}} = \cfrac{p_2-p_1}{p_{01}-p_1} \cdot \cfrac{p_{01}-p_1}{(p_1-p_1)+(p_{01}-p_{02})}= \eta_{is}
+\cfrac{c_P}{c_{pi}} = \cfrac{p_2-p_1}{p_{01}-p_1} \cdot \cfrac{p_{01}-p_1}{(p_2-p_1)+(p_{01}-p_{02})}= \eta_{is}
 \end{align*}
 Il diffusore funziona bene finché l'aspect ratio è molto piccolo altrimenti si verificano le condizioni per lo stallo a meno di non prevedere un diffusore con una geometria molto allungata. Anche per questo motivo l'angolo $\Theta$ vale pochi gradi soprattutto con diffusori corti, altrimenti ci sarebbe una ricircolazione di flusso sulle pareti e una diminuzione delle prestazioni. 
 \begin{figure}
@@ -348,63 +360,55 @@ Il diffusore funziona bene finché l'aspect ratio è molto piccolo altrimenti si
 \begin{figure}
 \centering
   \includegraphics[width=.5\textwidth]{fig/DiffPerf.pdf}
-\caption{Tipiche curve di performance per un diffusore bidimensionale con $L/W_1 = 0.8$}
+\caption{Tipiche curve di performance per un diffusore bidimensionale con $N/W_1 = 0.8$}
 \label{fig:DiffPerf}
 \end{figure}
-In figura \ref{fig:DiffPerf} sono rappresentate le tipiche curve di un diffusore.
+\\In figura \ref{fig:DiffPerf} sono rappresentate le tipiche curve di un diffusore.
 \section{Schiere palari}
 Le schiere di pale possono essere:
 \begin{itemize}
-	\item di espansione, in cui si ha un'accelerazione del flusso e quindi un comportamento simile ad un ugello;
-	\item  di compressione in cui si ha una trasformazione della velocità in pressione e quindi un comportamento simile ad un diffusore. 
+	\item di espansione, in cui si ha un'accelerazione del flusso e quindi un comportamento simile ad un ugello. Vista l'analogia con l'ugello, il rendimento isoentropico di queste schiere è esprimibile come:
+	\begin{align*}
+	\eta_{is} = 1- \cfrac{\Delta p_0}{p_1 - p_2}
+	\end{align*}
+	Sapendo però che la perdita di pressione tra ingresso e uscita può essere scritta nei termini della forza assiale sviluppata:
+	\begin{align*}
+	p_1-p_2 = \cfrac{F_a}{s}
+	\end{align*}
+	e la forza assiale può essere scritta come:
+	\begin{align*}
+	F_a=  - F_t \tan \alpha_{\infty} + s \Delta p_0
+	\end{align*}
+	si può scrivere il rendimento isoentropico come:
+	\begin{align*}
+	\eta_{is} = \cfrac{1}{1- \cfrac{\Delta p_0 s}{F_t \tan \alpha_{\infty}}}
+	\end{align*}
+	\item  di compressione, in cui si ha una trasformazione della velocità in pressione e quindi un comportamento simile ad un diffusore. Vista l'analogia con il diffusore, il rendimento isoentropico è espresso come:
+	\begin{align*}
+	\eta_{is} = \cfrac{1}{1 + \cfrac{\Delta p_0}{p_2-p_1}}
+	\end{align*}
+	Seguendo un percorso simile a quello della schiera di espansione, si può scrivere:
+	\begin{align*}
+	\eta_{is} = 1- \cfrac{\Delta p_0 s}{F_t \tan \alpha_{\infty}}
+	\end{align*}
 \end{itemize}
-\subsection{Schiere di espansione}
-Vista l'analogia con l'ugello, il rendimento isoentropico di queste schiere è espresso come:
-\begin{align*}
-\eta_{is} = 1- \cfrac{\Delta p_0}{p_1 - p_2}
-\end{align*}
-Sapendo però che la perdita di pressione tra ingresso e uscita può essere scritta nei termini della forza assiale sviluppata:
-\begin{align*}
-p_1-p_2 = \cfrac{F_a}{s}
-\end{align*}
-e la forza assiale può essere scritta come:
-\begin{align*}
-F_a=  - F_t \tan \alpha_{\infty} + s \Delta p_0
-\end{align*}
-si può scrivere il rendimento isoentropico come:
-\begin{align*}
-\eta_{is} = \cfrac{1}{1- \cfrac{\Delta p_0 s}{F_t \tan \alpha_{\infty}}}
-\end{align*}
-\subsection{Schiere di compressione}
-Vista l'analogia con il diffusore, il rendimento isoentropico è espresso come:
-\begin{align*}
-\eta_{is} = \cfrac{1}{1 + \cfrac{\Delta p_0}{p_2-p_1}}
-\end{align*}
-Seguendo un percorso simile a quello della schiera di espansione, si possono scrivere le seguenti relazioni:
-\begin{align*}
-p_2-p_1 = -\cfrac{F_a}{s}
-\end{align*}
-\begin{align*}
-F_a = -F_t \tan \alpha_{\infty} + s \Delta p_0
-\end{align*}
-\begin{align*}
-\eta_{is} = 1- \cfrac{\Delta p_0 s}{F_t \tan \alpha_{\infty}}
-\end{align*}
+
 Utilizzando le espressioni viste precedentemente di forza tangenziale, differenza di pressione totale, $V_\infty$ e $V_2$, si risale alla relazione che esprime il secondo termine dell'espressione di $\eta_{is}$:
 \begin{align*}
 \begin{cases}
 F_t = c_F \cfrac{1}{2} \rho c V_{\infty}^2\\
-V_{\infty} = \cfrac{V_a}{cos \alpha_{\infty}}\\
 \Delta p_0 = y \cfrac{1}{2} \rho V_2^2\\
-V_2 = \cfrac{V_a}{cos \alpha_2}
+V_{\infty} = \cfrac{V_a}{\cos \alpha_{\infty}}\\
+V_2 = \cfrac{V_a}{\cos \alpha_2}
 \end{cases}
 \;\;\;\; \rightarrow \;\;\;\;
-\cfrac{\Delta p_0 s}{F_t \tan \alpha_{\infty}} = \cfrac{y}{c_F \tan \alpha_{\infty}} \cdot \cfrac{cos^2 \alpha_{\infty}}{\delta \cdot cos^2 \alpha_2}
+\cfrac{\Delta p_0 s}{F_t \tan \alpha_{\infty}} = \cfrac{y}{c_F \tan \alpha_{\infty}} \cdot \cfrac{\cos^2 \alpha_{\infty}}{\sigma \cdot \cos^2 \alpha_2}
 \end{align*}
-\\Andando a considerare poi tutte le relazioni tra i coefficienti di forza, di pressione, di lift e di drag è possibile esprimere il rendimento isoentropico in funzione dei parametri di lift e di drag.
+\\Andando a considerare poi le relazioni tra i coefficienti di pressione, di forza, di lift e di drag è possibile esprimere il rendimento isoentropico in funzione dei parametri di lift e di drag.
 \begin{align*}
 \begin{cases}
 c_P = \left(  \cfrac{s}{c} \right) y \left( \cfrac{V_2}{V_{\infty}}  \right)^2 - c_F \tan \alpha_{\infty}\\
+c_F = 2 \bigg(\cfrac{s}{c} \bigg) \cos ^ 2 \alpha_{\infty}(\tan \alpha_1 - \tan \alpha_2)\\
 c_L = c_F \cos \alpha_{\infty} - c_P \sin \alpha_{\infty}\\
 c_D = c_F \sin \alpha_{\infty} + c_P \cos \alpha_{\infty}
 \end{cases}
@@ -421,13 +425,14 @@ c_D= \left(  \cfrac{s}{c} \right) y \cfrac{\cos^3 \alpha_{\infty}}{\cos \alpha_2
 Per rendere elevato il rendimento della schiera bisogna cercare il massimo del rapporto $c_L/c_D$, che rappresenta quindi l'efficienza del profilo. Esiste un tratto significativo di funzionamento in cui il rapporto $c_L/c_D$ rimane costante e questo corrisponde alle condizioni di funzionamento ottimo.\\
 Derivando il rendimento per $\alpha_{\infty}$ si trova il valore dell'angolo che rende massimo il rendimento:
 \begin{align*}
-\cfrac{\partial \eta_{is}}{\partial \alpha_{\infty}} = 0 \;\;\;\; \cfrac{c_D}{c_L} = cost.
+\cfrac{\partial \eta_{is}}{\partial \alpha_{\infty}} = 0 \;\;\;\;\;\;\;\; \cfrac{c_D}{c_L} = cost.
 \end{align*}
 \begin{align*}
 \eta_{is,max} = 1- \cfrac{2 c_D}{c_L}
 \end{align*}
-Il valore di $\alpha_{\infty}$ ottimale è di $45$ gradi.\\
-Secondo la solita convenzione si studiano i triangoli di velocità della schiera in movimento (Figura \ref{fig:SchiereCompr}). I triangoli invece di essere chiusi sul vettore velocità vengono rappresentati partendo dallo stesso punto di origine. 
+Il valore di $\alpha_{\infty}$ ottimale è di $45$ gradi.
+
+Si studiano ora i triangoli di velocità della schiera in movimento (Figura \ref{fig:SchiereCompr}); i triangoli invece di essere chiusi sul vettore velocità vengono rappresentati partendo dallo stesso punto di origine. 
 \begin{figure}
 \centering
   \includegraphics[width=\textwidth]{fig/SchiereCompr.pdf}
@@ -441,28 +446,27 @@ Secondo la solita convenzione si studiano i triangoli di velocità della schiera
 \begin{align*}
 F_t = s \rho c_a (\omega_{1t} - \omega_{2t})
 \end{align*}
-\\Partendo dalle relazioni di potenza, portata in massa e forza tangenziale si definisce il lavoro unitario:
+\\Partendo dalle definizioni di potenza, portata in massa e forza tangenziale si definisce il lavoro unitario:
 \begin{align*}
 \begin{cases}
 P=F_t \cdot u\\
 \dot{m} = \rho s c_a\\
-F_t = c_F \cfrac{1}{2} \rho c \omega_{\infty}^2 = \cfrac{c_F \cfrac{1}{2} \rho c c_a^2}{\cos^2 \beta_{\infty}}
+F_t = c_F \cfrac{1}{2} \rho c \omega_{\infty}^2 = c_F \cfrac{1}{2} \rho c \cfrac{c_a^2}{\cos^2 \beta_{\infty}}
 \end{cases} \;\;\;\;
 \Rightarrow \;\;\;\;
-L_u = \cfrac{F_t \cdot u}{\rho s c_a}
+L_u = \cfrac{P}{\dot{m}}= \cfrac{F_t \cdot u}{\rho s c_a}
 \end{align*}
-Sostituendo la relazione della forza tangenziale si ottiene il lavoro unitario in funzione del coefficiente di forza, della solidità della schiera, della velocità assiale e periferica:
 \begin{align*}
 L_u = \cfrac{c_F \cdot \sigma}{2 \cos^2 \beta_{\infty}} \cdot c_a \cdot u
 \end{align*}
 \\Con questa espressione si può ora adimensionalizzare il lavoro:
 \begin{align*}
 \begin{cases}
-\lambda = \cfrac{L_u}{\omega ^2 D^2} = \cfrac{L_u}{4 u^2}\\
+\psi = \cfrac{L_u}{\omega ^2 D^2} = \cfrac{L_u}{4 u^2}\\
 \varphi = \cfrac{Q}{\omega D^3} \propto \cfrac{c_a}{u}
 \end{cases} \;\;\;\;
 \Rightarrow \;\;\;\;
-\lambda = \cfrac{c_F \delta}{8 \cos^2 \beta_{\infty}} \cdot \cfrac{c_a}{u} = \cfrac{c_F \delta}{8 \cos^2 \beta_{\infty}} \cdot \varphi
+\psi = \cfrac{c_F \sigma}{8 \cos^2 \beta_{\infty}} \cdot \cfrac{c_a}{u} = \cfrac{c_F \sigma}{8 \cos^2 \beta_{\infty}} \cdot \varphi
 \end{align*}
 L'ultima espressione rappresenta la curva di funzionamento della macchina in quanto ovviamente il lavoro viene fatto esclusivamente dalle parti rotoriche.\\
 Si può quindi scrivere il rendimento isoentropico sia nel caso di compressione che di espansione:
@@ -481,24 +485,24 @@ e utilizzando le relazioni note:
 \begin{align*}
 \begin{cases}
 \Delta p_0 = y \cfrac{1}{2} \rho \omega_2^2\\
-L_u = \cfrac{c_F \delta}{2 \cos^2 \beta_{\infty}} \cdot c_a \cdot u\\
+L_u = \cfrac{c_F \sigma}{2 \cos^2 \beta_{\infty}} \cdot c_a \cdot u\\
 \omega_2 = \cfrac{c_a}{\cos \beta_2}\\
-\phi = \cfrac{c_a}{u}
+\varphi = \cfrac{c_a}{u}
 \end{cases}
 \end{align*}
 si ottengono le espressioni:
 \begin{multicols}{2}
 Compressione
 \begin{align*}
-\eta_{is} = 1- \cfrac{y}{c_F} \cdot  \cfrac{cos^2 \beta_{\infty}}{\delta \cos^2 \beta_2} \cdot \phi
+\eta_{is} = 1- \cfrac{y}{c_F} \cdot  \cfrac{cos^2 \beta_{\infty}}{\sigma \cos^2 \beta_2} \cdot \varphi
 \end{align*}
 \break
 Espansione
 \begin{align*}
-\eta_{is} = \cfrac{1}{1+\cfrac{y}{c_F} \cdot \cfrac{\cos^2 \beta_{\infty}}{\delta \cos^2 \beta_2} \cdot \phi}
+\eta_{is} = \cfrac{1}{1+\cfrac{y}{c_F} \cdot \cfrac{\cos^2 \beta_{\infty}}{\sigma \cos^2 \beta_2} \cdot \varphi}
 \end{align*}
 \end{multicols}
-Unendo la parte statorica e parte rotorica, la variazione di pressione che porta al calcolo del rendimento assumerà l'espressione:
+Unendo la parte statorica e parte rotorica, la variazione di pressione che porta al calcolo del rendimento di uno stadio assumerà l'espressione:
 \begin{align*}
 \Delta p_0 = \Delta p_{0,stat} + \Delta p_{0,rot}
 \end{align*}
@@ -516,7 +520,7 @@ Unendo la parte statorica e parte rotorica, la variazione di pressione che porta
 \label{fig:concio}
 \end{figure}
 Con i capitoli precedenti è stato trattato cosa succede nell'attraversamento della schiera in termini macroscopici; per effettuare queste considerazioni bisogna partire dal presupposto che non vi sia un deflusso significativo in direzione radiale assicurandosi quindi che non vi sia trasmissione di forze tra sezioni circolari della macchina.\\
-Si consideri ora l'elementino di fluido $dz - d\theta$, figura \ref{fig:concio}, su cui agiscono le forze di pressione. Si calcoli l'equilibrio delle forze:
+Si consideri l'elementino di fluido $dz - d\theta$, figura \ref{fig:concio}, su cui agiscono le forze di pressione. Si calcoli l'equilibrio delle forze:
 \begin{align*}
 \left( P + \cfrac{dP}{dr} dr \right) (r + dr) d \theta dz - Pr d \theta dz -2P dr dz \sin \frac{d \theta}{2} = r \frac{dP}{dr} dr d \theta dz
 \end{align*}
@@ -548,61 +552,57 @@ Considerando poi l'equazione \ref{eq:EquilibrioRad} si ottiene:
 \begin{align*}
 \frac{dh_0}{dr} = T \frac{ds}{dr} + \frac{V_t^2}{r} + V_t \frac{dV_t}{dr} + V_a \frac{dV_a}{dr}
 \end{align*}
-In questa espressione non c'è più una pressione ma solo i valori delle velocità, entalpia ed entropia al variare del raggio. A questo punto è possibile scrivere l'equazione complessiva che rappresenta il legame da imporre per avere un flusso bidimensionale:
-\begin{align*}
+In questa espressione non c'è più una pressione ma solo i valori di velocità, entalpia ed entropia al variare del raggio. A questo punto è possibile scrivere l'equazione complessiva che rappresenta il legame da imporre per avere un flusso bidimensionale:
+\begin{equation}
 \boxed{ \frac{dh_0}{dr} - T\frac{ds}{dr} = V_a \frac{dV_a}{dr} + \frac{V_t}{r} \frac{d}{dr}(V_t \cdot r)}
-\end{align*}
+\end{equation}
 Questa equazione consente di affrontare due problematiche tipiche della progettazione delle macchine:
 \begin{enumerate}
 \item Problema diretto (o problema di verifica): nota la geometria di una macchina e la distribuzione radiale dell'angolo $\alpha_{\infty}$, determinare la distribuzione radiale di tutte le grandezza del flusso e termodinamiche.
 \item Problema inverso (o problema di progetto): assegnata una certa distribuzione di una grandezza termodinamica o fluidodinamica, trovare qual è la geometria della schiera che la realizza.
 \end{enumerate}
 \subsection{Ipotesi semplificative}
-Si può fare un'ulteriore osservazione semplificativa per la fase di progettazione preliminare. Si ipone
+Si può fare un'ulteriore osservazione semplificativa per la fase di progettazione preliminare. Si impone:
 \begin{align*}
 \begin{cases}
 \cfrac{dh_0}{dr} = 0\\
 \cfrac{ds}{dr} = 0 
 \end{cases}
 \end{align*}
-ossia che $h_0$ e la dissipazione siano costanti lungo il raggio. In questo modo si ottiene la relazione semplificata:
+ossia che $h_0$ e la dissipazione siano costanti lungo il raggio. Queste due osservazioni sono abbastanza realistiche. In questo modo si ottiene la relazione semplificata:
 \begin{equation}
 \boxed{ V_a \frac{d V_a}{dr} + \frac{V_t}{r} \frac{d}{dr}(V_t \cdot r) = 0}
 \label{eq:EquilibrioRadSemp}
 \end{equation}
 \section{Condizione di vortice libero}
-Queste due osservazioni sono abbastanza realistiche. Dopo aver fatto queste assunzioni sulle distribuzioni delle velocità tangenziali si possono fare delle ulteriori osservazioni sulle velocità assiali.  Ad esempio è possibile costruire la macchina imponendo le condizioni di vortice libero, $V_t \cdot r = cost$.
-Questo significa che, considerando un mantello $i$ generico:
-\begin{align*}
-V_t \cdot r = V_{ti} \cdot r_i
-\end{align*}
-e unendo l'equazione di vortice libero all'equazione \ref{eq:EquilibrioRadSemp}, si ottiene:
+Si possono fare ora delle ulteriori osservazioni sulle velocità assiali.\\
+\'E possibile ad esempio costruire la macchina imponendo le condizioni di vortice libero:
+\begin{equation}
+\boxed{V_t \cdot r = cost}
+\end{equation}
+Unendo l'equazione di vortice libero all'equazione \ref{eq:EquilibrioRadSemp}, si ottiene:
 \begin{align*}
 V_a=cost
 \end{align*}
 ossia una velocità assiale costante lungo il raggio.\\
 Dal punto di vista dell'entalpia, considerando il rapporto tra una sezione generica e una sezione $i$, sapendo che $h_0 = cost$, si scrive
 \begin{align*}
-h + \frac{V^2}{2} = h_i + \frac{V_i^2}{2} \Rightarrow h = h_i	+ \frac{V_i^2 - V^2}{2}
+h + \frac{V^2}{2} = h_i + \frac{V_i^2}{2} \;\;\;\; \Rightarrow \;\;\;\; h = h_i	+ \frac{V_i^2 - V^2}{2}
 \end{align*}
 e quindi, considerando che $V^2=V_t^2+V_a^2$:
 \begin{equation}
-\frac{h}{h_i} = 1 + \frac{1}{2h_i} (V_{ti}^2-V_t^2 + \cancel{V_a^2} -\cancel{V_a^2}) = 1 + \frac{V_{ti}^2}{2h_i} \left( 1- \frac{V_t^2}{V_{ti}^2} \right)
+\frac{h}{h_i} = 1 + \frac{1}{2h_i} (V_{ti}^2+ \cancel{V_a^2}-V_t^2 -\cancel{V_a^2}) = 1 + \frac{V_{ti}^2}{2h_i} \left( 1- \frac{V_t^2}{V_{ti}^2} \right)
 \label{eq:RappEnt}
 \end{equation}
-Facendo un'ulteriore considerazione:
+Ricordando l'equazione di vortice libero:
 \begin{align*}
-V_t \cdot r = V_{ti} \cdot r_i \Rightarrow \frac{V_t}{V_{ti}} = \frac{r_i}{r}
+V_t \cdot r = V_{ti} \cdot r_i \;\;\;\; \Rightarrow \;\;\;\; \frac{V_t}{V_{ti}} = \frac{r_i}{r}
 \end{align*}
-riuscendo a scrivere la \ref{eq:RappEnt} come:
-\begin{align*}
+si può scrivere l'equazione \ref{eq:RappEnt} come:
+\begin{equation}\label{eq:h_hi}
 \frac{h}{h_i} = 1 + \frac{V_{ti}^2}{2h_i} \bigg(1 -  \left( \frac{r_i}{r}\right)^2 \bigg)
-\end{align*}
-Rimanipolandola ulteriormente si può scriverla nella forma:
-\begin{align*}
-\boxed{\frac{h}{h_i} = 1 + \frac{\gamma -1}{2} M_{ti}^2 \bigg(1 -  \left( \frac{r_i}{r}\right)^2 \bigg) }
-\end{align*}
-Si possono ora diagrammare nelle condizioni di vortice libero tutte le espressioni utili a livello termodinamico. In Figura \ref{fig:VorticeLibero} è rappresentata la variazione del rapporto delle pressioni in funzione del rapporto dei raggi al variare del numero di Mach. \'E possibile notare come c'è sempre un valore minimo di raggio oltre il quale non ci si può spingere.
+\end{equation}
+Se si considera un gas perfetto si può dire:
 \begin{align*}
 \begin{cases}
 h = \cfrac{a ^ 2}{\gamma - 1} \\
@@ -611,6 +611,11 @@ M_{ti} = \cfrac{V_{ti}}{a_i}\\
 \cfrac{p}{p_i} = \left( \cfrac{h}{h_i} \right)^{\frac{\gamma}{\gamma - 1}}
 \end{cases}
 \end{align*}
+Queste relazioni permettono di riscrivere l'equazione \ref{eq:h_hi} come:
+\begin{equation}
+\boxed{\frac{h}{h_i} = 1 + \frac{\gamma -1}{2} M_{ti}^2 \bigg(1 -  \left( \frac{r_i}{r}\right)^2 \bigg) }
+\end{equation}
+Si possono ora diagrammare, nelle condizioni di vortice libero, tutte le espressioni utili a livello termodinamico. In Figura \ref{fig:VorticeLibero} è rappresentata la variazione del rapporto delle pressioni in funzione del rapporto dei raggi al variare del numero di Mach. \'E possibile notare come c'è sempre un valore minimo di raggio oltre il quale non ci si può spingere.
 \begin{figure}
 \centering
   \includegraphics[width=.75\textwidth]{fig/VorticeLibero.pdf}
@@ -624,7 +629,7 @@ Condizione di vortice forzato:
 \boxed{\frac{V_t}{r} = cost.}
 \label{eq:VortForz}
 \end{equation}
-Questo significa che il deflusso della macchina si comporta effettivamente come un moto rigido e il rapporto tra velocità tangenziale e raggio si mantiene costante.\\
+Questo significa che il deflusso della macchina si comporta effettivamente come un moto rigido.\\
 Si ricordano le equazioni di partenza, ovvero quella di equilibrio radiale e le ipotesi semplificative:
 \begin{equation}
 \begin{cases}
@@ -655,7 +660,7 @@ V_a=V_{ai}\\
 r=r_i
 \end{cases}
 \;\;\;\; \Rightarrow \;\;\;\;
-C = \frac{V_{ai}^2}{2} + V_{ti}^2
+C = \frac{V_{ai}^2}{2} + 2 V_{ti}^2
 \end{align*}
 Sapendo che:
 \begin{align*}
@@ -663,16 +668,17 @@ Sapendo che:
 \end{align*}
 si può scrivere la \ref{eq:SolCost} nella forma completa:
 \begin{equation}
-\boxed{ \bigg( \frac{V_a}{V_{ai}} \bigg)^2 = 1- 2 \tan^2 \alpha_i \bigg[ \bigg( \frac{r}{r_i} \bigg)^2 -1 \bigg] }
+\boxed{ \bigg( \frac{V_a}{V_{ai}} \bigg)^2 = 1- 4 \tan^2 \alpha_i \bigg[ \bigg( \frac{r}{r_i} \bigg)^2 -1 \bigg] }
 \label{eq:RappVol}
 \end{equation}
+
 Si prosegue e si determina anche l'andamento dell'entalpia in funzione del raggio. Si ricorda l'espressione per l'entalpia totale:
 \begin{align*}
 h = h_i + \frac{V_i^2 - V^2}{2}
 \end{align*}
 A questo punto si calcola il rapporto tra l'entalpia di riferimento e l'entalpia in una generica sezione $i$:
 \begin{align*}
-\frac{h}{h_i} = 1+ \frac{1}{2 h_i} (V_{ti}^2 - V_t^2 + V_{ai}^2 -V_a^2)
+\frac{h}{h_i} = 1+ \frac{1}{2 h_i} (V_{ti}^2 + V_{ai}^2- V_t^2 -V_a^2)
 \end{align*}
 Raccogliendo i termini $V_{ti}$ e $V_{ai}$ si ottiene:
 \begin{align*}
@@ -685,12 +691,12 @@ Si possono fare delle ulteriori considerazioni ricordando la \ref{eq:RappVol} e 
 \cfrac{V_{ti}}{V_{ai}} = \tan \alpha_i
 \end{cases}
 \end{align*}
-Con alcuni passaggi algebrici si perviene a:
+si perviene a:
 \begin{equation}
 \boxed{ \frac{h}{h_i} = 1+ \frac{V_{ti}^2}{2h_i} \bigg[ \bigg( \frac{r}{r_i} \bigg)^2 -1 \bigg] }
 \label{eq:rappEntalpie}
 \end{equation}
-Questo significa che a seconda dell'angolo di incidenza della palettatura, la distribuzione delle velocità assiali non è più uniforme lungo il raggio; si vede chiaramente questo comportamento nel diagramma in Figura \ref{fig:TurboFan}.
+Questo significa che a seconda dell'angolo $\alpha_i$, la distribuzione delle velocità assiali non è più uniforme lungo il raggio; si vede chiaramente questo comportamento nel diagramma in Figura \ref{fig:TurboFan}.
 \begin{figure}
 \centering
   \includegraphics[width=.8\textwidth]{fig/VortForz.pdf}
@@ -703,7 +709,7 @@ Questo significa che a seconda dell'angolo di incidenza della palettatura, la di
 \caption{}
 \label{fig:PVortForz}
 \end{figure}
-\\Naturalmente si può ricavare l'andamento delle pressioni e delle entalpie (Figura \ref{fig:PVortForz}); ricordando che:
+\\Naturalmente si può ricavare l'andamento delle pressioni (Figura \ref{fig:PVortForz}) e delle entalpie; ricordando che:
 \begin{align*}
 \frac{p}{p_i} = \frac{h}{h_i}^{\frac{k}{k-1}}
 \end{align*}
@@ -734,7 +740,7 @@ h_{02} - h_{01} &= u (V_{t2} - V_{t1} ) = \omega r (K_2 r - K_1 r) \\
 &= \omega (K_2 - K_1) r^2 = \Delta h_{012}
 \end{split}
 \end{align*}
-ovvero $\Delta h \propto r^2 \; \Rightarrow \; h_{02} \neq  cost$. Quindi attraversando la macchina, a seconda del raggio ci si trova, cambia il lavoro scambiato dalla macchina; questa variazione precisa è una condizione pressoché impossibile da mantenere in fase di progettazione.\\
+ovvero $\Delta h \propto r^2 \; \Rightarrow \; h_{02} \neq  cost$. Quindi attraversando la macchina, a seconda del raggio a cui ci si trova, cambia il lavoro scambiato dalla macchina; questa variazione precisa è una condizione pressoché impossibile da mantenere in fase di progettazione.\\
 Si vede ora cosa succede calcolando il differenziale dell'entalpia rispetto al raggio:
 \begin{align*}
 \begin{split}
