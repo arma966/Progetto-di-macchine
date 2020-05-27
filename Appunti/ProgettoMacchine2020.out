@@ -16,49 +16,47 @@
 \BOOKMARK [1][-]{section.2.4}{Da profilo a schiera}{chapter.2}% 16
 \BOOKMARK [2][-]{subsection.2.4.1}{Ugelli e diffusori}{section.2.4}% 17
 \BOOKMARK [1][-]{section.2.5}{Schiere palari}{chapter.2}% 18
-\BOOKMARK [2][-]{subsection.2.5.1}{Schiere di espansione}{section.2.5}% 19
-\BOOKMARK [2][-]{subsection.2.5.2}{Schiere di compressione}{section.2.5}% 20
-\BOOKMARK [1][-]{section.2.6}{Equilibrio radiale}{chapter.2}% 21
-\BOOKMARK [2][-]{subsection.2.6.1}{Termodinamica}{section.2.6}% 22
-\BOOKMARK [2][-]{subsection.2.6.2}{Ipotesi semplificative}{section.2.6}% 23
-\BOOKMARK [1][-]{section.2.7}{Condizione di vortice libero}{chapter.2}% 24
-\BOOKMARK [1][-]{section.2.8}{Vortice forzato}{chapter.2}% 25
-\BOOKMARK [2][-]{subsection.2.8.1}{A valle del vortice forzato}{section.2.8}% 26
-\BOOKMARK [1][-]{section.2.9}{Vortice generico}{chapter.2}% 27
-\BOOKMARK [2][-]{subsection.2.9.1}{Angolo di palettatura costante}{section.2.9}% 28
-\BOOKMARK [1][-]{section.2.10}{Portata in un condotto anulare}{chapter.2}% 29
-\BOOKMARK [1][-]{section.2.11}{Condizioni di ingolfamento \(choking\)}{chapter.2}% 30
-\BOOKMARK [1][-]{section.2.12}{Componente radiale non trascurabile}{chapter.2}% 31
-\BOOKMARK [1][-]{section.2.13}{Moti secondari}{chapter.2}% 32
-\BOOKMARK [0][-]{chapter.3}{Compressori assiali}{}% 33
-\BOOKMARK [1][-]{section.3.1}{Introduzione}{chapter.3}% 34
-\BOOKMARK [1][-]{section.3.2}{Lavoro e triangoli di velocit\340}{chapter.3}% 35
-\BOOKMARK [1][-]{section.3.3}{Termodinamica}{chapter.3}% 36
-\BOOKMARK [1][-]{section.3.4}{Progettazione della schiera}{chapter.3}% 37
-\BOOKMARK [2][-]{subsection.3.4.1}{Correlazioni di Howell}{section.3.4}% 38
-\BOOKMARK [2][-]{subsection.3.4.2}{Condizioni fuori progetto}{section.3.4}% 39
-\BOOKMARK [2][-]{subsection.3.4.3}{Criterio di carico}{section.3.4}% 40
-\BOOKMARK [1][-]{section.3.5}{Schiere supersoniche}{chapter.3}% 41
-\BOOKMARK [0][-]{chapter.4}{Turbine a flusso assiale e misto}{}% 42
-\BOOKMARK [1][-]{section.4.1}{Calcolo dei rendimenti}{chapter.4}% 43
-\BOOKMARK [2][-]{subsection.4.1.1}{Rendimenti}{section.4.1}% 44
-\BOOKMARK [1][-]{section.4.2}{Propriet\340 termodinamiche del flusso}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.3}{Schiere palari}{chapter.4}% 46
-\BOOKMARK [1][-]{section.4.4}{Prestazioni della schiera}{chapter.4}% 47
-\BOOKMARK [2][-]{subsection.4.4.1}{Soderberg}{section.4.4}% 48
-\BOOKMARK [2][-]{subsection.4.4.2}{Ainley-Mathieson}{section.4.4}% 49
-\BOOKMARK [1][-]{section.4.5}{Criteri di carico}{chapter.4}% 50
-\BOOKMARK [0][-]{chapter.5}{Macchine eoliche}{}% 51
-\BOOKMARK [1][-]{section.5.1}{Introduzione}{chapter.5}% 52
-\BOOKMARK [1][-]{section.5.2}{Il teorema di Betz}{chapter.5}% 53
-\BOOKMARK [1][-]{section.5.3}{Definizione del problema}{chapter.5}% 54
-\BOOKMARK [1][-]{section.5.4}{Teoria del tubo di flusso anulare con scia vorticosa}{chapter.5}% 55
-\BOOKMARK [1][-]{section.5.5}{Forze aerodinamiche sull'elemento di pala}{chapter.5}% 56
-\BOOKMARK [2][-]{subsection.5.5.1}{Variazione ottimale di }{section.5.5}% 57
-\BOOKMARK [2][-]{subsection.5.5.2}{Variazione ottimale del prodotto l Cz}{section.5.5}% 58
-\BOOKMARK [2][-]{subsection.5.5.3}{Pala ottimale con massima efficienza aerodinamica}{section.5.5}% 59
-\BOOKMARK [2][-]{subsection.5.5.4}{Variazione della corda}{section.5.5}% 60
-\BOOKMARK [2][-]{subsection.5.5.5}{Relazione tra solidit\340, velocit\340 specifica ed efficienza della turbina}{section.5.5}% 61
-\BOOKMARK [2][-]{subsection.5.5.6}{Solidit\340 e velocit\340 specifica}{section.5.5}% 62
-\BOOKMARK [2][-]{subsection.5.5.7}{Solidit\340 ed efficienza aerodinamica}{section.5.5}% 63
-\BOOKMARK [2][-]{subsection.5.5.8}{Influenza del coefficiente di finezza del profilo}{section.5.5}% 64
+\BOOKMARK [1][-]{section.2.6}{Equilibrio radiale}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.6.1}{Termodinamica}{section.2.6}% 20
+\BOOKMARK [2][-]{subsection.2.6.2}{Ipotesi semplificative}{section.2.6}% 21
+\BOOKMARK [1][-]{section.2.7}{Condizione di vortice libero}{chapter.2}% 22
+\BOOKMARK [1][-]{section.2.8}{Vortice forzato}{chapter.2}% 23
+\BOOKMARK [2][-]{subsection.2.8.1}{A valle del vortice forzato}{section.2.8}% 24
+\BOOKMARK [1][-]{section.2.9}{Vortice generico}{chapter.2}% 25
+\BOOKMARK [2][-]{subsection.2.9.1}{Angolo di palettatura costante}{section.2.9}% 26
+\BOOKMARK [1][-]{section.2.10}{Portata in un condotto anulare}{chapter.2}% 27
+\BOOKMARK [1][-]{section.2.11}{Condizioni di ingolfamento \(choking\)}{chapter.2}% 28
+\BOOKMARK [1][-]{section.2.12}{Componente radiale non trascurabile}{chapter.2}% 29
+\BOOKMARK [1][-]{section.2.13}{Moti secondari}{chapter.2}% 30
+\BOOKMARK [0][-]{chapter.3}{Compressori assiali}{}% 31
+\BOOKMARK [1][-]{section.3.1}{Introduzione}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.2}{Lavoro e triangoli di velocit\340}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.3}{Termodinamica}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.4}{Progettazione della schiera}{chapter.3}% 35
+\BOOKMARK [2][-]{subsection.3.4.1}{Correlazioni di Howell}{section.3.4}% 36
+\BOOKMARK [2][-]{subsection.3.4.2}{Condizioni fuori progetto}{section.3.4}% 37
+\BOOKMARK [2][-]{subsection.3.4.3}{Criterio di carico}{section.3.4}% 38
+\BOOKMARK [1][-]{section.3.5}{Schiere supersoniche}{chapter.3}% 39
+\BOOKMARK [0][-]{chapter.4}{Turbine a flusso assiale e misto}{}% 40
+\BOOKMARK [1][-]{section.4.1}{Calcolo dei rendimenti}{chapter.4}% 41
+\BOOKMARK [2][-]{subsection.4.1.1}{Rendimenti}{section.4.1}% 42
+\BOOKMARK [1][-]{section.4.2}{Propriet\340 termodinamiche del flusso}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.3}{Schiere palari}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.4}{Prestazioni della schiera}{chapter.4}% 45
+\BOOKMARK [2][-]{subsection.4.4.1}{Soderberg}{section.4.4}% 46
+\BOOKMARK [2][-]{subsection.4.4.2}{Ainley-Mathieson}{section.4.4}% 47
+\BOOKMARK [1][-]{section.4.5}{Criteri di carico}{chapter.4}% 48
+\BOOKMARK [0][-]{chapter.5}{Macchine eoliche}{}% 49
+\BOOKMARK [1][-]{section.5.1}{Introduzione}{chapter.5}% 50
+\BOOKMARK [1][-]{section.5.2}{Il teorema di Betz}{chapter.5}% 51
+\BOOKMARK [1][-]{section.5.3}{Definizione del problema}{chapter.5}% 52
+\BOOKMARK [1][-]{section.5.4}{Teoria del tubo di flusso anulare con scia vorticosa}{chapter.5}% 53
+\BOOKMARK [1][-]{section.5.5}{Forze aerodinamiche sull'elemento di pala}{chapter.5}% 54
+\BOOKMARK [2][-]{subsection.5.5.1}{Variazione ottimale di }{section.5.5}% 55
+\BOOKMARK [2][-]{subsection.5.5.2}{Variazione ottimale del prodotto l Cz}{section.5.5}% 56
+\BOOKMARK [2][-]{subsection.5.5.3}{Pala ottimale con massima efficienza aerodinamica}{section.5.5}% 57
+\BOOKMARK [2][-]{subsection.5.5.4}{Variazione della corda}{section.5.5}% 58
+\BOOKMARK [2][-]{subsection.5.5.5}{Relazione tra solidit\340, velocit\340 specifica ed efficienza della turbina}{section.5.5}% 59
+\BOOKMARK [2][-]{subsection.5.5.6}{Solidit\340 e velocit\340 specifica}{section.5.5}% 60
+\BOOKMARK [2][-]{subsection.5.5.7}{Solidit\340 ed efficienza aerodinamica}{section.5.5}% 61
+\BOOKMARK [2][-]{subsection.5.5.8}{Influenza del coefficiente di finezza del profilo}{section.5.5}% 62
