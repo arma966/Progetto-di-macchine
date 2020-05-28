@@ -1,54 +1,56 @@
 \chapter{Compressori assiali}
 
 \section{Introduzione}
-I compressori assiali sono macchine relativamente recenti, si tratta di una macchina nata nel dopoguerra come componente per i gruppi turbina a gas in campo aeronautico. I primi motori aeronautici costituiti da gruppo turbogas sono stati inizialmente costruiti come compressori radiali. C'è una forte correlazione tra compressione ottenibile e rendimento; oggi in qualsiasi gruppo turbogas, salvo gruppo di dimensioni molto ridotte, si utilizzano compressori assiali. 
+I compressori assiali sono macchine relativamente recenti; si tratta infatti di macchine nate nel dopoguerra come componente per i gruppi turbina a gas in campo aeronautico. I primi motori aeronautici costituiti da gruppo turbogas sono stati inizialmente costruiti come compressori radiali; oggi in qualsiasi gruppo turbogas, salvo gruppo di dimensioni molto ridotte, si utilizzano compressori assiali.
 \begin{figure}[h!]
 \centering
   \includegraphics[width=.8\textwidth]{fig/PrestComp.pdf}
-\caption{A destra le curve di rendimento per le macchine assiali. Si nota l'evidente aumento delle prestazioni (in rosso) rispetto alle prime macchine}
+\caption{A destra le curve di rendimento per le macchine assiali. Si nota l'evidente aumento delle prestazioni (in rosso le curve per le macchine attuali) rispetto alle prime macchine.}
 \label{fig:PrestComp}
 \end{figure}
-Nel diagramma in figura \ref{fig:PrestComp} è presente il rendimento del compressore in funzione della velocità specifica (che ricordiamo essere la caratteristica di macchina).
 
+C'è una forte correlazione tra compressione ottenibile e rendimento. Nel diagramma in figura \ref{fig:PrestComp} è presente il rendimento del compressore in funzione della velocità specifica $\omega_s$ (che rappresenta la caratteristica di macchina) definita a partire dal coefficiente di carico $\psi$ e dal coefficiente di portata $\varphi$ ($S$ è la sezione anulare di passaggio di diametri $D_e$ e $D_i$):
 \begin{align*}
-\omega_s = \cfrac{\sqrt{\phi}}{\psi^{3/4}} \cdot \sqrt{\bigg( \cfrac{D_e}{D_i} \bigg)^2 -1}
+\psi = \cfrac{\Delta h_{0is}}{\cfrac{u^2}{2}} \hspace{2cm} \varphi = \frac{Q}{u \cdot S}
 \end{align*}
 \begin{align*}
-\phi = \frac{Q}{u \cdot S} \hspace{2cm} \psi = \cfrac{\Delta h_{0is}}{\cfrac{u^2}{2}}
+\omega_s = \cfrac{\sqrt{\varphi}}{\psi^{3/4}} \cdot \sqrt{\bigg( \cfrac{D_e}{D_i} \bigg)^2 -1}
 \end{align*}
-Si nota che all'aumentare della velocità specifica si va verso macchine assiali. Fino ad un certo punto della storia le macchine assiali non hanno goduto di rendimenti competitivi; in rosso è presentata la curva dello stato attuale dei rendimenti per macchine assiali che si vede essere maggiore rispetto quello delle prime macchine di questa tipologia. 
+Si nota che all'aumentare della velocità specifica si va verso macchine assiali.
+
+Fino ad un certo punto della storia le macchine assiali non hanno goduto di rendimenti competitivi; in rosso (figura \ref{fig:PrestComp}) è presentata la curva dello stato attuale dei rendimenti per macchine assiali che si vede essere maggiore rispetto quello delle prime macchine di questa tipologia. 
 \begin{figure}
 \centering
   \includegraphics[width=.4\textwidth]{fig/hsComp.pdf}
 \caption{1: ingresso statore 2: uscita statore - entrata rotore 3: uscita statore.}
 \label{fig:hsComp}
 \end{figure}
-Nel diagramma termodinamico in figura \ref{fig:hsComp} sono riportati gli stati di riferimento di uno stadio di compressore assiale. Nella parte rotorica avviene il lavoro con un relativo aumento della velocità mentre nello statore c'è il recupero in termini di pressione. Nello studio della macchina assiale vengono fatte generalmente le seguenti assunzioni:
+\\Nel diagramma termodinamico in figura \ref{fig:hsComp} sono riportati gli stati di riferimento di uno stadio di compressore assiale. Nella parte rotorica avviene il lavoro con un relativo aumento della velocità mentre nello statore c'è il recupero in termini di pressione. Nello studio delle macchine assiali vengono fatte generalmente le seguenti assunzioni:
 \begin{itemize}
-\item flusso adiabatico, visto il tempo di contatto fluido-paletta molto limitato
-\item stadio ``normale" o ``ripetuto", tutti gli stadi hanno gli stessi profili
+\item flusso adiabatico, visto il tempo di contatto fluido-paletta molto limitato;
+\item stadio ``normale" o ``ripetuto", tutti gli stadi hanno gli stessi profili:
 \begin{align*}
-c_1 = c_2 \Rightarrow h_3-h_1 = h_{03} - h_{01}
+c_1 = c_2 \;\;\;\; \Rightarrow \;\;\;\; h_3-h_1 = h_{03} - h_{01}
 \end{align*}
-\item velocità assiale costante (coincide con la velocità meridiana)
+\item velocità assiale costante (coincide con la velocità meridiana):
 \begin{align*}
 c_{m1} = c_{m2}
 \end{align*}
-\item densità costante nello stadio
+\item densità costante nello stadio:
 \begin{align*}
-\rho = cost. 
+\rho = cost
 \end{align*}
 \end{itemize}
 \section{Lavoro e triangoli di velocità}
-Nel rotore si conserva la rotalpia
+Nel rotore si conserva la rotalpia:
 \begin{equation}
 h_1 + \frac{1}{2} w_1^2 = h_2 + \frac{1}{2} w_2^2
 \end{equation}
-Nello statore si conserva l'entalpia
+Nello statore si conserva l'entalpia:
 \begin{equation}
 h_2 + \frac{1}{2} c_2^2 = h_3 + \frac{1}{2} c_3^2
 \end{equation}
-Il lavoro viene scambiato dalla parte rotorica e definiamo un parametro adimensionale per quest'ultimo:
+Il lavoro viene scambiato dalla parte rotorica e si definisce un parametro adimensionale per quest'ultimo ($u$ rimane costante visto che si sta trattando una macchina assiale):
 \begin{equation}
 \lambda = \frac{u \cdot c_{u2} - u \cdot c_{u1}}{u^2} = \frac{c_{u2} - c_{u1}}{u}
 \end{equation}
@@ -58,7 +60,11 @@ Il lavoro viene scambiato dalla parte rotorica e definiamo un parametro adimensi
 \caption{}
 \label{fig:triangComp}
 \end{figure}
-L'obiettivo è quello di determinare la relazione tra $\lambda$ e cifra di portata $\Phi$. Vado a disegnare i triangoli di velocità relativi allo stadio elementare come mostrato in figura \ref{fig:triangComp}. Ricordo che per definizione la componente meridiana e periferica sono costanti. Posso scrivere le seguenti tre relazioni:
+\\L'obiettivo è quello di determinare la relazione tra $\lambda$ e cifra di portata $\Phi$ definita come:
+\begin{align*}
+\Phi = \frac{c_m}{u}
+\end{align*}
+Si disegnano i triangoli di velocità relativi allo stadio elementare come mostrato in figura \ref{fig:triangComp}; per definizione la componente meridiana e periferica sono costanti. Si possono scrivere le seguenti tre relazioni:
 \begin{align*}
 c_{u2} = u - w_{u2}
 \end{align*}
@@ -72,30 +78,26 @@ e quindi scrivere:
 \begin{align*}
 \lambda = 1- \frac{w_{u2}}{u} - \frac{c_{u1}}{u} = 1 - \frac{c_m}{u} \left(\tan \beta_2 + \tan \alpha_1 \right)
 \end{align*}
-Definendo  la cifra di portata come:
-\begin{align*}
-\Phi = \frac{c_m}{u}
-\end{align*}
-Posso finalmente scrivere la cifra adimensionale relativa al lavoro scambiato dalla parte rotorica in funzione della cifra di portata come:
+\'E possibile scrivere la cifra adimensionale relativa al lavoro scambiato dalla parte rotorica in funzione della cifra di portata come:
 \begin{equation}
 \lambda = 1 - \Phi \left( \tan \beta_2 + \tan \alpha_1 \right) = 1 - k \cdot \Phi
 \end{equation}
-con $k$ costante che dipende dalla geometria della macchina. Si tratta di una rappresentazione molto simile a quella nel caso delle pompe centrifughe nelle quali, a seconda del valore di $k$, si ha la curva caratteristica della pompa; questo viene chiarito meglio dal diagramma in figura \ref{fig:CondProg}.
+con $k$ costante che dipende dalla geometria della macchina. Si tratta di una rappresentazione molto simile a quella del caso delle pompe centrifughe nelle quali, a seconda del valore di $k$, si ha la curva caratteristica della pompa; questo viene chiarito meglio dal diagramma in figura \ref{fig:CondProg}.
 \begin{figure}
 \centering
   \includegraphics[width=.4\textwidth]{fig/CondProg.pdf}
 \caption{}
 \label{fig:CondProg}
 \end{figure}
-\\Andiamo ora a definire una condizione particolare di progetto ``lambda di design" $\lambda_d$.
+\\Si definisce una condizione particolare di progetto ``lambda di design" $\lambda_d$:
 \begin{align*}
-\lambda_d = 1 - k \cdot \Phi_d, \;\; k = f(\lambda_d,\Phi_d)
+\lambda_d = 1 - k \cdot \Phi_d \;\;\;\; \rightarrow \;\;\;\; k = \frac{1}{\Phi_d}-\frac{\lambda_d}{\Phi_d}
 \end{align*}
-Calcolo ora il rapporto $\lambda/\lambda_d$:
+Sostituendo l'espressione di $k$ qui ricavata nella definizione generale di $\lambda$, si ottiene:
 \begin{equation} \label{eq:lambdad}
-\frac{\lambda}{\lambda_d} = \frac{1}{\lambda_d} - \frac{\Phi}{\Phi_d} \Bigg( \frac{1-\lambda_d}{\lambda_d} \Bigg), \;\;\; 0.3 < \lambda_d < 0.4
+\frac{\lambda}{\lambda_d} = \frac{1}{\lambda_d} - \frac{\Phi}{\Phi_d} \Bigg( \frac{1-\lambda_d}{\lambda_d} \Bigg) \;\;\;\; \text{con}\; 0.3 < \lambda_d < 0.4
 \end{equation}
-Si tratta di una famiglia di rette; in figura \ref{fig:LambdaPhiChart} è rappresentato il diagramma caratteristico espresso in termini di rapporti rispetto alle condizioni di progetto. Si vede che nel caso ideale di $\lambda_d = 1$ il lavoro scambiato sarebbe indipendente dalla portata, situazione abbastanza attraente. 
+Si tratta di una famiglia di rette; in figura \ref{fig:LambdaPhiChart} è rappresentato il diagramma caratteristico espresso in termini di rapporti rispetto alle condizioni di progetto. Nel caso ideale di $\lambda_d = 1$ il lavoro scambiato sarebbe indipendente dalla portata, situazione abbastanza attraente ma irrealizzabile. 
 \begin{figure}
 \centering
 \begin{minipage}{.5\textwidth}
@@ -111,14 +113,14 @@ Si tratta di una famiglia di rette; in figura \ref{fig:LambdaPhiChart} è rappre
   \label{fig:CarattReal}
 \end{minipage}
 \end{figure}
-Generalmente in un compressore infatti, la pressione di output è definita mentre la portata è regolata; con $\lambda_d = 1$ avrei una macchina perfetta: il rapporto di compressione lo riuscirei sempre a mantenere e basterebbe regolare la portata per ottenere la pressione voluta. Purtroppo non è così perché le palettature non si comportano in modo ideale, si hanno separazioni di vena, inspessimenti di strato limite, ecc. Dal punto di vista realistico si riesce ad ottenere $0.3<\lambda_d<0.4$.
+\\Generalmente in un compressore infatti, la pressione di output è definita mentre la portata è regolata; con $\lambda_d = 1$ si otterrebbe una macchina perfetta: il rapporto di compressione si riuscirebbe sempre a mantenere e basterebbe regolare la portata per ottenere la pressione voluta. Purtroppo non è così perché le palettature non si comportano in modo ideale, si hanno separazioni di vena, inspessimenti di strato limite, ecc. Dal punto di vista realistico si riesce ad ottenere $0.3<\lambda_d<0.4$.
 
-Come mostrato in figura \ref{fig:CarattReal} otterrò un comportamento non ideale evidenziato dalla curva $\Psi$, che non avrà andamento rettilineo e avrò quindi un campo di utilizzo essendo limitato che esclude sia portate basse che portate alte. La caratteristica reale $\Psi$ si ottiene dal rendimento diverso da 1 della macchina nella valutazione di $\lambda$:
+Come mostrato in figura \ref{fig:CarattReal} si otterrà un comportamento non ideale evidenziato dalla curva della caratteristica reale $\Psi$; essa non avrà andamento rettilineo e quindi un campo di utilizzo limitato che esclude sia portate basse che portate alte. La caratteristica reale $\Psi$ moltiplicando la caratteristica ideale per il rendimento:
 \begin{equation}
-\psi = \frac{\Delta h_{0is}}{u^2} = \lambda \cdot \eta_{is}, \;\;\; \Delta h_{0is} = h_{30is} - h_{10}
+\psi = \frac{\Delta h_{0is}}{u^2} = \lambda \cdot \eta_{is} \;\;\;\; \text{con}\; \Delta h_{0is} = h_{30is} - h_{10}
 \end{equation}
 
-Non abbiamo ancora detto nulla riguardo la forma della pala in funzione del grado di reazione definito come il rapporto tra il salto entalpico elaborato tra parte rotorica e statorica:
+Non è ancora stato detto nulla riguardo la forma della pala in funzione del grado di reazione definito come il rapporto tra il salto entalpico elaborato tra parte rotorica e statorica:
 \begin{align*}
 R = \frac{h_2 - h_1}{h_3-h_1} 
 \end{align*}
@@ -128,9 +130,9 @@ Sapendo che
 c_{u2} = u - w_{u2}\\
 c_{u1} = u - w_{u1}
 \end{rcases*}
-\Rightarrow c_{u2} - c_{u1} = w_{u1} - w_{u2} 
+\;\;\;\; \rightarrow \;\;\;\; c_{u2} - c_{u1} = w_{u1} - w_{u2} 
 \end{align*}
-Vado a sviluppare il grado di reazione della macchina applicando la conservazione della rotalpia al numeratore e l'espressione del lavoro euleriano al denominatore:
+si sviluppa l'espressione del grado di reazione della macchina applicando la conservazione della rotalpia al numeratore e l'espressione del lavoro euleriano al denominatore:
 \begin{align*}
 R = \frac{w_1^2 - w_2^2}{2 u (c_{u2} - c_{u1})} &= \frac{(w_{u1} + w_{u2})\cancel{(w_{u1}-w_{u2})}}{2 u \cancel{(c_{u2} - c_{u1})}} =\\
 &= \frac{w_{u1} + w_{u2}}{2u} = \\
@@ -138,38 +140,40 @@ R = \frac{w_1^2 - w_2^2}{2 u (c_{u2} - c_{u1})} &= \frac{(w_{u1} + w_{u2})\cance
 \end{align*}
 Definendo poi:
 	\begin{align*}
-	\tan \beta_{\infty} = \frac{\tan \beta_1 + \tan \beta_2}{2} \;\;\;\;\;\; \Phi = \frac{c_m}{u}
+	\tan \beta_{\infty} = \frac{\tan \beta_1 + \tan \beta_2}{2} \;\;\;\;\;\;\;\; \Phi = \frac{c_m}{u}
 	\end{align*}
-
-Si ottiene
+si ottiene
 \begin{equation}
 \boxed{R = \Phi \tan \beta_{\infty} = \frac{w_{u \infty}}{u}}
 \end{equation}
 Lo stesso risultato poteva essere raggiunto nel seguente modo:
-\begin{equation}
-w_{u1} = u - c_{u1} \; \Rightarrow \; R = \frac{1}{2} + \frac{\tan \beta_2 - \tan \alpha_1}{2} \cdot \Phi \simeq \frac{1}{2} + cost \cdot \Phi
-\end{equation}
-Quello che è importante notare è che:
 \begin{align*}
-R = 0.5 \to \beta_2 = \alpha_1
+	w_{u1} = u - c_{u1} \;\;\;\; \rightarrow \;\;\;\; R =\frac{(u-c_{u1}+w_{u2})\cancel{(w_{u1}-w_{u2})}}{2 u \cancel{(c_{u2} - c_{u1})}}=\frac{u-c_{u1}+w_{u2}}{2u}
 \end{align*}
-ossia che il grado di reazione è costante con la portata e la palettatura sarà simmetrica.
+\begin{equation}
+R = \frac{1}{2} + \frac{\tan \beta_2 - \tan \alpha_1}{2} \cdot \Phi \simeq \frac{1}{2} + cost \cdot \Phi
+\end{equation}
+Quello che è importante notare è il grado di reazione dipende tramite una costante dalla portata e che:
+\begin{align*}
+R = 0.5 \;\;\;\; \to \;\;\;\; \beta_2 = \alpha_1
+\end{align*}
+ossia che la palettatura sarà simmetrica se $R=0.5$.
 
-Per rappresentare lo stadio al variare del grado di reazione andiamo per prima cosa a definire i triangoli di velocità come si vede in figura \ref{fig:StadioRipetuto}.
+Per rappresentare lo stadio al variare del grado di reazione si definiscono i triangoli di velocità (figura \ref{fig:StadioRipetuto}).
 \begin{figure}
 \centering
   \includegraphics[width=\textwidth]{fig/StadioRipetuto.pdf}
 \caption{}
 \label{fig:StadioRipetuto}
 \end{figure}
-Sempre facendo riferimento alla figura posso quindi scrivere:
+Facendo riferimento alla figura si può scrivere:
 \begin{align*}
 \Phi \cdot \tan \beta_{\infty} = R
 \end{align*}
 \begin{align*}
-\lambda = \cfrac{\Delta h_0}{\cfrac{u^2}{2}} = \cfrac{u \Delta c_u}{\cfrac{u^2}{2}} = \cfrac{2 \Delta c_u}{u} = \cfrac{2 \Delta w_u}{u} \;\; \;\;\;\; \Rightarrow \;\;\;\;\;\; \frac{\Delta c_u}{u} = \frac{\Delta w_u}{u} = \frac{\lambda}{2}
+\lambda = \cfrac{\Delta h_0}{\cfrac{u^2}{2}} = \cfrac{u \Delta c_u}{\cfrac{u^2}{2}} = \cfrac{2 \Delta c_u}{u} = \cfrac{2 \Delta w_u}{u} \;\;\;\; \Rightarrow \;\;\;\; \frac{\Delta c_u}{u} = \frac{\Delta w_u}{u} = \frac{\lambda}{2}
 \end{align*}
-Qualora si operi un cambio di portata vediamo che gli unici angoli che si conservano sono $\beta_2$ e $\alpha_1$; la cifra di flusso passa dalle condizioni generiche $\Phi$ alle condizioni di design $\Phi_d$ come si vede in figura \ref{fig:CondFuoriProg}.
+Qualora si operi un cambio di portata, gli unici angoli che si conservano sono $\beta_2$ e $\alpha_1$; la cifra di flusso passa dalle condizioni generiche $\Phi$ alle condizioni di design $\Phi_d$ come si vede in figura \ref{fig:CondFuoriProg}.
 \begin{figure}
 \centering
   \includegraphics[width=\textwidth]{fig/CondFuoriProg.pdf}
@@ -177,7 +181,7 @@ Qualora si operi un cambio di portata vediamo che gli unici angoli che si conser
 \label{fig:CondFuoriProg}
 \end{figure}
 
-Possiamo classificare alcune condizioni notevoli riportate in figura \ref{fig:ComprAssTab}:
+Si classificano alcune condizioni notevoli riportate in figura \ref{fig:ComprAssTab}:
 \begin{figure}
 \centering
   \includegraphics[width=1.2\textwidth]{fig/ComprAssTab.pdf}
@@ -187,7 +191,7 @@ Possiamo classificare alcune condizioni notevoli riportate in figura \ref{fig:Co
 \begin{itemize}
 	\item il primo caso con $R = 1 + \lambda /4$ è particolare in quanto si ha grado di reazione maggiore di uno e infatti lo statore precede il rotore. In uscita sarà presente una velocità puramente assiale;
 
-	\item con $R = 1$ le velocità assolute in ingresso e uscita sono simmetriche;
+	\item con $R = 1/2$ le velocità assolute in ingresso e uscita sono simmetriche;
 
 	\item con $R = 1 - \lambda/4$ la velocità assoluta è puramente assiale, mentre quella allo scarico non lo è;
 
