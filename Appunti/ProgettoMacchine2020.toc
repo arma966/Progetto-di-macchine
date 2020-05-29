@@ -33,10 +33,9 @@
 \contentsline {section}{\numberline {3.1}Introduzione}{55}{section.3.1}
 \contentsline {section}{\numberline {3.2}Lavoro e triangoli di velocit\IeC {\`a}}{57}{section.3.2}
 \contentsline {section}{\numberline {3.3}Termodinamica}{63}{section.3.3}
-\contentsline {section}{\numberline {3.4}Progettazione della schiera}{66}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Correlazioni di Howell}{66}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Condizioni fuori progetto}{70}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Criterio di carico}{70}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.4}Progettazione della schiera}{65}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Correlazioni di Howell}{67}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Criterio di carico}{71}{subsection.3.4.2}
 \contentsline {section}{\numberline {3.5}Schiere supersoniche}{74}{section.3.5}
 \contentsline {chapter}{\numberline {4}Turbine a flusso assiale e misto}{77}{chapter.4}
 \contentsline {section}{\numberline {4.1}Calcolo dei rendimenti}{78}{section.4.1}
