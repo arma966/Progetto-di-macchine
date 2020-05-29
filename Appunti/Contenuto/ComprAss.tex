@@ -50,7 +50,7 @@ Nello statore si conserva l'entalpia:
 \begin{equation}
 h_2 + \frac{1}{2} c_2^2 = h_3 + \frac{1}{2} c_3^2
 \end{equation}
-Il lavoro viene scambiato dalla parte rotorica e si definisce un parametro adimensionale per quest'ultimo ($u$ rimane costante visto che si sta trattando una macchina assiale):
+Il lavoro viene scambiato dalla parte rotorica e si definisce un parametro adimensionale per quest'ultimo ($u$ rimane costante visto che si sta trattando una macchina assiale, c'è una differenza rispetto la precedente definizione di lavoro adimensionale data da un fattore 1/4):
 \begin{equation}
 \lambda = \frac{u \cdot c_{u2} - u \cdot c_{u1}}{u^2} = \frac{c_{u2} - c_{u1}}{u}
 \end{equation}
@@ -115,7 +115,7 @@ Si tratta di una famiglia di rette; in figura \ref{fig:LambdaPhiChart} è rappre
 \end{figure}
 \\Generalmente in un compressore infatti, la pressione di output è definita mentre la portata è regolata; con $\lambda_d = 1$ si otterrebbe una macchina perfetta: il rapporto di compressione si riuscirebbe sempre a mantenere e basterebbe regolare la portata per ottenere la pressione voluta. Purtroppo non è così perché le palettature non si comportano in modo ideale, si hanno separazioni di vena, inspessimenti di strato limite, ecc. Dal punto di vista realistico si riesce ad ottenere $0.3<\lambda_d<0.4$.
 
-Come mostrato in figura \ref{fig:CarattReal} si otterrà un comportamento non ideale evidenziato dalla curva della caratteristica reale $\Psi$; essa non avrà andamento rettilineo e quindi un campo di utilizzo limitato che esclude sia portate basse che portate alte. La caratteristica reale $\Psi$ moltiplicando la caratteristica ideale per il rendimento:
+Come mostrato in figura \ref{fig:CarattReal} si otterrà un comportamento non ideale evidenziato dalla curva della caratteristica reale $\psi$; essa non avrà andamento rettilineo e quindi un campo di utilizzo limitato che esclude sia portate basse che portate alte. La caratteristica reale $\psi$ si ottiene moltiplicando la caratteristica ideale per il rendimento:
 \begin{equation}
 \psi = \frac{\Delta h_{0is}}{u^2} = \lambda \cdot \eta_{is} \;\;\;\; \text{con}\; \Delta h_{0is} = h_{30is} - h_{10}
 \end{equation}
@@ -153,7 +153,7 @@ Lo stesso risultato poteva essere raggiunto nel seguente modo:
 \begin{equation}
 R = \frac{1}{2} + \frac{\tan \beta_2 - \tan \alpha_1}{2} \cdot \Phi \simeq \frac{1}{2} + cost \cdot \Phi
 \end{equation}
-Quello che è importante notare è il grado di reazione dipende tramite una costante dalla portata e che:
+Quello che è importante notare è che il grado di reazione dipende tramite una costante dalla cifra di portata e che:
 \begin{align*}
 R = 0.5 \;\;\;\; \to \;\;\;\; \beta_2 = \alpha_1
 \end{align*}
@@ -198,7 +198,7 @@ Si classificano alcune condizioni notevoli riportate in figura \ref{fig:ComprAss
 	\item sono poi rappresentate le geometrie per gradi di reazione sempre più ridotti. 
 \end{itemize}
 
-La soluzione $R = 1/2$ è la più diffusa e utilizzata eccetto per il primo e l'ultimo stadio in cui si vogliono distribuzioni di velocità particolari (si usano rispettivamente $R = 1 - \lambda /4$ e $R = 1 + \lambda /4$). In questa configurazione si avranno profili uguali ma specchiati e l'incremento di pressione (da $p_1$ a $p_3$) è diviso equamente in due parti uguali tra la parte statorica e la parte rotorica. 
+La soluzione $R = 1/2$ è la più diffusa e utilizzata eccetto per il primo e l'ultimo stadio in cui si vogliono distribuzioni di velocità particolari (si usano rispettivamente $R = 1 - \lambda /4$ e $R = 1 + \lambda /4$). Questa configurazione viene preferita in quanto si avranno profili uguali ma specchiati e l'incremento di pressione (da $p_1$ a $p_3$) è diviso equamente in due parti uguali tra la parte statorica e la parte rotorica. 
 
 \section{Termodinamica}
 Si calcola il rendimento al variare della portata e del grado di reazione. Si definisce il rendimento isoentropico:
@@ -213,7 +213,7 @@ ma
 \begin{align*}
 ds = 0 \;\;\;\; \rightarrow \;\;\;\; dh = \frac{dp}{\rho}
 \end{align*}
-Si ottiene, considerando la definizione \ref{eq:lambda} di $\lambda$, quindi:
+Si ottiene, ricordando la definizione \ref{eq:lambda} di $\lambda$, quindi:
 \begin{equation}\label{eq:etadp}
 \eta_{is} = \frac{\Delta p}{\rho \cdot \Delta h_0} = \cfrac{\Delta p}{\rho \cdot \cfrac{\lambda}{2} u^2}
 \end{equation}
@@ -222,7 +222,7 @@ Considerando i triangoli di velocità (figura \ref{fig:StadioRipetuto}), l'incre
 \Delta p = \Delta p_R + \Delta p_S = \frac{F_{aR}}{s_R} + \frac{F_{aS}}{s_S} = \frac{F_{tR} \cdot \tan(\beta_{\infty} - \varepsilon_R)}{s_R} + \frac{F_{tS} \cdot \tan(\alpha_{\infty} - \varepsilon_S)}{s_S}
 \label{eq:deltap}
 \end{equation}
-con $\varepsilon_S$ e $\varepsilon_R$ indici di efficienza del profilo e $s_R$ e $s_S$ i passi\footnote{Per quanto riguarda i pedici "S" sta per statore, "R" per rotore.}.\\
+con $\varepsilon_S$ e $\varepsilon_R$ indici di efficienza del profilo e $s_R$ e $s_S$ i passi\footnote{Per quanto riguarda i pedici "S" sta per statore, "R" sta per rotore.}.\\
 Si può fare qualche assunzione: i profili hanno drag molto più piccolo del lift quindi:
 \begin{align*}
 \tan \varepsilon_R \simeq \varepsilon_R = \frac{D_R}{L_R} \;\;\;\;\;\;\;\; \tan \varepsilon_S \simeq \varepsilon_S = \frac{D_S}{L_S}
@@ -236,7 +236,7 @@ F_{tS} = \dot{m} \cdot \Delta c_m = s_S \cdot \rho \cdot c_m \cdot \lambda \cdot
 \end{align*}
 Andando a sostituire le due forze nell'equazione \ref{eq:deltap}:
 \begin{align*}
-\Delta p = \frac{1}{2} \rho \lambda u^2 \big[ \Phi \tan \left( \beta_{\infty} - \varepsilon_R \right) + \Phi \tan \left( \alpha_{\infty} - \varepsilon_S \right) \big] 
+\Delta p = \frac{1}{2} \rho \lambda u^2 \big[\Phi \tan \left( \beta_{\infty} - \varepsilon_R \right) + \Phi \tan \left( \alpha_{\infty} - \varepsilon_S \right) \big]
 \end{align*}
 e ricordando le relazioni
 \begin{align*}
@@ -250,11 +250,11 @@ R = \Phi \tan \beta_{\infty} \;\;\;\;\;\;\;\;\;\;\; 1 - R = \Phi \tan \alpha_{\i
 \end{align*}
 Si ottiene infine la relazione del salto di pressione in funzione del grado di reazione e di $\lambda$:
 \begin{equation}
-\Delta p = \frac{1}{2} \rho \lambda u^2 \Bigg[ \frac{R - \varepsilon_R \Phi}{\Phi + \varepsilon_R R} + \frac{1 - R - \varepsilon_S \Phi}{\Phi + \varepsilon_S (1-R)} \Bigg] \cdot \Phi
+\Delta p = \frac{1}{2} \rho \lambda u^2 \Bigg[ \frac{R - \varepsilon_R \Phi}{\Phi + \varepsilon_R R} + \frac{1 - R - \varepsilon_S \Phi}{\Phi + \varepsilon_S (1-R)} \Bigg]
 \end{equation}
 Il rendimento isoentropico, ricordando l'equazione \ref{eq:etadp}, diviene:
 \begin{equation}
-\boxed{ \eta_{is} = \Bigg[ \frac{R - \varepsilon_R \Phi}{\Phi + \varepsilon_R R} + \frac{1 - R - \varepsilon_S \Phi}{\Phi + \varepsilon_S (1-R)} \Bigg] \cdot \Phi }
+\boxed{ \eta_{is} = \Bigg[ \frac{R - \varepsilon_R \Phi}{\Phi + \varepsilon_R R} + \frac{1 - R - \varepsilon_S \Phi}{\Phi + \varepsilon_S (1-R)} \Bigg] }
 \end{equation}
 Si introduce una semplificazione sugli indici di efficienza e si cerca il coefficiente di reazione ottimale:
 \begin{align*}
@@ -264,10 +264,10 @@ Si introduce una semplificazione sugli indici di efficienza e si cerca il coeffi
 \frac{d \eta_{is}}{dR} = 0 \;\;\;\; \text{se}  \;\;\;\; R_{opt} = 0.5 \mbox{ per } \forall \Phi
 \end{align*}
 Il rendimento con questo valore di R vale:
-\begin{align*}
+\begin{equation}
 \eta_{|R= 0.5} = 2 \Phi \cdot \frac{1- 2 \varepsilon \Phi}{\varepsilon + 2 \Phi}
-\end{align*}
-Il rendimento del compressore è migliorato alla diminuzione di $\varepsilon$. Questa relazione lega quindi il rendimento alla portata e all'efficienza del profilo; per il progetto di un compressore si inizierà quindi dallo studio del singolo profilo visto che le sue prestazioni hanno influenza sul rendimento totale\\
+\end{equation}
+Il rendimento del compressore è migliorato alla diminuzione di $\varepsilon$. Questa relazione lega il rendimento alla portata e all'efficienza del profilo; per il progetto di un compressore si inizierà quindi dallo studio del singolo profilo visto che le sue prestazioni hanno influenza sul rendimento totale.\\
 Si determina ora il valore di $\Phi$ che rende massimo il rendimento ottimale:
 \begin{align*}
 \frac{d\eta_{|R=0.5}}{d \Phi} = 0 \;\;\;\; \text{se} \;\;\;\; \Phi_{opt} = \frac{1}{2} \left( \sqrt{1 + \varepsilon^2} - \varepsilon \right) \simeq \frac{1 - \varepsilon}{2}
