@@ -1,54 +1,56 @@
 \chapter{Compressori assiali}
 
 \section{Introduzione}
-I compressori assiali sono macchine relativamente recenti, si tratta di una macchina nata nel dopoguerra come componente per i gruppi turbina a gas in campo aeronautico. I primi motori aeronautici costituiti da gruppo turbogas sono stati inizialmente costruiti come compressori radiali. C'è una forte correlazione tra compressione ottenibile e rendimento; oggi in qualsiasi gruppo turbogas, salvo gruppo di dimensioni molto ridotte, si utilizzano compressori assiali. 
+I compressori assiali sono macchine relativamente recenti; si tratta infatti di macchine nate nel dopoguerra come componente per i gruppi turbina a gas in campo aeronautico. I primi motori aeronautici costituiti da gruppo turbogas sono stati inizialmente costruiti come compressori radiali; oggi in qualsiasi gruppo turbogas, salvo gruppo di dimensioni molto ridotte, si utilizzano compressori assiali.
 \begin{figure}[h!]
 \centering
   \includegraphics[width=.8\textwidth]{fig/PrestComp.pdf}
-\caption{A destra le curve di rendimento per le macchine assiali. Si nota l'evidente aumento delle prestazioni (in rosso) rispetto alle prime macchine}
+\caption{A destra le curve di rendimento per le macchine assiali. Si nota l'evidente aumento delle prestazioni (in rosso le curve per le macchine attuali) rispetto alle prime macchine.}
 \label{fig:PrestComp}
 \end{figure}
-Nel diagramma in figura \ref{fig:PrestComp} è presente il rendimento del compressore in funzione della velocità specifica (che ricordiamo essere la caratteristica di macchina).
 
+C'è una forte correlazione tra compressione ottenibile e rendimento. Nel diagramma in figura \ref{fig:PrestComp} è presente il rendimento del compressore in funzione della velocità specifica $\omega_s$ (che rappresenta la caratteristica di macchina) definita a partire dal coefficiente di carico $\psi$ e dal coefficiente di portata $\varphi$ ($S$ è la sezione anulare di passaggio di diametri $D_e$ e $D_i$):
 \begin{align*}
-\omega_s = \cfrac{\sqrt{\phi}}{\psi^{3/4}} \cdot \sqrt{\bigg( \cfrac{D_e}{D_i} \bigg)^2 -1}
+\psi = \cfrac{\Delta h_{0is}}{\cfrac{u^2}{2}} \hspace{2cm} \varphi = \frac{Q}{u \cdot S}
 \end{align*}
 \begin{align*}
-\phi = \frac{Q}{u \cdot S} \hspace{2cm} \psi = \cfrac{\Delta h_{0is}}{\cfrac{u^2}{2}}
+\omega_s = \cfrac{\sqrt{\varphi}}{\psi^{3/4}} \cdot \sqrt{\bigg( \cfrac{D_e}{D_i} \bigg)^2 -1}
 \end{align*}
-Si nota che all'aumentare della velocità specifica si va verso macchine assiali. Fino ad un certo punto della storia le macchine assiali non hanno goduto di rendimenti competitivi; in rosso è presentata la curva dello stato attuale dei rendimenti per macchine assiali che si vede essere maggiore rispetto quello delle prime macchine di questa tipologia. 
+Si nota che all'aumentare della velocità specifica si va verso macchine assiali.
+
+Fino ad un certo punto della storia le macchine assiali non hanno goduto di rendimenti competitivi; in rosso (figura \ref{fig:PrestComp}) è presentata la curva dello stato attuale dei rendimenti per macchine assiali che si vede essere maggiore rispetto quello delle prime macchine di questa tipologia. 
 \begin{figure}
 \centering
   \includegraphics[width=.4\textwidth]{fig/hsComp.pdf}
 \caption{1: ingresso statore 2: uscita statore - entrata rotore 3: uscita statore.}
 \label{fig:hsComp}
 \end{figure}
-Nel diagramma termodinamico in figura \ref{fig:hsComp} sono riportati gli stati di riferimento di uno stadio di compressore assiale. Nella parte rotorica avviene il lavoro con un relativo aumento della velocità mentre nello statore c'è il recupero in termini di pressione. Nello studio della macchina assiale vengono fatte generalmente le seguenti assunzioni:
+\\Nel diagramma termodinamico in figura \ref{fig:hsComp} sono riportati gli stati di riferimento di uno stadio di compressore assiale. Nella parte rotorica avviene il lavoro con un relativo aumento della velocità mentre nello statore c'è il recupero in termini di pressione. Nello studio delle macchine assiali vengono fatte generalmente le seguenti assunzioni:
 \begin{itemize}
-\item flusso adiabatico, visto il tempo di contatto fluido-paletta molto limitato
-\item stadio ``normale" o ``ripetuto", tutti gli stadi hanno gli stessi profili
+\item flusso adiabatico, visto il tempo di contatto fluido-paletta molto limitato;
+\item stadio ``normale" o ``ripetuto", tutti gli stadi hanno gli stessi profili:
 \begin{align*}
-c_1 = c_2 \Rightarrow h_3-h_1 = h_{03} - h_{01}
+c_1 = c_2 \;\;\;\; \Rightarrow \;\;\;\; h_3-h_1 = h_{03} - h_{01}
 \end{align*}
-\item velocità assiale costante (coincide con la velocità meridiana)
+\item velocità assiale costante (coincide con la velocità meridiana):
 \begin{align*}
 c_{m1} = c_{m2}
 \end{align*}
-\item densità costante nello stadio
+\item densità costante nello stadio:
 \begin{align*}
-\rho = cost. 
+\rho = cost
 \end{align*}
 \end{itemize}
 \section{Lavoro e triangoli di velocità}
-Nel rotore si conserva la rotalpia
+Nel rotore si conserva la rotalpia:
 \begin{equation}
 h_1 + \frac{1}{2} w_1^2 = h_2 + \frac{1}{2} w_2^2
 \end{equation}
-Nello statore si conserva l'entalpia
+Nello statore si conserva l'entalpia:
 \begin{equation}
 h_2 + \frac{1}{2} c_2^2 = h_3 + \frac{1}{2} c_3^2
 \end{equation}
-Il lavoro viene scambiato dalla parte rotorica e definiamo un parametro adimensionale per quest'ultimo:
+Il lavoro viene scambiato dalla parte rotorica e si definisce un parametro adimensionale per quest'ultimo ($u$ rimane costante visto che si sta trattando una macchina assiale, c'è una differenza rispetto la precedente definizione di lavoro adimensionale data da un fattore 1/4):
 \begin{equation}
 \lambda = \frac{u \cdot c_{u2} - u \cdot c_{u1}}{u^2} = \frac{c_{u2} - c_{u1}}{u}
 \end{equation}
@@ -58,7 +60,11 @@ Il lavoro viene scambiato dalla parte rotorica e definiamo un parametro adimensi
 \caption{}
 \label{fig:triangComp}
 \end{figure}
-L'obiettivo è quello di determinare la relazione tra $\lambda$ e cifra di portata $\Phi$. Vado a disegnare i triangoli di velocità relativi allo stadio elementare come mostrato in figura \ref{fig:triangComp}. Ricordo che per definizione la componente meridiana e periferica sono costanti. Posso scrivere le seguenti tre relazioni:
+\\L'obiettivo è quello di determinare la relazione tra $\lambda$ e cifra di portata $\Phi$ definita come:
+\begin{align*}
+\Phi = \frac{c_m}{u}
+\end{align*}
+Si disegnano i triangoli di velocità relativi allo stadio elementare come mostrato in figura \ref{fig:triangComp}; per definizione la componente meridiana e periferica sono costanti. Si possono scrivere le seguenti tre relazioni:
 \begin{align*}
 c_{u2} = u - w_{u2}
 \end{align*}
@@ -72,30 +78,26 @@ e quindi scrivere:
 \begin{align*}
 \lambda = 1- \frac{w_{u2}}{u} - \frac{c_{u1}}{u} = 1 - \frac{c_m}{u} \left(\tan \beta_2 + \tan \alpha_1 \right)
 \end{align*}
-Definendo  la cifra di portata come:
-\begin{align*}
-\Phi = \frac{c_m}{u}
-\end{align*}
-Posso finalmente scrivere la cifra adimensionale relativa al lavoro scambiato dalla parte rotorica in funzione della cifra di portata come:
+\'E possibile scrivere la cifra adimensionale relativa al lavoro scambiato dalla parte rotorica in funzione della cifra di portata come:
 \begin{equation}
 \lambda = 1 - \Phi \left( \tan \beta_2 + \tan \alpha_1 \right) = 1 - k \cdot \Phi
 \end{equation}
-con $k$ costante che dipende dalla geometria della macchina. Si tratta di una rappresentazione molto simile a quella nel caso delle pompe centrifughe nelle quali, a seconda del valore di $k$, si ha la curva caratteristica della pompa; questo viene chiarito meglio dal diagramma in figura \ref{fig:CondProg}.
+con $k$ costante che dipende dalla geometria della macchina. Si tratta di una rappresentazione molto simile a quella del caso delle pompe centrifughe nelle quali, a seconda del valore di $k$, si ha la curva caratteristica della pompa; questo viene chiarito meglio dal diagramma in figura \ref{fig:CondProg}.
 \begin{figure}
 \centering
   \includegraphics[width=.4\textwidth]{fig/CondProg.pdf}
 \caption{}
 \label{fig:CondProg}
 \end{figure}
-\\Andiamo ora a definire una condizione particolare di progetto ``lambda di design" $\lambda_d$.
+\\Si definisce una condizione particolare di progetto ``lambda di design" $\lambda_d$:
 \begin{align*}
-\lambda_d = 1 - k \cdot \Phi_d, \;\; k = f(\lambda_d,\Phi_d)
+\lambda_d = 1 - k \cdot \Phi_d \;\;\;\; \rightarrow \;\;\;\; k = \frac{1}{\Phi_d}-\frac{\lambda_d}{\Phi_d}
 \end{align*}
-Calcolo ora il rapporto $\lambda/\lambda_d$:
+Sostituendo l'espressione di $k$ qui ricavata nella definizione generale di $\lambda$, si ottiene:
 \begin{equation} \label{eq:lambdad}
-\frac{\lambda}{\lambda_d} = \frac{1}{\lambda_d} - \frac{\Phi}{\Phi_d} \Bigg( \frac{1-\lambda_d}{\lambda_d} \Bigg), \;\;\; 0.3 < \lambda_d < 0.4
+\frac{\lambda}{\lambda_d} = \frac{1}{\lambda_d} - \frac{\Phi}{\Phi_d} \Bigg( \frac{1-\lambda_d}{\lambda_d} \Bigg) \;\;\;\; \text{con}\; 0.3 < \lambda_d < 0.4
 \end{equation}
-Si tratta di una famiglia di rette; in figura \ref{fig:LambdaPhiChart} è rappresentato il diagramma caratteristico espresso in termini di rapporti rispetto alle condizioni di progetto. Si vede che nel caso ideale di $\lambda_d = 1$ il lavoro scambiato sarebbe indipendente dalla portata, situazione abbastanza attraente. 
+Si tratta di una famiglia di rette; in figura \ref{fig:LambdaPhiChart} è rappresentato il diagramma caratteristico espresso in termini di rapporti rispetto alle condizioni di progetto. Nel caso ideale di $\lambda_d = 1$ il lavoro scambiato sarebbe indipendente dalla portata, situazione abbastanza attraente ma irrealizzabile. 
 \begin{figure}
 \centering
 \begin{minipage}{.5\textwidth}
@@ -111,14 +113,14 @@ Si tratta di una famiglia di rette; in figura \ref{fig:LambdaPhiChart} è rappre
   \label{fig:CarattReal}
 \end{minipage}
 \end{figure}
-Generalmente in un compressore infatti, la pressione di output è definita mentre la portata è regolata; con $\lambda_d = 1$ avrei una macchina perfetta: il rapporto di compressione lo riuscirei sempre a mantenere e basterebbe regolare la portata per ottenere la pressione voluta. Purtroppo non è così perché le palettature non si comportano in modo ideale, si hanno separazioni di vena, inspessimenti di strato limite, ecc. Dal punto di vista realistico si riesce ad ottenere $0.3<\lambda_d<0.4$.
+\\Generalmente in un compressore infatti, la pressione di output è definita mentre la portata è regolata; con $\lambda_d = 1$ si otterrebbe una macchina perfetta: il rapporto di compressione si riuscirebbe sempre a mantenere e basterebbe regolare la portata per ottenere la pressione voluta. Purtroppo non è così perché le palettature non si comportano in modo ideale, si hanno separazioni di vena, inspessimenti di strato limite, ecc. Dal punto di vista realistico si riesce ad ottenere $0.3<\lambda_d<0.4$.
 
-Come mostrato in figura \ref{fig:CarattReal} otterrò un comportamento non ideale evidenziato dalla curva $\Psi$, che non avrà andamento rettilineo e avrò quindi un campo di utilizzo essendo limitato che esclude sia portate basse che portate alte. La caratteristica reale $\Psi$ si ottiene dal rendimento diverso da 1 della macchina nella valutazione di $\lambda$:
+Come mostrato in figura \ref{fig:CarattReal} si otterrà un comportamento non ideale evidenziato dalla curva della caratteristica reale $\psi$; essa non avrà andamento rettilineo e quindi un campo di utilizzo limitato che esclude sia portate basse che portate alte. La caratteristica reale $\psi$ si ottiene moltiplicando la caratteristica ideale per il rendimento:
 \begin{equation}
-\psi = \frac{\Delta h_{0is}}{u^2} = \lambda \cdot \eta_{is}, \;\;\; \Delta h_{0is} = h_{30is} - h_{10}
+\psi = \frac{\Delta h_{0is}}{u^2} = \lambda \cdot \eta_{is} \;\;\;\; \text{con}\; \Delta h_{0is} = h_{30is} - h_{10}
 \end{equation}
 
-Non abbiamo ancora detto nulla riguardo la forma della pala in funzione del grado di reazione definito come il rapporto tra il salto entalpico elaborato tra parte rotorica e statorica:
+Non è ancora stato detto nulla riguardo la forma della pala in funzione del grado di reazione definito come il rapporto tra il salto entalpico elaborato tra parte rotorica e statorica:
 \begin{align*}
 R = \frac{h_2 - h_1}{h_3-h_1} 
 \end{align*}
@@ -128,9 +130,9 @@ Sapendo che
 c_{u2} = u - w_{u2}\\
 c_{u1} = u - w_{u1}
 \end{rcases*}
-\Rightarrow c_{u2} - c_{u1} = w_{u1} - w_{u2} 
+\;\;\;\; \rightarrow \;\;\;\; c_{u2} - c_{u1} = w_{u1} - w_{u2} 
 \end{align*}
-Vado a sviluppare il grado di reazione della macchina applicando la conservazione della rotalpia al numeratore e l'espressione del lavoro euleriano al denominatore:
+si sviluppa l'espressione del grado di reazione della macchina applicando la conservazione della rotalpia al numeratore e l'espressione del lavoro euleriano al denominatore:
 \begin{align*}
 R = \frac{w_1^2 - w_2^2}{2 u (c_{u2} - c_{u1})} &= \frac{(w_{u1} + w_{u2})\cancel{(w_{u1}-w_{u2})}}{2 u \cancel{(c_{u2} - c_{u1})}} =\\
 &= \frac{w_{u1} + w_{u2}}{2u} = \\
@@ -138,38 +140,40 @@ R = \frac{w_1^2 - w_2^2}{2 u (c_{u2} - c_{u1})} &= \frac{(w_{u1} + w_{u2})\cance
 \end{align*}
 Definendo poi:
 	\begin{align*}
-	\tan \beta_{\infty} = \frac{\tan \beta_1 + \tan \beta_2}{2} \;\;\;\;\;\; \Phi = \frac{c_m}{u}
+	\tan \beta_{\infty} = \frac{\tan \beta_1 + \tan \beta_2}{2} \;\;\;\;\;\;\;\; \Phi = \frac{c_m}{u}
 	\end{align*}
-
-Si ottiene
+si ottiene
 \begin{equation}
 \boxed{R = \Phi \tan \beta_{\infty} = \frac{w_{u \infty}}{u}}
 \end{equation}
 Lo stesso risultato poteva essere raggiunto nel seguente modo:
-\begin{equation}
-w_{u1} = u - c_{u1} \; \Rightarrow \; R = \frac{1}{2} + \frac{\tan \beta_2 - \tan \alpha_1}{2} \cdot \Phi \simeq \frac{1}{2} + cost \cdot \Phi
-\end{equation}
-Quello che è importante notare è che:
 \begin{align*}
-R = 0.5 \to \beta_2 = \alpha_1
+	w_{u1} = u - c_{u1} \;\;\;\; \rightarrow \;\;\;\; R =\frac{(u-c_{u1}+w_{u2})\cancel{(w_{u1}-w_{u2})}}{2 u \cancel{(c_{u2} - c_{u1})}}=\frac{u-c_{u1}+w_{u2}}{2u}
 \end{align*}
-ossia che il grado di reazione è costante con la portata e la palettatura sarà simmetrica.
+\begin{equation}
+R = \frac{1}{2} + \frac{\tan \beta_2 - \tan \alpha_1}{2} \cdot \Phi \simeq \frac{1}{2} + cost \cdot \Phi
+\end{equation}
+Quello che è importante notare è che il grado di reazione dipende tramite una costante dalla cifra di portata e che:
+\begin{align*}
+R = 0.5 \;\;\;\; \to \;\;\;\; \beta_2 = \alpha_1
+\end{align*}
+ossia che la palettatura sarà simmetrica se $R=0.5$.
 
-Per rappresentare lo stadio al variare del grado di reazione andiamo per prima cosa a definire i triangoli di velocità come si vede in figura \ref{fig:StadioRipetuto}.
+Per rappresentare lo stadio al variare del grado di reazione si definiscono i triangoli di velocità (figura \ref{fig:StadioRipetuto}).
 \begin{figure}
 \centering
   \includegraphics[width=\textwidth]{fig/StadioRipetuto.pdf}
 \caption{}
 \label{fig:StadioRipetuto}
 \end{figure}
-Sempre facendo riferimento alla figura posso quindi scrivere:
+Facendo riferimento alla figura si può scrivere:
 \begin{align*}
 \Phi \cdot \tan \beta_{\infty} = R
 \end{align*}
-\begin{align*}
-\lambda = \cfrac{\Delta h_0}{\cfrac{u^2}{2}} = \cfrac{u \Delta c_u}{\cfrac{u^2}{2}} = \cfrac{2 \Delta c_u}{u} = \cfrac{2 \Delta w_u}{u} \;\; \;\;\;\; \Rightarrow \;\;\;\;\;\; \frac{\Delta c_u}{u} = \frac{\Delta w_u}{u} = \frac{\lambda}{2}
-\end{align*}
-Qualora si operi un cambio di portata vediamo che gli unici angoli che si conservano sono $\beta_2$ e $\alpha_1$; la cifra di flusso passa dalle condizioni generiche $\Phi$ alle condizioni di design $\Phi_d$ come si vede in figura \ref{fig:CondFuoriProg}.
+\begin{equation}\label{eq:lambda}
+\lambda = \cfrac{\Delta h_0}{\cfrac{u^2}{2}} = \cfrac{u \Delta c_u}{\cfrac{u^2}{2}} = \cfrac{2 \Delta c_u}{u} = \cfrac{2 \Delta w_u}{u} \;\;\;\; \Rightarrow \;\;\;\; \frac{\Delta c_u}{u} = \frac{\Delta w_u}{u} = \frac{\lambda}{2}
+\end{equation}
+Qualora si operi un cambio di portata, gli unici angoli che si conservano sono $\beta_2$ e $\alpha_1$; la cifra di flusso passa dalle condizioni generiche $\Phi$ alle condizioni di design $\Phi_d$ come si vede in figura \ref{fig:CondFuoriProg}.
 \begin{figure}
 \centering
   \includegraphics[width=\textwidth]{fig/CondFuoriProg.pdf}
@@ -177,7 +181,7 @@ Qualora si operi un cambio di portata vediamo che gli unici angoli che si conser
 \label{fig:CondFuoriProg}
 \end{figure}
 
-Possiamo classificare alcune condizioni notevoli riportate in figura \ref{fig:ComprAssTab}:
+Si classificano alcune condizioni notevoli riportate in figura \ref{fig:ComprAssTab}:
 \begin{figure}
 \centering
   \includegraphics[width=1.2\textwidth]{fig/ComprAssTab.pdf}
@@ -187,123 +191,120 @@ Possiamo classificare alcune condizioni notevoli riportate in figura \ref{fig:Co
 \begin{itemize}
 	\item il primo caso con $R = 1 + \lambda /4$ è particolare in quanto si ha grado di reazione maggiore di uno e infatti lo statore precede il rotore. In uscita sarà presente una velocità puramente assiale;
 
-	\item con $R = 1$ le velocità assolute in ingresso e uscita sono simmetriche;
+	\item con $R = 1/2$ le velocità assolute in ingresso e uscita sono simmetriche;
 
 	\item con $R = 1 - \lambda/4$ la velocità assoluta è puramente assiale, mentre quella allo scarico non lo è;
 
 	\item sono poi rappresentate le geometrie per gradi di reazione sempre più ridotti. 
 \end{itemize}
 
-La soluzione $R = 1/2$ è la più diffusa e utilizzata eccetto per il primo e l'ultimo stadio in cui si vogliono distribuzioni di velocità particolari (si usano rispettivamente $R = 1 - \lambda /4$ e $R = 1 + \lambda /4$). In questa configurazione si avranno profili uguali ma specchiati e l'incremento di pressione (da $p_1$ a $p_3$) è diviso equamente in due parti uguali tra la parte statorica e la parte rotorica. 
+La soluzione $R = 1/2$ è la più diffusa e utilizzata eccetto per il primo e l'ultimo stadio in cui si vogliono distribuzioni di velocità particolari (si usano rispettivamente $R = 1 - \lambda /4$ e $R = 1 + \lambda /4$). Questa configurazione viene preferita in quanto si avranno profili uguali ma specchiati e l'incremento di pressione (da $p_1$ a $p_3$) è diviso equamente in due parti uguali tra la parte statorica e la parte rotorica. 
 
 \section{Termodinamica}
-Vediamo il calcolo del rendimento al variare della portata e del grado di reazione. Partiamo dalla definizione di rendimento isoentropico:
+Si calcola il rendimento al variare della portata e del grado di reazione. Si definisce il rendimento isoentropico:
 \begin{align*}
-\eta_{is} = \frac{\Delta h_{is}}{\Delta h_0} = \frac{\Delta p}{\rho \cdot \Delta h_0}
+\eta_{is} = \frac{\Delta h_{is}}{\Delta h_0}
 \end{align*}
-Dal primo principio:
+Dal primo principio della termodinamica:
 \begin{align*}
 T ds = dh - \frac{dp}{\rho}
 \end{align*}
 ma
 \begin{align*}
-ds = 0 \;\;\;\; \Rightarrow \;\;\;\; dh = \frac{dp}{\rho}
+ds = 0 \;\;\;\; \rightarrow \;\;\;\; dh = \frac{dp}{\rho}
 \end{align*}
-Otteniamo quindi
+Si ottiene, ricordando la definizione \ref{eq:lambda} di $\lambda$, quindi:
 \begin{equation}\label{eq:etadp}
 \eta_{is} = \frac{\Delta p}{\rho \cdot \Delta h_0} = \cfrac{\Delta p}{\rho \cdot \cfrac{\lambda}{2} u^2}
 \end{equation}
-L'incremento di pressione totale si può però ulteriormente sviluppare come somma di incremento di pressione sviluppato nel rotore e nello statore:
+Considerando i triangoli di velocità (figura \ref{fig:StadioRipetuto}), l'incremento di pressione totale si può ulteriormente sviluppare come somma di incremento di pressione sviluppato nel rotore e nello statore:
 \begin{equation}
 \Delta p = \Delta p_R + \Delta p_S = \frac{F_{aR}}{s_R} + \frac{F_{aS}}{s_S} = \frac{F_{tR} \cdot \tan(\beta_{\infty} - \varepsilon_R)}{s_R} + \frac{F_{tS} \cdot \tan(\alpha_{\infty} - \varepsilon_S)}{s_S}
 \label{eq:deltap}
 \end{equation}
-Con $\varepsilon_S, \; \varepsilon_R$\footnote{Per quanto riguarda i pedici "S" sta per statore, "R" per rotore.} indice di efficienza del profilo.\\
-Possiamo fare qualche assunzione: i profili hanno drag molto più piccolo del lift quindi:
+con $\varepsilon_S$ e $\varepsilon_R$ indici di efficienza del profilo e $s_R$ e $s_S$ i passi\footnote{Per quanto riguarda i pedici "S" sta per statore, "R" sta per rotore.}.\\
+Si può fare qualche assunzione: i profili hanno drag molto più piccolo del lift quindi:
 \begin{align*}
 \tan \varepsilon_R \simeq \varepsilon_R = \frac{D_R}{L_R} \;\;\;\;\;\;\;\; \tan \varepsilon_S \simeq \varepsilon_S = \frac{D_S}{L_S}
 \end{align*}
-Utilizzando le componenti di forza del triangolo di velocità per rotore e statore si ottiene:
+Utilizzando le componenti di forza del triangolo di velocità per rotore e statore, e ricordando la definizione di $\Phi$, si ottiene:
 \begin{align*}
-F_{tR} = \dot{m} \Delta w_u = \overbrace{s_R \cdot \rho \cdot c_m}^\text{$ \dot{m} $} \cdot \overbrace{\lambda \cdot u \cdot \frac{1}{2}}^\text{$\Delta w_u$}  
+F_{tR} = \dot{m} \cdot \Delta w_u = \overbrace{s_R \cdot \rho \cdot c_m}^\text{$ \dot{m} $} \cdot \overbrace{\lambda \cdot u \cdot \frac{1}{2}}^\text{$\Delta w_u$}=  s_R \cdot \rho \cdot \lambda \cdot \Phi \cdot u^2 \cdot \frac{1}{2}
 \end{align*}
 \begin{align*}
-F_{tS} = \dot{m} \Delta c_m = s_S \cdot \rho \cdot \lambda \cdot \Phi \cdot u^2 \cdot \frac{1}{2}
+F_{tS} = \dot{m} \cdot \Delta c_m = s_S \cdot \rho \cdot c_m \cdot \lambda \cdot u \cdot \frac{1}{2} =s_S \cdot \rho \cdot \lambda \cdot \Phi \cdot u^2 \cdot \frac{1}{2}
 \end{align*}
-Andando a sostituire in \ref{eq:deltap}:
+Andando a sostituire le due forze nell'equazione \ref{eq:deltap}:
 \begin{align*}
-\Delta p = \frac{1}{2} \rho \lambda u^2 \big[ \Phi \tan \left( \beta_{\infty} - \varepsilon_R \right) + \Phi \tan \left( \alpha_{\infty} - \varepsilon_S \right) \big] 
+\Delta p = \frac{1}{2} \rho \lambda u^2 \big[\Phi \tan \left( \beta_{\infty} - \varepsilon_R \right) + \Phi \tan \left( \alpha_{\infty} - \varepsilon_S \right) \big]
 \end{align*}
 e ricordando le relazioni
 \begin{align*}
 R = \Phi \tan \beta_{\infty} \;\;\;\;\;\;\;\;\;\;\; 1 - R = \Phi \tan \alpha_{\infty} 
 \end{align*}
 \begin{align*}
-\tan ( \beta_{\infty} - \varepsilon_R ) = \frac{\tan \beta_{\infty} - \tan \varepsilon_R}{1 + \tan \beta_{\infty} \tan \varepsilon_R} \simeq \frac{\tan \beta_{\infty} - \varepsilon_R}{1 + \tan \beta_{\infty} \cdot \varepsilon_R}
+\tan ( \beta_{\infty} - \varepsilon_R ) = \frac{\tan \beta_{\infty} - \tan \varepsilon_R}{1 + \tan \beta_{\infty} \tan \varepsilon_R} \simeq \frac{\tan \beta_{\infty} - \varepsilon_R}{1 + \tan \beta_{\infty} \varepsilon_R}= \frac{R - \varepsilon_R \Phi}{\Phi + \varepsilon_R R}
 \end{align*}
 \begin{align*}
-\tan (\alpha_{\infty} - \varepsilon_S) \simeq \frac{\tan \alpha_{\infty} - \varepsilon_S}{1 + \tan \alpha_{\infty} \cdot \epsilon_S}
+\tan (\alpha_{\infty} - \varepsilon_S) \simeq \frac{\tan \alpha_{\infty} - \varepsilon_S}{1 + \tan \alpha_{\infty} \cdot \epsilon_S} = \frac{1 - R - \varepsilon_S \Phi}{\Phi + \varepsilon_S (1-R)}
 \end{align*}
-ottengo infine la relazione del salto di pressione in funzione del grado di reazione e di $\lambda$:
+Si ottiene infine la relazione del salto di pressione in funzione del grado di reazione e di $\lambda$:
 \begin{equation}
-\Delta p = \frac{1}{2} \rho \lambda u^2 \Bigg[ \frac{R - \varepsilon_R \Phi}{\Phi + \varepsilon_R R} + \frac{1 - R - \varepsilon_S \Phi}{\Phi + \varepsilon_S (1-R)} \Bigg] \cdot \Phi
+\Delta p = \frac{1}{2} \rho \lambda u^2 \Bigg[ \frac{R - \varepsilon_R \Phi}{\Phi + \varepsilon_R R} + \frac{1 - R - \varepsilon_S \Phi}{\Phi + \varepsilon_S (1-R)} \Bigg]
 \end{equation}
-Posso dire che $\epsilon_R$ è circa $\epsilon_S$. Il rendimento isoentropico, ricordando l'equazione \ref{eq:etadp}, diviene:
+Il rendimento isoentropico, ricordando l'equazione \ref{eq:etadp}, diviene:
 \begin{equation}
-\boxed{ \eta_{is} = \Bigg[ \frac{R - \varepsilon_R \Phi}{\Phi + \varepsilon_R R} + \frac{1 - R - \varepsilon_S \Phi}{\Phi + \varepsilon_S (1-R)} \Bigg] \cdot \Phi }
+\boxed{ \eta_{is} = \Bigg[ \frac{R - \varepsilon_R \Phi}{\Phi + \varepsilon_R R} + \frac{1 - R - \varepsilon_S \Phi}{\Phi + \varepsilon_S (1-R)} \Bigg] }
 \end{equation}
-Cerco ora il coefficiente di reazione:
+Si introduce una semplificazione sugli indici di efficienza e si cerca il grado di reazione ottimale:
 \begin{align*}
 \varepsilon_S \simeq \varepsilon_R = cost = \varepsilon
 \end{align*}
 \begin{align*}
-\frac{d \eta_{is}}{dR} = 0 \;\;\;\; \Rightarrow  \;\;\;\; R_{opt} = 0.5 \mbox{ per } \forall \Phi
+\frac{d \eta_{is}}{dR} = 0 \;\;\;\; \text{se}  \;\;\;\; R_{opt} = 0.5 \mbox{ per } \forall \Phi
 \end{align*}
-Si ha quindi $R_{opt} = 0.5$. Il rendimento con questo valore di R vale:
-\begin{align*}
+Il rendimento con questo valore di R vale:
+\begin{equation}
 \eta_{|R= 0.5} = 2 \Phi \cdot \frac{1- 2 \varepsilon \Phi}{\varepsilon + 2 \Phi}
-\end{align*}
-Naturalmente si vede che il rendimento del compressore è migliorato alla diminuzione di $\varepsilon$. Determino ora il rendimento ottimale in funzione di $\Phi$:
+\end{equation}
+Il rendimento del compressore è migliorato alla diminuzione di $\varepsilon$. Questa relazione lega il rendimento alla portata e all'efficienza del profilo; per il progetto di un compressore si inizierà quindi dallo studio del singolo profilo visto che le sue prestazioni hanno influenza sul rendimento totale.\\
+Si determina ora il valore di $\Phi$ che rende massimo il rendimento ottimale:
 \begin{align*}
-\frac{d\eta_{|R=0.5}}{d \Phi} = 0 \;\;\;\; \Rightarrow \;\;\;\; \Phi_{opt} = \frac{1}{2} \left( \sqrt{1 + \varepsilon^2} - \varepsilon \right) \simeq \frac{1 - \varepsilon}{2}
+\frac{d\eta_{|R=0.5}}{d \Phi} = 0 \;\;\;\; \text{se} \;\;\;\; \Phi_{opt} = \frac{1}{2} \left( \sqrt{1 + \varepsilon^2} - \varepsilon \right) \simeq \frac{1 - \varepsilon}{2}
 \end{align*}
 \begin{equation}
 \eta_{max} = 1 + 2 \varepsilon^2 - 2 \varepsilon \sqrt{1 + \varepsilon^2} \simeq 1 - 2 \varepsilon \left( 1 - \varepsilon \right)
 \end{equation}
 \begin{figure}
 \centering
-  \includegraphics[width=\textwidth]{fig/IsoRendCompAss.pdf}
+  \includegraphics[width=0.9\textwidth]{fig/IsoRendCompAss.pdf}
 \caption{Curve isorendimento di uno stadio assiale in funzione del grado di reazione e coefficiente di portata per efficienza del profilo $\epsilon=0.04$}
-\label{}
+\label{fig:isorendimento}
 \end{figure}
+I valori di rendimento possono essere riportati in un grafico con le varie curve di rendimento al variare del grado di reazione e della cifra di portata $\Phi$, figura \ref{fig:isorendimento}.
 
 \section{Progettazione della schiera}
-Sono presenti molteplici correlazioni per progettare una macchina assiale. Noi vedremo un filone di correlazioni, sono datate ma non hanno perso di validità. Anche nella progettazione di una nuova macchina è utile partire da un predimensionamento per poi andare a raffinare con strumenti moderni. Verrà quindi usato come passo preliminare.\\
-Si parte dalle seguenti riflessioni:
+Sono presenti molteplici correlazioni per progettare una macchina assiale. Si analizzeranno un filone di correlazioni datate ma che non hanno perso di validità. Anche nella progettazione di una nuova macchina è utile partire da un predimensionamento per poi andare a raffinare lo studio con strumenti moderni. Queste correlazioni verranno quindi usate come passo preliminare.\\
+\'E possibile fare le seguenti riflessioni:
 \begin{itemize}
-\item la deflessione imposta alla corrente è limitata: nell'ordine delle decine di gradi ($20 \div 30$ al massimo $40$);
+\item la deflessione imposta alla corrente è limitata: nell'ordine delle decine di gradi (\ang{20} $\div$ \ang{30} al massimo \ang{40});
 \item profili sottili a bassa curvatura.
 \end{itemize}
 Le perdite possono quindi essere suddivise in:
 \begin{itemize}
-\item perdite di anello: sono dovute all'interazione tra flusso elicoidale che si sviluppa all'interno del compressore e la cassa della macchina;
-\item perdite di profilo: sono direttamente correlate al $c_D$, saranno quelle in cui si può andare maggiormente a lavorare;
-\item perdite per flussi secondari: trattate nel capitolo precedente.
-\end{itemize}
-
-Si andrà quindi a lavorare inizialmente sulle perdite di profilo aggiungendo poi le altre due perdite tramite coefficienti di correlazione.
-
-Le perdite di anello inducono un drag aggiuntivo correlato a quanto più è elevato lo sviluppo radiale della pala. Definito $H$ lo sviluppo radiale e $s$ passo palare, si può scrivere:
+\item perdite di anello: sono dovute all'interazione tra flusso elicoidale che si sviluppa all'interno del compressore e la cassa della macchina. Esse inducono un drag aggiuntivo correlato a quanto più è elevato lo sviluppo radiale della pala. Definito $H$ lo sviluppo radiale e $s$ passo palare, si può scrivere:
 \begin{align*}
 C_{Da} = 0.02 \cdot \frac{s}{H}
 \end{align*}
-Abbiamo poi che la perdita per flussi secondari è correlata con il quadrato del coefficiente di portanza; tanto più la portanza è elevata tanto verrà imposta una deviazione e di conseguenza tanto più è probabile che si instaurino moti secondari.
+\item perdite di profilo: sono direttamente correlate al coefficiente $c_D$, saranno quelle in cui si può andare maggiormente a lavorare;
+\item perdite per flussi secondari: trattate nel capitolo precedente. Esse dipendono dal quadrato del coefficiente di portanza; tanto più la portanza è elevata tanto verrà imposta una deviazione e di conseguenza tanto più è probabile che si instaurino moti secondari.
 \begin{align*}
-C_{Ds} = 0.018 \cdot C_L^2
+C_{Ds} = 0.018 \cdot c_L^2
 \end{align*}
-Posso andare quindi a scrivere un coefficiente di resistenza complessivo
+\end{itemize}
+\'E possibile andare quindi a scrivere un coefficiente di resistenza complessivo:
 \begin{equation}
-C_{Dtot} = C_D + C_{Da} + C_{Ds} = C_D + 0.02 \cdot \frac{s}{H} + 0.018 \cdot C_L^2
+C_{Dtot} = C_D + C_{Da} + C_{Ds} = C_D + 0.02 \cdot \frac{s}{H} + 0.018 \cdot c_L^2
 \label{eq:Cdtot}
 \end{equation}
 In questo modo si riconducono le perdite all'interno del flusso ad un incremento del coefficiente di resistenza del profilo. In figura \ref{fig:ComprStageLoss} si vede come le varie perdite inficino sull'efficienza della schiera.
@@ -314,7 +315,16 @@ In questo modo si riconducono le perdite all'interno del flusso ad un incremento
 \label{fig:ComprStageLoss}
 \end{figure}
 \subsection{Correlazioni di Howell}
-Nella progettazione preliminare fatta utilizzando la correlazione di Howell, si va a cercare la relazione tra gli angoli geometrici in ingresso e uscita e gli angoli che deve avere il fluido. La prima correlazione di Howell dice che la condizione di riferimento, ovvero la deflessione nominale che la corrente subisce nell'attraversamento delle pale, $\varepsilon^*$, viene riferita rispetto la deviazione di stallo $\varepsilon_s$:
+Si ricordano le nomenclature utilizzate in questo capitolo in figura \ref{fig:SchieraDim}; in particolare è evidenziata la differenza tra angoli geometrici e fluidodinamici.
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{fig/SchieraDim.pdf}
+	\caption{}
+	\label{fig:SchieraDim}
+\end{figure}
+
+Nella progettazione preliminare fatta utilizzando la correlazione di Howell, si va a cercare la relazione tra gli angoli geometrici in ingresso e in uscita e gli angoli che deve avere il fluido.\\
+La correlazione di Howell dice che la condizione di riferimento, ovvero la deflessione nominale che la corrente subisce nell'attraversamento delle pale $\varepsilon^*$, dipende dalla deviazione di stallo $\varepsilon_s$:
 \begin{equation}
 \varepsilon^* = 0.8 \cdot \varepsilon_s
 \end{equation}
@@ -325,18 +335,12 @@ In figura \ref{fig:Howell} è rappresentato l'andamento della deflessione in fun
 \caption{}
 \label{fig:Howell}
 \end{figure}
-\\In figura \ref{fig:SchieraDim} si riportano le nomenclature utilizzate in questo capitolo: è rappresentata in particolare la differenza tra angoli geometrici e fluidodinamici.
-\begin{figure}
-\centering
-  \includegraphics[width=\textwidth]{fig/SchieraDim.pdf}
-\caption{}
-\label{fig:SchieraDim}
-\end{figure}
-\\La prima correlazione di Howell permette di calcolare gli angoli del flusso attesi al variare della solidità della schiera ($\varepsilon = \varepsilon*$). In figura \ref{fig:1CorrHowell} è rappresentata la prima correlazione di Howell al variare della solidità della schiera. Si nota che a parità di deflessione nominale si avrà una maggiore angolo in uscita per schiere più compatte.
+
+La prima correlazione di Howell permette di calcolare gli angoli del flusso attesi da una schiera di data solidità ($\epsilon=\epsilon^*$). In figura \ref{fig:1CorrHowell} viene riportato l'andamento della deflessione nominale al variare della solidità della schiera. Si nota che a parità di deflessione nominale si avrà una maggiore angolo in uscita per schiere più compatte.
 \begin{figure}
 	\centering
 	\includegraphics[width=.4\textwidth]{fig/1CorrHowell.pdf}
-	\caption{}
+	\caption{Prima correlazione di Howell, $l$ è la corda del profilo}
 	\label{fig:1CorrHowell}
 \end{figure}
 Se $ 20^{\circ} < \theta < 40^{\circ} $, la relazione della deflessione nominale è indipendente dall'angolo di deflessione geometrica $\theta$:
@@ -351,27 +355,27 @@ La deflessione nominale è definita come
 \begin{align*}
 \varepsilon^* = \alpha_1^* - \alpha_2^*
 \end{align*}
-e possiamo scrivere:
+e si può scrivere:
 \begin{align*}
-\tan \alpha_1^* - \tan \alpha_2^* = \cfrac{1.55}{1 + 1.5 \cfrac{s}{l}}
+\boxed{\tan \alpha_1^* - \tan \alpha_2^* = \cfrac{1.55}{1 + 1.5 \cfrac{s}{l}}}
 \end{align*}
 valida nel range $0^\circ \leq \alpha_2^* \le 40^\circ$.
-\\La seconda correlazione di Howell permette di trovare, noti gli angoli di flusso, i corrispondenti valori degli angoli geometrici della schiera ($\varepsilon = \varepsilon*$). \'E possibile calcolare il valore della deviazione $\delta$ ossia lo scostamento tra angolo geometrico e angolo effettivo del flusso in uscita:
+
+La seconda correlazione di Howell permette di trovare, noti gli angoli di flusso, i corrispondenti valori degli angoli geometrici della schiera ($\varepsilon = \varepsilon^*$). \'E possibile calcolare il valore della deviazione $\delta$ ossia lo scostamento tra angolo geometrico e angolo effettivo del flusso in uscita:
 \begin{align*}
 \delta = f \bigg( \theta, forma \; della \; pala, \frac{s}{l}, \gamma \bigg)
 \end{align*}
 con $\gamma$ angolo di calettamento. Si usa la seguente relazione, nota come legge di Costant:
 \begin{align*}
-\delta^* = m \theta \bigg( \frac{s}{l} \bigg)^n
+\boxed{\delta^* = m \theta \bigg( \frac{s}{l} \bigg)^n}
 \end{align*}
 con $n = 1/2$ per schiere di compressore e $n = 1$ per schiere di IGV. Il coefficiente $m$ è funzione della forma della pala, in particolare della sua linea media (queste restano comunque delle correlazioni approssimative visto che derivano da osservazioni sperimentali):
 \begin{align*}
 m = 0.23 \cdot \bigg( 2 \cdot \frac{a}{l} \bigg)^2 + \frac{\alpha_2^*}{500}
 \end{align*}
 con $a$ che rappresenta la distanza del punto di massimo incurvamento della linea media rispetto il bordo d'ingresso. 
-\\La terza correlazione di Howell permette di calcolare le prestazioni in off-design, quando $\varepsilon \neq \varepsilon*$.\\
 
-Con queste correlazioni posso ridurre i gradi di libertà nella definizione della geometria. Infatti una volta scelti $ \theta$ e $\sigma $, dalla seconda correlazione ottengo $ \delta^* $ e dalla prima correlazione trovo $ \varepsilon^* $. In questo modo posso definire:
+Con queste correlazioni si riducono i gradi di libertà nella definizione della geometria. Infatti una volta scelti $ \theta$ e $\sigma $, dalla seconda correlazione risulta $ \delta^* $ e dalla prima correlazione si trova $ \varepsilon^* $. In questo modo si definiscono:
 \begin{align*}
 i^* = \varepsilon^* - \theta + \delta^*
 \end{align*}
@@ -381,19 +385,17 @@ i^* = \varepsilon^* - \theta + \delta^*
 \begin{align*}
 \alpha_{1g} = \alpha_2^* - \delta^*
 \end{align*}
-e disegnare effettivamente la schiera. 
+e si può effettivamente disegnare la schiera. 
 
-\subsection{Condizioni fuori progetto}
-Queste condizioni possono verificarsi in caso di una macchina che lavora in condizioni differenti da quelle nominali. \'E necessario trovare delle correlazioni anche per questi casi. In queste ulteriori relazioni si va a rapportare la deflessione relativa $\varepsilon/\varepsilon^*$ rispetto ad altre caratteristiche (figura \ref{fig:FuoriProg1}).
+La terza correlazione di Howell permette di calcolare le prestazioni in off-design, quando $\varepsilon \neq \varepsilon^*$, le quali si verificano nel caso una macchina lavori in condizioni differenti da quelle nominali.
 \begin{figure}
 \centering
   \includegraphics[width=0.8\textwidth]{fig/FuoriProg1.pdf}
 \caption{}
 \label{fig:FuoriProg1}
 \end{figure}
-Questo diagramma ci permette di stimare il coefficiente di perdita $c_Dp$ e di considerare eventuali numeri di Re diversi; le curve vengono espresse a differenti valori di solidità.
-Queste relazioni sono state ricavate per numeri di Mach bassi; vediamo cosa succede aumentando la velocità, quindi avvicinandosi alle condizioni soniche e considerando anche i fenomeni di comprimibilità.\\
-In figura \ref{fig:FuoriProg2} si rapporta il coefficiente di incremento di pressione e il numero di Mach in entrata per una schiera con le caratteristiche riportate in figura.
+Il diagramma in figura \ref{fig:FuoriProg1} permette di rapportare la deflessione relativa $\varepsilon/\varepsilon^*$ rispetto ad altre caratteristiche e di stimare il coefficiente di perdita $c_{Dp}$ considerando anche eventuali campi di variazione di Re differenti da quelli studiati nelle precedenti correlazioni; le curve vengono espresse a differenti valori di solidità.\\
+In figura \ref{fig:FuoriProg2} si rapporta il coefficiente di incremento di pressione e il numero di Mach in entrata per una schiera con le caratteristiche riportate in figura; in questo modo è possibile avvicinarsi alle condizioni soniche e considerare anche i fenomeni di comprimibilità.
 \begin{figure}[h!]
 \centering
 \begin{minipage}{.6\textwidth}
@@ -409,7 +411,7 @@ In figura \ref{fig:FuoriProg2} si rapporta il coefficiente di incremento di pres
   \label{fig:FuoriProgMach}
 \end{minipage}
 \end{figure}
-\\Finchè Ma resta basso il coefficiente di recupero di pressione non dipende da Ma. Raggiunto il valore di $M_{critico}$ il coefficiente di recupero di pressione cala e c'è la possibilità si formi un'onda d'urto con un decadimento delle prestazioni della schiera fino ad arrivare al suo annullamento in corrispondenza di $M_{max}$; in quest'ultima condizione in particolare, si ha un'onda d'urto che occupa l'intero condotto, quindi in condizioni di chocking e di conseguenza la portata non può variare. La maggior parte dei test sperimentali che vengono svolti hanno lo scopo di trovare $M_c$.
+Finchè Ma resta basso il coefficiente di recupero di pressione non dipende da Ma. Raggiunto il valore di $M_{critico}$, il coefficiente di recupero di pressione diminuisce e c'è la possibilità che si formi un'onda d'urto con un decadimento delle prestazioni della schiera fino ad arrivare al loro annullamento in corrispondenza di $M_{max}$; in quest'ultima condizione in particolare, si ha un'onda d'urto che occupa l'intero condotto, quindi con condizioni di chocking, e di conseguenza la portata non può variare. La maggior parte dei test sperimentali che vengono svolti hanno lo scopo di trovare $M_{critico}$.
 \begin{figure}[h!]
 	\centering
 	\begin{minipage}{.6\textwidth}
@@ -425,11 +427,11 @@ In figura \ref{fig:FuoriProg2} si rapporta il coefficiente di incremento di pres
 		\label{fig:FuoriProg4}
 	\end{minipage}
 \end{figure}
-\\In figura \ref{fig:FuoriProg3} ho le relazioni che mi correlano deflessione della schiera e rendimento in funzione di una grandezza dipendente da $M$; $M_C$ e $M_{max}$ (ricordiamo essere specifici per condizioni fissate). \'E possibile notare dalla figura \ref{fig:FuoriProg4} come soprattutto $M_C$ sia pesantemente influenzato dall'angolo di incidenza.
+\\In figura \ref{fig:FuoriProg3} sono riportate le relazioni che correlano deflessione della schiera e l'efficienza per $M_C\leq M\leq M_{max}$. \'E possibile notare dalla figura \ref{fig:FuoriProg4} come soprattutto $M_C$ sia pesantemente influenzato dall'angolo di incidenza.
 
 \subsection{Criterio di carico}
-Al variare del numero di pale ma a parità di lavoro svolto dalla macchina, dovrò imporre diverse deflessioni con un conseguente carico diverso sulla singola pala. Con poche pale dovrò infatti imporre deflessioni maggiori che portano ad un forte carico sul singolo profilo.\\
-Si va a fare una verifica: fissata la schiera e la solidità, si va a calcolare il coefficiente di deflessione locale, $D_{loc}$, che indica quant'è la massima decelerazione a cui è soggetta la schiera:
+Al variare del numero di pale ma a parità di lavoro svolto dalla macchina, si dovranno imporre diverse deflessioni con un conseguente carico diverso sulla singola pala: con poche pale si dovranno imporre deflessioni maggiori che portano ad un forte carico sul singolo profilo.\\
+Si fa quindi una verifica: fissata la schiera e la solidità, si calcola il coefficiente di deflessione locale, $D_{loc}$, che indica quant'è la massima decelerazione a cui è soggetta la schiera:
 \begin{equation}\label{eq:D_loc}
 D_{loc} = \frac{V_{max} - V_2}{V_{max}}
 \end{equation}
@@ -450,7 +452,7 @@ con $V$ è velocità di riferimento e $\nu$ velocità come funzione della posizi
 \caption{}
 \label{fig:CritCarico2}
 \end{figure}
-Se sono presenti molte pale, l'integrale diventa molto grande perché potrei avere l'intero canale palare occupato dalla scia, quindi come criterio empirico si utilizza:
+Se sono presenti molte pale, l'integrale diventa molto grande perché l'intero canale palare potrebbe essere occupato dalla scia, quindi come criterio empirico si utilizza:
 \begin{align*}
 \frac{\theta}{c} < 0.2
 \end{align*}
@@ -461,7 +463,7 @@ In questo modo l'inspessimento di strato limite è considerato trascurabile risp
 \caption{}
 \label{fig:CritCarico3}
 \end{figure}
-\\\'E possibile calcolare un fattore di diffusione globale, $D$, attraverso differenti correlazioni (figura \ref{fig:CritCarico3}):
+\\\'E possibile calcolare un fattore di diffusione globale, $D$, attraverso differenti correlazioni ottenute a partire da dati sperimentali (figura \ref{fig:CritCarico3}):
 \begin{align*}
 D = \bigg( \frac{V_1 - V_2}{V_1} \bigg) + \bigg( \frac{V_{t1} - V_{t2}}{2 \sigma V_1} \bigg) = \bigg( 1 - \frac{\cos \alpha_1}{cos \alpha_2} \bigg) + \frac{\cos \alpha_1}{2 \sigma} (\tan \alpha_1 - \tan \alpha_2)
 \end{align*}
@@ -476,36 +478,37 @@ e come criterio empirico si usa $ D \leqslant 0.4 \div 0.5  $.
 \begin{align*}
 \Delta M = \int_0^{\delta} \rho u dy (U-u) = \rho \int_0^{\delta} u (U-u) dy
 \end{align*} 
-Questo però attualmente non ha molto senso in quanto questa è la parte di progettazione che si effettua per via numerica. A partire da questo decremento è poi possibile calcolare lo spessore della quantità di moto dello strato limite per valutare l'intensità energetica della scia in termini di perturbazione:
+Quest'ultima fase però attualmente non ha molto senso in quanto questa è la parte di progettazione che si effettua per via numerica. A partire da questo decremento, è possibile calcolare lo spessore della quantità di moto dello strato limite al fine di valutare l'intensità energetica della scia in termini di perturbazione:
 \begin{equation}
 \theta = \frac{\Delta M}{\rho U^2} = \int_0^{\delta} \frac{u}{U} \bigg( 1 -\frac{u}{U} \bigg) dy
 \end{equation}
 
 \section{Schiere supersoniche}
-Fin'ora abbiamo parlato di schiere di compressori con deflusso subsonico debolmente comprimibile con rapporti di compressione modesti ($10 \div 20 \%$) con le seguenti condizioni sulla velocità in ingresso e in uscita:
+Fin'ora si sono analizzate schiere di compressori con deflusso subsonico debolmente comprimibile con rapporti di compressione modesti ($10 \div 20 \%$) e con le seguenti condizioni sulla velocità in ingresso e in uscita:
 \begin{align*}
 \begin{cases}
 M_1 <1\\
 M_2 <1
 \end{cases}
 \end{align*} 
+
 Si analizzano ora delle condizioni diverse in cui si presenteranno condizioni supersoniche. Questo tipo di deflusso consente un salto di pressione più elevato a scapito però di una pesante perdita in termini di rendimento. Queste trovano applicazioni particolari in campo aeronautico. 
 \begin{itemize}
-	\item si parlerà di compressore transonico se:
+	\item Si parlerà di compressore transonico se:
 	\begin{align*}
 	\begin{cases}
 	M_1 >1\\
 	M_2 <1
 	\end{cases}
 	\end{align*} 
-	ovviamente con $M_2<M_1$. Nel caso in cui si arrivi in condizione soniche all'interno della macchina si faranno ulteriori distinzioni rispetto alla componente assiale: 
+	Nel caso in cui si arrivi in condizione soniche all'interno della macchina si faranno ulteriori distinzioni rispetto alla componente assiale: 
 	\begin{itemize}
 		\item per $M_{1a} < 1 $ si parlerà di:
 		\begin{itemize}
-			\item \textit{non innescato} (figura \ref{fig:Schlieren1}a): notiamo che è presente un'onda d'urto normale al flusso. Si avrà quindi una zona supersonica a monte e una subsonica a valle della schiera con un passaggio tra le due discontinuo; l'aumento di velocità naturalmente è dovuto all'aumento di spessore della schiera;
+			\item \textit{regime non innescato} (figura \ref{fig:Schlieren1}a): è presente un'onda d'urto normale al flusso. Si avrà quindi una zona supersonica a monte e una subsonica a valle della schiera con un passaggio tra le due discontinuo; l'aumento di velocità è dovuto all'aumento di spessore della schiera;
 			\item \textit{regime innescato} (figura \ref{fig:Schlieren1}b): la perturbazione di pressione occupa integralmente il condotto palare ed è distinguibile in maniera chiara (è comunque presente una zona subsonica in ingresso); la portata è bloccata; 
 		\end{itemize}
-		\item per $ M_{1a} > 1 $ si parlerà di \textit{regime saturo} (figura \ref{fig:Schlieren1}c): la componente assiale è superiore a 1 e il blocco sonico è a monte della schiera; inoltre a monte si creano delle onde oblique che dissipano energia. Il deflusso in questo caso è complesso;
+		\item per $ M_{1a} > 1 $ si parlerà di \textit{regime saturo} (figura \ref{fig:Schlieren1}c): il blocco sonico è a monte della schiera dove si creano delle onde oblique che dissipano energia. Il deflusso in questo caso è complesso;
 	\end{itemize}
 	\item un'ulteriore possibilità, che però non ha rilevanza nei compressori, è:
 	\begin{align*}
@@ -514,7 +517,7 @@ Si analizzano ora delle condizioni diverse in cui si presenteranno condizioni su
 	M_2 >1
 	\end{cases}
 	\end{align*} 
-	In questo caso il flusso viene accelerato ma per definizione in un compressore cerco esattamente l'effetto opposto;
+	In questo caso il flusso viene accelerato ma per definizione in un compressore si cerca esattamente l'effetto opposto;
 	\item un ultimo caso è:
 	\begin{align*}
 	\begin{cases}
@@ -522,7 +525,7 @@ Si analizzano ora delle condizioni diverse in cui si presenteranno condizioni su
 	M_2 >1
 	\end{cases}
 	\end{align*} 
-	in cui il flusso è interamente supersonico ma non ha interessi applicativi.
+	in cui il flusso è interamente supersonico ma non ha particolari interessi applicativi.
 \end{itemize}
 \begin{figure}[h!]
 \centering
