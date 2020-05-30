@@ -256,7 +256,7 @@ Il rendimento isoentropico, ricordando l'equazione \ref{eq:etadp}, diviene:
 \begin{equation}
 \boxed{ \eta_{is} = \Bigg[ \frac{R - \varepsilon_R \Phi}{\Phi + \varepsilon_R R} + \frac{1 - R - \varepsilon_S \Phi}{\Phi + \varepsilon_S (1-R)} \Bigg] }
 \end{equation}
-Si introduce una semplificazione sugli indici di efficienza e si cerca il coefficiente di reazione ottimale:
+Si introduce una semplificazione sugli indici di efficienza e si cerca il grado di reazione ottimale:
 \begin{align*}
 \varepsilon_S \simeq \varepsilon_R = cost = \varepsilon
 \end{align*}
@@ -277,16 +277,17 @@ Si determina ora il valore di $\Phi$ che rende massimo il rendimento ottimale:
 \end{equation}
 \begin{figure}
 \centering
-  \includegraphics[width=\textwidth]{fig/IsoRendCompAss.pdf}
+  \includegraphics[width=0.9\textwidth]{fig/IsoRendCompAss.pdf}
 \caption{Curve isorendimento di uno stadio assiale in funzione del grado di reazione e coefficiente di portata per efficienza del profilo $\epsilon=0.04$}
-\label{}
+\label{fig:isorendimento}
 \end{figure}
+I valori di rendimento possono essere riportati in un grafico con le varie curve di rendimento al variare del grado di reazione e della cifra di portata $\Phi$, figura \ref{fig:isorendimento}.
 
 \section{Progettazione della schiera}
 Sono presenti molteplici correlazioni per progettare una macchina assiale. Si analizzeranno un filone di correlazioni datate ma che non hanno perso di validità. Anche nella progettazione di una nuova macchina è utile partire da un predimensionamento per poi andare a raffinare lo studio con strumenti moderni. Queste correlazioni verranno quindi usate come passo preliminare.\\
 \'E possibile fare le seguenti riflessioni:
 \begin{itemize}
-\item la deflessione imposta alla corrente è limitata: nell'ordine delle decine di gradi ($20 \div 30$ al massimo $40$);
+\item la deflessione imposta alla corrente è limitata: nell'ordine delle decine di gradi (\ang{20} $\div$ \ang{30} al massimo \ang{40});
 \item profili sottili a bassa curvatura.
 \end{itemize}
 Le perdite possono quindi essere suddivise in:
@@ -296,7 +297,7 @@ Le perdite possono quindi essere suddivise in:
 C_{Da} = 0.02 \cdot \frac{s}{H}
 \end{align*}
 \item perdite di profilo: sono direttamente correlate al coefficiente $c_D$, saranno quelle in cui si può andare maggiormente a lavorare;
-\item perdite per flussi secondari: trattate nel capitolo precedente. Esse sono dipendono dal quadrato del coefficiente di portanza; tanto più la portanza è elevata tanto verrà imposta una deviazione e di conseguenza tanto più è probabile che si instaurino moti secondari.
+\item perdite per flussi secondari: trattate nel capitolo precedente. Esse dipendono dal quadrato del coefficiente di portanza; tanto più la portanza è elevata tanto verrà imposta una deviazione e di conseguenza tanto più è probabile che si instaurino moti secondari.
 \begin{align*}
 C_{Ds} = 0.018 \cdot c_L^2
 \end{align*}
@@ -322,8 +323,7 @@ Si ricordano le nomenclature utilizzate in questo capitolo in figura \ref{fig:Sc
 	\label{fig:SchieraDim}
 \end{figure}
 
-Nella progettazione preliminare fatta utilizzando la correlazione di Howell, si va a cercare la relazione tra gli angoli geometrici in ingresso e in uscita e gli angoli che deve avere il fluido.
-
+Nella progettazione preliminare fatta utilizzando la correlazione di Howell, si va a cercare la relazione tra gli angoli geometrici in ingresso e in uscita e gli angoli che deve avere il fluido.\\
 La correlazione di Howell dice che la condizione di riferimento, ovvero la deflessione nominale che la corrente subisce nell'attraversamento delle pale $\varepsilon^*$, dipende dalla deviazione di stallo $\varepsilon_s$:
 \begin{equation}
 \varepsilon^* = 0.8 \cdot \varepsilon_s
@@ -336,7 +336,7 @@ In figura \ref{fig:Howell} è rappresentato l'andamento della deflessione in fun
 \label{fig:Howell}
 \end{figure}
 
-La prima correlazione di Howell permette di calcolare gli angoli del flusso attesi da una schiera di data solidità ($\epsilon=\epsilon^*$). Questa viene riportata in figura \ref{fig:1CorrHowell} al variare della solidità della schiera. Si nota che a parità di deflessione nominale si avrà una maggiore angolo in uscita per schiere più compatte.
+La prima correlazione di Howell permette di calcolare gli angoli del flusso attesi da una schiera di data solidità ($\epsilon=\epsilon^*$). In figura \ref{fig:1CorrHowell} viene riportato l'andamento della deflessione nominale al variare della solidità della schiera. Si nota che a parità di deflessione nominale si avrà una maggiore angolo in uscita per schiere più compatte.
 \begin{figure}
 	\centering
 	\includegraphics[width=.4\textwidth]{fig/1CorrHowell.pdf}
@@ -387,14 +387,14 @@ i^* = \varepsilon^* - \theta + \delta^*
 \end{align*}
 e si può effettivamente disegnare la schiera. 
 
-La terza correlazione di Howell permette di calcolare le prestazioni in off-design, quando $\varepsilon \neq \varepsilon^*$. Le condizioni di off-design possono verificarsi nel caso una macchina lavori in condizioni differenti da quelle nominali. In questi casi si va a rapportare la deflessione relativa $\varepsilon/\varepsilon^*$ rispetto ad altre caratteristiche.
+La terza correlazione di Howell permette di calcolare le prestazioni in off-design, quando $\varepsilon \neq \varepsilon^*$, le quali si verificano nel caso una macchina lavori in condizioni differenti da quelle nominali.
 \begin{figure}
 \centering
   \includegraphics[width=0.8\textwidth]{fig/FuoriProg1.pdf}
 \caption{}
 \label{fig:FuoriProg1}
 \end{figure}
-Il diagramma in figura \ref{fig:FuoriProg1} permette di stimare il coefficiente di perdita $c_{Dp}$ e di considerare eventuali campi di variazione di Re differenti da quelli studiati nelle precedenti correlazioni; le curve vengono espresse a differenti valori di solidità.\\
+Il diagramma in figura \ref{fig:FuoriProg1} permette di rapportare la deflessione relativa $\varepsilon/\varepsilon^*$ rispetto ad altre caratteristiche e di stimare il coefficiente di perdita $c_{Dp}$ considerando anche eventuali campi di variazione di Re differenti da quelli studiati nelle precedenti correlazioni; le curve vengono espresse a differenti valori di solidità.\\
 In figura \ref{fig:FuoriProg2} si rapporta il coefficiente di incremento di pressione e il numero di Mach in entrata per una schiera con le caratteristiche riportate in figura; in questo modo è possibile avvicinarsi alle condizioni soniche e considerare anche i fenomeni di comprimibilità.
 \begin{figure}[h!]
 \centering
@@ -411,7 +411,7 @@ In figura \ref{fig:FuoriProg2} si rapporta il coefficiente di incremento di pres
   \label{fig:FuoriProgMach}
 \end{minipage}
 \end{figure}
-\\Finchè Ma resta basso il coefficiente di recupero di pressione non dipende da Ma. Raggiunto il valore di $M_{critico}$ il coefficiente di recupero di pressione diminuisce e c'è la possibilità che si formi un'onda d'urto con un decadimento delle prestazioni della schiera fino ad arrivare al loro annullamento in corrispondenza di $M_{max}$; in quest'ultima condizione in particolare, si ha un'onda d'urto che occupa l'intero condotto, quindi con condizioni di chocking, e di conseguenza la portata non può variare. La maggior parte dei test sperimentali che vengono svolti hanno lo scopo di trovare $M_c$.
+Finchè Ma resta basso il coefficiente di recupero di pressione non dipende da Ma. Raggiunto il valore di $M_{critico}$, il coefficiente di recupero di pressione diminuisce e c'è la possibilità che si formi un'onda d'urto con un decadimento delle prestazioni della schiera fino ad arrivare al loro annullamento in corrispondenza di $M_{max}$; in quest'ultima condizione in particolare, si ha un'onda d'urto che occupa l'intero condotto, quindi con condizioni di chocking, e di conseguenza la portata non può variare. La maggior parte dei test sperimentali che vengono svolti hanno lo scopo di trovare $M_{critico}$.
 \begin{figure}[h!]
 	\centering
 	\begin{minipage}{.6\textwidth}
@@ -427,7 +427,7 @@ In figura \ref{fig:FuoriProg2} si rapporta il coefficiente di incremento di pres
 		\label{fig:FuoriProg4}
 	\end{minipage}
 \end{figure}
-\\In figura \ref{fig:FuoriProg3} sono riportate le relazioni che correlano deflessione della schiera e il rendimento in funzione di una grandezza dipendente da $M$, $M_C$ e $M_{max}$ (sono valori specifici per condizioni fissate). \'E possibile notare dalla figura \ref{fig:FuoriProg4} come soprattutto $M_C$ sia pesantemente influenzato dall'angolo di incidenza.
+\\In figura \ref{fig:FuoriProg3} sono riportate le relazioni che correlano deflessione della schiera e l'efficienza per $M_C\leq M\leq M_{max}$. \'E possibile notare dalla figura \ref{fig:FuoriProg4} come soprattutto $M_C$ sia pesantemente influenzato dall'angolo di incidenza.
 
 \subsection{Criterio di carico}
 Al variare del numero di pale ma a parità di lavoro svolto dalla macchina, si dovranno imporre diverse deflessioni con un conseguente carico diverso sulla singola pala: con poche pale si dovranno imporre deflessioni maggiori che portano ad un forte carico sul singolo profilo.\\
