@@ -243,10 +243,10 @@ e ricordando le relazioni
 R = \Phi \tan \beta_{\infty} \;\;\;\;\;\;\;\;\;\;\; 1 - R = \Phi \tan \alpha_{\infty} 
 \end{align*}
 \begin{align*}
-\tan ( \beta_{\infty} - \varepsilon_R ) = \frac{\tan \beta_{\infty} - \tan \varepsilon_R}{1 + \tan \beta_{\infty} \tan \varepsilon_R} \simeq \frac{\tan \beta_{\infty} - \varepsilon_R}{1 + \tan \beta_{\infty} \varepsilon_R}= \frac{R - \varepsilon_R \Phi}{\Phi + \varepsilon_R R}
+\Phi \cdot \tan ( \beta_{\infty} - \varepsilon_R ) = \Phi \cdot \frac{\tan \beta_{\infty} - \tan \varepsilon_R}{1 + \tan \beta_{\infty} \tan \varepsilon_R} \simeq \Phi \cdot \frac{\tan \beta_{\infty} - \varepsilon_R}{1 + \tan \beta_{\infty} \varepsilon_R}= \frac{R - \varepsilon_R \Phi}{\Phi + \varepsilon_R R}
 \end{align*}
 \begin{align*}
-\tan (\alpha_{\infty} - \varepsilon_S) \simeq \frac{\tan \alpha_{\infty} - \varepsilon_S}{1 + \tan \alpha_{\infty} \cdot \epsilon_S} = \frac{1 - R - \varepsilon_S \Phi}{\Phi + \varepsilon_S (1-R)}
+\Phi \cdot \tan (\alpha_{\infty} - \varepsilon_S) \simeq \Phi \cdot \frac{\tan \alpha_{\infty} - \varepsilon_S}{1 + \tan \alpha_{\infty} \cdot \epsilon_S} = \frac{1 - R - \varepsilon_S \Phi}{\Phi + \varepsilon_S (1-R)}
 \end{align*}
 Si ottiene infine la relazione del salto di pressione in funzione del grado di reazione e di $\lambda$:
 \begin{equation}
@@ -431,11 +431,11 @@ Finchè Ma resta basso il coefficiente di recupero di pressione non dipende da M
 
 \subsection{Criterio di carico}
 Al variare del numero di pale ma a parità di lavoro svolto dalla macchina, si dovranno imporre diverse deflessioni con un conseguente carico diverso sulla singola pala: con poche pale si dovranno imporre deflessioni maggiori che portano ad un forte carico sul singolo profilo.\\
-Si fa quindi una verifica: fissata la schiera e la solidità, si calcola il coefficiente di deflessione locale, $D_{loc}$, che indica quant'è la massima decelerazione a cui è soggetta la schiera:
+Utilizzando il criterio NACA (o Lieblein) si fa una verifica: fissata la schiera e la solidità, si calcola il coefficiente di deflessione locale $D_{loc}$, che indica quant'è la massima decelerazione del fluido in quella schiera:
 \begin{equation}\label{eq:D_loc}
 D_{loc} = \frac{V_{max} - V_2}{V_{max}}
 \end{equation}
-Si considera poi la riduzione di quantità di moto integrando sullo spessore occupato dalla scia:
+Si considera poi la riduzione di quantità di moto integrando sullo spessore occupato dalla scia adimensionalizzato rispetto la corda (figura \ref{fig:CritCarico2}):
 \begin{equation}\label{eq:D_ridqmot}
 \theta = \int_{\delta_P}^{\delta_S} \frac{\nu}{V} \bigg(1- \frac{\nu}{V} \bigg) dy
 \end{equation} 
@@ -463,7 +463,7 @@ In questo modo l'inspessimento di strato limite è considerato trascurabile risp
 \caption{}
 \label{fig:CritCarico3}
 \end{figure}
-\\\'E possibile calcolare un fattore di diffusione globale, $D$, attraverso differenti correlazioni ottenute a partire da dati sperimentali (figura \ref{fig:CritCarico3}):
+\\\'E possibile calcolare un fattore di diffusione globale $D$ attraverso differenti correlazioni ottenute a partire da dati sperimentali (figura \ref{fig:CritCarico3}):
 \begin{align*}
 D = \bigg( \frac{V_1 - V_2}{V_1} \bigg) + \bigg( \frac{V_{t1} - V_{t2}}{2 \sigma V_1} \bigg) = \bigg( 1 - \frac{\cos \alpha_1}{cos \alpha_2} \bigg) + \frac{\cos \alpha_1}{2 \sigma} (\tan \alpha_1 - \tan \alpha_2)
 \end{align*}
@@ -474,7 +474,7 @@ e come criterio empirico si usa $ D \leqslant 0.4 \div 0.5  $.
 \caption{}
 \label{fig:CritCarico4}
 \end{figure}
-\\Infine si possono andare a cercare correlazioni rispetto allo strato limite come mostrato in figura \ref{fig:CritCarico4} e calcolare il decremento della quantità di moto come 
+\\Infine si possono cercare correlazioni rispetto allo strato limite come mostrato in figura \ref{fig:CritCarico4} e calcolare il decremento della quantità di moto come:
 \begin{align*}
 \Delta M = \int_0^{\delta} \rho u dy (U-u) = \rho \int_0^{\delta} u (U-u) dy
 \end{align*} 
@@ -506,7 +506,7 @@ Si analizzano ora delle condizioni diverse in cui si presenteranno condizioni su
 		\item per $M_{1a} < 1 $ si parlerà di:
 		\begin{itemize}
 			\item \textit{regime non innescato} (figura \ref{fig:Schlieren1}a): è presente un'onda d'urto normale al flusso. Si avrà quindi una zona supersonica a monte e una subsonica a valle della schiera con un passaggio tra le due discontinuo; l'aumento di velocità è dovuto all'aumento di spessore della schiera;
-			\item \textit{regime innescato} (figura \ref{fig:Schlieren1}b): la perturbazione di pressione occupa integralmente il condotto palare ed è distinguibile in maniera chiara (è comunque presente una zona subsonica in ingresso); la portata è bloccata; 
+			\item \textit{regime innescato} (figura \ref{fig:Schlieren1}b): la perturbazione di pressione occupa integralmente il condotto palare ed è distinguibile in maniera chiara (è comunque presente una zona subsonica a valle); la portata è bloccata; 
 		\end{itemize}
 		\item per $ M_{1a} > 1 $ si parlerà di \textit{regime saturo} (figura \ref{fig:Schlieren1}c): il blocco sonico è a monte della schiera dove si creano delle onde oblique che dissipano energia. Il deflusso in questo caso è complesso;
 	\end{itemize}
