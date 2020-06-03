@@ -15,7 +15,7 @@
    viewBox="0 0 335.68973 201.2669"
    version="1.1"
    id="svg6335"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="limBetz.svg">
   <defs
      id="defs6329" />
@@ -26,15 +26,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="100.73018"
-     inkscape:cy="253.0806"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="836.28944"
+     inkscape:cy="599.2485"
      inkscape:document-units="mm"
      inkscape:current-layer="layer23"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1027"
-     inkscape:window-x="1912"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:snap-global="false" />
@@ -46,7 +46,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -382,6 +382,17 @@
          style="stroke-width:0.26458332">c<tspan
    style="font-size:64.99999762%;baseline-shift:sub"
    id="tspan881">p</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="20.163456"
+       y="243.91901"
+       id="text74"><tspan
+         sodipodi:role="line"
+         id="tspan72"
+         x="20.163456"
+         y="243.91901"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';stroke-width:0.26458332">λ</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"

@@ -1,14 +1,14 @@
 \chapter{Macchine eoliche}
-Il seguente capitolo è un riassunto di un estratto del libro di testo ``Progettazione di microturbine eoliche - Guida pratica per la costruzione di turbine ad asse orizzontale e verticale" di Mario Alejandro Rosato, Editore: EPC, ISBN-10: 8863106517.
+Il seguente capitolo è un riassunto di un estratto del libro di testo ``\textit{Progettazione di microturbine eoliche - Guida pratica per la costruzione di turbine ad asse orizzontale e verticale}" di Mario Alejandro Rosato, Editore EPC, ISBN-10: 8863106517.
 \section{Introduzione}
-Le macchine eoliche sono caratterizzate da pale molto grandi. Vista la loro diffusione stanno acquistando un'economicità di utilizzo permettendone la costruzione anche senza incentivi. In questo modo, negli ultimi anni, si è riusciti a raggiungere un costo per kW simile a quello della generazione di energia con l'utilizzo di petrolio. Va' comunque detto che questo tipo di tecnologia, soffrendo del problema dell'intermittenza di disponibilità (il vento non è costante) e della sua diluizione nel tempo, costituisce una forma di produzione di energia integrativa e non sostitutiva della produzione mediante petrolio. Inoltre, per sviluppare la stessa potenza prodotta per esempio con un gruppo turbogas sono necessarie superfici enormi; basti pensare che per sviluppare la stessa potenza prodotta da una turbina installata a Monfalcone (gruppo da 320 MW) è necessaria una superficie quadrata di circa 400 metri di lato.
+Le macchine eoliche sono caratterizzate da pale molto grandi. Vista la loro diffusione stanno acquistando un'economicità di utilizzo permettendone la costruzione anche senza incentivi. In questo modo, negli ultimi anni, si è riusciti a raggiungere un costo per kW simile a quello della generazione di energia con l'utilizzo di petrolio. Va' comunque detto che questo tipo di tecnologia, soffrendo del problema dell'intermittenza di disponibilità (il vento non è costante) e della sua diluizione nel tempo, costituisce una forma di produzione di energia integrativa e non sostitutiva della produzione mediante petrolio. Inoltre, per sviluppare la stessa potenza prodotta per esempio con un gruppo turbogas sono necessarie superfici enormi; basti pensare che per sviluppare la stessa potenza prodotta da una turbina installata a Monfalcone (gruppo da 320 MW) è necessaria una superficie quadrata di circa 400 metri di lato ipotizzando delle condizioni di vento perfette e molto favorevoli.
 \section{Il teorema di Betz}
-Il primo a studiare scientificamente le turbine eoliche fu l'ingegnere e fisico tedesco Albert Betz, il quale, attraverso una serie di ragionamenti giunse a determinare la massima potenza estraibile da un flusso d'aria. Il teorema di Betz è tanto fondamentale per le macchine eoliche quanto quello di Carnot per le macchine termiche. 
+Il primo a studiare scientificamente le turbine eoliche fu l'ingegnere e fisico tedesco Albert Betz il quale, attraverso una serie di ragionamenti, giunse a determinare la massima potenza estraibile da un flusso d'aria. Il teorema di Betz è tanto fondamentale per le macchine eoliche quanto quello di Carnot per le macchine termiche. 
 
 La teoria di Betz si fonda su due postulati:
 \begin{itemize}
-\item il flusso attraversante un'immaginaria sezione $S_1$ di una turbina, a monte del piano di rotazione della stessa possiede velocità $V_1$;
-\item il flusso in una sezione $S_2$, a valle della turbina possiede una velocità $V_2$.
+\item il flusso attraversante un'immaginaria sezione $S_1$ di una turbina, a monte del piano di rotazione della stessa, possiede velocità $V_1$;
+\item il flusso in una sezione $S_2$, a valle della turbina, possiede una velocità $V_2$.
 \end{itemize}
 \begin{figure}
 \centering
@@ -16,13 +16,14 @@ La teoria di Betz si fonda su due postulati:
 \caption{}
 \label{}
 \end{figure}
-Nella realtà, il flusso a valle della turbina è vorticoso, fatto che complica molto l'analisi, per cui l'ipotesi semplificativa di Betz consiste nell'assumere che la rotazione della turbina non trasmetta al fluido alcun moto in senso tangenziale. In ultima analisi, il flusso è bidimensionale e le sue componenti assiali e radiali. 
+Nella realtà, il flusso a valle della turbina è vorticoso, fatto che complica molto l'analisi; l'ipotesi semplificativa di Betz consiste nell'assumere che la rotazione della turbina non trasmetta al fluido alcun moto in senso tangenziale. In ultima analisi, il flusso è bidimensionale e le sue componenti assiali e radiali. 
 
-In virtù del principio di conservazione dell'energia, se una turbina estrae una certa quantità di energia da un flusso d'aria, questo deve cedere la stessa quantità di energia cinetica. Pertanto, la velocità $V_2$ deve essere inferiore alla velocità $V_1$. Allo stesso tempo però si deve conservare la portata di massa e se si suppone che l'aria è incomprimibile, l'equazione di continuità sarà la seguente con $S_2>S_1$:
+In virtù del Principio di Conservazione dell'Energia, se una turbina estrae una certa quantità di energia da un flusso d'aria, questo deve cedere la stessa quantità di energia cinetica. Pertanto, la velocità $V_2$ deve essere inferiore alla velocità $V_1$ visto che $S_2>S_1$:
 \begin{equation}
 S_1 \cdot V_1 = S_2 \cdot V_2 = S \cdot V
 \end{equation}
-con la sezione $S$ che indica la superficie spazzata dalla rotazione dell'elica.\\
+con la sezione $S$ che indica la superficie spazzata dalla rotazione dell'elica.
+
 Se si valuta la forza $F$ esercitata dalla turbina sul flusso d'aria in movimento, per l'equazione di Eulero, il suo valore assoluto è dato dalla seguente espressione:
 \begin{equation}
 F = \dot{m} \cdot \left( V_1 - V_2 \right) = S V \rho \cdot \left( V_1 - V_2 \right)
@@ -30,7 +31,7 @@ F = \dot{m} \cdot \left( V_1 - V_2 \right) = S V \rho \cdot \left( V_1 - V_2 \ri
 con:\\[1mm]
 $F$ = Valore assoluto della forza $[N]$\\
 $\rho$ = densità dell'aria (da $1.2$ a $1.25$ $kg/m^3$)\\
-$Q$ = portata del flusso d'aria $[kg/s]$\\
+$\dot{m}$ = portata del flusso d'aria $[kg/s]$\\
 $V_1$ = velocità dell'aria a monte della turbina $[m/s]$\\
 $V_2$ = velocità dell'aria a valle della turbina $[m/s]$\\
 $V$ = velocità dell'aria che passa attraverso la turbina $[m/s]$\\[2mm]
@@ -61,7 +62,7 @@ Assumendo $V_1$ costante si può poi calcolare il valore di $V_2$ che massimizza
 \begin{align*}
 \frac{dP}{dV_2} = \frac{1}{4} \rho S \left( V_1^2 - 2 V_1 V_2 - 3 V_2^2 \right) = 0
 \end{align*}
-Si tratta di un'equazione quadratica che ammette due radici, una è negativa e perciò non ha significato fisico. Si ottiene:
+Si tratta di un'equazione quadratica che ammette due radici: una è negativa ($V_2=-V_1 $) e perciò non ha significato fisico, l'altra è:
 \begin{align*}
 V_{2,ott} = \frac{V_1}{3}
 \end{align*}
@@ -72,8 +73,8 @@ Sostituendo l'espressione appena ricavata nell'espressione di $P$ si ottiene la 
 Questo significa che dalla potenza disponibile nel vento, rappresentata dal termine tra parentesi, fisicamente è possibile estrarne solo il 59\% ($\frac{16}{27}=0,59$); questo viene detto limite di Betz. Esso rappresenta comunque un limite teorico perchè in realtà la quota di energia che è possibile estrarre è ancora minore.
 
 \section{Definizione del problema}
-L'aria passando attraverso una turbina eolica in movimento, perde velocità nel verso del flusso e per questo motivo le turbine devono essere sufficientemente distanziate tra loro.\\
-Siccome le turbine degli aerogeneratori sono sprovviste di alette direzionali o deflettori, il movimento di rotazione delle pale genera una componente tangenziale nel moto dell'aria; per questo motivo a valle di una turbina si innesta una corrente elicoidale. L'espansione del flusso genera invece una componente radiale che è stato dimostrato essere trascurabile.\\
+L'aria passando attraverso una turbina eolica in movimento perde velocità nel verso del flusso e, per questo motivo, le turbine devono essere sufficientemente distanziate tra loro.\\
+Siccome le turbine degli aerogeneratori sono sprovviste di alette direzionali o deflettori, il movimento di rotazione delle pale genera una componente tangenziale nel moto dell'aria che porta all'innestarsi di una corrente elicoidale a valle della turbina. L'espansione del flusso genera invece una componente radiale che è stato dimostrato essere trascurabile.\\
 Per la progettazione di una mini o microturbina eolica ci si può avvalere di una teoria semplificata la cui validità è stata dimostrata per via empirica. Si effettuano le seguenti ipotesi di lavoro:
 \begin{enumerate}
 \item le condizioni indisturbate a monte della turbina sono velocità $V_1$ e pressione $p_0$;
@@ -95,39 +96,38 @@ Per la progettazione di una mini o microturbina eolica ci si può avvalere di un
 \label{fig:triangEol}
 \end{figure}
 Si possono definire una serie di parametri caratteristici relativi alla turbina eolica:\\[1mm]
-\textbf{Solidità}: $\sigma=\cfrac{a}{S}$ . Rapporto tra somma delle aree delle pale e area spazzata dalle pale.\\
-\textbf{Coefficiente di velocità specifica locale}:
-$\lambda=\cfrac{u}{V_1}=\cfrac{\omega R}{V_1}$ . Lo stesso coefficiente per un punto $r$ generico si può esprimere in funzione di $\lambda$: $\lambda_r = \cfrac{\Omega \cdot r}{V_1} = \cfrac{\lambda \cdot r}{R}$ .\\
+\textbf{Solidità}: $\sigma=\cfrac{A}{S}$ , rapporto tra somma delle aree delle pale e area spazzata dalle pale.\\
+\textbf{Coefficiente di velocità specifica locale}: $\lambda=\cfrac{u}{V_1}=\cfrac{\Omega \cdot R}{V_1}$ , lo stesso coefficiente per un punto $r$ generico si può esprimere in funzione di $\lambda$: $\lambda_r = \cfrac{\Omega \cdot r}{V_1} = \cfrac{\lambda \cdot r}{R}$ .\\
 \textbf{Coefficiente di coppia motrice}: $c_M=\cfrac{2M}{\rho S R V_\infty^2}$ con M momento trasmesso all'albero.\\
-\textbf{Coefficiente di spinta assiale}: $c_F=\cfrac{2F}{\rho S R V_\infty^2}$ con F forza assiale che agisce sulla macchina.\\
-\textbf{Cifra di potenza}: $c_P=\cfrac{2P}{\rho S R V_\infty^3}$ . Visto che $P=m\cdot \omega = F \cdot v$ si può dire che $c_P=c_M \cdot \lambda=c_F$.\\
-\textbf{Coefficiente di perdita di velocità}: $a=1-\cfrac{V}{V_1}$ . Esso consente di esprimere $V$ in funzione della velocità del vento a monte della pala. Vista questa definizione è possibile scrivere $V=V_1-(1-a)$; uguagliando questa equazione con la \ref{eq:vmedia}:
+\textbf{Coefficiente di spinta assiale}: $c_F=\cfrac{2F}{\rho S V_\infty^2}$ con F forza assiale che agisce sulla macchina.\\
+\textbf{Cifra di potenza}: $c_P=\cfrac{2P}{\rho S V_\infty^3}$ , visto che $P = F \cdot V = M\cdot \Omega$ si può dire che $c_P=c_F=c_M \cdot \lambda$.\\
+\textbf{Coefficiente di perdita di velocità}: $a=1-\cfrac{V}{V_1}$ , esso consente di esprimere $V$ in funzione della velocità del vento a monte della pala $V=V_1 (1-a)$; uguagliando questa equazione con la \ref{eq:vmedia}:
 \begin{align*}
 V_1 (1-a) = \frac{V_1 +V_2}{2} \;\;\;\; \Rightarrow \;\;\;\; 2 V_1 (1-a) - V_1 = V_2
 \end{align*}
-\begin{equation}
+\begin{equation}\label{eq:v2}
 \boxed{V_2 = V_1 (1-2a)}
 \end{equation}
-Il valore di $a$ non è noto a priori, si sa che deve essere compreso tra $0 \leq a \leq 1/2$ e idealmente si deve avere $a = 1/3$\footnote{Dal teorema di Betz, $V_2=\frac{V_1}{3}$}. Un valore pari a $1/2$ renderebbe nulla la $V_2$, condizione fisicamente impossibile. Una condizione $a=0$ implicherebbe $V_2 = V_1$ (turbina frenata).\\
-\textbf{Coefficiente di velocità angolare}: $a' = \cfrac{\omega}{2 \Omega}$ .
-La velocità angolare della turbina è pari a $\Omega$. L'interazione delle pale del rotore con l'aria introduce su quest'ultima una componente rotazionale, la cui velocità angolare è pari a $\omega$.\\[2mm]
+Il valore di $a$ non è noto a priori, si sa che deve essere $0 < a < 1/2$ e idealmente si deve avere $a = 1/3$\footnote{Dal teorema di Betz, $V_2=\frac{V_1}{3}$}. Un valore pari a $1/2$ renderebbe nulla $V_2$, condizione fisicamente impossibile. Una condizione $a=0$ implicherebbe $V_2 = V_1$ (turbina frenata).\\
+\textbf{Coefficiente di velocità angolare}: $a' = \cfrac{\omega}{2 \Omega}$ , la velocità angolare della turbina è pari a $\Omega$. L'interazione delle pale del rotore con l'aria introduce su quest'ultima una componente rotazionale, la cui velocità angolare è pari a $\omega$.\\
 
-Per calcolare la potenza sviluppata da un elemento differenziale di pala, si utilizzano le equazioni di conservazione della quantità di moto; in questo modo si potrà integrare la potenza di un elemento differenziale per la lunghezza della pala per ricavare la potenza totale. Conoscendo la potenza massima ottenibile, si potranno definire, in ogni punto della pala, corda e angolo di attacco del profilo.
+Per calcolare la potenza sviluppata da un elemento differenziale di pala, si possono usare le equazioni di conservazione della quantità di moto; in questo modo si potrà integrare la potenza di un elemento differenziale per la lunghezza della pala e ricavare la potenza totale. Conoscendo la potenza massima ottenibile, si potranno definire in ogni punto della pala la corda e l'angolo di attacco del profilo.
 
 \section{Teoria del tubo di flusso anulare con scia vorticosa}
-Si vogliono trovare le relazioni che legano $a$, $a'$ e $\lambda$. Conoscendo tali relazioni si possono ricavare i valori di $V_1$, $V_2$ e $\omega$. Facendo riferimento alla figura \ref{fig:frontlatEol} si applica il teorema di Bernoulli tra una sezione posta infinitamente a monte della turbina e una posta un infinitesimo a monte:
-\begin{align*}
+Si vogliono trovare le relazioni che legano $a$, $a'$ e $\lambda$. Conoscendo tali relazioni si possono ricavare i valori di $V_1$, $V_2$ e $\omega$.\\
+Facendo riferimento alla figura \ref{fig:frontlatEol} si applica il teorema di Bernoulli tra una sezione posta infinitamente a monte della turbina e una posta un infinitesimo a monte:
+\begin{equation}\label{eq:bernmonte}
 p_0 + \frac{\rho V_1}{2} = p + \frac{\rho V}{2}
-\end{align*}
-Si applica ora il teorema tra una sezione infinitesimalmente a valle della turbina e una infinitamente a valle:
-\begin{align*}
+\end{equation}
+Si applica ora il teorema tra una sezione infinitesimamente a valle della turbina e una infinitamente a valle:
+\begin{equation}\label{eq:bernvalle}
 p_0 + \frac{\rho V_2}{2} = p_1 + \frac{\rho V}{2}
-\end{align*}
-Sottraendo membro a membro si ottiene:
-\begin{align*}
+\end{equation}
+Sottraendo membro a membro le equazioni \ref{eq:bernmonte} e \ref{eq:bernvalle} si ottiene:
+\begin{equation}
 \frac{\rho V_1^2}{2} - \frac{\rho V_2^2}{2} = p - p_1 = \Delta p
-\end{align*}
-Sostituendo le relazioni tra $V_1$ e $V_2$ trovate precedentemente esplicitando $V_1$\footnote{$V_2$ è ignota}:
+\end{equation}
+Sostituendo la relazione \ref{eq:v2} tra $V_1$ e $V_2$ ed esplicitando rispetto $V_1$ \footnote{$V_2$ è ignota}:
 \begin{align*}
 \Delta p &= \frac{\rho}{2} \left(V_1^2 - V_2^2 \right) = \frac{\rho}{2} \left[ V_1^2 - V_1^2 \left(1-2a \right)^2 \right]=\\
 &= \frac{\rho V_1^2}{2} \left[ 1- \left( 1- 2a \right)^2 \right] = \frac{\rho V_1^2}{2} \left( 1- 1+4a-4a^2 \right)=\\
@@ -140,7 +140,7 @@ dF_a = \Delta p \cdot dS = 2 \rho V_1^2 a \left( 1-a \right) \cdot 2 \pi r dr
 \begin{equation}\label{eq:forza1}
 dF_a = 4 \pi \rho	V_1^2 a \left( 1-a \right) r dr
 \end{equation}
-Ora si applica l'equazione di Bernoulli ad entrambi i lati di una corona circolare di raggio $r$ e area $dS$. Dalla figura \ref{fig:triangEol} si evince che, essendo il flusso bidimensionale, vanno considerate le risultanti vettoriali di dette componenti di velocità $V_m$ e $V_v$ \footnote{I pedici indicano rispettivamente ``monte" e ``valle"}. Si ottiene:
+Ora si applica l'equazione di Bernoulli a monte e a valle di una corona circolare di raggio $r$ e area $dS$. Dalla figura \ref{fig:triangEol} si evince che, essendo il flusso bidimensionale, vanno considerate le risultanti vettoriali di dette componenti di velocità $V_m$ e $V_v$ \footnote{I pedici indicano rispettivamente ``monte" e ``valle"}. Si ottiene:
 \begin{align*}
 p_1 + \frac{\rho V_m^2}{2} = p_2 + \frac{\rho V_v^2}{2}
 \end{align*}
@@ -161,11 +161,11 @@ Utilizzando ora il coefficiente $a'$ precedentemente definito è possibile rimpi
 \begin{align*}
 \Delta p &= \frac{\rho r^2}{2} \left[ 2 \Omega \left( 2 \Omega a'\right) + \left( 2 \Omega a' \right)^2 \right]=\\
 &= \frac{\rho r^2}{2} \left[ 4 \Omega^2 a' + 4 \Omega^2 a'^2 \right] = \\
-&= 2 \rho r^2 \Omega^2 a' \left[ 1+a' \right]
+&= 2 \rho r^2 \Omega^2 a' \left( 1+a' \right)
 \end{align*}
-La spinta assiale sulla corona $dS$ varrà, allora:
+La spinta assiale sulla corona $dS$ vale, allora:
 \begin{align*}
-dF_a = \Delta p \cdot dS = 2 \rho r^2 \Omega^2 a' \left(1 + a' \right) \left( \pi 2 r dr \right)
+dF_a = \Delta p \cdot dS = 2 \rho r^2 \Omega^2 a' \left(1 + a' \right) \cdot \left( \pi 2 r dr \right)
 \end{align*}
 \begin{equation}\label{eq:forza2}
 dF_a = 4 \pi \rho \Omega^2 a' \left( 1+ a' \right) r^3 dr
@@ -178,7 +178,7 @@ Sono state ottenute due espressioni equivalenti per la forza $dF_a$: una in funz
 V_1^2 a \left( 1 - a \right) = \Omega^2 a' \left( 1 + a' \right) r^2
 \end{align*}
 \begin{equation}\label{eq:lambdara}
-\frac{a \left( 1 - a \right)}{a' \left(1 + a' \right)} = \frac{\Omega^2 r^2}{V_1^2}\doteq \lambda_r^2 \;\;\;\; \Rightarrow \;\;\;\; \lambda_r^2 = \frac{a \left(1 - a \right)}{a' \left( 1 + a' \right)}
+\frac{a \left( 1 - a \right)}{a' \left(1 + a' \right)} = \frac{\Omega^2 r^2}{V_1^2}\doteq \lambda_r^2 \;\;\;\; \Rightarrow \;\;\;\; \boxed{\lambda_r^2 = \frac{a \left(1 - a \right)}{a' \left( 1 + a' \right)}}
 \end{equation}
 Ora che si conoscono i rapporti tra $a$, $a'$ e $\lambda_r$ si può calcolare la potenza erogata dal differenziale di pala. Dalla figura \ref{fig:triangEol} si desume che la componente assiale di velocità del vento $V$ rimane costante nell'attraversamento della pala visto che è solo la componente tangenziale a generare lavoro. Per calcolare la forza tangenziale si scrive l'impulso:
 \begin{align*}
@@ -198,7 +198,7 @@ dF_t = \rho V dS \cdot \omega r
 \end{align*}
 Si può dunque rimpiazzare $dS$ con la sua espressione completa e $V$ con il suo equivalente in funzione della velocità del vento nota $V_1$ utilizzando a questo scopo il coefficiente $a$:
 \begin{align*}
-dF_t &= \rho \left( 2 \pi r dr \right) \left[ V_1 \left(1 -a \right) \right] \cdot \omega r\\
+dF_t &= \rho \left[ V_1 \left(1 -a \right) \right] \left( 2 \pi r dr \right) \cdot \omega r\\
 & = 2 \pi \rho V_1 \left( 1-a \right) \omega r^2 dr
 \end{align*}
 Scrivendo ora la grandezza ignota $\omega$ con il suo equivalente utilizzando il coefficiente $a'$:
@@ -230,11 +230,11 @@ Siccome $\lambda_r > 0$, la potenza sarà massima quando il prodotto $a' \left( 
 \begin{equation}\label{eq:aa'}
 \left(1 - a \right) da' = a' da
 \end{equation}
-$a$ e $a'$ sono legate dall'equazione \ref{eq:lambdara} che possiamo riscrivere come:
+$a$ e $a'$ sono legate dall'equazione \ref{eq:lambdara} che si può riscrivere come:
 \begin{equation}\label{eq:lambdaraa'}
 \lambda_r^2 \cdot a' \left( 1+ a' \right) = a \left( 1 - a \right)
 \end{equation}
-Visto che $a'$ è funzione di $a$, è possibile differenziare membro a membro l'equazione \ref{eq:lambdaraa'} rispetto ad $a$:
+Visto che $a'$ è funzione di $a$, è possibile differenziare membro a membro l'equazione \ref{eq:lambdaraa'} rispetto ad $a$ [utilizzando la regola della catena $D(f(g(x)))=f'(g(x))*g'(x)$]:
 \begin{align*}
 \lambda_r^2 \left( 1+ 2a' \right) \frac{da'}{da} = \left( 1 - 2a \right)
 \end{align*}
@@ -262,7 +262,7 @@ a + 2 a a' = 1 - 2a + a' - 2aa'
 4aa' -a' = 1 - 3a
 \end{align*}
 \begin{equation}\label{eq:finala'a}
-a' = \frac{1 - 3a}{4a -1}
+\boxed{a' = \frac{1 - 3a}{4a -1}}
 \end{equation}
 Riassumendo, le equazioni \ref{eq:lambdara} e \ref{eq:finala'a} vincolano $a$, $a'$ e $\lambda$ affinché la potenza estratta sia massima.\\
 Si rimpiazza ora $r$ nell'equazione \ref{eq:dP} esprimendolo in funzione di $\lambda_r$ (vedi la definizione di $\lambda_r$):
@@ -288,7 +288,7 @@ c_P = \cfrac{P}{\cfrac{\rho}{2} \pi R^2 V_1^3} = \cfrac{4 \pi \rho V_1^3 R^2}{\c
 \begin{equation}
 c_P = \frac{8}{\lambda^2} \int_0^{\lambda} a' \left( 1 - a \right) \lambda_r^3 d \lambda_r
 \end{equation}
-Quest'ultimo integrale è detto integrale di Glauert; esso è estremamente difficile per via algebrica e perciò la soluzione deve essere ricavata per via numerica.
+Quest'ultimo integrale è detto integrale di Glauert; esso è estremamente difficile da risolvere per via algebrica e perciò la soluzione deve essere ricavata per via numerica.
 \begin{figure}[h!]
 \centering
   \includegraphics[width=.7\textwidth]{fig/limBetz.pdf}
@@ -302,8 +302,9 @@ Con questa teoria non ancora possibile progettare una pala, ma le espressioni ot
 Ora verrà affrontata la progettazione delle pale dal punto di vista delle forze aerodinamiche agenti sull'elemento differenziale della pala già definito nella figura \ref{fig:frontlatEol}. 
 
 Risulta doveroso fare una premessa: nella progettazione di turbine commerciali di grande taglia generalmente si utilizzano modelli di calcolo più sofisticati di quello che verrà esposto.
-Poiché i profili delle pale delle turbine di piccola potenza operano in condizioni di basso Re e visto che in prossimità del suolo il profilo di velocità del vento è irregolare, non ha senso basare il progetto delle pale su teorie più complesse. La validità del metodo descritto di seguito è stata comunque verificata in galleria del vento, ma per maggiori approfondimenti si faccia riferimento alla bibliografia del libro citato all'inizio di questo capitolo.\\
-Si osserva la figura \ref{fig:frontlatEol}; l'esperienza insegna che un elemento di pala compreso tra due raggi $r$ e $r+dr$ e in presenza di una corrente di aria, sarà sottoposto ad un complesso di forze le quali dipenderanno dalla forma del profilo della pala e dall'angolo d'incidenza tra la corda del profilo e la velocità relativa dell'aria, $W$.
+Poiché i profili delle pale delle turbine di piccola potenza operano in condizioni di basso Re e visto che in prossimità del suolo il profilo di velocità del vento è irregolare, non ha senso basare il progetto delle pale su teorie più complesse. La validità del metodo descritto di seguito è stata comunque verificata in galleria del vento, ma per maggiori approfondimenti si faccia riferimento alla bibliografia del libro citato all'inizio di questo capitolo.
+
+Si osserva la figura \ref{fig:frontlatEol}; l'esperienza insegna che un elemento di pala compreso tra due raggi $r$ e $r+dr$ in presenza di una corrente di aria, sarà sottoposto ad un complesso di forze le quali dipenderanno dalla forma del profilo della pala e dall'angolo d'incidenza tra la corda del profilo e la velocità relativa dell'aria $W$.
 \begin{figure}[h!]
 \centering
   \includegraphics[width=.7\textwidth]{fig/triangEol2.pdf}
@@ -314,7 +315,7 @@ Si osserva la figura \ref{fig:frontlatEol}; l'esperienza insegna che un elemento
 \begin{itemize}
 	\item $\alpha$: angolo d'incidenza sulla sezione del profilo rispetto la corda del profilo;
 	\item $\varphi$: angolo di calettamento della sezione del profilo o passo locale dell'elica rispetto la corda del profilo;
-	\item $\theta$: angolo fra il piano di rotazione della pala e la velocità relativa $W$. Dalla figura di deduce che $\theta = \alpha + \varphi$.
+	\item $\theta$: angolo fra il piano di rotazione della pala e la velocità relativa $W$. Dalla figura si deduce che $\theta = \alpha + \varphi$.
 \end{itemize}
 Inoltre, osservando il triangolo delle velocità, vale:
 \begin{equation}\label{eq:tantheta}
@@ -326,10 +327,10 @@ Inoltre, osservando il triangolo delle velocità, vale:
 La velocità relativa $W$, incidendo sul profilo con angolo $\alpha$, genera le seguenti forze aerodinamiche:
 \begin{itemize}
 	\item \textbf{portanza}: $dF_z = \cfrac{\rho}{2} C_z l W^2 dr$
-	\item \textbf{forza di trascinamento o resistenza}: $dF_x = \cfrac{\rho}{2} C_x l W^2 dr$
+	\item \textbf{resistenza o forza di trascinamento}: $dF_x = \cfrac{\rho}{2} C_x l W^2 dr$
 \end{itemize}
 con $l$ lunghezza della corda del profilo, per ora incognita.\\
-Il nostro obiettivo è appunto determinare quale deve essere il valore ottimale di $l$ per una data coppia di valori $C_z$ e $C_x$, scelti dalla curva delle caratteristiche del profilo alare che si vuole determinare. 
+L'obiettivo è determinare quale deve essere il valore ottimale di $l$ per una data coppia di valori $C_z$ e $C_x$ scelti dalla curva delle caratteristiche del profilo alare che si vuole determinare. 
 \begin{figure}[h!]
 \centering
   \includegraphics[width=.9\textwidth]{fig/forzeEol.pdf}
@@ -341,16 +342,16 @@ Il nostro obiettivo è appunto determinare quale deve essere il valore ottimale 
 	\item in senso assiale $F_f$: forza che genera soltanto sforzo di flessione sulla pala, ma non produce lavoro utile;
 	\item tangenziale $F_u$: forza che genera lavoro utile.
 \end{itemize}
-Nel riferirci all'elemento di pala, si chiameranno queste forze rispettivamente $dF_f$ e $dF_u$. Dalla trigonometria elementare, è possibile scrivere il valore di $dF_u$ come:
+Nel riferirsi all'elemento di pala, si chiameranno queste forze rispettivamente $dF_f$ e $dF_u$. Dalla trigonometria elementare, è possibile scrivere il valore di $dF_u$ come:
 \begin{align*}
 dF_u = dF_z \cdot \sin \theta - dF_x \cdot \cos \theta
 \end{align*}
 \begin{equation}\label{eq:dF_u1}
-dF_u = \frac{\rho}{2} C_z l W^2 dr \sin \theta - \frac{\rho}{2} C_x l W^2 dr \cos \theta
+dF_u = \frac{\rho}{2} C_z l W^2 dr \cdot \sin \theta - \frac{\rho}{2} C_x l W^2 dr \cdot \cos \theta
 \end{equation}
 Con lo stesso ragionamento, si può scrivere:
 \begin{equation}\label{eq:dF_f1}
-dF_f = \frac{\rho}{2} C_z l W^2 dr \cos \theta + \frac{\rho}{2} C_x l W^2 dr \sin \theta
+dF_f = \frac{\rho}{2} C_z l W^2 dr \cdot \cos \theta + \frac{\rho}{2} C_x l W^2 dr \cdot \sin \theta
 \end{equation}
 In un profilo alare operante in condizioni ottimali, si ha sempre che $C_z \gg C_x$; per questo motivo le equazioni \ref{eq:dF_u1} e \ref{eq:dF_f1} possono essere semplificate come segue:
 \begin{equation}\label{eq:dF_u2}
@@ -359,7 +360,7 @@ dF_u \approx \frac{\rho}{2} C_zl W^2 dr \sin \theta
 \begin{equation}\label{eq:dF_f2}
 dF_f \approx \frac{\rho}{2} C_zl W^2 dr \cos \theta
 \end{equation}
-Se il numero di pale è pari a $z$, si può dunque scrivere che la forza assiale $dF_a$ sulla corona differenziale di pala è pari a
+Se il numero di pale è pari a $z$, si può scrivere che la forza assiale $dF_a$ sulla corona differenziale di pala è:
 \begin{align*}
 dF_a = \frac{\rho}{2} z C_z l W^2 dr \cos \theta
 \end{align*}
@@ -367,7 +368,7 @@ Si rimpiazza $W^2$ con il suo valore in funzione di $\theta$:
 \begin{equation}\label{eq:dFa}
 dF_a = \frac{\rho}{2} z C_z l \frac{V_1^2 \left( 1- a \right)^2}{\sin^2 \theta} dr \cos \theta
 \end{equation}
-Se si uguagliano le equazioni \ref{eq:dFa} e \ref{eq:forza2} si ottiene:
+Se si uguagliano le espressioni \ref{eq:dFa} e \ref{eq:forza1} per la forza assiale si ottiene:
 \begin{align*}
 4 \pi \rho V_1^2 a \left( 1-a \right) r dr = \frac{\rho}{2} z C_z l \frac{V_1^2 \left( 1- a \right)^2 }{\sin^2 \theta} dr \cos \theta
 \end{align*}
@@ -386,7 +387,7 @@ La forza utile $dF_u$ genera un momento torcente rispetto all'asse di rotazione.
 \begin{equation}\label{eq:dM}
 dM = z \cdot r \cdot dF_u
 \end{equation}
-Dall'equazione \ref{eq:dftfin} si può scrivere:
+Dall'espressione \ref{eq:dftfin} della forza tangenziale $F_t$ si può scrivere:
 \begin{align*}
 dM = dF_t \cdot r = 4 \pi \rho V_1 \left( 1- a \right) \Omega a' r^3 dr
 \end{align*}
@@ -394,7 +395,7 @@ e uguagliando questa espressione con l'equazione \ref{eq:dM}, si ottiene:
 \begin{align*}
 4 \pi \rho V_1 \left(1-a \right) \Omega a' r^3 dr = z \cdot r \cdot dF_u
 \end{align*}
-Rimpiazzando l'espressione di $dF_u$ secondo l'equazione \ref{eq:dF_f2} nell'equazione precedente, risulta:
+Rimpiazzando l'espressione di $dF_u$ secondo l'equazione \ref{eq:dF_u2} nell'equazione precedente, risulta:
 \begin{align*}
 4 \pi \rho V_1 \left(1-a \right) \Omega a' r^3 dr = z \cdot r \cdot C_z \cfrac{\rho}{2} l W^2 dr \sin \theta
 \end{align*}
@@ -402,17 +403,17 @@ Semplificando:
 \begin{align*}
 4 V_1 \left(1-a \right) \Omega a' r = C_z \cfrac{z l }{2 \pi r} W^2 \sin \theta
 \end{align*}
-e rimpiazzando $W^2$ con il suo equivalente trigonometrico ricavato dalla figura \ref{fig:triangEol2} e introducendo $\sigma_l$:
+Rimpiazzando $W^2$ con il suo equivalente trigonometrico ricavato dalla figura \ref{fig:triangEol2} e introducendo $\sigma_l$:
 \begin{align*}
 4 V_1 \left(1-a \right) \Omega a' r = \sigma_l C_z \cfrac{V_1^2 \left(1-a \right)^2}{\sin^2 \theta} \sin \theta
 \end{align*}
 \begin{align*}
-4 \Omega a' r = \sigma_l C_z \cfrac{V \left(1-a \right)}{\sin \theta}
+4 \Omega a' r = \sigma_l C_z \cfrac{V_1 \left(1-a \right)}{\sin \theta}
 \end{align*}
 \begin{align*}
-a'= \sigma_l C_z \cfrac{V \left(1-a \right)}{4 \Omega r \sin \theta}
+a'= \sigma_l C_z \cfrac{V_1 \left(1-a \right)}{4 \Omega r \sin \theta}
 \end{align*}
-Introducendo al posto di $V \left(1-a\right)$ il suo equivalente trigonometrico secondo l'equazione \ref{eq:tantheta}:
+Introducendo al posto di $V_1 \left(1-a\right)$ il suo equivalente trigonometrico secondo l'equazione \ref{eq:tantheta}:
 \begin{align*}
 a' = \sigma_l C_z \cfrac{\Omega r \left(1+a' \right) \tan \theta}{4 \Omega r \sin \theta}
 \end{align*}
@@ -438,12 +439,12 @@ Se nell'equazione \ref{eq:aprimofin} si rimpiazza $a'$ con il suo equivalente se
 \begin{equation}\label{eq:afin}
 a = \cfrac{4 \cos \theta}{\sigma_l C_z +12 \cos \theta}
 \end{equation}
-Rimpiazziamo l'equazione \ref{eq:afin} nella \ref{eq:asolid} si ottiene:
+Rimpiazzando l'equazione \ref{eq:afin} nella \ref{eq:asolid} si ottiene:
 \begin{align*}
 \cfrac{\cfrac{4 \cos \theta}{\sigma_l C_z + 12 \cos \theta}}{\left( 1- \cfrac{4 \cos \theta}{\sigma_l C_z + 12 \cos \theta} \right)} = \cfrac{\sigma_l C_z \cos \theta}{4 \sin^2 \theta}
 \end{align*}
 \begin{align*}
-\cfrac{\cfrac{4 \cos \theta}{\sigma_l C_z + 12 \cos \theta}}{\cfrac{\sigma_l C_z + 12 \cos \theta - 4 \cos \theta}{\sigma_l C_z + 12 \cos \theta}} = \cfrac{\sigma_l C_z}{4 \sin^2 \theta}
+\cfrac{\cfrac{4 \cos \theta}{\sigma_l C_z + 12 \cos \theta}}{\cfrac{\sigma_l C_z + 12 \cos \theta - 4 \cos \theta}{\sigma_l C_z + 12 \cos \theta}} = \cfrac{\sigma_l C_z \cos\theta}{4 \sin^2 \theta}
 \end{align*}
 \begin{align*}
 \cfrac{4}{\sigma_l C_z + 8 \cos \theta} = \cfrac{\sigma_l C_z}{4 \sin^2 \theta}
@@ -454,37 +455,35 @@ Rimpiazziamo l'equazione \ref{eq:afin} nella \ref{eq:asolid} si ottiene:
 \begin{align*}
 16 \sin^2 \theta = \left( \sigma_l C_z \right)^2 + \sigma_l C_z 8 \cos \theta
 \end{align*}
-Questa è un'equazione di secondo grado, nella quale l'incognita è $\sigma_l C_z$. Le due radici saranno dunque
+Questa è un'equazione di secondo grado, nella quale l'incognita è $\sigma_l C_z$. Le due radici sono:
 \begin{align*}
 \sigma_l C_z = 4 \left(-1 -\cos \theta \right)
 \end{align*}
 \begin{equation}\label{eq:sigmazc}
-\sigma_l C_z = 4 \left(1- \cos \theta \right)
+\boxed{\sigma_l C_z = 4 \left(1- \cos \theta \right)}
 \end{equation}
-La prima non ha significato fisico poiché nell'intervallo di interesse $\cos \theta > 0 $ affinché $\sigma_l C_z > 0$.\\
+La prima non ha significato fisico poiché nell'intervallo di interesse affinché $\sigma_l C_z > 0$ dev'essere $\cos \theta > 0 $.\\
 In questo modo si è ricavata un'equazione che lega direttamente la solidità locale $\sigma_l$, e quindi la corda del profilo $l$, con l'angolo $\theta$.\\
 Il coefficiente $C_z$ viene scelto arbitrariamente dal progettista sulla base di determinati criteri prestazionali e il valore di $C_x$ risulta di conseguenza in quanto la loro relazione è univoca. Per esempio si può scegliere il valore ottimo, ossia $C_z$ che corrisponde al massimo del rapporto $C_z/C_x$ (massima efficienza aerodinamica del profilo). Va sottolineato però che i valori di $C_z$ e $C_x$ riscontrabili, nella letteratura aerodinamica, valgono per un profilo di lunghezza infinita.\\
-In un profilo reale, e precisamente sulla punta della pala, si produce un vortice, dovuto alla differenza di pressione tra l'intradosso e l'estradosso e all'assenza di una condizione al contorno che ne impedisca la formazione. Sono state proposte pale con deflettori situati sulla punta per evitare proprio questo effetto però in pratica non sono utilizzati.\\
+In un profilo reale, e precisamente sulla punta della pala, si produce un vortice dovuto alla differenza di pressione tra l'intradosso e l'estradosso e all'assenza di una condizione al contorno che ne impedisca la formazione. Sono state proposte pale con deflettori situati sulla punta per evitare proprio questo effetto però in pratica non sono utilizzati.\\
 Dalla teoria aerodinamica, l'attrito indotto dai vortici che si sviluppano sulla punta della pala si può calcolare con la formula di Oswald:
 \begin{align*}
 C_{xi} = \frac{C_z^2}{\pi \cdot e \cdot AR}
 \end{align*}
 con:\\[1mm]
 $C_{xi}$: coefficiente di resistenza indotta dai vortici;\\
-$C_Z$: coefficiente di portanza (da tabelle aerodinamiche per profili infiniti);\\
+$C_z$: coefficiente di portanza (da tabelle aerodinamiche per profili infiniti);\\
 $e$: fattore di Oswald ($0.85 \div 0.9$ per le pale molto allungate);\\
-$AR$: aspect ratio ($L/l$);\\
-$L$: lunghezza totale della pala (dall'attaccatura con il mozzo fino all'estremità);\\
-$l$: corda media della pala.\\[2mm]
+$AR$: Aspect Ratio ($L/l$) con $L$ lunghezza totale della pala (dall'attaccatura con il mozzo fino all'estremità) e $l$ corda media della pala.\\[2mm]
 Nella pratica, si dovrà considerare il valore di $C_z$ ricavato dalle tabelle di dati aerodinamici e il valore reale di resistenza aerodinamica $C_{xr}$ ricavato con
 \begin{align*}
 C_{xr} = C_x + C_{xi}
 \end{align*}
-A questo punto sono stati definiti tutti gli elementi necessari per progettare ogni sezione della pala; ciò nonostante le considerazioni esposte nei paragrafi successivi ci aiuteranno nella definizione dei criteri progettuali.
+A questo punto sono stati definiti tutti gli elementi necessari per progettare ogni sezione della pala; ciò nonostante le considerazioni esposte nei paragrafi successivi aiuteranno nella definizione dei criteri progettuali.
 
 \subsection{Variazione ottimale di $\theta$}
 Poiché in ogni posizione $r$ della pala si desidera estrarre il massimo di energia dal vento, ne consegue che $a$ e $a'$ devono soddisfare la definizione di $\lambda_r$ ($\lambda_r = \frac{\lambda \cdot r}{R}$) e di $a'$ ($a' = \frac{1 - 3a}{4a -1}$).\\
-Poiché per l'angolo $\theta$ vale la relazione \ref{eq:tantheta}, ne consegue che $\theta$ è funzione di $\lambda_r$. quindi allo stesso modo con cui è stato tabulato il coefficiente di potenza locale in funzione di $a$, $a'$ e $\lambda_r$, si calcola l'angolo $\theta$ ottimale in ogni posizione $r$ della pala. La figura \ref{fig:lambdatheta} mostra come varia $\theta$ in funzione di $\lambda_r$.
+Poiché per l'angolo $\theta$ vale la relazione \ref{eq:tantheta}, ne consegue che $\theta$ è funzione di $\lambda_r$. Allo stesso modo con cui è stato tabulato il coefficiente di potenza locale in funzione di $a$, $a'$ e $\lambda_r$, si calcola l'angolo $\theta$ ottimale in ogni posizione $r$ della pala. La figura \ref{fig:lambdatheta} mostra come varia $\theta$ in funzione di $\lambda_r$.
 \begin{figure}[h!]
 \centering
   \includegraphics[width=.7\textwidth]{fig/lambdatheta.pdf}
@@ -499,7 +498,7 @@ Come è possibile notare dall'equazione \ref{eq:sigmazc} il prodotto $\sigma_l C
 \\
 \textit{Gli argomenti da questo punto in poi non sono stati trattati direttamente a lezione nell'a.a. 2019-2020 ma sono presenti sul libro di riferimento}.\\
 \\
-A questo punto, si definisce ad esempio un valore di corda $l$, costante lungo  tutta la pala, e si calcola di conseguenza $\sigma_l$ per ogni valore di $r$ secondo la definizione della solidità locale:
+A questo punto, definiamo ad esempio un valore di corda $l$, costante lungo  tutta la pala, e calcoliamo di conseguenza $\sigma_l$ per ogni valore di $r$, secondo la definizione della solidità locale:
 \begin{align*}
 \sigma_l = \frac{z l}{2 \pi r}
 \end{align*}
