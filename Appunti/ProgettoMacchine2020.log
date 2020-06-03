@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.25)  1 JUN 2020 18:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.25)  3 JUN 2020 16:43
 entering extended mode
 **./ProgettoMacchine2020.tex
 (ProgettoMacchine2020.tex
@@ -1811,110 +1811,110 @@ Package pdftex.def Info: fig/Betz.pdf  used on input line 15.
 <fig/frontlatEol.pdf, id=2541, 1144.55608pt x 412.45659pt>
 File: fig/frontlatEol.pdf Graphic file (type pdf)
 <use fig/frontlatEol.pdf>
-Package pdftex.def Info: fig/frontlatEol.pdf  used on input line 87.
+Package pdftex.def Info: fig/frontlatEol.pdf  used on input line 88.
 (pdftex.def)             Requested size: 336.0pt x 121.08203pt.
 <fig/triangEol.pdf, id=2542, 796.47563pt x 495.35066pt>
 File: fig/triangEol.pdf Graphic file (type pdf)
 <use fig/triangEol.pdf>
-Package pdftex.def Info: fig/triangEol.pdf  used on input line 93.
+Package pdftex.def Info: fig/triangEol.pdf  used on input line 94.
 (pdftex.def)             Requested size: 336.0pt x 208.96799pt.
  [98 <./fig/frontlatEol.pdf>] [99 <./fig/triangEol.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 110--114
+Underfull \hbox (badness 10000) in paragraph at lines 110--113
 
  []
 
 [100] [101] [102] [103]
-<fig/limBetz.pdf, id=2648, 955.12982pt x 552.7562pt>
+<fig/limBetz.pdf, id=2660, 955.12982pt x 572.65977pt>
 File: fig/limBetz.pdf Graphic file (type pdf)
 <use fig/limBetz.pdf>
 Package pdftex.def Info: fig/limBetz.pdf  used on input line 294.
-(pdftex.def)             Requested size: 235.19897pt x 136.11385pt.
+(pdftex.def)             Requested size: 235.19897pt x 141.01501pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [104]
-<fig/triangEol2.pdf, id=2656, 679.84715pt x 557.39597pt>
+<fig/triangEol2.pdf, id=2668, 679.84715pt x 557.39597pt>
 File: fig/triangEol2.pdf Graphic file (type pdf)
 <use fig/triangEol2.pdf>
-Package pdftex.def Info: fig/triangEol2.pdf  used on input line 309.
+Package pdftex.def Info: fig/triangEol2.pdf  used on input line 310.
 (pdftex.def)             Requested size: 235.19897pt x 192.82913pt.
  [105 <./fig/limBetz.pdf>]
-<fig/forzeEol.pdf, id=2674, 640.05566pt x 472.38188pt>
+<fig/forzeEol.pdf, id=2693, 640.05566pt x 472.38188pt>
 File: fig/forzeEol.pdf Graphic file (type pdf)
 <use fig/forzeEol.pdf>
-Package pdftex.def Info: fig/forzeEol.pdf  used on input line 335.
+Package pdftex.def Info: fig/forzeEol.pdf  used on input line 336.
 (pdftex.def)             Requested size: 302.39795pt x 223.1872pt.
  [106 <./fig/triangEol2.pdf>] [107 <./fig/forzeEol.pdf>] [108] [109] [110]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 485.
+(hyperref)                removing `math shift' on input line 484.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\theta' on input line 485.
+(hyperref)                removing `\theta' on input line 484.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 485.
+(hyperref)                removing `math shift' on input line 484.
 
-<fig/lambdatheta.pdf, id=2768, 859.77736pt x 554.64551pt>
+<fig/lambdatheta.pdf, id=2787, 859.77736pt x 554.64551pt>
 File: fig/lambdatheta.pdf Graphic file (type pdf)
 <use fig/lambdatheta.pdf>
-Package pdftex.def Info: fig/lambdatheta.pdf  used on input line 490.
+Package pdftex.def Info: fig/lambdatheta.pdf  used on input line 489.
 (pdftex.def)             Requested size: 235.19897pt x 151.72821pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--503
+Underfull \hbox (badness 10000) in paragraph at lines 496--502
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--503
+Underfull \hbox (badness 10000) in paragraph at lines 496--502
 
  []
 
 [111] [112 <./fig/lambdatheta.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 521.
+(hyperref)                removing `math shift' on input line 520.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\sigma' on input line 521.
+(hyperref)                removing `\sigma' on input line 520.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 521.
+(hyperref)                removing `subscript' on input line 520.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 521.
+(hyperref)                removing `subscript' on input line 520.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 521.
+(hyperref)                removing `math shift' on input line 520.
 
-<fig/lambdacz.pdf, id=2811, 778.9094pt x 455.74542pt>
+<fig/lambdacz.pdf, id=2830, 778.9094pt x 455.74542pt>
 File: fig/lambdacz.pdf Graphic file (type pdf)
 <use fig/lambdacz.pdf>
-Package pdftex.def Info: fig/lambdacz.pdf  used on input line 528.
+Package pdftex.def Info: fig/lambdacz.pdf  used on input line 527.
 (pdftex.def)             Requested size: 235.19897pt x 137.6148pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [113] [114 <./fig/lambdacz.pdf>]
-<fig/sigmalambda.pdf, id=2838, 729.376pt x 455.74542pt>
+<fig/sigmalambda.pdf, id=2857, 729.376pt x 455.74542pt>
 File: fig/sigmalambda.pdf Graphic file (type pdf)
 <use fig/sigmalambda.pdf>
-Package pdftex.def Info: fig/sigmalambda.pdf  used on input line 565.
+Package pdftex.def Info: fig/sigmalambda.pdf  used on input line 564.
 (pdftex.def)             Requested size: 235.19897pt x 146.96112pt.
-<fig/cplambda.pdf, id=2845, 811.3982pt x 477.53278pt>
+<fig/cplambda.pdf, id=2864, 811.3982pt x 477.53278pt>
 File: fig/cplambda.pdf Graphic file (type pdf)
 <use fig/cplambda.pdf>
-Package pdftex.def Info: fig/cplambda.pdf  used on input line 581.
+Package pdftex.def Info: fig/cplambda.pdf  used on input line 580.
 (pdftex.def)             Requested size: 302.39795pt x 177.97408pt.
  [115 <./fig/sigmalambda.pdf>]) [116 <./fig/cplambda.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
@@ -1932,10 +1932,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 22019 strings out of 492969
- 410962 string characters out of 3126585
- 470284 words of memory out of 3000000
- 25132 multiletter control sequences out of 15000+200000
+ 22025 strings out of 492969
+ 411042 string characters out of 3126585
+ 470514 words of memory out of 3000000
+ 25135 multiletter control sequences out of 15000+200000
  544400 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,25n,63p,1456b,885s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1968,9 +1968,9 @@ fonts/cm/cmsy5.pfb><C:/Users/giona/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 ams/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Users/giona/
 AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pf
 b>
-Output written on ProgettoMacchine2020.pdf (122 pages, 5580285 bytes).
+Output written on ProgettoMacchine2020.pdf (122 pages, 5592773 bytes).
 PDF statistics:
- 3093 PDF objects out of 3580 (max. 8388607)
- 410 named destinations out of 1000 (max. 500000)
+ 3112 PDF objects out of 3580 (max. 8388607)
+ 413 named destinations out of 1000 (max. 500000)
  1011 words of extra memory for PDF output out of 10000 (max. 10000000)
 
