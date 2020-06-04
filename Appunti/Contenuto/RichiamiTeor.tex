@@ -11,6 +11,7 @@ L’applicazione della teoria della similitudine costituisce un primo e potente 
 \item[$-$] curve di prestazioni rilevate in determinate condizioni ambientali possono essere espresse in funzione di parametri che sono invarianti al variare delle condizioni ambientali stesse. In questo modo è possibile conoscere le prestazioni di una macchina operante in condizioni diverse (ad esempio un compressore al livello del mare ad agosto e in montagna a Natale);
 \item[$-$]si può stabilire in maniera semplice e veloce fin da subito quale sarà il tipo di macchina migliore da usare, quale sarà la sua geometria di base e quali le dimensioni generali; questo si rivela essere un ausilio al designer in sede di progettazione. Grazie a ciò si riesce a sfruttare l’esperienza già maturata nella progettazione, sviluppo e test di altre macchine simili. Perciò, possedere un database ricco di informazioni relative a macchine pregresse, risulta essere un vantaggio progettuale non di poco conto.
 \end{itemize}
+
 ll teorema di Buckingham (conosciuto anche come teorema $\pi$), dovuto al fisico statunitense Edgar Buckingham, afferma:
 \begin{quotation}
 	Dato un problema descritto da un certo numero di equazioni in cui siano presenti $n$ variabili fisiche, se le dimensioni fondamentali di queste variabili sono $x$ allora il problema può essere completamente descritto da $n - x$ variabili adimensionali.
@@ -119,7 +120,7 @@ In questo modo si ottiene:
 \begin{equation}
 H_x = H\bigg(\frac{w_x}{w}\bigg)^2 = H\bigg(\frac{Q_x}{Q}\bigg)^2 \;\;\;\; \Rightarrow \;\;\;\; H_x = \frac{H}{Q^2}Q_x^2
 \end{equation}
-che è l'equazione di una parabola sul piano H-Q, passante per il punto A e per l'origine degli assi. Il lavoro varia con il quadrato della velocità angolare mentre la portata varia linearmente rispetto la velocità angolare.
+che è l'equazione di una parabola sul piano H - Q, passante per il punto A e per l'origine degli assi. Il lavoro varia con il quadrato della velocità angolare mentre la portata varia linearmente rispetto la velocità angolare.
 
 Ad ogni curva $\varphi - \psi$ corrisponde una curva di rendimento; si può quindi individuare una coppia di valori $\bar{\varphi} - \bar{\psi}$ ottimali in cui il rendimento è massimo (figura \ref{fig:adim}) e definire il coefficiente di velocità periferica:
 \begin{figure}[h!]
@@ -278,20 +279,19 @@ Per considerare l'influenza del diametro sul rendimento, facendo riferimento al 
 \begin{align*}
 \eta = \eta_S \cdot f_r(D)
 \end{align*}
-con $\eta_S$ il rendimento standard e $f_r$ un coefficiente correttivo funzione del diametro. Considerando due macchine con scala diversa, la relazione tra il rendimento delle pompe è il seguente:
+con $\eta_S$ il rendimento standard e $f_r$ un coefficiente correttivo funzione del diametro.\\
+Considerando due pompe con scala diversa, la relazione tra il loro rendimento è:
 \begin{equation}
 \frac{1-\eta_1}{1-\eta_2} = \left( \frac{D_2}{D_1}\right)^\alpha
 \end{equation}
 La stessa operazione viene fatta anche per le turbine idrauliche:
-\begin{align*}
-\frac{1-\eta_1}{1-\eta_2} = \left[ \frac{Re_{u,2}}{Re_{u,1}} \right]^n \;\;\;\; n=0.1 \div 0.25
-\end{align*}
-\begin{align*}
-\frac{1-\eta_1}{1-\eta_2} =0.5 + 0.5 \left[ \frac{Re_{u,2}}{Re_{u,1}} \right]^{0.2} \;\;\;\; \mbox{Formula di Ackeret, usata in Europa}
-\end{align*}
-\begin{align*}
-\frac{1-\eta_1}{1-\eta_2} = 0.3 + 0.7 \left[ \frac{Re_{u,2}}{Re_{u,1}} \right]^{0.2} \;\;\;\; \mbox{usata per turbine Kaplan}
-\end{align*}
+\begin{center}
+\begin{tabular}{l l l l l l l l}
+	$\cfrac{1-\eta_1}{1-\eta_2} = \left[ \cfrac{Re_{u,2}}{Re_{u,1}} \right]^n$ & & & & & & & $n=0.1 \div 0.25$\\
+	$\cfrac{1-\eta_1}{1-\eta_2} =0.5 + 0.5 \left[ \cfrac{Re_{u,2}}{Re_{u,1}} \right]^{0.2}$ & & & & & & & formula di Ackeret, usata in Europa\\
+	$\cfrac{1-\eta_1}{1-\eta_2} = 0.3 + 0.7 \left[ \cfrac{Re_{u,2}}{Re_{u,1}} \right]^{0.2}$ & & & & & & & usata per turbine Kaplan\\
+\end{tabular}
+\end{center}
 \section{Flusso comprimibile}
 Se si considera il flusso comprimibile le relazioni diventano più complesse. Infatti si ha:
 \begin{equation}
@@ -357,14 +357,14 @@ Considerando le espressioni precedenti si possono esprimere più sinteticamente 
 \begin{align*}
 p_{02c} = \frac{p_{02}}{\delta} \;\;\;\;\;\;\;\; \dot{m_c}= \dot{m} \frac{\sqrt{\theta}}{\delta} \;\;\;\;\;\;\;\; n_c = \frac{n}{\sqrt{\theta}}
 \end{align*}
+ottenendo così la pressione corretta in aspirazione, la portata di massa corretta e il numero di giri corretto.
 \begin{figure}
-\centering
-  \includegraphics[width=\textwidth]{fig/CompMaps.pdf}
-\caption{}
-\label{fig:compMaps}
+	\centering
+	\includegraphics[width=\textwidth]{fig/CompMaps.pdf}
+	\caption{}
+	\label{fig:compMaps}
 \end{figure}
-ottenendo così la pressione corretta in aspirazione, la portata di massa corretta e il numero di giri corretto.\\
-In questo modo si trovano le mappe di funzionamento delle macchine (figura \ref{fig:compMaps}) diagrammando la portata d'aria corretta con il rapporto di compressione; sono tracciate diverse curve di isorendimento al variare del numero di giri.
+\\In questo modo si trovano le mappe di funzionamento delle macchine (figura \ref{fig:compMaps}) diagrammando la portata d'aria corretta con il rapporto di compressione; sono tracciate diverse curve di isorendimento al variare del numero di giri.
 
 Considerando un compressore se ne vuole rappresentare in modo univoco il comportamento usando i termini $\varphi$ e $\psi$ ma mantenendo la significatività fisica. Si espande l'espressione di $\varphi$ tenendo conto delle seguenti espressioni di $M_{01}$, $p$ e $a$:
 \begin{align*}
@@ -476,7 +476,7 @@ La scelta di questa definizione, oltre al facile utilizzo, è quella di fornire 
 Si può considerare poi il rendimento politropico definito dalla trasformazione politropica reversibile tra i punti $1$ e $2$, come riferimento per la trasformazione reale, figura \ref{fig:Rend2}. Questo viene incontro alla necessità, nel caso di macchine multistadio (o a singolo stadio ma con elevato rapporto di compressione), di non imputare ad una porzione di trasformazione la storia dei volumi specifici precedenti ed in particolar modo le irreversibilità precedenti.\\
 Dividendo la trasformazione in tre porzioni, l'ultima parte della compressione richiede un salto entalpico pari a $\Delta h_r = h_3 - h_2$ che può essere confrontato con $\Delta h_{is} = h_{3'} - h_{2'}$ oppure con $\Delta h_{is} = h_{3''} - h_2$ a seconda dell'analisi che si vuole compiere sulla macchina.\\
 Qualora si voglia analizzare il singolo stadio, o la singola porzione di trasformazione, allora appare corretto confrontare il salto reale con quello tra i punti $3''$ e $2$ in quanto più attinente alla trasformazione reale oggetto dell'attenzione. A causa della divergenza delle isobare il salto entalpico $3''$ e $2$ risulta maggiore di quello $3'$ e $2'$, dando luogo ad un rendimento maggiore. Se tale ragionamento viene esteso a porzioni infinitesime di compressione ci si avvicina alla definizione di rendimento politropico.\\
-La scelta della trasformazione politropica reversibile (che tiene conto al suo interno di un riscaldamento del fluido operato da una sorgente esterna ma equivalente a quello causato dalle irreversibilità) consente di evidenziare il solo contributo delle irreversibilità e cioè del termine $\int Tds$.\\
+La scelta di considerare la trasformazione politropica reversibile (che tiene conto al suo interno di un riscaldamento del fluido operato da una sorgente esterna ma equivalente a quello causato dalle irreversibilità) nel calcolo del rendimento, consente di evidenziare il solo contributo delle irreversibilità e cioè del termine $\int Tds$.\\
 Considerata allora la trasformazione 1 - 2, chiamato $l_p$ il lavoro lungo la politropica reversibile e $l_r$ il lavoro lungo la trasformazione adiabatica reale, il rendimento assume la seguente forma:
 \begin{align*}
 \eta_p = \frac{l_p}{l_r}
