@@ -620,7 +620,8 @@ Si possono ora diagrammare, nelle condizioni di vortice libero, tutte le espress
 \label{fig:VorticeLibero}
 \end{figure}
 \section{Vortice forzato}
-Questo tipo di condizione non si realizza nella realtà nelle fasi di progettazione della macchina o nel suo funzionamento. Tuttavia viene utilizzata per mitigare le problematiche relative al vortice libero introducendo una distribuzione di velocità diversa da quella prevista dal vortice libero.\\
+Questo tipo di condizione non si realizza nella realtà nelle fasi di progettazione della macchina o nel suo funzionamento. Tuttavia viene utilizzato per mitigare le problematiche relative al vortice libero introducendo una distribuzione di velocità diversa da quella prevista dal vortice libero.
+
 Condizione di vortice forzato:
 \begin{equation}
 \boxed{\frac{V_t}{r} = cost}
@@ -700,7 +701,8 @@ Questo significa che a seconda dell'angolo $\alpha_i$, la distribuzione delle ve
 \caption{Velocità assiale in funzione del raggio per un flusso a vortice forzato}
 \label{fig:TurboFan}
 \end{figure}
-\\Naturalmente si può ricavare l'andamento delle pressioni (Figura \ref{fig:PVortForz}) e delle entalpie ricordando che:
+
+Naturalmente si può ricavare l'andamento delle pressioni (Figura \ref{fig:PVortForz}) e delle entalpie ricordando che:
 \begin{align*}
 \frac{p}{p_i} = \frac{h}{h_i}^{\frac{k}{k-1}}
 \end{align*}
@@ -714,21 +716,23 @@ Questo significa che a seconda dell'angolo $\alpha_i$, la distribuzione delle ve
 \begin{align*}
 \boxed{\frac{h}{h_i} = 1 + \frac{k-1}{2} M_{ti}^2 \bigg[ \bigg(\frac{r}{r_i} \bigg)^2-1 \bigg]}
 \end{align*}
-\\L'entalpia varia con il rapporto dei raggi in maniera quadratica e con una costante che dipende dal numero di Mach tangenziale. Si vede che con raggio pari a $0$ le pressioni non sono nulle (al contrario del caso di vortice libero). Sebbene non si realizzerà mai una macchina con vortice forzato, nel caso il diametro all'albero sia particolarmente ridotto si può utilizzare una distribuzione diversa dal vortice libero. 
+\\L'entalpia varia con il rapporto dei raggi in maniera quadratica e con una costante che dipende dal numero di Mach tangenziale. Si vede che con raggio pari a $0$ le pressioni non sono nulle (al contrario del caso di vortice libero).
+
+Sebbene non si realizzerà mai una macchina con vortice forzato, nel caso il diametro all'albero sia particolarmente ridotto si può utilizzare una distribuzione diversa dal vortice libero. 
 \subsection{A valle del vortice forzato}
-Cosa succede però a valle della palettatura dopo aver attraversato un vortice forzato? Si impone la condizione di entalpia totale costante al variare del raggio:
+Cosa succede però a valle della palettatura dopo aver attraversato un vortice forzato? Si impone la condizione di entalpia totale costante al variare del raggio a monte:
 \begin{align*}
 \frac{dh_{0}}{dr} = 0
 \end{align*}
 e si vuole valutare se si conserva nella sezione successiva.
 \begin{center}
-\begin{tabular}{l l l l l l l l l l l l l l l}
-	Sezione 1 & & & & & & & & & & & & & & Sezione 2\\
+\begin{tabular}{l l l l l l l l }
+	Sezione 1 & & & & & & &   Sezione 2\\
 	$
 	\begin{cases}
 		h_{01} = cost\\
 		V_{t1} = K_1 \cdot r
-	\end{cases}$ & & & & & & & & & & & & & & $V_{t2} = K_2 \cdot r$
+	\end{cases}$ & & & & & & &   $V_{t2} = K_2 \cdot r$
 \end{tabular}
 \end{center}
 Si può calcolare il lavoro scambiato come differenza di entalpia totale:
@@ -738,11 +742,12 @@ L_u=h_{02} - h_{01} &= u (V_{t2} - V_{t1} ) = \omega r (K_2 r - K_1 r) \\
 &= \omega (K_2 - K_1) r^2 = \Delta h_{012}
 \end{split}
 \end{align*}
-ovvero $\Delta h \propto r^2 \; \Rightarrow \; h_{02} \neq  cost$. Quindi attraversando la macchina, a seconda del raggio a cui ci si trova, cambia il lavoro scambiato dalla macchina; questa condizione è pressoché impossibile da mantenere in fase di progettazione e per questo non si utilizza il vortice forzato in questa fase del progetto.\\
+ovvero $\Delta h \propto r^2 \; \Rightarrow \; h_{02} \neq  cost$. Quindi attraversando la macchina, a seconda del raggio a cui ci si trova, cambia il lavoro scambiato dalla macchina; questa condizione è pressoché impossibile da mantenere in fase di progettazione e per questo non si utilizza il vortice forzato in questa fase del progetto.
+
 Si vede ora cosa succede calcolando il differenziale dell'entalpia rispetto al raggio:
 \begin{align*}
 \begin{split}
-\cfrac{d \Delta h_{012}}{dr} &= \cfrac{d ( h_{02}-h_{01})}{dr} = \cfrac{dh_{02}}{dr} = V_a \cfrac{dV_a}{dr} + \cfrac{V_t}{r} \cfrac{d}{dr} (V_t \cdot r) = \\
+\cfrac{d \Delta h_{012}}{dr} &= \cfrac{d ( h_{02}-h_{01})}{dr} = \cfrac{dh_{02}}{dr} = V_a \cfrac{dV_{a2}}{dr} + \cfrac{V_{t2}}{r} \cfrac{d}{dr} (V_{t2} \cdot r) = \\
 & =2 \omega (K_2 - K_1) r = \cfrac{d}{dr} \bigg( \cfrac{V_{a2}^2}{2} \bigg) + K_2 \cfrac{d}{dr} (K_2 r^2)
 \end{split}
 \end{align*}
@@ -755,7 +760,7 @@ La costante C si ottiene integrando su tutta la sezione la portata in massa:
 \begin{align*}
 \frac{\dot{m}}{2 \pi \rho} = \int_{rh}^{rs} V_{a1} r dr = \int_{rh}^{rs} V_{a2} r dr
 \end{align*}
-L'uguaglianza degli integrali rappresenta che la portata entrante nella sezione 1 deve essere uguale alla portata che entra nella sezione 2 (integrale da raggio dell'hub a raggio dello shroud in Figura \ref{fig:hubshroud}).
+L'uguaglianza degli integrali rappresenta che la portata entrante nella sezione 1 deve essere uguale alla portata che entra nella sezione 2 (integrale da raggio dell'hub $rh$ a raggio dello shroud $rs$ in Figura \ref{fig:hubshroud}).
 \begin{figure}[h]
 \centering
   \includegraphics[width=.4\textwidth]{fig/HubShroud.pdf}
@@ -765,21 +770,25 @@ L'uguaglianza degli integrali rappresenta che la portata entrante nella sezione 
 \section{Vortice generico}
 Spesso nella progettazione delle macchine assiali si usa una soluzione mista tra vortice libero e forzato. Si parla di vortice generico:
 \begin{align*}
+\boxed{
 \begin{cases}
 V_{t1} = a \cdot r^n - \frac{b}{r}\\
 V_{t2} = a \cdot r^n + \frac{b}{r}
-\end{cases}
+\end{cases}}
 \end{align*}
-Definizioni (blending = miscelazione):
+
+Definizioni:
 \begin{itemize}
-\item $n=0$: zero power blending
-\item $n=1$: fast power blending
+\item $n=0$: zero power blending\footnote{\label{nota} blending = miscelazione};
+\item $n=1$: fast power blending\textsuperscript{\ref{nota}}.
 \end{itemize}
-Il lavoro effettuato vale quindi:
+
+Il lavoro effettuato vale:
 \begin{align*}
 L_u = h_{02} - h_{01} = u \left( V_{t2} - V_{t1} \right) = 2 \cdot b \cdot \omega
 \end{align*}
-\'E da notare che il lavoro effettuato non varia con il raggio.\\
+\'E da notare che il lavoro effettuato non varia con il raggio.
+
 Per $n=1$ si ha una palettatura a grado di reazione costante; infatti, considerando $V_{a2} \simeq V_{a1}$ (non è del tutto vero ma si assume la differenza piccola), si può scrivere:
 \begin{align*}
 \begin{split}
@@ -790,19 +799,14 @@ Per $n=1$ si ha una palettatura a grado di reazione costante; infatti, considera
 \subsection{Angolo di palettatura costante}
 Si immagini ora di voler costruire una macchina con angolo di palettatura costante, ossia con il bordo di attacco rettilineo e solo la coda della palettatura cambia l'angolo.
 \begin{align*}
-\frac{V_t}{V_a} = \tan \alpha = cost
+\boxed{\frac{V_t}{V_a} = \tan \alpha = cost}
 \end{align*}
-Ci si chiede dunque come variano $V_t$ e $V_a$ al variare di $r$ rispettando l'equilibrio radiale.
-Si avrà:
-\begin{align*}
-\frac{V}{V_i} = \frac{V_a}{V_{ai}} = \frac{V_t}{V_{ti}} = \bigg(\frac{r_i}{r} \bigg)^{\sin^2 \alpha}
-\end{align*}
-Con le solite ipotesi semplificative:
+Ci si chiede dunque come variano $V_t$ e $V_a$ al variare di $r$ rispettando l'equilibrio radiale. Con le solite ipotesi semplificative:
 \begin{align*}
 \begin{cases}
 \cfrac{dh_0}{dr} = 0\\
 \cfrac{ds}{dr} = 0 
-\end{cases} \;\;\;\; \text{e} \;\;\;\;\;\;
+\end{cases} \;\;\;\; \rightarrow \;\;\;\;\;\;
 \frac{d}{dr} \bigg(\frac{V_a^2}{2} \bigg) + \frac{V_t}{r} \frac{d}{dr}(V_t \cdot r) = 0
 \end{align*}
 sapendo inoltre che:
@@ -831,11 +835,16 @@ Per $r=r_i$ e $V=V_i$ allora:
 \begin{align*}
 C = \frac{V_i}{r_i^{-\sin^2 \alpha}}
 \end{align*}
+da cui risulta:
+\begin{align*}
+	\frac{V}{V_i} = \bigg(\frac{r_i}{r} \bigg)^{\sin^2 \alpha} \;\;\;\; \mbox{e valgono anche } \frac{V}{V_i} =\frac{V_a}{V_{ai}} = \frac{V_t}{V_{ti}}
+\end{align*}
 Questo porta ad un'espressione del rapporto tra le entalpie pari a:
 \begin{align*}
 \boxed{ \frac{h}{h_i} =  1+ \frac{V_{ti}^2}{2 h_i \sin^2 \alpha} \bigg[1- \bigg(\frac{r_i}{r} \bigg) ^{2 \sin^2 \alpha} \bigg]}
 \end{align*}
-Si tratta di una soluzione adottata per le macchine a vapore che possiedono delle palettature molto massicce, con sviluppo radiale limitato che permettono di ottenere un andamento delle velocità assiali come in Figura \ref{fig:AngPalCost}. Questa è una distribuzione che non ha limiti teorici, si può sempre fare una macchina a bordo d'ingresso rettilineo; essa rappresenta un caso intermedio tra un vortice libero e un vortice forzato.\\
+Si tratta di una soluzione adottata per le macchine a vapore che possiedono delle palettature molto massicce, con sviluppo radiale limitato che permettono di ottenere un andamento delle velocità assiali come in Figura \ref{fig:AngPalCost}. Questa è una distribuzione che non ha limiti teorici, si può sempre fare una macchina a bordo d'ingresso rettilineo; essa rappresenta un caso intermedio tra un vortice libero e un vortice forzato.
+
 \'E possibile osservare nelle figura \ref{fig:TurboFan1} come cambia la svergolamento della palettatura tra hub e shroud di una turbina e di un compressore nel caso di corrente a vortice libero; questa forma particolare ha il fine di mantenere le condizioni di equilibrio radiale visto che cambia il profilo di velocità della corrente.
 \begin{figure}
 \centering
@@ -860,7 +869,8 @@ Si analizza ora quali sono le altre particolarità del flusso nell'attraversamen
 \begin{align*}
 \dot{m} = 2 \pi \int_{rh}^{rs} \rho V_a r dr
 \end{align*}
-con $V_a$ dipendente dal vortice utilizzato per progettare l'andamento dei triangoli di velocità ai diversi raggi. Questa espressione è limitata al caso di flusso comprimibile.\\
+con $V_a$ dipendente dal vortice utilizzato per progettare l'andamento dei triangoli di velocità ai diversi raggi. Questa espressione è limitata al caso di flusso comprimibile.
+
 Considerando una sezione anulare piccola, quindi $V_a = cost$, si scrive:
 \begin{align*}
 \dot{m} = S \rho V_a = S \frac{\rho V_a}{\rho_0 a_o}\rho_0 a_0 = S \rho_0 a_0 \Phi = cost \cdot \Phi
@@ -868,8 +878,7 @@ Considerando una sezione anulare piccola, quindi $V_a = cost$, si scrive:
 \begin{equation}\label{eq:portanulare}
 \Phi = \frac{\rho}{\rho_0} \frac{V_a}{a_0}
 \end{equation}
-La definizione \ref{eq:portanulare} rappresenta la portata adimensionalizzata rispetto le condizioni di ristagno a monte sotto l'ipotesi di gas perfetto $p = \rho RT$ e flusso isoentropico $p \rho^{-k} = cost$; si analizzano i rapporti che compaiono in questa definizione.\\
-Combinando le ipotesi di gas perfetto e flusso isoentropico si può scrivere:
+La definizione \ref{eq:portanulare} rappresenta la portata adimensionalizzata rispetto le condizioni di ristagno a monte sotto l'ipotesi di gas perfetto ($p = \rho RT$) e flusso isoentropico ($p \rho^{-k} = cost$); si analizzano i rapporti che compaiono in questa definizione. Combinando le ipotesi di gas perfetto e flusso isoentropico si può scrivere:
 \begin{align*}
 \frac{\rho}{\rho_0} = \bigg( \frac{T}{T_0} \bigg)^{\frac{1}{k-1}} 
 \end{align*}
@@ -895,6 +904,7 @@ Sostituendo nell'espressione della portata risulta:
 \begin{align*}
 \Phi = \frac{\rho}{\rho_0} \frac{V_a}{a_0} = f \bigg( \frac{a}{a_0} \bigg)
 \end{align*}
+
 Si cerca ora il rapporto critico tra le velocità soniche che massimizzano la portata adimensionalizzata. Se la componente di velocità tangenziale fosse nulla e quindi moto monodimensionale, l'espressione sarebbe quella della velocità critica di un condotto convergente in cui si arriva alla condizione di choking.
 \begin{align*}
 \frac{d\Phi}{d \bigg( \cfrac{a}{a_0} \bigg)}=0 \;\;\;\; \Rightarrow \;\;\;\; \boxed{ \frac{a^*}{a_0} = \sqrt{\frac{2}{k+1} - \frac{k-1}{k+1} \bigg( \frac{V_t}{a_0} \bigg)^2} }
@@ -903,13 +913,8 @@ con
 \begin{align*}
 Ma^* = \bigg( \frac{V_a}{a} \bigg)^* = 1
 \end{align*}
-Diagrammando $\Phi$ in funzione della pressione e delle diverse componenti tangenziali risulta un andamento elicoidale (figura \ref{fd:PortCondAn}).\\
-Il flusso in un condotto anulare, può essere supersonico ma non in condizioni di choking, a patto che la velocità assiale sia inferiore a quella acustica. Il choking si ha in tre casi:
-\begin{itemize}
-\item raggiungimento di velocità sonica $V$ nello statore;
-\item raggiungimento di velocità sonica $W$ nel rotore;
-\item raggiungimento di velocità sonica assiale nel condotto anulare.
-\end{itemize}
+
+Diagrammando $\Phi$ in funzione della pressione e delle diverse componenti tangenziali risulta un andamento elicoidale (figura \ref{fd:PortCondAn}).
 \begin{figure}
 \centering
   \includegraphics[width=.7\textwidth]{fig/PortCondAn.pdf}
@@ -917,7 +922,15 @@ Il flusso in un condotto anulare, può essere supersonico ma non in condizioni d
 \label{fd:PortCondAn}
 \end{figure}
 \section{Condizioni di ingolfamento (choking)}
-Diminuendo la pressione a valle si aumenta la componente assiale della velocità $V_a$ pur mantenendo $V_t$ se il moto è libero, mentre non è sempre possibile in un moto guidato dalla palettatura. Il segnale di pressione deve riuscire a propagarsi a monte e questo accade solamente se le velocità sono subsoniche.\\
+Il flusso in un condotto anulare, può essere supersonico ma non in condizioni di choking, a patto che la velocità assiale sia inferiore a quella acustica. Il choking si ha in tre casi:
+\begin{itemize}
+	\item raggiungimento di velocità sonica $V$ nello statore;
+	\item raggiungimento di velocità sonica $W$ nel rotore;
+	\item raggiungimento di velocità sonica assiale nel condotto anulare.
+\end{itemize}
+
+Diminuendo la pressione a valle si aumenta la componente assiale della velocità $V_a$ pur mantenendo $V_t$ se il moto è libero, mentre non è sempre possibile in un moto guidato dalla palettatura. Il segnale di pressione a valle deve riuscire a propagarsi a monte per poter variare la componente assiale della velocità e questo accade solamente se le velocità sono subsoniche.
+
 Si considera un punto $P$ da cui si propaga un'onda di pressione all'interno del cono di Mach come mostrato in figura \ref{fd:bloccson1}.
 \begin{itemize}
 	\item Nel caso di velocità $V_a$ subsonica (figura \ref{fd:bloccson2} sinistra), la perturbazione di pressione si propaga a monte del fronte; in questo modo ad una diminuzione di pressione a valle corrisponde un aumento di velocità a monte.
@@ -926,27 +939,27 @@ Si considera un punto $P$ da cui si propaga un'onda di pressione all'interno del
 \end{itemize} 
 \begin{figure}[h!]
 \centering
-  \includegraphics[width=.8\textwidth]{fig/bloccson1.pdf}
-\caption{}
-\label{fd:bloccson1}
-\end{figure}
-\begin{figure}[h!]
-\centering
   \includegraphics[width=.8\textwidth]{fig/bloccson2.pdf}
 \caption{}
 \label{fd:bloccson2}
 \end{figure}
+\begin{figure}[h!]
+\centering
+  \includegraphics[width=.8\textwidth]{fig/bloccson1.pdf}
+\caption{}
+\label{fd:bloccson1}
+\end{figure}
 \section{Componente radiale non trascurabile}
-Nel caso ci sia nel flusso una componente radiale non trascurabile, come per esempio nel caso mostrato in figura \ref{fd:comp_rad} in prossimità del mozzo, le equazioni dell'equilibrio radiale imposte sull'elementino di fluido evidenziato si modificano con l'aggiunta di un termine:
-\begin{figure}
+Nel caso ci sia nel flusso una componente radiale non trascurabile, come per esempio nel caso mostrato in figura \ref{fd:comp_rad} in prossimità del mozzo, le equazioni dell'equilibrio radiale imposte sull'elemento di fluido evidenziato si modificano con l'aggiunta di un termine:
+\begin{align*}
+\frac{d h_0}{dr} - T\frac{ds}{dr} = V_a \frac{dV_a}{dr} - \boxed{V_a \frac{dV_r}{dz}} + \frac{V_t}{r} \frac{d}{dr} ( V_t \cdot r)
+\end{align*}
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=.8\textwidth]{fig/comp_rad.pdf}
 	\caption{}
 	\label{fd:comp_rad}
 \end{figure}
-\begin{align*}
-\frac{d h_0}{dr} - T\frac{ds}{dr} = V_a \frac{dV_a}{dr} - \boxed{V_a \frac{dV_r}{dz}} + \frac{V_t}{r} \frac{d}{dr} ( V_t \cdot r)
-\end{align*}
 \section{Moti secondari}
 Fino ad ora si è sempre ragionato su un flusso idealizzato che però non corrisponde alla realtà. Nella zona superiore, in cui le pale del rotore sono molto vicine alla cassa, e vicino alla radice delle pale, si forma lo strato limite a parete che innesca i moti secondari a causa appunto dell'interazione del fluido con la parete. Anche se questi moti nascono in zone limitate possono comunque influenzare grosse sezioni.\\
 Ci sono quattro diverse tipologie di moti secondari:
