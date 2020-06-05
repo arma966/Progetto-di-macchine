@@ -273,8 +273,9 @@ Questo significa che si trova lo stesso valore di portanza sia nel caso si consi
   \label{fig:EffSchiera}
 \end{minipage}
 \end{figure}
-C'è poi la possibilità di correlare per un profilo isolato le relazioni tra angolo di attacco e coefficienti di lift e di drag (Figura \ref{fig:cdcl}). Per quanto riguarda il coefficiente di lift si avrà una parte sostanzialmente lineare mentre il coefficiente di drag è via via crescente. Si arriva ad un punto di stallo in cui c'è una rapida diminuzione del valore di $c_L$ e un rapido aumento di $c_D$; per questo motivo si preferisce lavorare nella zona lineare di variazione di $c_L$.\\
-\'E possibile valutare le prestazioni di una schiera di assegnata solidità cercando una correlazione con quello che succede su un profilo isolato. Statisticamente si diagramma anche cosa succede tra un coefficiente $k$ (definito come il rapporto tra il coefficiente di lift del profilo in schiera e coefficiente di lift di profilo isolato $c_{L \infty}$) e l'inverso della solidità della schiera al variare dell'angolo di calettamento (Figura \ref{fig:EffSchiera}). Il range di solidità al quale si fa riferimento varia tra $1$ e $ 1.5 \div 1.6$, non si va oltre $2$. L'angolo di calettamento della schiera è tra i $45^{\circ} \div 52^{\circ}$ come si vede tracciando le linee orizzontali della zona evidenziata nella figura \ref{fig:EffSchiera}. In questo range il rapporto $c_L / c_{L \infty}$ è molto vicino all'unità e quindi la correlazione è alta.\\
+C'è poi la possibilità di correlare per un profilo isolato le relazioni tra angolo di attacco e coefficienti di lift e di drag (Figura \ref{fig:cdcl}). Per quanto riguarda il coefficiente di lift si avrà una parte sostanzialmente lineare mentre il coefficiente di drag è via via crescente. Si arriva ad un punto di stallo in cui c'è una rapida diminuzione del valore di $c_L$ e un rapido aumento di $c_D$; per questo motivo si preferisce lavorare nella zona lineare di variazione di $c_L$.
+
+\'E possibile valutare le prestazioni di una schiera di assegnata solidità cercando una correlazione con quello che succede su un profilo isolato. Statisticamente si diagramma cosa succede tra un coefficiente $k$ (definito come il rapporto tra il coefficiente di lift del profilo in schiera e coefficiente di lift di profilo isolato $c_{L \infty}$) e l'inverso della solidità della schiera al variare dell'angolo di calettamento (Figura \ref{fig:EffSchiera}). Il range di solidità al quale si fa riferimento varia tra $1$ e $1.6$, non si va oltre $2$. L'angolo di calettamento della schiera varia tra $45^{\circ} \div 52^{\circ}$ come si vede nella zona evidenziata nella figura \ref{fig:EffSchiera}. In questo range il rapporto $c_L / c_{L \infty}$ è molto vicino all'unità e quindi la correlazione è alta.\\
 Lavorando all'interno di questi range quindi, in fase di progettazione è possibile usare i dati del profilo isolato e correggere il coefficiente utilizzato nella valutazione della schiera secondo questi diagrammi. In contesto industriale si simula fluidodinamicamente direttamente la schiera.
 \subsection{Ugelli e diffusori}
 Le definizioni sono note e stranote (ugelli portano ad un aumento di velocità a fronte di una riduzione di pressione e vengono utilizzati soprattutto nelle turbine, diffusori viceversa e vengono utilizzati soprattutto nei compressori). 
@@ -322,7 +323,7 @@ Per i diffusori si consideri sempre $Ma<0.3$ e si possono usare le stesse espres
 L'utilizzo di un rendimento isoentropico è meno espressivo nel caso di un diffusore, in quanto ha maggior significato fisico qual è l'entità di $ \Delta p$ recuperabile rispetto la parte eccedente la pressione statica in ingresso.\\
 Definendo il coefficiente di recupero di pressione come:
 \begin{align*}
-c_p = \cfrac{p_2 - p_1}{p_{01} - p_1}
+c_P = \cfrac{p_2 - p_1}{p_{01} - p_1}
 \end{align*}
 si cerca il legame tra coefficiente di recupero di pressione e rendimento isoentropico di un diffusore:
 \begin{align*}
@@ -432,22 +433,22 @@ Si studiano ora i triangoli di velocità della schiera in movimento (Figura \ref
 \begin{figure}
 \centering
   \includegraphics[width=\textwidth]{fig/SchiereCompr.pdf}
-\caption{Schiere in movimento (compressore)}
+\caption{Schiere in movimento (compressore). La componente $c_a$ indicata in figura è normalmente chiamata $c_m$.}
 \label{fig:SchiereCompr}
 \end{figure}
 \\Si può quindi calcolare la forza tangenziale data dalla variazione delle velocità relative tra ingresso e uscita:
 \begin{align*}
-\Delta c_t = c_{2t} - c_{1t} = \omega_{1t} - \omega_{2t} = |\Delta \omega_t |
+\Delta c_t = c_{2t} - c_{1t} = w_{1t} - w_{2t} = |\Delta w_t |
 \end{align*}
 \begin{align*}
-F_t = s \rho c_a (\omega_{1t} - \omega_{2t})
+F_t = s \rho c_a (w_{1t} - w_{2t})
 \end{align*}
-\\Partendo dalle definizioni di potenza, portata in massa e forza tangenziale si definisce il lavoro unitario:
+\\Considerando dalle definizioni di potenza, portata in massa e forza tangenziale si definisce il lavoro unitario:
 \begin{align*}
 \begin{cases}
 P=F_t \cdot u\\
 \dot{m} = \rho s c_a\\
-F_t = c_F \cfrac{1}{2} \rho c \omega_{\infty}^2 = c_F \cfrac{1}{2} \rho c \cfrac{c_a^2}{\cos^2 \beta_{\infty}}
+F_t = c_F \cfrac{1}{2} \rho c w_{\infty}^2 = c_F \cfrac{1}{2} \rho c \cfrac{c_a^2}{\cos^2 \beta_{\infty}}
 \end{cases} \;\;\;\;
 \Rightarrow \;\;\;\;
 L_u = \cfrac{P}{\dot{m}}= \cfrac{F_t \cdot u}{\rho s c_a}
@@ -481,9 +482,9 @@ Espansione
 e utilizzando le relazioni note:
 \begin{align*}
 \begin{cases}
-\Delta p_0 = y \cfrac{1}{2} \rho \omega_2^2\\
+\Delta p_0 = y \cfrac{1}{2} \rho w_2^2\\
 L_u = \cfrac{c_F \sigma}{2 \cos^2 \beta_{\infty}} \cdot c_a \cdot u\\
-\omega_2 = \cfrac{c_a}{\cos \beta_2}\\
+w_2 = \cfrac{c_a}{\cos \beta_2}\\
 \varphi = \cfrac{c_a}{u}
 \end{cases}
 \end{align*}
@@ -511,11 +512,12 @@ Con i capitoli precedenti è stato trattato cosa succede nell'attraversamento de
 	\caption{Equilibrio radiale}
 	\label{fig:concio}
 \end{figure}
-\\Si consideri l'elementino di fluido $dz - d\theta$, figura \ref{fig:concio}, su cui agiscono le forze di pressione. Si calcoli l'equilibrio delle forze:
+
+Si consideri l'elemento di fluido $dz - d\theta - dr$, figura \ref{fig:concio}, su cui agiscono le forze di pressione. Si calcoli l'equilibrio delle forze:
 \begin{align*}
 \left( P + \cfrac{dP}{dr} dr \right) (r + dr) d \theta dz - Pr d \theta dz -2P dr dz \sin \frac{d \theta}{2} = r \frac{dP}{dr} dr d \theta dz
 \end{align*}
-Linearizzando e trascurando i termini del secondo ordine si ottiene un termine che verrà equilibrato dalle forze centrifughe agenti sull'elemento. Affinché il moto non abbia componenti radiali deve quindi accadere:
+Considerando l'approssimazione per angoli piccoli e trascurando i termini del secondo ordine, si ottiene un termine che verrà equilibrato dalle forze centrifughe agenti sull'elemento. Affinché il moto non abbia componenti radiali deve quindi accadere:
 \begin{equation}
 \rho r d \theta dr dz \cdot \frac{V_t^2}{r} = r \frac{dP}{dr} dr d \theta dz \;\;\;\; \Rightarrow \;\;\;\; \cfrac{1}{\rho} \cfrac{dP}{dr} = \frac{V_t^2}{r}
 \label{eq:EquilibrioRad}
@@ -543,7 +545,7 @@ Considerando poi l'equazione \ref{eq:EquilibrioRad} si ottiene:
 \begin{align*}
 \frac{dh_0}{dr} = T \frac{ds}{dr} + \frac{V_t^2}{r} + V_t \frac{dV_t}{dr} + V_a \frac{dV_a}{dr}
 \end{align*}
-In questa espressione non c'è più una pressione ma solo i valori di velocità, entalpia ed entropia al variare del raggio. A questo punto è possibile scrivere l'equazione complessiva che rappresenta il legame da imporre per avere un flusso bidimensionale:
+In questa espressione non c'è più la pressione ma solo i valori di velocità, entalpia ed entropia al variare del raggio. A questo punto è possibile scrivere l'equazione complessiva che rappresenta il legame da imporre per avere un flusso bidimensionale:
 \begin{equation}
 \boxed{ \frac{dh_0}{dr} - T\frac{ds}{dr} = V_a \frac{dV_a}{dr} + \frac{V_t}{r} \frac{d}{dr}(V_t \cdot r)}
 \end{equation}
@@ -575,12 +577,13 @@ Unendo l'equazione di vortice libero all'equazione \ref{eq:EquilibrioRadSemp}, s
 \begin{align*}
 V_a=cost
 \end{align*}
-ossia una velocità assiale costante lungo il raggio.\\
+ossia una velocità assiale costante lungo il raggio.
+
 Dal punto di vista dell'entalpia, considerando il rapporto tra una sezione generica e una sezione $i$, sapendo che $h_0 = cost$, si scrive
 \begin{align*}
 h + \frac{V^2}{2} = h_i + \frac{V_i^2}{2} \;\;\;\; \Rightarrow \;\;\;\; h = h_i	+ \frac{V_i^2 - V^2}{2}
 \end{align*}
-e quindi, considerando che $V^2=V_t^2+V_a^2$:
+e quindi, considerando che $V^2=V_t^2+V_a^2$ (per ipotesi $V_r=0$):
 \begin{equation}
 \frac{h}{h_i} = 1 + \frac{1}{2h_i} (V_{ti}^2+ \cancel{V_a^2}-V_t^2 -\cancel{V_a^2}) = 1 + \frac{V_{ti}^2}{2h_i} \left( 1- \frac{V_t^2}{V_{ti}^2} \right)
 \label{eq:RappEnt}
@@ -604,6 +607,7 @@ Queste relazioni permettono di riscrivere l'equazione \ref{eq:h_hi} come:
 \begin{equation}
 \boxed{\frac{h}{h_i} = 1 + \frac{\gamma -1}{2} M_{ti}^2 \bigg(1 -  \left( \frac{r_i}{r}\right)^2 \bigg) }
 \end{equation}
+
 Si possono ora diagrammare, nelle condizioni di vortice libero, tutte le espressioni utili a livello termodinamico. In Figura \ref{fig:VorticeLibero} è rappresentata la variazione del rapporto delle pressioni in funzione del rapporto dei raggi al variare del numero di Mach; questo diagramma è significativo vista la relazione tra rapporto delle entalpie e delle pressioni:
 \begin{align*}
 	\cfrac{p}{p_i} = \left( \cfrac{h}{h_i} \right)^{\frac{\gamma}{\gamma - 1}}
@@ -612,7 +616,7 @@ Si possono ora diagrammare, nelle condizioni di vortice libero, tutte le espress
 \begin{figure}
 \centering
   \includegraphics[width=.75\textwidth]{fig/VorticeLibero.pdf}
-\caption{Rapporto delle pressioni in funzione del rapporto dei raggi al variare del numero di Mach per un flusso a vortice libero}
+\caption{Rapporto delle pressioni in funzione del rapporto dei raggi al variare del numero di Mach per un flusso a vortice libero.}
 \label{fig:VorticeLibero}
 \end{figure}
 \section{Vortice forzato}
