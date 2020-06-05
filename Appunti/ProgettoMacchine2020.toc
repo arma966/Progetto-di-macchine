@@ -23,11 +23,11 @@
 \contentsline {section}{\numberline {2.6}Condizione di vortice libero}{36}{section.2.6}
 \contentsline {section}{\numberline {2.7}Vortice forzato}{37}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}A valle del vortice forzato}{40}{subsection.2.7.1}
-\contentsline {section}{\numberline {2.8}Vortice generico}{41}{section.2.8}
+\contentsline {section}{\numberline {2.8}Vortice generico}{42}{section.2.8}
 \contentsline {subsection}{\numberline {2.8.1}Angolo di palettatura costante}{42}{subsection.2.8.1}
-\contentsline {section}{\numberline {2.9}Portata in un condotto anulare}{45}{section.2.9}
+\contentsline {section}{\numberline {2.9}Portata in un condotto anulare}{43}{section.2.9}
 \contentsline {section}{\numberline {2.10}Condizioni di ingolfamento (choking)}{46}{section.2.10}
-\contentsline {section}{\numberline {2.11}Componente radiale non trascurabile}{47}{section.2.11}
+\contentsline {section}{\numberline {2.11}Componente radiale non trascurabile}{48}{section.2.11}
 \contentsline {section}{\numberline {2.12}Moti secondari}{48}{section.2.12}
 \contentsline {chapter}{\numberline {3}Compressori assiali}{51}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduzione}{51}{section.3.1}
