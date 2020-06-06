@@ -1,12 +1,6 @@
-%%%%%%%%%%%%%%%%%%%% book_it.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Esempio di file principale per i capitoli della vostra  "monografia"
-%
-% Usare questo file come template per il vostro documento.
-%
-%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[envcountsame,envcountchap]{svmono}
+\documentclass[a4paper]{book}
+\usepackage[utf8]{inputenc}
 
 \usepackage{makeidx} 
 \usepackage{graphicx}        
@@ -31,40 +25,33 @@
 \usepackage{multirow}
 \usepackage{siunitx}
 
-
-
 \makeindex
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% !TEX root = ./ProgettoMacchine2020.tex
-% !TEX encoding = UTF-8 Unicode
-% !TEX program = pdflatex
-% !TEX spellcheck = it-IT
 
 \begin{document}
 
 \author{Armenante Davide}
-\title{Progetto di macchine\\
-}
-\subtitle{Appunti del corso}
-\date{2020
-\begin{figure}[h!]
-\centering
-  \includegraphics[width=.8\textwidth]{fig/CarlinoPc.pdf}
-\label{}
-\end{figure}}
+
+\title{Progetto di macchine\\ 
+	\vspace{1cm}
+	Appunti del corso}
+
+\date{a.a. 2020 
+	\vspace{2cm}
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=.8\textwidth]{fig/CarlinoPc.pdf}
+			\label{}
+		\end{figure}}
 \maketitle
 
-
-
-\frontmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
 
 \include{Contenuto/pref_it}
 
 \tableofcontents
 
+\mainmatter
 
-\mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include{Contenuto/RichiamiTeor}
 
 \include{Contenuto/MaccAss}
@@ -74,9 +61,5 @@
 \include{Contenuto/TurbAss}
 
 \include{Contenuto/TurbEol}
+
 \end{document}
-
-
-
-
-

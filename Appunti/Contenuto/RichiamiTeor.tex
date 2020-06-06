@@ -1,7 +1,3 @@
-% !TEX root = ../ProgettoMacchine2020.tex
-% !TEX encoding = UTF-8 Unicode
-% !TEX program = pdflatex
-% !TEX spellcheck = it-IT
 \chapter{Richiami teorici}
 \section{Teoria della similitudine}
 L’applicazione della teoria della similitudine costituisce un primo e potente strumento della progettazione, in particolar modo per quanto riguarda le turbomacchine. La teoria della similitudine permette di risolvere diversi problemi:
@@ -11,6 +7,7 @@ L’applicazione della teoria della similitudine costituisce un primo e potente 
 \item[$-$] curve di prestazioni rilevate in determinate condizioni ambientali possono essere espresse in funzione di parametri che sono invarianti al variare delle condizioni ambientali stesse. In questo modo è possibile conoscere le prestazioni di una macchina operante in condizioni diverse (ad esempio un compressore al livello del mare ad agosto e in montagna a Natale);
 \item[$-$]si può stabilire in maniera semplice e veloce fin da subito quale sarà il tipo di macchina migliore da usare, quale sarà la sua geometria di base e quali le dimensioni generali; questo si rivela essere un ausilio al designer in sede di progettazione. Grazie a ciò si riesce a sfruttare l’esperienza già maturata nella progettazione, sviluppo e test di altre macchine simili. Perciò, possedere un database ricco di informazioni relative a macchine pregresse, risulta essere un vantaggio progettuale non di poco conto.
 \end{itemize}
+
 ll teorema di Buckingham (conosciuto anche come teorema $\pi$), dovuto al fisico statunitense Edgar Buckingham, afferma:
 \begin{quotation}
 	Dato un problema descritto da un certo numero di equazioni in cui siano presenti $n$ variabili fisiche, se le dimensioni fondamentali di queste variabili sono $x$ allora il problema può essere completamente descritto da $n - x$ variabili adimensionali.
@@ -61,17 +58,18 @@ f(\varphi,\psi,Re,Ma)=0
 \end{figure}
 Guardando il diagramma di Moody in figura \ref{fig:moody}, sull'asse delle ascisse è presente $Re$ ed su quello delle ordinate il coefficiente di perdita di carico del nostro tubo $\xi$. Le scale sono logaritmiche. Il legame tra $\xi$ e $Re$, per bassi numeri di Reynolds, è rappresentato da una retta. Poi si ha una zona di transizione non ben definita ed infine una serie di linee a rugosità relativa costante $\epsilon/D$ (con $\epsilon$ rugosità media).\\
 Nel primo tratto di legame lineare si ha una corrente laminare. Il tratto tratteggiato è un tratto nel quale, in condizioni sperimentali assolutamente controllate, è possibile mantenere un flusso laminare ma altamente instabile. In condizioni di flusso turbolento la perdita di carico dipende dalla rugosità.\\
-\'E possibile inoltre osservare che se si considera un solo valore di rugosità relativa, la curva presenta una certa pendenza fino ad un certo valore di $Re$ (limite o critico) per poi diventare orizzontale. Sotto le ipotesi di moto turbolento pienamente sviluppato si trascura l’influenza di Reynolds nel funzionale. Va ovviamente considerato che le rugosità relative di una macchina grande saranno in genere diverse da quelle che si possono ottenere con macchine piccole. Variazioni anche grandi del numero di Reynolds, purché in regime di moto turbolento completamente sviluppato (corrispondenti a valori di $Re$ molto elevati), non influenzano le prestazioni della mia macchina.\\
-Se il numero di Reynolds è superiore ad un certo valore limite, il coefficiente di perdita di carico è indipendente da $Re$. Trasferendo questa osservazione alla turbomacchina si può verificare sperimentalmente che se $Re$ è molto elevato questo potrà anche variare ma le prestazioni non ne saranno influenzate. perciò il funzionale si semplifica ulteriormente in:
+\'E possibile inoltre osservare che se si considera un solo valore di rugosità relativa, la curva presenta una certa pendenza fino ad un certo valore di $Re$ (limite o critico) per poi diventare orizzontale. Sotto le ipotesi di moto turbolento pienamente sviluppato si trascura l’influenza di Reynolds nel funzionale. Va ovviamente considerato che le rugosità relative di una macchina grande saranno in genere diverse da quelle che si possono ottenere con macchine piccole.\\
+Quindi se il numero di Reynolds è superiore ad un certo valore limite, il coefficiente di perdita di carico è indipendente da $Re$. Trasferendo questa osservazione alla turbomacchina si può verificare sperimentalmente che se $Re$ è molto elevato questo potrà anche variare ma le prestazioni non ne saranno influenzate. Perciò il funzionale si semplifica ulteriormente in:
 \begin{equation}
 f(\varphi,\psi,Ma)=0
 \end{equation}
 In seguito, si aggiungerà una perdita sul modello in quanto il rendimento di una macchina piccola sarà sempre inferiore al rendimento di una macchina grande.\\
-In ultimo, se si considerano i fenomeni di comprimibilità trascurabili, si può trascurare anche il numero di Mach; equivalentemente si fa l'ipotesi $Ma<0.3$. Perciò il funzionale risulta:
+In ultimo, se si trascurano i fenomeni di comprimibilità si può trascurare anche il numero di Mach; equivalentemente si fa l'ipotesi $Ma<0.3$. Perciò il funzionale risulta:
 \begin{align*}
 f(\varphi,\psi)=0
 \end{align*}
-Dotando la pompa di un sensore per la rilevazione di pressione, numero di giri e portata, è possibile andare a definire una curva di prestazione adimensionale.\\
+Dotando la pompa di un sensore per la rilevazione di pressione, numero di giri e portata, è possibile andare a definire una curva di prestazione adimensionale.
+
 Si definiscono le tre componenti del vettore velocità:
 \begin{itemize}
 \item[$c$]: velocità assoluta;
@@ -94,22 +92,23 @@ con $u= \omega \times r$. Perciò mantenere $\varphi$ e $\psi$ uguali significa 
 \end{figure}
 
 Si considera ora il caso di una macchina idraulica e si cerca il luogo dei punti di funzionamento simili sul piano delle prestazioni; questo permette di capire come le curve delle prestazioni adimensionali stiano in rapporto con le curve delle prestazioni dimensionali.\\
-Rilevando le prestazioni di una pompa si ottiene la curva di funzionamento caratteristica (diagramma prevalenza-portata) per un certo valore della velocità di rotazione (figura \ref{fig:hq}).
+Rilevando le prestazioni di una pompa si ottiene la curva di funzionamento caratteristica (diagramma prevalenza - portata) per un certo valore della velocità di rotazione (figura \ref{fig:hq}).
 \begin{figure}[h!]
 \centering
   \includegraphics[width=.3\textwidth]{fig/hq.pdf}
 \caption{}
 \label{fig:hq}
 \end{figure}
-Queste curve sono espresse in funzione di grandezze dimensionali, ma andando ad adimensionalizzarle si possono ottenere tali curve in funzione delle relative cifre di pressione e di flusso. Si consideri una condizione di funzionamento $A$: il luogo dei punti di funzionamento simili ad $A$ sarà caratterizzato dal fatto di avere stessi $\varphi$ e $\psi$. Considerando quindi il generico punto $x$ si può scrivere:
+Queste curve sono espresse in funzione di grandezze dimensionali, ma andando ad adimensionalizzarle si possono ottenere tali curve in funzione delle relative cifre di pressione e di flusso.\\
+Si consideri una condizione di funzionamento $A$: il luogo dei punti di funzionamento simili ad $A$ sarà caratterizzato dal fatto di avere stessi $\varphi$ e $\psi$. Considerando quindi il generico punto $x$ si può scrivere:
 \begin{equation}
 \varphi = \frac{Q}{w D^3}= \frac{Q_x}{w_x D^3}
 \end{equation}
-Considerando una macchina con lo stesso diametro si può scrivere:
+Per una macchina con lo stesso diametro si può scrivere:
 \begin{equation}
 \frac{Q_x}{Q}=\frac{w_x}{w} \;\;\;\; \Rightarrow \;\;\;\; Q_x = Q \frac{w_x}{w}
 \end{equation}
-Imponendo invece l'uguaglianza della cifra di pressione ($L_i=gH$ perché si sta considerando una macchina idraulica):
+Imponendo l'uguaglianza della cifra di pressione ($L_i=gH$ perché si sta considerando una macchina idraulica):
 \begin{equation}
 \psi = \frac{gH}{w^2 D^2}= \frac{gH_x}{w_x^2 D^2}
 \end{equation}
@@ -117,8 +116,9 @@ In questo modo si ottiene:
 \begin{equation}
 H_x = H\bigg(\frac{w_x}{w}\bigg)^2 = H\bigg(\frac{Q_x}{Q}\bigg)^2 \;\;\;\; \Rightarrow \;\;\;\; H_x = \frac{H}{Q^2}Q_x^2
 \end{equation}
-che è l'equazione di una parabola sul piano H-Q, passante per il punto A e per l'origine degli assi. Il lavoro varia con il quadrato della velocità angolare mentre la portata varia linearmente rispetto la velocità angolare. \\
-Ad ogni curva $\varphi - \psi$ corrisponde una curva di rendimento; si può quindi individuare una coppia $\bar{\varphi} - \bar{\psi}$ ottimale in cui il rendimento è massimo (figura \ref{fig:adim}) e definire il coefficiente di velocità periferica:
+che è l'equazione di una parabola sul piano H - Q, passante per il punto A e per l'origine degli assi. Il lavoro varia con il quadrato della velocità angolare mentre la portata varia linearmente rispetto la velocità angolare.
+
+Ad ogni curva $\varphi - \psi$ corrisponde una curva di rendimento; si può quindi individuare una coppia di valori $\bar{\varphi} - \bar{\psi}$ ottimali in cui il rendimento è massimo (figura \ref{fig:adim}) e definire il coefficiente di velocità periferica:
 \begin{figure}[h!]
 \centering
   \includegraphics[width=.3\textwidth]{fig/adim.pdf}
@@ -128,12 +128,13 @@ Ad ogni curva $\varphi - \psi$ corrisponde una curva di rendimento; si può quin
 \begin{equation}
 k_P = \frac{w D}{\sqrt{L_i}}
 \end{equation}
-Si tratta di una cifra che lega la velocità periferica della macchina al lavoro unitario della stessa.\\
+Si tratta di una cifra che lega la velocità periferica della macchina al lavoro unitario della stessa.
+
 Considerando $\varphi$ e $\psi$ si definisce una cifra di potenza adimensionalizzata come:
 \begin{equation}
 \Lambda = \frac{P_e}{\rho w^3 D^5} = \varphi \psi
 \end{equation}
-Introducendo il rendimento inoltre, per una macchina motrice vale (si moltiplica perchè una parte della portata rilevata all'esterno è passata attraverso i giochi tra cassa e girante senza produrre lavoro utile):
+Introducendo il rendimento, per una macchina motrice vale (si moltiplica perché una parte della portata rilevata all'esterno è passata attraverso i giochi tra cassa e girante senza produrre lavoro utile):
 \begin{equation}
 \Lambda = \varphi \psi \eta_e
 \end{equation}
@@ -141,6 +142,7 @@ e per macchina operatrice vale (si divide perché la portata elaborata dalla pom
 \begin{equation}
 \Lambda = \frac{\varphi \psi}{\eta_e}
 \end{equation}
+
 Con la seguente espressione si può poi eliminare la caratteristica geometrica ottenendo la velocità specifica o numero specifico di macchina; questo rappresenta una condizione di funzionamento portata - lavoro indipendente dalla dimensione della macchina:
 \begin{equation}
 w_s = k = \varphi^{1/2} \psi^{-3/4} = w \frac{\sqrt{Q}}{L_i^{3/4}}
@@ -152,9 +154,8 @@ La forma della macchina varierà al variare di k. Avere dei coefficienti k picco
 \caption{Variazione della forma delle giranti delle turbine idrauliche al variare del numero caratteristico di macchina.}
 \label{fig:numcar}
 \end{figure}
-Sfruttando l'esperienza si analizzano le migliori macchine esistenti e si vede quanto valgono per quelle macchine le cifre adimensionali $\pi_i$, $\pi_j$ e si diagrammano in funzione di k.
 
-Si fa ora un esempio concreto considerando una tipica macchina radiale (una pompa centrifuga) e se ne considera la sezione meridiana semplificata al massimo (figura \ref{fig:pala}).
+Sfruttando l'esperienza si analizzano le migliori macchine esistenti e si vede quanto valgono per quelle macchine le cifre adimensionali $\pi_i$, $\pi_j$ e si diagrammano in funzione di k. Facendo un esempio concreto si considera una tipica macchina radiale (una pompa centrifuga) e se ne analizza la sezione meridiana semplificata al massimo (figura \ref{fig:pala}).
 \begin{figure}
 \centering
 \begin{minipage}{.5\textwidth}
@@ -170,7 +171,7 @@ Si fa ora un esempio concreto considerando una tipica macchina radiale (una pomp
   \label{fig:primo_1}
 \end{minipage}
 \end{figure}
-\\Si definiscono le seguenti dimensioni caratteristiche più significative (si tratta di un esempio didattico, in realtà posso andare a definire un database molto più ampio e raffinato):
+\\Si definiscono le seguenti dimensioni caratteristiche più significative (si tratta di un esempio didattico, in realtà si può definire un database molto più ampio e raffinato):
 \begin{itemize}
 \item[-]$D_2$: diametro massimo della girante;\\
 \item[-]$D_1$: diametro massimo della sezione di ingresso;\\
@@ -180,9 +181,9 @@ Si fa ora un esempio concreto considerando una tipica macchina radiale (una pomp
 \end{itemize}
 Per definire $b_1$ bisogna considerare il diametro medio e con riferimento al punto di intersezione tra questo ed il profilo della pala in ingresso, si traccia la circonferenza inscrivibile nella sezione d’ingresso. Come grandezza caratteristica della sezione d’ingresso si prende proprio il diametro di questa circonferenza. Per queste grandezze si definiscono i seguenti rapporti adimensionali:
 \begin{align*}
-\frac{D_1}{D_2} \; \; \; \frac{D_1^{'}}{D_2} \; \; \; \frac{b_1}{D_2} \; \; \; \frac{b_2}{D_2} 
+\frac{D_1}{D_2} \;\;\; \frac{D_1^{'}}{D_2} \;\;\; \frac{b_1}{D_2} \;\;\; \frac{b_2}{D_2} 
 \end{align*}
-Essi sono funzioni di $k$ e quindi si riescono a definire delle curve che riportano in ascissa il valore del numero caratteristico $k$ e in ordinata i valori dei quattro rapporti (figura \ref{fig:primo_1}). Naturalmente fissato $k$ va poi determinato il numero di giri a cui deve lavorare la macchina.\\
+Essi sono funzioni di $k$ e quindi si riescono a definire delle curve che riportano in ascissa il valore del numero caratteristico $k$ e in ordinata i valori dei quattro rapporti (figura \ref{fig:primo_1}).\\
 Ricapitolando: note portata e prevalenza e fissata la velocità di rotazione, è noto il valore di $k$. Utilizzando questi diagrammi si trovano i valori dei quattro parametri e quindi si definisce per sommi capi la sezione meridiana della macchina in analisi.
 
 Esiste una dimensione ottimale ossia una dimensione alla quale corrisponde il massimo rendimento; va però definita un’ulteriore grandezza detta diametro specifico:
@@ -249,7 +250,7 @@ Grazie ai coefficienti correttivi si trovano le cifre adimensionali corrette:
 \eta_{corretto} = f_{\eta} \cdot \eta(w_s)
 \end{cases}
 \end{align*}
-A questo punto è possibile procedere a ritroso. Trovato il valore corretto si ricalcola $\omega_s$
+A questo punto è possibile procedere a ritroso. Trovato il valore corretto si ricalcola $\omega_s$:
 \begin{align*}
 \omega_s = \varphi^{1/2} \psi^{-3/4} =  \varphi^{1/2} \psi_{corretto}^{-3/4} = cost
 \end{align*}
@@ -274,20 +275,19 @@ Per considerare l'influenza del diametro sul rendimento, facendo riferimento al 
 \begin{align*}
 \eta = \eta_S \cdot f_r(D)
 \end{align*}
-con $\eta_S$ il rendimento standard e $f_r$ un coefficiente correttivo funzione del diametro. Considerando due macchine con scala diversa, la relazione tra il rendimento delle pompe è il seguente:
+con $\eta_S$ il rendimento standard e $f_r$ un coefficiente correttivo funzione del diametro.\\
+Considerando due pompe con scala diversa, la relazione tra il loro rendimento è:
 \begin{equation}
 \frac{1-\eta_1}{1-\eta_2} = \left( \frac{D_2}{D_1}\right)^\alpha
 \end{equation}
 La stessa operazione viene fatta anche per le turbine idrauliche:
-\begin{align*}
-\frac{1-\eta_1}{1-\eta_2} = \left[ \frac{Re_{u,2}}{Re_{u,1}} \right]^n \;\;\;\; n=0.1 \div 0.25
-\end{align*}
-\begin{align*}
-\frac{1-\eta_1}{1-\eta_2} =0.5 + 0.5 \left[ \frac{Re_{u,2}}{Re_{u,1}} \right]^{0.2}
-\end{align*}
-\begin{align*}
-\frac{1-\eta_1}{1-\eta_2} = 0.3 + 0.7 \left[ \frac{Re_{u,2}}{Re_{u,1}} \right]^{0.2} \;\;\;\; \to \;\;\;\; \mbox{Turbine Kaplan}
-\end{align*}
+\begin{center}
+\begin{tabular}{l l l l l l l l}
+	$\cfrac{1-\eta_1}{1-\eta_2} = \left[ \cfrac{Re_{u,2}}{Re_{u,1}} \right]^n$ & & & & & & & $n=0.1 \div 0.25$\\
+	$\cfrac{1-\eta_1}{1-\eta_2} =0.5 + 0.5 \left[ \cfrac{Re_{u,2}}{Re_{u,1}} \right]^{0.2}$ & & & & & & & formula di Ackeret, usata in Europa\\
+	$\cfrac{1-\eta_1}{1-\eta_2} = 0.3 + 0.7 \left[ \cfrac{Re_{u,2}}{Re_{u,1}} \right]^{0.2}$ & & & & & & & usata per turbine Kaplan\\
+\end{tabular}
+\end{center}
 \section{Flusso comprimibile}
 Se si considera il flusso comprimibile le relazioni diventano più complesse. Infatti si ha:
 \begin{equation}
@@ -300,7 +300,8 @@ Nel diagramma $\varphi-\psi$ si ottengono diverse curve al variare del numero di
 \caption{Curve adimensionali di funzionamento di una famiglia di compressori, per un fluido assegnato, a diversi numeri di Mach periferici. Sono definiti $Ma = \frac{w \frac{D}{2}}{a_{01}}$, $Mu = \frac{w \frac{D}{2}}{a}$}
 \label{fig:ComprMach}
 \end{figure}
-\\Per avere una grandezza confrontabile di funzionamento bisogna effettuare tutte le prove in condizioni standard; in questo modo si riesce a rappresentare le condizioni di funzionamento in modo univoco.\\
+\\Per avere una grandezza confrontabile di funzionamento bisogna effettuare tutte le prove in condizioni standard; in questo modo si riesce a rappresentare le condizioni di funzionamento in modo univoco.
+
 Considerando un gas generico miscela di due gas con massa molare $M_i$ \footnote{Nota bene: solo in questo contesto si utilizza $M$ per indicare la massa molare, in tutto il resto del libro viene usato per indicare il numero di Mach.} si può scrivere:
 \begin{align*}
 \frac{p}{\rho} = \frac{p_1}{\rho} + \frac{p_2}{\rho} = x_1  \frac{p_1}{\rho_1} + x_2  \frac{p_2}{\rho_2} = RT \left( \frac{x_1}{M_1} + \frac{x_2}{M_2} \right) = RT\left(\frac{1}{M_{tot}}\right)
@@ -309,8 +310,8 @@ Considerando un gas generico miscela di due gas con massa molare $M_i$ \footnote
 c_p = x_1 c_{p1} + x_2 c_{p2}
 \end{align*}
 con:\\[1mm]
-$M_{1,2,tot}$: numero di moli\\
-$x_{1,2}$: frazione molare\\
+$M_{1/2/tot}$: numero di moli\\
+$x_{1/2}$: frazione molare\\
 $R$: costante dei gas perfetti\\[2mm]
 Si ricorda poi che definiti calore specifico a pressione costante $c_p$ e calore specifico a volume costante $c_v$ si ha:
 \begin{align*}
@@ -352,16 +353,16 @@ Considerando le espressioni precedenti si possono esprimere più sinteticamente 
 \begin{align*}
 p_{02c} = \frac{p_{02}}{\delta} \;\;\;\;\;\;\;\; \dot{m_c}= \dot{m} \frac{\sqrt{\theta}}{\delta} \;\;\;\;\;\;\;\; n_c = \frac{n}{\sqrt{\theta}}
 \end{align*}
+ottenendo così la pressione corretta in aspirazione, la portata di massa corretta e il numero di giri corretto.
 \begin{figure}
-\centering
-  \includegraphics[width=\textwidth]{fig/CompMaps.pdf}
-\caption{}
-\label{fig:compMaps}
+	\centering
+	\includegraphics[width=\textwidth]{fig/CompMaps.pdf}
+	\caption{}
+	\label{fig:compMaps}
 \end{figure}
-ottenendo così la pressione corretta in aspirazione, portata di massa corretta e il numero di giri corretto.\\
-In questo modo si trovano le mappe di funzionamento delle macchine (figura \ref{fig:compMaps}) diagrammando la portata d'aria corretta con il rapporto di compressione; sono tracciate diverse curve di isorendimento al variare del numero di giri.
+\\In questo modo si trovano le mappe di funzionamento delle macchine (figura \ref{fig:compMaps}) diagrammando la portata d'aria corretta con il rapporto di compressione; sono tracciate diverse curve di isorendimento al variare del numero di giri.
 
-Si vuole ora rappresentare in modo univoco il comportamento del compressore usando i termini $\varphi$ e $\psi$ ma mantenendo la significatività fisica. Si espande l'espressione di $\varphi$ tenendo conto delle seguenti espressioni di $M_{01}$, $p$ e $a$:
+Considerando un compressore se ne vuole rappresentare in modo univoco il comportamento usando i termini $\varphi$ e $\psi$ ma mantenendo la significatività fisica. Si espande l'espressione di $\varphi$ tenendo conto delle seguenti espressioni di $M_{01}$, $p$ e $a$:
 \begin{align*}
 a = \sqrt{k R T} \;\;\;\;\;\;\;\; M_{01}=\frac{w D}{a_{01}}= \frac{w D}{\sqrt{k R T_{01}}} \;\;\;\;\;\;\;\; p = \rho_i RT 
 \end{align*}
@@ -372,6 +373,7 @@ La cifra $\psi$ è esprimibile in funzione di $M_{01}$, del rapporto di compress
 \begin{equation}
 \psi = \cfrac{L_i}{w^2 D^2} = \cfrac{\Delta h_{0s}}{w^ 2 D^2} = \cfrac{\cfrac{k}{k-1} R T_{01}\left[ \bigg( \cfrac{p_{02}}{p_{01}} \bigg)^{\frac{k-1}{k}}-1\right]}{M_{01}^2 k R T_{01}} = \cfrac{\cfrac{1}{k-1} \left[ \bigg( \cfrac{p_{02}}{p_{01}} \bigg)^{\frac{k-1}{k}}-1\right]}{M_{01}^2 }
 \end{equation}
+Si possono fare alcune ipotesi semplificative:
 \begin{itemize}
 	\item Utilizzando lo stesso fluido si possono trascurare $R$ e $k$.
 	\item Utilizzando la stessa macchina si trascura $D$.
@@ -387,8 +389,7 @@ M_{01}=\frac{w D}{\sqrt{k R T_{01}}} \;\;\;\;\;\;\;\; \Rightarrow \;\;\;\;\;\;\;
 \begin{align*}
 \psi= \cfrac{\cfrac{1}{k-1} \left[ \bigg( \cfrac{p_{02}}{p_{01}} \bigg)^{\frac{k-1}{k}}-1\right]}{M_{01}^2 } \;\;\;\;\;\;\;\; \Rightarrow \;\;\;\;\;\;\;\; \psi=\frac{p_{02}}{p_{01}}
 \end{align*}
-Si tratta di grandezze misurabili in un banco prova.
-
+Si tratta di grandezze misurabili in un banco prova.\\
 La mappa di funzionamento del compressore assume quindi una forma più leggibile: sull'asse delle ascisse c'è la portata in massa corretta con la temperatura in ingresso (cifra di flusso) e su quello delle ordinate il rapporto di compressione (cifra di pressione). Assieme a queste curve si costruiscono le linee di isorendimento e quindi la curva ideale operativa del compressore data dall'inviluppo delle curve di isorendimento.
 \begin{figure}
 \centering
@@ -398,7 +399,7 @@ La mappa di funzionamento del compressore assume quindi una forma più leggibile
 \end{figure}
 \\Guardando al diagramma in figura \ref{fig:secondo_8} si nota il fenomeno dell'ingolfamento del compressore; esso si verifica nella zona in cui le linee a velocità costante tendono a diventare verticali. Raggiunta questa condizione non è più possibile variare la portata variando il rapporto delle pressioni; questo si verifica perché in qualche punto si raggiungono le condizioni di flusso sonico e quindi, ricordando lo studio dell'ugello convergente - divergente, si verifica un
 blocco sonico delle portata.\\
-L'obiettivo è quello di lavorare il più possibile vicino alla ``operating line" che è la zona di massimo rendimento; il problema è che ci si trova pericolosamente vicino alla ``surge line". Oltre la surge line si innesca il fenomeno del pompaggio che può compromettere la macchina e l'impianto irrimediabilmente.
+L'obiettivo è quello di lavorare il più possibile vicino alla ``operating line" che è la zona di massimo rendimento; il problema è che ci si trova pericolosamente vicino alla ``surge line". Oltre la surge line si innesca il fenomeno del pompaggio che può danneggiare la macchina e l'impianto irrimediabilmente.
 \section{Richiamo di termodinamica}
 Lo scambio termico è trascurabile per i bassi tempi di residenza del fluido nel condotto, per questo motivo si considera il rotore adiabatico. In un rotore adiabatico, per il primo principio della termodinamica essendo il flusso di calore nullo, il lavoro è dato dal salto entalpico tra gli stati $1$ e $2$:
 \begin{equation}
@@ -428,11 +429,7 @@ Si definisce quindi la rotalpia\footnote{Grandezza che rappresenta la conservazi
 I=h+\frac{c^2}{2}+gz-u c_u = cost
 \end{equation}
 Essa ha valore costante proprio a seguito dell'adiabaticità del rotore.\\
-Riassumendo:
-\begin{itemize}
-\item $I=cost$ in un rotore adiabatico;
-\item $h_t=cost$ in uno statore adiabatico.
-\end{itemize}
+Quindi in un rotore adiabatico $I=cost$ e in uno statore adiabatico $h_t=cost$ visto che non c'è scambio di calore e di lavoro.\\
 Tutte le grandezze fin'ora viste possono essere disegnate in un piano $T-s$ o $h-s$.
 \section{Rendimenti per i compressori}
 Il rendimento è definito qualitativamente come il rapporto tra l'effetto utile ed il lavoro svolto dalla macchina. Sul lavoro svolto non ci sono ambiguità mentre in merito all'effetto utile si possono avere diverse formulazioni.\\
@@ -443,19 +440,20 @@ L'effetto utile può essere considerato come il salto entalpico associato al rap
 \caption{}
 \label{fig:schieraTComp}
 \end{figure}
-\\Con riferimento ad una trasformazione termodinamica, trascurando i contributi cinetici all'ingresso e all'uscita, si possono definire il rendimento adiabatico ed il rendimento politropico. Tale approccio è spesso utilizzato quando non si vuole entrare nel dettaglio della macchina come invece è necessario fare quando si vogliono studiare le prestazioni dei singoli stadi.\\
+
+Con riferimento ad una trasformazione di compressione, trascurando i contributi cinetici all'ingresso e all'uscita, si possono definire il rendimento adiabatico ed il rendimento politropico. Tale approccio è spesso utilizzato quando non si vuole entrare nel dettaglio della macchina come invece è necessario fare quando si vogliono studiare le prestazioni dei singoli stadi.\\
 Nel caso di rendimento adiabatico (o isoentropico), definendo con $l_{is}$ il lavoro lungo la trasformazione isoentropica e con $l_r$ quello lungo l'adiabatica reale (politropica), e facendo riferimento alla figura \ref{fig:Rend1}, la definizione diventa:
 \begin{align*}
 \eta_{ad} = \frac{h_{2'} - h_1}{h_2 - h_1} = \frac{c_p \left( T_{2'} - T_1 \right)}{c_p \left( T_2 - T_1 \right)} =
- \cfrac{\left( \beta^{\cfrac{\gamma -1}{\gamma}} -1 \right)}{\left( \beta^{\cfrac{n -1}{n}} -1 \right)} = \frac{l_{is}}{l_r}
+ \frac{\Bigg( \beta^{\cfrac{\gamma -1}{\gamma}} -1 \Bigg)}{\Bigg( \beta^{\cfrac{n -1}{n}} -1 \Bigg)} = \frac{l_{is}}{l_r}
 \end{align*}
 con:\\[1mm]
 $c_p = cost$ con la temperatura e pressione\\
 $\beta$: rapporto di compressione\\
-$\gamma=c_p/c_v$: indice dell'isoentropica\\
-$n=(c_p-c)/(c_v-c)$: indice della politropica (corrispondente alla trasformazione reale)\\[2mm]
+$\gamma=c_p/c_v$: indice della trasformazione isoentropica\\
+$n=(c_p-c)/(c_v-c)$: indice della trasformazione politropica (corrispondente alla trasformazione reale)\\[2mm]
 La scelta di questa definizione, oltre al facile utilizzo, è quella di fornire un'indicazione diretta dello scostamento della trasformazione da quella migliore possibile, l'isoentropica, senza dedicare particolare attenzione alle energie cinetiche presenti all'interno del sistema macchina.
-\begin{figure}
+\begin{figure}[h!]
 \centering
 \begin{minipage}{.45\textwidth}
   \centering
@@ -470,10 +468,11 @@ La scelta di questa definizione, oltre al facile utilizzo, è quella di fornire 
   \label{fig:Rend2}
 \end{minipage}
 \end{figure}
-\\Si può considerare poi il rendimento politropico definito dalla trasformazione politropica reversibile tra i punti $1$ e $2$, come riferimento per la trasformazione reale, figura \ref{fig:Rend2}. Questo viene incontro alla necessità, nel caso di macchine multistadio (o a singolo stadio ma con elevato rapporto di compressione), di non imputare ad una porzione di trasformazione la storia dei volumi specifici precedenti ed in particolar modo le irreversibilità precedenti.\\
+
+Si può considerare poi il rendimento politropico definito dalla trasformazione politropica reversibile tra i punti $1$ e $2$, come riferimento per la trasformazione reale, figura \ref{fig:Rend2}. Questo viene incontro alla necessità, nel caso di macchine multistadio (o a singolo stadio ma con elevato rapporto di compressione), di non imputare ad una porzione di trasformazione la storia dei volumi specifici precedenti ed in particolar modo le irreversibilità precedenti.\\
 Dividendo la trasformazione in tre porzioni, l'ultima parte della compressione richiede un salto entalpico pari a $\Delta h_r = h_3 - h_2$ che può essere confrontato con $\Delta h_{is} = h_{3'} - h_{2'}$ oppure con $\Delta h_{is} = h_{3''} - h_2$ a seconda dell'analisi che si vuole compiere sulla macchina.\\
 Qualora si voglia analizzare il singolo stadio, o la singola porzione di trasformazione, allora appare corretto confrontare il salto reale con quello tra i punti $3''$ e $2$ in quanto più attinente alla trasformazione reale oggetto dell'attenzione. A causa della divergenza delle isobare il salto entalpico $3''$ e $2$ risulta maggiore di quello $3'$ e $2'$, dando luogo ad un rendimento maggiore. Se tale ragionamento viene esteso a porzioni infinitesime di compressione ci si avvicina alla definizione di rendimento politropico.\\
-La scelta della trasformazione politropica reversibile (che tiene conto al suo interno di un riscaldamento del fluido operato da una sorgente esterna ma equivalente a quello causato dalle irreversibilità) consente di evidenziare il solo contributo delle irreversibilità e cioè del termine $\int Tds$.\\
+La scelta di considerare la trasformazione politropica reversibile (che tiene conto al suo interno di un riscaldamento del fluido operato da una sorgente esterna ma equivalente a quello causato dalle irreversibilità) nel calcolo del rendimento, consente di evidenziare il solo contributo delle irreversibilità e cioè del termine $\int Tds$.\\
 Considerata allora la trasformazione 1 - 2, chiamato $l_p$ il lavoro lungo la politropica reversibile e $l_r$ il lavoro lungo la trasformazione adiabatica reale, il rendimento assume la seguente forma:
 \begin{align*}
 \eta_p = \frac{l_p}{l_r}
@@ -496,23 +495,25 @@ Confrontando i due rendimenti a pari rapporto di compressione, si vede come la d
 \end{figure}
 Infatti poichè $\eta_p = l_p / l_r$ e $\eta_{ad} = l_{is} / l_r$, si ottiene:
 \begin{align*}
-\eta_{ad} = \eta_p \frac{l_{is}}{l_p} = \eta_p \frac{\frac{\gamma}{\gamma-1} \left(\beta^{\frac{\gamma -1}{\gamma}}-1 \right)}{\frac{n}{n-1} \left(\beta^{\frac{n -1}{n}}-1 \right)}
+\eta_{ad} = \eta_p \frac{l_{is}}{l_p} = \eta_p \frac{\left(\beta^{\frac{\gamma -1}{\gamma}}-1 \right)}{\left(\beta^{\frac{n -1}{n}}-1 \right)}
 \end{align*}
-ed essendo $l_p > l_{is}$ si ottiene $\eta_{ad} < \eta_p$.\\
-Al fine di evidenziare al differenza tra le due trasformazioni è possibile definire il lavoro di controrecupero definito come:
+ed essendo $l_p > l_{is}$ si ottiene $\eta_{ad} < \eta_p$.
+
+Al fine di evidenziare la differenza tra le due trasformazioni è possibile definire il lavoro di controrecupero definito come:
 \begin{align*}
 f = \frac{l_p - l_{is}}{l_{is}} = \frac{l_p}{l_{is}} -1 = \frac{\left( \beta^{\frac{n-1}{n}} -1 \right)}{\left( \beta^{\frac{\gamma-1}{\gamma}} -1 \right)} -1 = \frac{\eta_p}{\eta_{ad}} -1
 \end{align*}
-Al crescere della differenza tra i due rendimenti, il fattore di controrecupero aumenta. Tale fattore è sempre maggiore di zero e si annulla quando i due rendimenti sono uguali, cioè quando non ci sono effetti termici sulla densità come avviene per le macchine idrauliche.\\
-Qualora si voglia studiare gli effetti delle quote cinetiche, è possibile definire diversi tipi di rendimento, sempre definiti nella scia del rendimento adiabatico, denominati "Total to Total" e "Total to Static". Con riferimento alla figura \ref{fig:Rend4} si definiscono:
+Al crescere della differenza tra i due rendimenti, il fattore di controrecupero aumenta. Tale fattore è sempre maggiore di zero e si annulla quando i due rendimenti sono uguali, cioè quando non ci sono effetti termici sulla densità come avviene per le macchine idrauliche.
+
+Qualora si vogliano studiare gli effetti delle quote cinetiche, è possibile definire diversi tipi di rendimento, sempre definiti nella scia del rendimento adiabatico, denominati "Total to Total" e "Total to Static". Con riferimento alla figura \ref{fig:Rend4} si definiscono:
 \begin{itemize}
 \item Rendimento Total to Total:
 \begin{align*}
-\eta_{T,T} = \frac{h_{T,2'} - h_{T,1}}{h_{T,2} - h_{T,1}} = \frac{h_{2'} - h_1 + \left( \frac{c_2^2 - c_1^2}{2} \right)}{h_2 - h_1 + \left( \frac{c_2^2 - c_1^2}{2} \right)} = \frac{h_{2'} - h_1 + \left( \frac{c_2^2 - c_1^2}{2} \right)}{l_r} = \frac{l_{is}}{l_r}
+\eta_{T,T} = \frac{h_{T,2'} - h_{T,1}}{h_{T,2} - h_{T,1}} = \frac{h_{2'} - h_1 + \left( \frac{c_2^2 - c_1^2}{2} \right)}{h_2 - h_1 + \left( \frac{c_2^2 - c_1^2}{2} \right)} = \frac{l_{is}}{l_r}
 \end{align*}
 \item Rentimento Total to Static:
 \begin{align*}
-\eta_{T,S} = \frac{h_{2'} - h_{T,1}}{h_{T,2} - h_{T,1}} = \frac{h_{2'} - h_1 - \left( \frac{ c_1^2}{2} \right)}{h_2 - h_1 + \left( \frac{c_2^2 - c_1^2}{2} \right)} = \frac{h_{2'} - h_1 + \left( \frac{c_2^2 - c_1^2}{2} \right)}{l_r}
+\eta_{T,S} = \frac{h_{2'} - h_{T,1}}{h_{T,2} - h_{T,1}} = \frac{h_{2'} - h_1 + \left( \frac{ c_1^2}{2} \right)}{h_2 - h_1 + \left( \frac{c_2^2 - c_1^2}{2} \right)} = \frac{h_{2'} - h_1 + \left( \frac{c_1^2}{2} \right)}{l_r}
 \end{align*}
 \end{itemize}
 \pagebreak
