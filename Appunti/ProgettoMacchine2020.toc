@@ -33,30 +33,30 @@
 \contentsline {section}{\numberline {3.1}Introduzione}{51}{section.3.1}
 \contentsline {section}{\numberline {3.2}Lavoro e triangoli di velocit\IeC {\`a}}{53}{section.3.2}
 \contentsline {section}{\numberline {3.3}Termodinamica}{57}{section.3.3}
-\contentsline {section}{\numberline {3.4}Progettazione della schiera}{60}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Correlazioni di Howell}{62}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Criterio di carico}{68}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Schiere supersoniche}{70}{section.3.5}
-\contentsline {chapter}{\numberline {4}Turbine a flusso assiale e misto}{73}{chapter.4}
-\contentsline {section}{\numberline {4.1}Calcolo dei rendimenti}{74}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Rendimenti}{75}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Propriet\IeC {\`a} termodinamiche del flusso}{78}{section.4.2}
-\contentsline {section}{\numberline {4.3}Schiere palari}{79}{section.4.3}
-\contentsline {section}{\numberline {4.4}Prestazioni della schiera}{82}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Soderberg}{83}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Ainley-Mathieson}{84}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Criteri di carico}{86}{section.4.5}
-\contentsline {chapter}{\numberline {5}Macchine eoliche}{89}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduzione}{89}{section.5.1}
-\contentsline {section}{\numberline {5.2}Il teorema di Betz}{89}{section.5.2}
-\contentsline {section}{\numberline {5.3}Definizione del problema}{91}{section.5.3}
-\contentsline {section}{\numberline {5.4}Teoria del tubo di flusso anulare con scia vorticosa}{94}{section.5.4}
-\contentsline {section}{\numberline {5.5}Forze aerodinamiche sull'elemento di pala}{98}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Variazione ottimale di $\theta $}{103}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Variazione ottimale del prodotto $\sigma _l C_z$}{105}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Pala ottimale con massima efficienza aerodinamica}{105}{subsection.5.5.3}
-\contentsline {subsection}{\numberline {5.5.4}Variazione della corda}{105}{subsection.5.5.4}
-\contentsline {subsection}{\numberline {5.5.5}Relazione tra solidit\IeC {\`a}, velocit\IeC {\`a} specifica ed efficienza della turbina}{106}{subsection.5.5.5}
-\contentsline {subsection}{\numberline {5.5.6}Solidit\IeC {\`a} e velocit\IeC {\`a} specifica}{107}{subsection.5.5.6}
-\contentsline {subsection}{\numberline {5.5.7}Solidit\IeC {\`a} ed efficienza aerodinamica}{107}{subsection.5.5.7}
-\contentsline {subsection}{\numberline {5.5.8}Influenza del coefficiente di finezza del profilo}{107}{subsection.5.5.8}
+\contentsline {section}{\numberline {3.4}Progettazione della schiera}{61}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Correlazioni di Howell}{61}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Criterio di carico}{67}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Schiere supersoniche}{69}{section.3.5}
+\contentsline {chapter}{\numberline {4}Turbine a flusso assiale e misto}{71}{chapter.4}
+\contentsline {section}{\numberline {4.1}Calcolo dei rendimenti}{72}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Rendimenti}{73}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Propriet\IeC {\`a} termodinamiche del flusso}{76}{section.4.2}
+\contentsline {section}{\numberline {4.3}Schiere palari}{77}{section.4.3}
+\contentsline {section}{\numberline {4.4}Prestazioni della schiera}{80}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Soderberg}{81}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Ainley-Mathieson}{82}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Criteri di carico}{84}{section.4.5}
+\contentsline {chapter}{\numberline {5}Macchine eoliche}{87}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduzione}{87}{section.5.1}
+\contentsline {section}{\numberline {5.2}Il teorema di Betz}{87}{section.5.2}
+\contentsline {section}{\numberline {5.3}Definizione del problema}{89}{section.5.3}
+\contentsline {section}{\numberline {5.4}Teoria del tubo di flusso anulare con scia vorticosa}{92}{section.5.4}
+\contentsline {section}{\numberline {5.5}Forze aerodinamiche sull'elemento di pala}{96}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Variazione ottimale di $\theta $}{101}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Variazione ottimale del prodotto $\sigma _l C_z$}{103}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Pala ottimale con massima efficienza aerodinamica}{103}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.4}Variazione della corda}{103}{subsection.5.5.4}
+\contentsline {subsection}{\numberline {5.5.5}Relazione tra solidit\IeC {\`a}, velocit\IeC {\`a} specifica ed efficienza della turbina}{104}{subsection.5.5.5}
+\contentsline {subsection}{\numberline {5.5.6}Solidit\IeC {\`a} e velocit\IeC {\`a} specifica}{105}{subsection.5.5.6}
+\contentsline {subsection}{\numberline {5.5.7}Solidit\IeC {\`a} ed efficienza aerodinamica}{105}{subsection.5.5.7}
+\contentsline {subsection}{\numberline {5.5.8}Influenza del coefficiente di finezza del profilo}{105}{subsection.5.5.8}
