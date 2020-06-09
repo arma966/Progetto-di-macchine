@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.25)  8 JUN 2020 16:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.25)  9 JUN 2020 15:57
 entering extended mode
 **./ProgettoMacchine2020.tex
 (ProgettoMacchine2020.tex
@@ -1612,12 +1612,12 @@ File: fig/hsturbine.pdf Graphic file (type pdf)
 Package pdftex.def Info: fig/hsturbine.pdf  used on input line 56.
 (pdftex.def)             Requested size: 163.87447pt x 175.06389pt.
  [72 <./fig/TurboGas.png>]
-Overfull \hbox (34.23389pt too wide) in paragraph at lines 80--90
+Overfull \hbox (10.23389pt too wide) in paragraph at lines 78--88
 [] 
  []
 
 
-Underfull \vbox (badness 2181) has occurred while \output is active []
+Underfull \vbox (badness 3189) has occurred while \output is active []
 
  [73 <./fig/SezioneTurbina.pdf> <./fig/hsturbine.pdf
 
@@ -1627,49 +1627,49 @@ e pdfs with page group included in a single page
 <fig/triangTurb.pdf, id=2121, 944.6362pt x 408.70276pt>
 File: fig/triangTurb.pdf Graphic file (type pdf)
 <use fig/triangTurb.pdf>
-Package pdftex.def Info: fig/triangTurb.pdf  used on input line 99.
+Package pdftex.def Info: fig/triangTurb.pdf  used on input line 97.
 (pdftex.def)             Requested size: 276.00105pt x 119.41255pt.
  [74 <./fig/triangTurb.pdf>] [75]
 <fig/Rendimenti_ts_tt.pdf, id=2139, 891.33pt x 526.21594pt>
 File: fig/Rendimenti_ts_tt.pdf Graphic file (type pdf)
 <use fig/Rendimenti_ts_tt.pdf>
-Package pdftex.def Info: fig/Rendimenti_ts_tt.pdf  used on input line 166.
+Package pdftex.def Info: fig/Rendimenti_ts_tt.pdf  used on input line 164.
 (pdftex.def)             Requested size: 276.00105pt x 162.94058pt.
  [76 <./fig/Rendimenti_ts_tt.pdf>]
 <fig/SchierePaleTab.pdf, id=2161, 563.10374pt x 638.385pt>
 File: fig/SchierePaleTab.pdf Graphic file (type pdf)
 <use fig/SchierePaleTab.pdf>
-Package pdftex.def Info: fig/SchierePaleTab.pdf  used on input line 206.
+Package pdftex.def Info: fig/SchierePaleTab.pdf  used on input line 204.
 (pdftex.def)             Requested size: 345.0pt x 391.12868pt.
 <fig/palaBassaDef.pdf, id=2164, 578.31708pt x 554.10645pt>
 File: fig/palaBassaDef.pdf Graphic file (type pdf)
 <use fig/palaBassaDef.pdf>
 Package pdftex.def Info: fig/palaBassaDef.pdf  used on input line 214.
 (pdftex.def)             Requested size: 207.0021pt x 198.33675pt.
-<fig/ou_schiera.png, id=2168, 120.45pt x 103.8279pt>
-File: fig/ou_schiera.png Graphic file (type png)
-<use fig/ou_schiera.png>
-Package pdftex.def Info: fig/ou_schiera.png  used on input line 227.
-(pdftex.def)             Requested size: 163.87447pt x 141.27377pt.
-<fig/SupSonic.pdf, id=2169, 601.00928pt x 461.95851pt>
-File: fig/SupSonic.pdf Graphic file (type pdf)
-<use fig/SupSonic.pdf>
-Package pdftex.def Info: fig/SupSonic.pdf  used on input line 233.
-(pdftex.def)             Requested size: 163.87447pt x 125.95697pt.
-<fig/PaleSup.pdf, id=2170, 1129.21875pt x 529.22719pt>
-File: fig/PaleSup.pdf Graphic file (type pdf)
-<use fig/PaleSup.pdf>
-Package pdftex.def Info: fig/PaleSup.pdf  used on input line 240.
-(pdftex.def)             Requested size: 345.0pt x 161.69266pt.
  [77]
 [78 <./fig/SchierePaleTab.pdf>]
+<fig/ou_schiera.png, id=2186, 120.45pt x 103.8279pt>
+File: fig/ou_schiera.png Graphic file (type png)
+<use fig/ou_schiera.png>
+Package pdftex.def Info: fig/ou_schiera.png  used on input line 228.
+(pdftex.def)             Requested size: 163.87447pt x 141.27377pt.
+<fig/SupSonic.pdf, id=2187, 601.00928pt x 461.95851pt>
+File: fig/SupSonic.pdf Graphic file (type pdf)
+<use fig/SupSonic.pdf>
+Package pdftex.def Info: fig/SupSonic.pdf  used on input line 234.
+(pdftex.def)             Requested size: 163.87447pt x 125.95697pt.
+<fig/PaleSup.pdf, id=2188, 1129.21875pt x 529.22719pt>
+File: fig/PaleSup.pdf Graphic file (type pdf)
+<use fig/PaleSup.pdf>
+Package pdftex.def Info: fig/PaleSup.pdf  used on input line 241.
+(pdftex.def)             Requested size: 345.0pt x 161.69266pt.
 <fig/PrestSchieraTurb.pdf, id=2189, 960.58875pt x 530.73282pt>
 File: fig/PrestSchieraTurb.pdf Graphic file (type pdf)
 <use fig/PrestSchieraTurb.pdf>
-Package pdftex.def Info: fig/PrestSchieraTurb.pdf  used on input line 249.
+Package pdftex.def Info: fig/PrestSchieraTurb.pdf  used on input line 250.
 (pdftex.def)             Requested size: 345.0pt x 190.61826pt.
 
-Underfull \vbox (badness 6859) has occurred while \output is active []
+Underfull \vbox (badness 3514) has occurred while \output is active []
 
  [79 <./fig/palaBassaDef.pdf> <./fig/ou_schiera.png> <./fig/SupSonic.pdf
 
@@ -1683,16 +1683,16 @@ multiple pdfs with page group included in a single page
 <fig/PerditeSchiera.pdf, id=2330, 852.18375pt x 619.56468pt>
 File: fig/PerditeSchiera.pdf Graphic file (type pdf)
 <use fig/PerditeSchiera.pdf>
-Package pdftex.def Info: fig/PerditeSchiera.pdf  used on input line 273.
+Package pdftex.def Info: fig/PerditeSchiera.pdf  used on input line 274.
 (pdftex.def)             Requested size: 224.2479pt x 163.03049pt.
  [81 <./fig/PerditeSchiera.pdf>]
-<fig/Soderberg.pdf, id=2347, 950.04938pt x 583.42969pt>
+<fig/Soderberg.pdf, id=2346, 950.04938pt x 583.42969pt>
 File: fig/Soderberg.pdf Graphic file (type pdf)
 <use fig/Soderberg.pdf>
 Package pdftex.def Info: fig/Soderberg.pdf  used on input line 311.
 (pdftex.def)             Requested size: 345.0pt x 211.86841pt.
  [82 <./fig/Soderberg.pdf>]
-<fig/Mathieson.pdf, id=2370, 907.96515pt x 349.8395pt>
+<fig/Mathieson.pdf, id=2369, 907.96515pt x 349.8395pt>
 File: fig/Mathieson.pdf Graphic file (type pdf)
 <use fig/Mathieson.pdf>
 Package pdftex.def Info: fig/Mathieson.pdf  used on input line 352.
@@ -1703,32 +1703,31 @@ Overfull \hbox (72.57959pt too wide) in paragraph at lines 349--361
  []
 
 [83 <./fig/Mathieson.pdf>]
-<fig/lambdaPerditeSchiera.pdf, id=2392, 688.09973pt x 426.88702pt>
+<fig/lambdaPerditeSchiera.pdf, id=2391, 688.09973pt x 426.88702pt>
 File: fig/lambdaPerditeSchiera.pdf Graphic file (type pdf)
 <use fig/lambdaPerditeSchiera.pdf>
-Package pdftex.def Info: fig/lambdaPerditeSchiera.pdf  used on input line 380.
+Package pdftex.def Info: fig/lambdaPerditeSchiera.pdf  used on input line 379.
 (pdftex.def)             Requested size: 207.0021pt x 128.41882pt.
-<fig/FuoriProgT1.pdf, id=2394, 731.99638pt x 449.76913pt>
+<fig/FuoriProgT1.pdf, id=2393, 731.99638pt x 449.76913pt>
 File: fig/FuoriProgT1.pdf Graphic file (type pdf)
 <use fig/FuoriProgT1.pdf>
-Package pdftex.def Info: fig/FuoriProgT1.pdf  used on input line 388.
+Package pdftex.def Info: fig/FuoriProgT1.pdf  used on input line 387.
 (pdftex.def)             Requested size: 345.0pt x 211.98859pt.
-<fig/Ainley.pdf, id=2395, 515.0121pt x 505.68973pt>
+<fig/Ainley.pdf, id=2394, 515.0121pt x 505.68973pt>
 File: fig/Ainley.pdf Graphic file (type pdf)
 <use fig/Ainley.pdf>
-Package pdftex.def Info: fig/Ainley.pdf  used on input line 396.
+Package pdftex.def Info: fig/Ainley.pdf  used on input line 395.
 (pdftex.def)             Requested size: 327.74895pt x 321.81929pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[84 <./fig/lambdaPerditeSchiera.pdf>]
-<fig/CritCaricoT.pdf, id=2420, 982.56618pt x 488.96826pt>
+<fig/CritCaricoT.pdf, id=2397, 982.56618pt x 488.96826pt>
 File: fig/CritCaricoT.pdf Graphic file (type pdf)
 <use fig/CritCaricoT.pdf>
-Package pdftex.def Info: fig/CritCaricoT.pdf  used on input line 408.
+Package pdftex.def Info: fig/CritCaricoT.pdf  used on input line 407.
 (pdftex.def)             Requested size: 327.74895pt x 163.09843pt.
-)
+) [84 <./fig/lambdaPerditeSchiera.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1741,7 +1740,7 @@ ple pdfs with page group included in a single page
 
  (Contenuto/TurbEol.tex
 Capitolo 5.
-<fig/Betz.pdf, id=2480, 830.35219pt x 429.85594pt>
+<fig/Betz.pdf, id=2479, 830.35219pt x 429.85594pt>
 File: fig/Betz.pdf Graphic file (type pdf)
 <use fig/Betz.pdf>
 Package pdftex.def Info: fig/Betz.pdf  used on input line 15.
@@ -1751,12 +1750,12 @@ Package pdftex.def Info: fig/Betz.pdf  used on input line 15.
 
 
 ] [88 <./fig/Betz.pdf>] [89]
-<fig/frontlatEol.pdf, id=2518, 1144.55608pt x 412.45659pt>
+<fig/frontlatEol.pdf, id=2517, 1144.55608pt x 412.45659pt>
 File: fig/frontlatEol.pdf Graphic file (type pdf)
 <use fig/frontlatEol.pdf>
 Package pdftex.def Info: fig/frontlatEol.pdf  used on input line 88.
 (pdftex.def)             Requested size: 345.0pt x 124.32323pt.
-<fig/triangEol.pdf, id=2519, 796.47563pt x 495.35066pt>
+<fig/triangEol.pdf, id=2518, 796.47563pt x 495.35066pt>
 File: fig/triangEol.pdf Graphic file (type pdf)
 <use fig/triangEol.pdf>
 Package pdftex.def Info: fig/triangEol.pdf  used on input line 94.
@@ -1773,7 +1772,7 @@ Overfull \hbox (2.81589pt too wide) has occurred while \output is active
  []
 
 [93] [94]
-<fig/limBetz.pdf, id=2630, 955.12982pt x 572.65977pt>
+<fig/limBetz.pdf, id=2629, 955.12982pt x 572.65977pt>
 File: fig/limBetz.pdf Graphic file (type pdf)
 <use fig/limBetz.pdf>
 Package pdftex.def Info: fig/limBetz.pdf  used on input line 294.
@@ -1789,7 +1788,7 @@ Overfull \hbox (2.81589pt too wide) has occurred while \output is active
  []
 
 [95]
-<fig/triangEol2.pdf, id=2639, 679.84715pt x 557.39597pt>
+<fig/triangEol2.pdf, id=2638, 679.84715pt x 557.39597pt>
 File: fig/triangEol2.pdf Graphic file (type pdf)
 <use fig/triangEol2.pdf>
 Package pdftex.def Info: fig/triangEol2.pdf  used on input line 310.
@@ -1799,7 +1798,7 @@ Package pdftex.def Info: fig/triangEol2.pdf  used on input line 310.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [96 <./fig/limBetz.pdf>]
-<fig/forzeEol.pdf, id=2665, 640.05566pt x 472.38188pt>
+<fig/forzeEol.pdf, id=2664, 640.05566pt x 472.38188pt>
 File: fig/forzeEol.pdf Graphic file (type pdf)
 <use fig/forzeEol.pdf>
 Package pdftex.def Info: fig/forzeEol.pdf  used on input line 336.
@@ -1821,7 +1820,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 484.
 
-<fig/lambdatheta.pdf, id=2753, 859.77736pt x 554.64551pt>
+<fig/lambdatheta.pdf, id=2752, 859.77736pt x 554.64551pt>
 File: fig/lambdatheta.pdf Graphic file (type pdf)
 <use fig/lambdatheta.pdf>
 Package pdftex.def Info: fig/lambdatheta.pdf  used on input line 489.
@@ -1857,7 +1856,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 520.
 
-<fig/lambdacz.pdf, id=2797, 778.9094pt x 455.74542pt>
+<fig/lambdacz.pdf, id=2796, 778.9094pt x 455.74542pt>
 File: fig/lambdacz.pdf Graphic file (type pdf)
 <use fig/lambdacz.pdf>
 Package pdftex.def Info: fig/lambdacz.pdf  used on input line 527.
@@ -1871,13 +1870,13 @@ Overfull \hbox (3.96735pt too wide) in paragraph at lines 556--558
 -ri-spon-do-no al pro-dot-to $\OML/cmm/m/it/10 []C[][]$
  []
 
-<fig/sigmalambda.pdf, id=2805, 729.376pt x 455.74542pt>
+<fig/sigmalambda.pdf, id=2804, 729.376pt x 455.74542pt>
 File: fig/sigmalambda.pdf Graphic file (type pdf)
 <use fig/sigmalambda.pdf>
 Package pdftex.def Info: fig/sigmalambda.pdf  used on input line 564.
 (pdftex.def)             Requested size: 241.49895pt x 150.89714pt.
 [104 <./fig/lambdacz.pdf>]
-<fig/cplambda.pdf, id=2831, 811.3982pt x 477.53278pt>
+<fig/cplambda.pdf, id=2830, 811.3982pt x 477.53278pt>
 File: fig/cplambda.pdf Graphic file (type pdf)
 <use fig/cplambda.pdf>
 Package pdftex.def Info: fig/cplambda.pdf  used on input line 580.
@@ -1900,7 +1899,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  21690 strings out of 492969
  407584 string characters out of 3126585
- 463242 words of memory out of 3000000
+ 462242 words of memory out of 3000000
  24819 multiletter control sequences out of 15000+200000
  544933 words of font info for 73 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1933,9 +1932,9 @@ ic/amsfonts/cm/cmsy7.pfb><C:/Users/giona/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/giona/AppData/Local/Programs/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Users/giona/AppDat
 a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ProgettoMacchine2020.pdf (112 pages, 5596757 bytes).
+Output written on ProgettoMacchine2020.pdf (112 pages, 5596486 bytes).
 PDF statistics:
- 3077 PDF objects out of 3580 (max. 8388607)
+ 3076 PDF objects out of 3580 (max. 8388607)
  404 named destinations out of 1000 (max. 500000)
  1011 words of extra memory for PDF output out of 10000 (max. 10000000)
 
