@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.25)  9 JUN 2020 15:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.25)  10 JUN 2020 08:55
 entering extended mode
 **./ProgettoMacchine2020.tex
 (ProgettoMacchine2020.tex
@@ -1725,7 +1725,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <fig/CritCaricoT.pdf, id=2397, 982.56618pt x 488.96826pt>
 File: fig/CritCaricoT.pdf Graphic file (type pdf)
 <use fig/CritCaricoT.pdf>
-Package pdftex.def Info: fig/CritCaricoT.pdf  used on input line 407.
+Package pdftex.def Info: fig/CritCaricoT.pdf  used on input line 408.
 (pdftex.def)             Requested size: 327.74895pt x 163.09843pt.
 ) [84 <./fig/lambdaPerditeSchiera.pdf>]
 
@@ -1932,7 +1932,7 @@ ic/amsfonts/cm/cmsy7.pfb><C:/Users/giona/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/giona/AppData/Local/Programs/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Users/giona/AppDat
 a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ProgettoMacchine2020.pdf (112 pages, 5596486 bytes).
+Output written on ProgettoMacchine2020.pdf (112 pages, 5596631 bytes).
 PDF statistics:
  3076 PDF objects out of 3580 (max. 8388607)
  404 named destinations out of 1000 (max. 500000)

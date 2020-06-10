@@ -61,7 +61,7 @@ Si analizza ora quello che succede all'interno dello stadio di una turbina. Ci s
 \\Il salto entalpico tra i punti $1 - 2_s$ è leggermente superiore a quello presente tra i punti $1_s - 2_{ss}$ a causa della divergenza delle isobare. A tal proposito si introduce il fattore di recupero $f$. Questo fattore di recupero è fisicamente spiegabile dal fatto che la trasformazione, non essendo puramente isoentropica, causa un aumento della temperatura che verrà parzialmente recuperato nell'attraversamento successivo. 
 \begin{center}
 \begin{tabular}{l l l l l}
-	$(1- R^*) \cdot \cfrac{c_i^2}{2}$ &&&& salto entalpico con espansione isoentropica\\
+	$R^* \cdot \cfrac{c_i^2}{2}$ &&&& salto entalpico tra $1_s$ e $2_{ss}$\\
 	$(1+f)R^* \cdot \cfrac{c_i^2}{2}$ &&&& salto entalpico tra $1$ e $2_s$\\
 \end{tabular}
 \end{center}
@@ -396,7 +396,8 @@ In questo modo si vanno quindi a calcolare le perdite in condizioni fuori proget
 \caption{}
 \label{fig:Ainley}
 \end{figure}
-Una volta determinata la schiera è opportuno verificare con un criterio di carico se la solidità scelta è sostenibile o meno. Per esempio con molte pale aumentano le perdite perché aumenta la superficie bagnata ma per contro si riesce a realizzare meglio la variazione d'angolo che è quella che da momento alla turbina.\\
+Una volta determinata la schiera è opportuno verificare con un criterio di carico se la solidità scelta è sostenibile o meno. Per esempio con molte pale aumentano le perdite perché aumenta la superficie bagnata ma per contro si riesce a realizzare meglio la variazione d'angolo che è quella che da momento alla turbina.
+
 In figura \ref{fig:Ainley} sono illustrati i diversi criteri di carico. I criteri di Zweifel impongono un vincolo sul rapporto tra forza tangenziale e una forza tangenziale ideale:
 \begin{align*}
 \cfrac{F_t}{F_{t,id}} = \cfrac{F_t}{\cfrac{1}{2} \rho b c_1^2} = c_{F_t} = 2 \cos^2 \alpha_1 \bigg(\cfrac{c_{m0}}{c_{m1}} \tan \alpha_0 - \tan \alpha_1 \bigg) \cfrac{s}{b} = 0.8
