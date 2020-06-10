@@ -7,7 +7,7 @@ Le principali caratteristiche e differenze delle turbine a flusso assiale e mist
 	\item sono presenti temperature molto elevate;
 	\item si realizzano deflessioni importanti che vanno dai $50^{\circ}$ ai $180^{\circ}$;
 	\item nel compressore la qualità del design del profilo è dominante mentre nella turbina il limite costruttivo è dato dai materiali della palettatura in quanto devono sopportare temperature e stress dovuti alle deflessioni imposte che sono molto elevati;
-	\item il profilo aerodinamico utilizzato in un compressore sarà molto diverso da quello utilizzato in una turbina, visto che quest'ultima presenta una variazione di condotto importante.
+	\item il profilo aerodinamico utilizzato in un compressore sarà molto diverso da quello utilizzato in una turbina visto che quest'ultima presenta una variazione di condotto importante.
 \end{itemize}
 \begin{figure}[h!]
 \centering
@@ -31,8 +31,8 @@ Si analizzano quali possono essere le varie configurazioni di turbina richiamand
 	con $z_v$ salti di velocità. Lo stadio De Laval generalmente è usato nel primo stadio mentre lo stadio Reteau generalmente è usato nello stadio intermedio;
 	\item stadi a reazione $R\neq 0$: turbine Parsons con $R = 0,5$.
 \end{itemize}
-Si possono determinare i triangoli di velocità:
 
+Si possono determinare i triangoli di velocità:
 \begin{align*}
 \bigg( \frac{u}{c_1} \bigg)_{opt} = \frac{\sin \alpha_1}{2 z_v} \;\;\;\;\;\;\; \mbox{per} \; R = 0
 \end{align*}
@@ -59,14 +59,12 @@ Si analizza ora quello che succede all'interno dello stadio di una turbina. Ci s
 \end{minipage}
 \end{figure}
 \\Il salto entalpico tra i punti $1 - 2_s$ è leggermente superiore a quello presente tra i punti $1_s - 2_{ss}$ a causa della divergenza delle isobare. A tal proposito si introduce il fattore di recupero $f$. Questo fattore di recupero è fisicamente spiegabile dal fatto che la trasformazione, non essendo puramente isoentropica, causa un aumento della temperatura che verrà parzialmente recuperato nell'attraversamento successivo. 
-\begin{align*}
-(1- R^*) \cdot \frac{c_i^2}{2} \hspace{1cm} \mbox{salto entalpico con espansione isoentropica}
-\end{align*}
-\begin{align*}
-(1+f)R^* \cdot \frac{c_i^2}{2} \hspace{1cm} \mbox{salto entalpico tra $1$ e $2_s$}
-\end{align*}
-
-
+\begin{center}
+\begin{tabular}{l l l l l}
+	$R^* \cdot \cfrac{c_i^2}{2}$ &&&& salto entalpico tra $1_s$ e $2_{ss}$\\
+	$(1+f)R^* \cdot \cfrac{c_i^2}{2}$ &&&& salto entalpico tra $1$ e $2_s$\\
+\end{tabular}
+\end{center}
 \subsection{Rendimenti}
 Il rendimento è il seguente:
 \begin{align*}
@@ -79,13 +77,13 @@ con il termine $\Phi_E$ che rappresenta la quota cinetica a valle della turbina:
 \end{itemize}
 Seguono ora una serie di definizioni:\\
 \renewcommand\arraystretch{3}
-\begin{tabular}{l l l l l l l}
-	Coefficiente di portata: & & & & & & $\Phi_1 = \cfrac{c_{m1}}{u_1}$\\
-	Grado di reazione ideale: & & & & & & $R^* = \cfrac{h_{1s} - h_{2ss}}{h_{0_0} - h_{2_{ss}}} = \cfrac{\Delta h_{R_{is}}}{\Delta h_{is_{ts}}}$\\
-	Energia cinetica totale: & & & & & & $\cfrac{c_i^2}{2}=h_{0_0} - h_{2_{ss}}$\\
-	Coefficiente di lavoro specifico ideale: & & & & & &  $\psi = \cfrac{h_{0_0} - h_{2_{ss}}}{\cfrac{u_1^2}{2}} = \cfrac{\Delta h_{is_{ts}}}{\cfrac{u_1^2}{2}}= \cfrac{c_i^2}{u_1^2}$\\
-	Coefficiente di lavoro specifico reale: & & & & & & $\lambda = \cfrac{h_{0_0} - h_{2_0}}{\cfrac{u_1^2}{2}}= \cfrac{\Delta h_0}{\cfrac{u_1^2}{2}}$\\
-	Coefficiente di velocità periferica: & & & & & & $k_{is} = \cfrac{u_1}{c_i} = \cfrac{1}{\sqrt{\psi}}$\\
+\begin{tabular}{l l l l l}
+	Coefficiente di portata: & & & &  $\Phi_1 = \cfrac{c_{m1}}{u_1}$\\
+	Grado di reazione ideale: & & & & $R^* = \cfrac{h_{1s} - h_{2ss}}{h_{0_0} - h_{2_{ss}}} = \cfrac{\Delta h_{R_{is}}}{\Delta h_{is_{ts}}}$\\
+	Energia cinetica totale: & & & &  $\cfrac{c_i^2}{2}=h_{0_0} - h_{2_{ss}}$\\
+	Coefficiente di lavoro specifico ideale: & & & &  $\psi = \cfrac{h_{0_0} - h_{2_{ss}}}{\cfrac{u_1^2}{2}} = \cfrac{\Delta h_{is_{ts}}}{\cfrac{u_1^2}{2}}= \cfrac{c_i^2}{u_1^2}$\\
+	Coefficiente di lavoro specifico reale: & & & &  $\lambda = \cfrac{h_{0_0} - h_{2_0}}{\cfrac{u_1^2}{2}}= \cfrac{\Delta h_0}{\cfrac{u_1^2}{2}}$\\
+	Coefficiente di velocità periferica: & & & &  $k_{is} = \cfrac{u_1}{c_i} = \cfrac{1}{\sqrt{\psi}}$\\
 \end{tabular}
 
 \vspace{0.5cm}
@@ -142,7 +140,7 @@ h_1 - h_2 = \frac{c_i^2}{2} \cdot R^* \left( 1 + f \right) \eta_R
 \Bigg[\frac{w_2^2 - w_1^2}{2} - \frac{u_2^2 - u_1^2}{2} = \frac{c_i^2}{2} \cdot R^* \left( 1 + f \right) \eta_R \Bigg] \cdot \frac{1}{u_1^2}
 \end{align*}
 \begin{equation}
-\boxed{W_2 = \sqrt{\frac{\eta_R \left( 1 + f \right) R^*}{k_{is}^2} + \frac{\eta_s}{k_{is}^2}  \left(1 + R^* \right) - \frac{2 \sqrt{\eta_s}}{k_{is}} \sqrt{1 - R^*} \sin \alpha_1 + \bigg(\frac{r_2}{r_1} \bigg)^2 } }
+\boxed{W_2 = \sqrt{\frac{\eta_R \left( 1 + f \right) R^*}{k_{is}^2} + \frac{\eta_s}{k_{is}^2}  \left(1 - R^* \right) - \frac{2 \sqrt{\eta_s}}{k_{is}} \sqrt{1 - R^*} \sin \alpha_1 + \bigg(\frac{r_2}{r_1} \bigg)^2 } }
 \end{equation}
 \\Per quanto riguarda $C_{m2}$:
 \begin{align*}
@@ -157,7 +155,7 @@ ottenendo
 \end{equation}
 In questo modo è possibile scrivere il rendimento come funzionale di tutte le grandezze viste :
 \begin{align*}
-\eta = f \bigg( \psi, \Phi_E, R^*, k_{is}, f, \frac{c_{m2}}{c_{m1}}, \frac{r_2}{r_1}, \alpha_1, \eta_s, \eta_R \bigg)
+\boxed{\eta = f \bigg( \psi, \Phi_E, R^*, k_{is}, f, \frac{c_{m2}}{c_{m1}}, \frac{r_2}{r_1}, \alpha_1, \eta_s, \eta_R \bigg)}
 \end{align*}
 I primi quattro parametri sono parametri funzionali, $f$ dipende dalla divergenza delle isobare e quindi dalla natura del fluido, i tre parametri successivi sono parametri di progetto e infine gli ultimi due sono parametri della schiera rotorica e statorica.\\
 \'E possibile tracciare un diagramma di rendimento Total to Static / Total to Total in funzione del coefficiente di lavoro specifico ideale (figura \ref{fig:Rendimenti_ts_tt}). 
@@ -207,7 +205,9 @@ L'attraversamento del fluido attraverso la palettatura comporta una situazione m
 \caption{}
 \label{fig:SchierePaleTab}
 \end{figure}
-\\I profili a deflessione relativamente bassa, come quelli delle turbine a gas, si ricavano dalla somma di una distribuzione di spessori ad una linea media. Ci sono profili di diversa categoria e i valori sono ricavati in base a dei parametri di progettazione come mostrato in figura \ref{fig:SchierePaleTab}.\\
+
+I profili a deflessione relativamente bassa, come quelli delle turbine a gas, si ricavano dalla somma di una distribuzione di spessori ad una linea media. Ci sono profili di diversa categoria e i valori sono ricavati in base a dei parametri di progettazione come mostrato in figura \ref{fig:SchierePaleTab}.
+
 Nei profili ad alta deflessione, utilizzati soprattutto in macchine ad azione, la sezione è costituita da una carenatura ad arco di cerchio. Come si vede in figura \ref{fig:palaBassaDef}, la componente $w_1$ ha stesso modulo di $w_2$ e vi è semplicemente una deviazione nella direzione del secondo vettore. La palettatura è un arco di cerchio tangente alle due direzioni e presenta un inspessimento verso il centro per dare maggiore resistenza meccanica. La coda è tronca mentre il leading edge non può naturalmente esserlo e per questo viene arrotondato. 
 \begin{figure}
 \centering
@@ -216,9 +216,10 @@ Nei profili ad alta deflessione, utilizzati soprattutto in macchine ad azione, l
 \label{fig:palaBassaDef}
 \end{figure}
 
-In alcuni casi, come con turbine a vapore, gli effetti ci comprimibilità non sono trascurabili.\\
+In alcuni casi, come con turbine a vapore, gli effetti di comprimibilità non sono trascurabili.\\
 Come si può notare osservando la figura \ref{fig:SupSonic} in alto, nel caso sia presente un flusso subsonico si forma sul dorso del profilo isolato una zona supersonica con una discontinuità data da un'onda d'urto.\\
-Osservando invece le figura \ref{fig:SupSonic}, nel caso il flusso sia supersonico si verifica la formazione di un'onda d'urto prima del profilo isolato che porta quindi ad un incremento della sua resistenza al flusso; a valle si formano invece delle onde d'urto oblique.\\
+Osservando invece la figura \ref{fig:SupSonic} in basso, nel caso il flusso sia supersonico si verifica la formazione di un'onda d'urto prima del profilo isolato che porta quindi ad un incremento della sua resistenza al flusso; a valle si formano invece delle onde d'urto oblique.
+
 Considerando un insieme di pale in presenza di velocità supersonica del flusso, figura \ref{fig:PaleSup} a destra, a valle del condotto convergente si instaura un'onda d'urto e un sistema di onde oblique che va ad interagire con la palettatura del rotore posta a valle. \'E possibile distinguere un'onda normale sul condotto (a) e un'onda obliqua a valle (b). Si tratta di un sistema complicato di onde d'urto. Per stabilizzare il comportamento della palettatura si utilizzerà quindi un leading edge appuntito.
 \begin{figure}
 \centering
@@ -244,7 +245,7 @@ Considerando un insieme di pale in presenza di velocità supersonica del flusso,
 
 \section{Prestazioni della schiera}
 Definiti i triangoli di velocità si cerca ora il coefficiente di perdita in uscita e l'angolo in uscita. In prima approssimazione si possono trascurare $Ma$ e $Re$.
-\begin{figure}
+\begin{figure}[h!]
 \centering
   \includegraphics[width=\textwidth]{fig/PrestSchieraTurb.pdf}
 \caption{}
@@ -257,7 +258,7 @@ Stabilire l'angolo del fluido in uscita non è ovvio: in presenza di una deviazi
 \end{align*}
 $\alpha_2$ è poco variabile al variare dell'incidenza; si rileva un comportamento abbastanza costante anche per il primo tratto del coefficiente di perdita.
 
-\'E noto che l'angolo di flusso non sarà esattamento pari all'angolo di pala:
+\'E noto che l'angolo di flusso non sarà esattamente pari all'angolo di pala:
 \begin{align*}
 \cos \alpha_1 = \frac{1}{k} \cos \alpha_1^*
 \end{align*}
@@ -291,21 +292,20 @@ I coefficienti di perdita di energia adimensionalizzati rispetto l'energia cinet
 Si cercano ora dei coefficienti funzione di:
 \begin{itemize}
 \item deflessione cinematica: $\Delta \alpha$ statore, $\Delta \beta$ rotore;
-\item numero di Reynolds: $Re = \cfrac{D_i c_1}{\nu}$
-con $D_i$ diametro idraulico della sezione\footnote{Diametro bagnato dal fluido: \begin{align*}
+\item numero di Reynolds: $Re = \cfrac{D_i c_1 }{\nu}$
+con $D_i$ diametro idraulico della sezione\footnote{ Diametro bagnato dal fluido: \begin{align*}
 D_{i} = \frac{2 h s \cos \alpha_1}{h + s \cos \alpha_1} \mbox{ per lo statore}, \;\; D_{i} = \frac{2 h s \cos \beta_2}{h + s \cos \beta_2} \mbox{ per il rotore}
 \end{align*} con $h$ altezza della pala.};
 \item allungamento della pala $h/b$;
 \item $t_{max}/c$.
 \end{itemize}
-Le correlazioni sono espresse rispetto ad una perdita $\xi^*$ (figura \ref{fig:Soderberg}) rispetto ad una palettatura di riferimento:
+Le correlazioni sono espresse rispetto ad una perdita $\xi^*$ (figura \ref{fig:Soderberg}) in funzione della deflessione cinematica $\varepsilon$ al variare del rapporto $t_{max}/c$. Si tratta di una sintesi di dati sperimentali di una palettatura di riferimento ricavati in galleria del vento.
 \begin{align*}
 \begin{cases}
 \xi = \bigg( \cfrac{10^5}{Re} \bigg)^{0.25} \bigg[ \left( 1 + \xi^* \right) \bigg ( 0.975 + 0.075 \cfrac{h}{b} \bigg) -1 \bigg] & \mbox{per lo statore} \\
 \xi = \bigg( \cfrac{10^5}{Re} \bigg)^{0.25} \bigg[ \left( 1 + \xi^* \right) \bigg ( 0.993 + 0.021 \cfrac{h}{b} \bigg) -1 \bigg] & \mbox{per il rotore}
 \end{cases}
 \end{align*}
-In figura \ref{fig:Soderberg} si vede che è possibile ottenere i valori di $\xi^*$ in funzione della deflessione cinematica $\varepsilon$ al variare del rapporto $t_{max}/c$. Si tratta di una sintesi di dati sperimentali ricavati in galleria del vento.
 \begin{figure}
 \centering
   \includegraphics[width=\textwidth]{fig/Soderberg.pdf}
@@ -366,14 +366,13 @@ Y_S + Y_G = \Big( \lambda + B \frac{\delta}{k} \Big) \Bigg( \frac{c_L}{\frac{s}{
 \end{align*}
 con
 \begin{itemize}
-\item $B = 0.5$ per pale ``libere";
-\item $B = 0.25$ per pale ``cerchiate";
+\item $B = 0.5$ per pale ``libere", $B = 0.25$ per pale ``cerchiate";
 \item $h$ altezza della pala;
 \item $\delta$ gioco radiale;
-\item $\lambda$ un coefficiente sperimentale in funzione di $\theta$ secondo il grafico \ref{fig:lambdaPerditeSchiera}. $\theta$ è definito come:
+\item $\lambda$ un coefficiente sperimentale in funzione di $\Theta$ secondo il grafico \ref{fig:lambdaPerditeSchiera}. $\Theta$ è definito come:
 \end{itemize}
 \begin{align*}
-\theta = \cfrac{\bigg(\cfrac{A_1}{A_0}\bigg)^2}{1- \cfrac{D_i}{D_e}}
+\Theta = \cfrac{\bigg(\cfrac{A_1}{A_0}\bigg)^2}{1- \cfrac{D_i}{D_e}}
 \end{align*}
 \begin{figure}
 \centering
@@ -397,12 +396,13 @@ In questo modo si vanno quindi a calcolare le perdite in condizioni fuori proget
 \caption{}
 \label{fig:Ainley}
 \end{figure}
-Una volta determinata la schiera è opportuno verificare con un criterio di carico se la solidità scelta è sostenibile o meno. Per esempio con molte pale aumentano le perdite perché aumenta la superficie bagnata ma per contro si riesce a realizzare meglio la variazione d'angolo che è quella che da momento alla turbina.\\
+Una volta determinata la schiera è opportuno verificare con un criterio di carico se la solidità scelta è sostenibile o meno. Per esempio con molte pale aumentano le perdite perché aumenta la superficie bagnata ma per contro si riesce a realizzare meglio la variazione d'angolo che è quella che da momento alla turbina.
+
 In figura \ref{fig:Ainley} sono illustrati i diversi criteri di carico. I criteri di Zweifel impongono un vincolo sul rapporto tra forza tangenziale e una forza tangenziale ideale:
 \begin{align*}
 \cfrac{F_t}{F_{t,id}} = \cfrac{F_t}{\cfrac{1}{2} \rho b c_1^2} = c_{F_t} = 2 \cos^2 \alpha_1 \bigg(\cfrac{c_{m0}}{c_{m1}} \tan \alpha_0 - \tan \alpha_1 \bigg) \cfrac{s}{b} = 0.8
 \end{align*}
-In figura \ref{fig:CritCaricoT} è rappresentata in rosso l'area formata dall'andamento delle pressioni ideale nell'attraversamento del fluido nel canale interpalare; viene poi evidenziata l'area formata dall'andamento reale in grigio scuro. Il loro rapporto è appunto il rapporto tra le forze tangenziali.
+In figura \ref{fig:CritCaricoT} è rappresentata in rosso l'area formata dall'andamento delle pressioni ideali nell'attraversamento del fluido nel canale interpalare; viene poi evidenziata l'area formata dall'andamento reale in grigio scuro. Il loro rapporto è appunto il rapporto tra le forze tangenziali.
 \begin{figure}[h!]
 \centering
   \includegraphics[width=0.95\textwidth]{fig/CritCaricoT.pdf}
