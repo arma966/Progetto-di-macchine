@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.25)  15 JUN 2020 09:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.25)  15 JUN 2020 17:40
 entering extended mode
 **./ProgettoMacchine2020.tex
 (ProgettoMacchine2020.tex
@@ -1259,13 +1259,13 @@ File: fig/VorticeLibero.pdf Graphic file (type pdf)
 <use fig/VorticeLibero.pdf>
 Package pdftex.def Info: fig/VorticeLibero.pdf  used on input line 618.
 (pdftex.def)             Requested size: 258.75pt x 196.48067pt.
- [37 <./fig/VorticeLibero.pdf>] [38]
-<fig/VortForz.pdf, id=1235, 598.03731pt x 522.66887pt>
+ [37 <./fig/VorticeLibero.pdf>]
+<fig/VortForz.pdf, id=1226, 598.03731pt x 522.66887pt>
 File: fig/VortForz.pdf Graphic file (type pdf)
 <use fig/VortForz.pdf>
-Package pdftex.def Info: fig/VortForz.pdf  used on input line 700.
+Package pdftex.def Info: fig/VortForz.pdf  used on input line 675.
 (pdftex.def)             Requested size: 276.00105pt x 241.21217pt.
- [39 <./fig/VortForz.pdf>]
+ [38] [39 <./fig/VortForz.pdf>]
 <fig/PVortForz.pdf, id=1264, 558.58687pt x 490.0809pt>
 File: fig/PVortForz.pdf Graphic file (type pdf)
 <use fig/PVortForz.pdf>
@@ -1910,7 +1910,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  21690 strings out of 492969
  407584 string characters out of 3126585
- 462309 words of memory out of 3000000
+ 462311 words of memory out of 3000000
  24819 multiletter control sequences out of 15000+200000
  544933 words of font info for 73 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1943,7 +1943,7 @@ ic/amsfonts/cm/cmsy7.pfb><C:/Users/giona/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/giona/AppData/Local/Programs/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Users/giona/AppDat
 a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ProgettoMacchine2020.pdf (112 pages, 5596566 bytes).
+Output written on ProgettoMacchine2020.pdf (112 pages, 5596528 bytes).
 PDF statistics:
  3076 PDF objects out of 3580 (max. 8388607)
  404 named destinations out of 1000 (max. 500000)
