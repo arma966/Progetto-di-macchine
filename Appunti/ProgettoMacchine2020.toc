@@ -50,7 +50,7 @@
 \contentsline {section}{\numberline {5.1}Introduzione}{87}{section.5.1}
 \contentsline {section}{\numberline {5.2}Il teorema di Betz}{87}{section.5.2}
 \contentsline {section}{\numberline {5.3}Definizione del problema}{89}{section.5.3}
-\contentsline {section}{\numberline {5.4}Teoria del tubo di flusso anulare con scia vorticosa}{92}{section.5.4}
+\contentsline {section}{\numberline {5.4}Teoria del tubo di flusso anulare con scia vorticosa}{91}{section.5.4}
 \contentsline {section}{\numberline {5.5}Forze aerodinamiche sull'elemento di pala}{96}{section.5.5}
 \contentsline {subsection}{\numberline {5.5.1}Variazione ottimale di $\theta $}{101}{subsection.5.5.1}
 \contentsline {subsection}{\numberline {5.5.2}Variazione ottimale del prodotto $\sigma _l C_z$}{103}{subsection.5.5.2}

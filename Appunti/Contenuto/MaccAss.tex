@@ -248,7 +248,7 @@ Si trova il rapporto:
 		\label{fig:forzaKJ}
 	\end{minipage}
 \end{figure}
-Questo parallelismo tra forze e velocità ci permette di individuare le forze agenti su una schiera di un compressore, figura \ref{fig:forzaKJ}. La forza risultante $F$ è perciò ortogonale a $V_\infty$ e vale:
+Questo parallelismo tra forze e velocità permette di individuare le forze agenti su una schiera di un compressore, figura \ref{fig:forzaKJ}. La forza risultante $F$ è perciò ortogonale a $V_\infty$ e vale:
 \begin{equation}\label{eq:f_kutta_J}
 F=\frac{F_t}{\cos \alpha_{\infty}}=\rho \frac{V_a}{\cos \alpha_{\infty}}s(V_{1t}-V_{2t})=\rho V_\infty s (V_{1t}-V_{2t})=L
 \end{equation}
@@ -513,7 +513,7 @@ Con i capitoli precedenti è stato trattato cosa succede nell'attraversamento de
 	\label{fig:concio}
 \end{figure}
 
-Si consideri l'elemento di fluido $dz - d\theta - dr$, figura \ref{fig:concio}, su cui agiscono le forze di pressione. Si calcoli l'equilibrio delle forze:
+Si consideri l'elemento di fluido $d\theta - dr - dz$, figura \ref{fig:concio}, su cui agiscono le forze di pressione. Si calcoli l'equilibrio delle forze:
 \begin{align*}
 \left( P + \cfrac{dP}{dr} dr \right) (r + dr) d \theta dz - Pr d \theta dz -2P dr dz \sin \frac{d \theta}{2} = r \frac{dP}{dr} dr d \theta dz
 \end{align*}
@@ -669,6 +669,13 @@ si può scrivere la \ref{eq:SolCost} nella forma completa:
 \boxed{ \bigg( \frac{V_a}{V_{ai}} \bigg)^2 = 1- 2 \tan^2 \alpha_i \bigg[ \bigg( \frac{r}{r_i} \bigg)^2 -1 \bigg] }
 \label{eq:RappVol}
 \end{equation}
+Questo significa che a seconda dell'angolo $\alpha_i$, la distribuzione delle velocità assiali non è più uniforme lungo il raggio; si vede chiaramente questo comportamento nel diagramma in Figura \ref{fig:TurboFan}.
+\begin{figure}
+	\centering
+	\includegraphics[width=.8\textwidth]{fig/VortForz.pdf}
+	\caption{Velocità assiale in funzione del raggio per un flusso a vortice forzato}
+	\label{fig:TurboFan}
+\end{figure}
 
 Si prosegue e si determina anche l'andamento dell'entalpia in funzione del raggio. Si ricorda l'espressione per l'entalpia totale:
 \begin{align*}
@@ -694,17 +701,10 @@ si perviene a:
 \boxed{ \frac{h}{h_i} = 1+ \frac{V_{ti}^2}{2h_i} \bigg[ \bigg( \frac{r}{r_i} \bigg)^2 -1 \bigg] }
 \label{eq:rappEntalpie}
 \end{equation}
-Questo significa che a seconda dell'angolo $\alpha_i$, la distribuzione delle velocità assiali non è più uniforme lungo il raggio; si vede chiaramente questo comportamento nel diagramma in Figura \ref{fig:TurboFan}.
-\begin{figure}
-\centering
-  \includegraphics[width=.8\textwidth]{fig/VortForz.pdf}
-\caption{Velocità assiale in funzione del raggio per un flusso a vortice forzato}
-\label{fig:TurboFan}
-\end{figure}
 
 Naturalmente si può ricavare l'andamento delle pressioni (Figura \ref{fig:PVortForz}) e delle entalpie ricordando che:
 \begin{align*}
-\frac{p}{p_i} = \Bigg(\frac{h}{h_i}\Bigg)^{\frac{k}{k-1}}
+\frac{p}{p_i} = \Bigg(\frac{h}{h_i}\Bigg)^{\frac{\gamma}{\gamma-1}}
 \end{align*}
 \begin{figure}
 \centering
@@ -722,7 +722,7 @@ Sebbene non si realizzerà mai una macchina con vortice forzato, nel caso il dia
 \subsection{A valle del vortice forzato}
 Cosa succede però a valle della palettatura dopo aver attraversato un vortice forzato? Si impone la condizione di entalpia totale costante al variare del raggio a monte:
 \begin{align*}
-\frac{dh_{0}}{dr} = 0
+\frac{dh_{01}}{dr} = 0
 \end{align*}
 e si vuole valutare se si conserva nella sezione successiva.
 \begin{center}
@@ -744,7 +744,7 @@ L_u=h_{02} - h_{01} &= u (V_{t2} - V_{t1} ) = \omega r (K_2 r - K_1 r) \\
 \end{align*}
 ovvero $\Delta h \propto r^2 \; \Rightarrow \; h_{02} \neq  cost$. Quindi attraversando la macchina, a seconda del raggio a cui ci si trova, cambia il lavoro scambiato dalla macchina; questa condizione è pressoché impossibile da mantenere in fase di progettazione e per questo non si utilizza il vortice forzato in questa fase del progetto.
 
-Si vede ora cosa succede calcolando il differenziale dell'entalpia rispetto al raggio:
+Si vede ora cosa succede calcolando il differenziale della differenza di entalpia totale rispetto al raggio:
 \begin{align*}
 \begin{split}
 \cfrac{d \Delta h_{012}}{dr} &= \cfrac{d ( h_{02}-h_{01})}{dr} = \cfrac{dh_{02}}{dr} = V_a \cfrac{dV_{a2}}{dr} + \cfrac{V_{t2}}{r} \cfrac{d}{dr} (V_{t2} \cdot r) = \\
