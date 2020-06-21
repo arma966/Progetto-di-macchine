@@ -878,27 +878,27 @@ Considerando una sezione anulare piccola, quindi $V_a = cost$, si scrive:
 \begin{equation}\label{eq:portanulare}
 \Phi = \frac{\rho}{\rho_0} \frac{V_a}{a_0}
 \end{equation}
-La definizione \ref{eq:portanulare} rappresenta la portata adimensionalizzata rispetto le condizioni di ristagno a monte sotto l'ipotesi di gas perfetto ($p = \rho RT$) e flusso isoentropico ($p \rho^{-k} = cost$); si analizzano i rapporti che compaiono in questa definizione. Combinando le ipotesi di gas perfetto e flusso isoentropico si può scrivere:
+La definizione \ref{eq:portanulare} rappresenta la portata adimensionalizzata rispetto le condizioni di ristagno a monte sotto l'ipotesi di gas perfetto ($p = \rho RT$) e flusso isoentropico ($p \rho^{-\gamma} = cost$); si analizzano i rapporti che compaiono in questa definizione. Combinando le ipotesi di gas perfetto e flusso isoentropico si può scrivere:
 \begin{align*}
-\frac{\rho}{\rho_0} = \bigg( \frac{T}{T_0} \bigg)^{\frac{1}{k-1}} 
+\frac{\rho}{\rho_0} = \bigg( \frac{T}{T_0} \bigg)^{\frac{1}{\gamma-1}} 
 \end{align*}
 ma scrivendo:
 \begin{align*}
 \begin{cases}
-a = \sqrt{kRT}\\
-a_0 = \sqrt{kRT_0}
+a = \sqrt{\gamma RT}\\
+a_0 = \sqrt{\gamma RT_0}
 \end{cases}
-\;\;\;\; \rightarrow \;\;\;\; \frac{\rho}{\rho_0} = \bigg( \frac{a}{a_0} \bigg)^{\frac{2}{k-1}}
+\;\;\;\; \rightarrow \;\;\;\; \frac{\rho}{\rho_0} = \bigg( \frac{a}{a_0} \bigg)^{\frac{2}{\gamma-1}}
 \end{align*}
 Si sviluppa ora il secondo rapporto:
 \begin{align*}
-V^2 = 2 (h_0 - h) = 2 c_p (T_0 - T) = 2 \frac{c_p}{kR} (a_0^2 - a^2)
+V^2 = 2 (h_0 - h) = 2 c_p (T_0 - T) = 2 \frac{c_p}{\gamma R} (a_0^2 - a^2)
 \end{align*}
 \begin{align*}
-\frac{V^2}{a_0^2} = \frac{2}{k-1} \bigg[ 1- \bigg( \frac{a}{a_0} \bigg)^2 \bigg] = \frac{V_a^2 + V_t^2}{a_0^2}
+\frac{V^2}{a_0^2} = \frac{2}{\gamma -1} \bigg[ 1- \bigg( \frac{a}{a_0} \bigg)^2 \bigg] = \frac{V_a^2 + V_t^2}{a_0^2}
 \end{align*}
 \begin{align*}
-\frac{V_a}{a_0} = \sqrt{\frac{2}{k-1} \bigg[ 1- \bigg( \frac{a}{a_0} \bigg)^2 \bigg] - \bigg( \frac{V_t}{a_0} \bigg)^2}
+\frac{V_a}{a_0} = \sqrt{\frac{2}{\gamma -1} \bigg[ 1- \bigg( \frac{a}{a_0} \bigg)^2 \bigg] - \bigg( \frac{V_t}{a_0} \bigg)^2}
 \end{align*}
 Sostituendo nell'espressione della portata risulta:
 \begin{align*}
@@ -907,7 +907,7 @@ Sostituendo nell'espressione della portata risulta:
 
 Si cerca ora il rapporto critico tra le velocità soniche che massimizzano la portata adimensionalizzata. Se la componente di velocità tangenziale fosse nulla e quindi moto monodimensionale, l'espressione sarebbe quella della velocità critica di un condotto convergente in cui si arriva alla condizione di choking.
 \begin{align*}
-\frac{d\Phi}{d \bigg( \cfrac{a}{a_0} \bigg)}=0 \;\;\;\; \Rightarrow \;\;\;\; \boxed{ \frac{a^*}{a_0} = \sqrt{\frac{2}{k+1} - \frac{k-1}{k+1} \bigg( \frac{V_t}{a_0} \bigg)^2} }
+\frac{d\Phi}{d \bigg( \cfrac{a}{a_0} \bigg)}=0 \;\;\;\; \Rightarrow \;\;\;\; \boxed{ \frac{a^*}{a_0} = \sqrt{\frac{2}{\gamma+1} - \frac{\gamma-1}{\gamma+1} \bigg( \frac{V_t}{a_0} \bigg)^2} }
 \end{align*}
 con
 \begin{align*}
