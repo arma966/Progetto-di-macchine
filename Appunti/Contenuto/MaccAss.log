@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.8)  21 JUN 2020 14:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.8)  22 JUN 2020 17:38
 entering extended mode
 **./MaccAss.tex
 (MaccAss.tex
@@ -38058,7 +38058,7 @@ or  <return>  to continue without it.
 <inserted text> 
                 $
 l.883 \frac{\rho}{\rho_0}
-                          = \bigg( \frac{T}{T_0} \bigg)^{\frac{1}{k-1}}
+                          = \bigg( \frac{T}{T_0} \bigg)^{\frac{1}{\gamma-1}}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -38066,7 +38066,7 @@ you left one out. Proceed, with fingers crossed.
 <inserted text> 
                 $
 l.883 \frac{\rho}{\rho_0}
-                          = \bigg( \frac{T}{T_0} \bigg)^{\frac{1}{k-1}}
+                          = \bigg( \frac{T}{T_0} \bigg)^{\frac{1}{\gamma-1}}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -38077,7 +38077,7 @@ my insertion and my current dilemma will both disappear.
 <inserted text> 
                 $
 l.883 \frac{\rho}{\rho_0}
-                          = \bigg( \frac{T}{T_0} \bigg)^{\frac{1}{k-1}}
+                          = \bigg( \frac{T}{T_0} \bigg)^{\frac{1}{\gamma-1}}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -38085,7 +38085,7 @@ you left one out. Proceed, with fingers crossed.
 \frac  #1#2->{\begingroup #1\endgroup \over #2}
                                                
 l.883 \frac{\rho}{\rho_0}
-                          = \bigg( \frac{T}{T_0} \bigg)^{\frac{1}{k-1}}
+                          = \bigg( \frac{T}{T_0} \bigg)^{\frac{1}{\gamma-1}}
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
@@ -38562,7 +38562,7 @@ Overfull \hbox (20.07295pt too wide) in paragraph at lines 880--907
  []
 
 
-Overfull \hbox (31.9271pt too wide) in paragraph at lines 880--907
+Overfull \hbox (32.138pt too wide) in paragraph at lines 880--907
 \OML/cmm/m/it/10 p[] \/cmr/m/n/10 =
  []
 
@@ -38577,7 +38577,7 @@ Overfull \hbox (5.00002pt too wide) in paragraph at lines 880--907
  []
 
 
-Overfull \hbox (62.53864pt too wide) in paragraph at lines 880--907
+Overfull \hbox (62.7488pt too wide) in paragraph at lines 880--907
 \OML/cmm/m/it/10 $$[]$
  []
 
