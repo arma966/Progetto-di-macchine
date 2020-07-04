@@ -147,7 +147,7 @@ Nel sistema di riferimento relativo, figura \ref{fig:LDref} e \ref{fig:triang1},
 \caption{}
 \label{fig:triang1}
 \end{figure}
-Risulta quindi possibile scrivere le espressioni di lift e drag in funzione delle forze nelle componenti assiale e tangenziale e viceversa:
+Risulta quindi possibile scrivere le espressioni di lift e drag in funzione delle forze nelle componenti assiale e tangenziale e viceversa\footnote{Questa relazione vale solo per al schiera di compressione.}
 \begin{equation}\label{eq:c_L}
 	\begin{cases} 
 		L = F_t \cos \alpha_{\infty} -  F_a \sin \alpha_{\infty}\\
@@ -620,7 +620,7 @@ Si possono ora diagrammare, nelle condizioni di vortice libero, tutte le espress
 \label{fig:VorticeLibero}
 \end{figure}
 \section{Vortice forzato}
-Questo tipo di condizione non si realizza nella realtà nelle fasi di progettazione della macchina o nel suo funzionamento. Tuttavia viene utilizzato per mitigare le problematiche relative al vortice libero introducendo una distribuzione di velocità diversa da quella prevista dal vortice libero.
+Questo tipo di condizione non si realizza nella realtà, nelle fasi di progettazione della macchina o nel suo funzionamento. Tuttavia viene utilizzato per mitigare le problematiche relative al vortice libero introducendo una distribuzione di velocità differente.
 
 Condizione di vortice forzato:
 \begin{equation}
@@ -714,7 +714,7 @@ Naturalmente si può ricavare l'andamento delle pressioni (Figura \ref{fig:PVort
 \end{figure}
 \\Come nel caso del vortice libero, ricordando le condizioni \ref{eq:condgasperf}, si può scrivere:
 \begin{align*}
-\boxed{\frac{h}{h_i} = 1 + \frac{k-1}{2} M_{ti}^2 \bigg[ \bigg(\frac{r}{r_i} \bigg)^2-1 \bigg]}
+\boxed{\frac{h}{h_i} = 1 + \frac{\gamma-1}{2} M_{ti}^2 \bigg[ \bigg(\frac{r}{r_i} \bigg)^2-1 \bigg]}
 \end{align*}
 \\L'entalpia varia con il rapporto dei raggi in maniera quadratica e con una costante che dipende dal numero di Mach tangenziale. Si vede che con raggio pari a $0$ le pressioni non sono nulle (al contrario del caso di vortice libero).
 
@@ -747,7 +747,7 @@ ovvero $\Delta h \propto r^2 \; \Rightarrow \; h_{02} \neq  cost$. Quindi attrav
 Si vede ora cosa succede calcolando il differenziale della differenza di entalpia totale rispetto al raggio:
 \begin{align*}
 \begin{split}
-\cfrac{d \Delta h_{012}}{dr} &= \cfrac{d ( h_{02}-h_{01})}{dr} = \cfrac{dh_{02}}{dr} = V_a \cfrac{dV_{a2}}{dr} + \cfrac{V_{t2}}{r} \cfrac{d}{dr} (V_{t2} \cdot r) = \\
+\cfrac{d \Delta h_{012}}{dr} &= \cfrac{d ( h_{02}-h_{01})}{dr} = \cfrac{dh_{02}}{dr} = V_{a2} \cfrac{dV_{a2}}{dr} + \cfrac{V_{t2}}{r} \cfrac{d}{dr} (V_{t2} \cdot r) = \\
 & =2 \omega (K_2 - K_1) r = \cfrac{d}{dr} \bigg( \cfrac{V_{a2}^2}{2} \bigg) + K_2 \cfrac{d}{dr} (K_2 r^2)
 \end{split}
 \end{align*}
@@ -911,7 +911,7 @@ Si cerca ora il rapporto critico tra le velocità soniche che massimizzano la po
 \end{align*}
 con
 \begin{align*}
-Ma^* = \bigg( \frac{V_a}{a} \bigg)^* = 1
+Ma^* = \bigg( \frac{V_a}{a_0} \bigg)^* = 1
 \end{align*}
 
 Diagrammando $\Phi$ in funzione della pressione e delle diverse componenti tangenziali risulta un andamento elicoidale (figura \ref{fd:PortCondAn}).

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.8)  22 JUN 2020 17:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.8)  1 JUL 2020 09:16
 entering extended mode
 **./MaccAss.tex
 (MaccAss.tex
@@ -8393,7 +8393,88 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no : in font nullfont!
+! Undefined control sequence.
+\@footnotetext ...tins {\reset@font \footnotesize 
+                                                  \interlinepenalty \interfo...
+l.150 ...ale solo per al schiera di compressione.}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@footnotetext ...}\color@begingroup \@makefntext 
+                                                  {\rule \z@ \footnotesep \i...
+l.150 ...ale solo per al schiera di compressione.}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (30.61118pt too wide) in paragraph at lines 150--150
+[][]\/cmr/m/n/10 Questa
+ []
+
+
+Overfull \hbox (11.69444pt too wide) in paragraph at lines 150--150
+\/cmr/m/n/10 re-
+ []
+
+
+Overfull \hbox (30.00006pt too wide) in paragraph at lines 150--150
+\/cmr/m/n/10 lazione
+ []
+
+
+Overfull \hbox (16.94449pt too wide) in paragraph at lines 150--150
+\/cmr/m/n/10 vale
+ []
+
+
+Overfull \hbox (16.72226pt too wide) in paragraph at lines 150--150
+\/cmr/m/n/10 solo
+ []
+
+
+Overfull \hbox (14.19447pt too wide) in paragraph at lines 150--150
+\/cmr/m/n/10 per
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 150--150
+\/cmr/m/n/10 al
+ []
+
+
+Overfull \hbox (29.80559pt too wide) in paragraph at lines 150--150
+\/cmr/m/n/10 schiera
+ []
+
+
+Overfull \hbox (8.33336pt too wide) in paragraph at lines 150--150
+\/cmr/m/n/10 di
+ []
+
+
+Overfull \hbox (21.11115pt too wide) in paragraph at lines 150--150
+\/cmr/m/n/10 com-
+ []
+
+
+Overfull \hbox (21.19446pt too wide) in paragraph at lines 150--150
+\/cmr/m/n/10 pres-
+ []
+
+
+Overfull \hbox (24.50005pt too wide) in paragraph at lines 150--150
+\/cmr/m/n/10 sione.| 
+ []
+
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 109--151
   \/cmr/m/n/10 e
@@ -8693,6 +8774,11 @@ Overfull \hbox (5.00002pt too wide) in paragraph at lines 109--151
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 109--151
 \/cmr/m/n/10 e
+ []
+
+
+Overfull \hbox (4.48613pt too wide) in paragraph at lines 109--151
+[] 
  []
 
 
@@ -27928,6 +28014,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -28097,43 +28184,14 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no i in font nullfont!
-Missing character: There is no v in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no f in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no c in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 611--624
@@ -30641,7 +30699,7 @@ or  <return>  to continue without it.
 
 ! Undefined control sequence.
 l.717 \boxed
-            {\frac{h}{h_i} = 1 + \frac{k-1}{2} M_{ti}^2 \bigg[ \bigg(\frac{r...
+            {\frac{h}{h_i} = 1 + \frac{\gamma-1}{2} M_{ti}^2 \bigg[ \bigg(\f...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -30653,7 +30711,7 @@ Missing character: There is no h in font nullfont!
 <inserted text> 
                 $
 l.717 \boxed{\frac{h}{h_i}
-                           = 1 + \frac{k-1}{2} M_{ti}^2 \bigg[ \bigg(\frac{r...
+                           = 1 + \frac{\gamma-1}{2} M_{ti}^2 \bigg[ \bigg(\f...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -30661,7 +30719,7 @@ you left one out. Proceed, with fingers crossed.
 \frac  #1#2->{\begingroup #1\endgroup \over #2}
                                                
 l.717 \boxed{\frac{h}{h_i}
-                           = 1 + \frac{k-1}{2} M_{ti}^2 \bigg[ \bigg(\frac{r...
+                           = 1 + \frac{\gamma-1}{2} M_{ti}^2 \bigg[ \bigg(\f...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
@@ -30943,7 +31001,7 @@ Overfull \hbox (5.00002pt too wide) in paragraph at lines 705--720
  []
 
 
-Overfull \hbox (103.5578pt too wide) in paragraph at lines 705--720
+Overfull \hbox (103.76796pt too wide) in paragraph at lines 705--720
 []$ 
  []
 
@@ -32439,7 +32497,7 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.750 ...= \cfrac{d ( h_{02}-h_{01})}{dr} = \cfrac
-                                                  {dh_{02}}{dr} = V_a \cfrac...
+                                                  {dh_{02}}{dr} = V_{a2} \cf...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -32447,7 +32505,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.750 ...)}{dr} = \cfrac{dh_{02}}{dr} = V_a \cfrac
+l.750 ...dr} = \cfrac{dh_{02}}{dr} = V_{a2} \cfrac
                                                   {dV_{a2}}{dr} + \cfrac{V_{...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -32456,7 +32514,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.750 ...}}{dr} = V_a \cfrac{dV_{a2}}{dr} + \cfrac
+l.750 ...dr} = V_{a2} \cfrac{dV_{a2}}{dr} + \cfrac
                                                   {V_{t2}}{r} \cfrac{d}{dr} ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -32701,7 +32759,7 @@ Overfull \hbox (39.98845pt too wide) in paragraph at lines 747--755
  []
 
 
-Overfull \hbox (48.30498pt too wide) in paragraph at lines 747--755
+Overfull \hbox (52.2911pt too wide) in paragraph at lines 747--755
 \OML/cmm/m/it/10 V[][][] \/cmr/m/n/10 +
  []
 
@@ -39072,7 +39130,7 @@ Missing character: There is no a in font nullfont!
 <inserted text> 
                 $
 l.914 Ma^
-         * = \bigg( \frac{V_a}{a} \bigg)^* = 1
+         * = \bigg( \frac{V_a}{a_0} \bigg)^* = 1
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 

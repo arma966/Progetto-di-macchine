@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.8)  22 JUN 2020 12:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.8)  1 JUL 2020 21:38
 entering extended mode
 **./ComprAss.tex
 (ComprAss.tex
@@ -10379,8 +10379,13 @@ Overfull \hbox (57.25037pt too wide) in paragraph at lines 227--255
  []
 
 
-Overfull \hbox (29.85464pt too wide) in paragraph at lines 227--255
-[]$
+Overfull \hbox (32.63243pt too wide) in paragraph at lines 227--255
+[] \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (7.22223pt too wide) in paragraph at lines 227--255
+\/cmr/m/n/10 $
  []
 
 
@@ -10409,8 +10414,13 @@ Overfull \hbox (59.22128pt too wide) in paragraph at lines 227--255
  []
 
 
-Overfull \hbox (45.60643pt too wide) in paragraph at lines 227--255
-[]$
+Overfull \hbox (48.38422pt too wide) in paragraph at lines 227--255
+[] \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (7.22223pt too wide) in paragraph at lines 227--255
+\/cmr/m/n/10 $
  []
 
 
@@ -10419,9 +10429,9 @@ Overfull \hbox (5.83336pt too wide) in paragraph at lines 227--255
  []
 
 
-Overfull \hbox (180.46507pt too wide) detected at line 257
+Overfull \hbox (190.46509pt too wide) detected at line 257
 \/cmr/m/n/10 \OML/cmm/m/it/10 p \/cmr/m/n/10 = []\OML/cmm/m/it/10 u[][][] \/
-cmr/m/n/10 + [][]
+cmr/m/n/10 + [][] \OMS/cmsy/m/n/10  \/cmr/m/n/10 
  []
 
 Missing character: There is no I in font nullfont!
@@ -10508,8 +10518,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (143.33276pt too wide) detected at line 261
-[]
+Overfull \hbox (153.33278pt too wide) detected at line 261
+[] \OMS/cmsy/m/n/10  \/cmr/m/n/10 
  []
 
 Missing character: There is no S in font nullfont!
@@ -18078,8 +18088,6 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no h in font nullfont!
-Missing character: There is no M in font nullfont!
-Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -18137,8 +18145,10 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no M in font nullfont!
-Missing character: There is no a in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no R in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -18756,6 +18766,11 @@ Overfull \hbox (8191.99997pt too wide) in paragraph at lines 406--438
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 406--438
 \/cmr/m/n/10 e
+ []
+
+
+Overfull \hbox (16.07755pt too wide) in paragraph at lines 406--438
+\OML/cmm/m/it/10 Ma$
  []
 
 
@@ -21007,7 +21022,7 @@ or  <return>  to continue without it.
 <inserted text> 
                 $
 l.491 \Delta
-             M = \int_0^{\delta} \rho u dy (U-u) = \rho \int_0^{\delta} u (U...
+             M = \int_0^{\delta} \rho u (U-u) dy = \rho \int_0^{\delta} u (U...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -21216,13 +21231,13 @@ Overfull \hbox (29.68053pt too wide) in paragraph at lines 489--494
  []
 
 
-Overfull \hbox (53.66777pt too wide) in paragraph at lines 489--494
-[][] \OML/cmm/m/it/10 udy\/cmr/m/n/10 (\OML/cmm/m/it/10 U \OMS/cmsy/m/n/10  
+Overfull \hbox (43.20131pt too wide) in paragraph at lines 489--494
+[][] \OML/cmm/m/it/10 u\/cmr/m/n/10 (\OML/cmm/m/it/10 U \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (20.16899pt too wide) in paragraph at lines 489--494
-\OML/cmm/m/it/10 u\/cmr/m/n/10 ) =
+Overfull \hbox (30.63545pt too wide) in paragraph at lines 489--494
+\OML/cmm/m/it/10 u\/cmr/m/n/10 )\OML/cmm/m/it/10 dy \/cmr/m/n/10 =
  []
 
 
@@ -23457,9 +23472,9 @@ or  <return>  to continue without it.
 Here is how much of TeX's memory you used:
  77 strings out of 480799
  1182 string characters out of 2907382
- 268747 words of memory out of 3000000
+ 269747 words of memory out of 3000000
  16178 multiletter control sequences out of 15000+200000
  532992 words of font info for 26 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 18i,9n,16p,662b,176s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 18i,9n,16p,666b,176s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!
