@@ -129,15 +129,15 @@ ottenendo
 \label{eq:W1}
 \end{equation}
 
-Per quanto riguarda $W_2$, si considera il salto entalpico e lo si esprime in funzione del fattore di recupero $f$:
+Per quanto riguarda $W_2$, si considera il salto entalpico (dalla conservazione della rotalpia) e lo si esprime in funzione del fattore di recupero $f$:
 \begin{equation}
-h_2 - h_1 = \frac{u_2^2 - u_1^2}{2} - \frac{w_2^2 - w_1^2}{2}
+h_1 - h_2 = \frac{u_1^2 - u_2^2}{2} - \frac{w_1^2 - w_2^2}{2}
 \end{equation}
 \begin{align*}
 h_1 - h_2 = \frac{c_i^2}{2} \cdot R^* \left( 1 + f \right) \eta_R
 \end{align*}
 \begin{align*}
-\Bigg[\frac{w_2^2 - w_1^2}{2} - \frac{u_2^2 - u_1^2}{2} = \frac{c_i^2}{2} \cdot R^* \left( 1 + f \right) \eta_R \Bigg] \cdot \frac{1}{u_1^2}
+\Bigg[\frac{u_1^2 - u_2^2}{2} - \frac{u_w^2 - w_2^2}{2} = \frac{c_i^2}{2} \cdot R^* \left( 1 + f \right) \eta_R \Bigg] \cdot \frac{1}{u_1^2}
 \end{align*}
 \begin{equation}
 \boxed{W_2 = \sqrt{\frac{\eta_R \left( 1 + f \right) R^*}{k_{is}^2} + \frac{\eta_s}{k_{is}^2}  \left(1 - R^* \right) - \frac{2 \sqrt{\eta_s}}{k_{is}} \sqrt{1 - R^*} \sin \alpha_1 + \bigg(\frac{r_2}{r_1} \bigg)^2 } }
@@ -173,18 +173,18 @@ M_u = \frac{u_1}{a_{0_0}}
 \end{align*}
 \'E possibile esprimere la velocità acustica a monte della turbina in funzione dell'entalpia totale:
 \begin{align*}
-a_{0_0} = \sqrt{kRT_{0_0}} = \sqrt{\frac{c_p}{c_v} \left( c_p - c_v \right) T_{0_0}} = \sqrt{h_{0_0} \left( k - 1 \right)}
+a_{0_0} = \sqrt{\gamma RT_{0_0}} = \sqrt{\frac{c_p}{c_v} \left( c_p - c_v \right) T_{0_0}} = \sqrt{h_{0_0} \left( \gamma - 1 \right)}
 \end{align*}
 e
 \begin{align*}
-\psi = \cfrac{h_{0_0} - h_{2ss}}{\cfrac{u_1^2}{2}} = \cfrac{\Delta h_{is_{ts}}}{\cfrac{u_1^2}{2}} = \cfrac{c_i^2}{u_1^2} \hspace{2cm} \frac{c_i^2}{2} = \psi \frac{u_1^2}{2} \cdot \frac{a_{0_0}^2}{a_{0_0}^2} = \frac{k-1}{2}\psi {M_u}^2 h_{0_0}
+\psi = \cfrac{h_{0_0} - h_{2ss}}{\cfrac{u_1^2}{2}} = \cfrac{\Delta h_{is_{ts}}}{\cfrac{u_1^2}{2}} = \cfrac{c_i^2}{u_1^2} \hspace{2cm} \frac{c_i^2}{2} = \psi \frac{u_1^2}{2} \cdot \frac{a_{0_0}^2}{a_{0_0}^2} = \frac{\gamma-1}{2}\psi {M_u}^2 h_{0_0}
 \end{align*}
 Si ricavano quindi le espressioni dei punti delle trasformazioni isoentropiche:
 \begin{align*}
-h_{1s} = h_{0_0} - \left(1- R^* \right) \frac{c_i^2}{2} = h_{0_0} \bigg[ 1- \left( 1- R^* \right) \frac{k-1}{2} \psi M_u^2 \bigg]
+h_{1s} = h_{0_0} - \left(1- R^* \right) \frac{c_i^2}{2} = h_{0_0} \bigg[ 1- \left( 1- R^* \right) \frac{\gamma-1}{2} \psi M_u^2 \bigg]
 \end{align*}
 \begin{align*}
-h_{2ss} = h_{0_0} - \frac{c_i^2}{2} = h_{0_0} \bigg[ 1 - \frac{k-1}{2} \psi M_u^2 \bigg]
+h_{2ss} = h_{0_0} - \frac{c_i^2}{2} = h_{0_0} \bigg[ 1 - \frac{\gamma-1}{2} \psi M_u^2 \bigg]
 \end{align*}
 Ricordando che
 \begin{align*}
@@ -192,10 +192,10 @@ Ricordando che
 \end{align*}
 si arriva alle espressioni dell'entalpia nei punti $1$ e $2$:
 \begin{align*}
-\boxed{h_1 = h_{0_0} - \frac{c_1^2}{2} = h_{0_0} \bigg[ 1- \left( 1- R^* \right) \frac{k-1}{2}  \psi M_u^2 \eta_s\bigg]}
+\boxed{h_1 = h_{0_0} - \frac{c_1^2}{2} = h_{0_0} \bigg[ 1- \left( 1- R^* \right) \frac{\gamma-1}{2}  \psi M_u^2 \eta_s\bigg]}
 \end{align*}
 \begin{align*}
-\boxed{h_2 = h_{0_0} - \Delta h_0 - \frac{c_2^2}{2} = h_{0_0} \bigg[ 1- \bigg( \eta_{ts} + \frac{C_2^2}{\psi} \bigg) \frac{k-1}{2} \psi M_u^2 \bigg]}
+\boxed{h_2 = h_{0_0} - \Delta h_0 - \frac{c_2^2}{2} = h_{0_0} \bigg[ 1- \bigg( \eta_{ts} + \frac{C_2^2}{\psi} \bigg) \frac{\gamma-1}{2} \psi M_u^2 \bigg]}
 \end{align*}
 
 \section{Schiere palari}
